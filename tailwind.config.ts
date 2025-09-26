@@ -57,6 +57,28 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // NaniCure custom colors
+        nani: {
+          primary: "hsl(var(--nani-primary))",
+          secondary: "hsl(var(--nani-secondary))",
+          accent: "hsl(var(--nani-accent))",
+          cream: "hsl(var(--nani-cream))",
+          peach: "hsl(var(--nani-peach))",
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'Segoe UI', 'system-ui', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+      },
+      backgroundImage: {
+        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-sage': 'var(--gradient-sage)', 
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'warm': 'var(--shadow-warm)',
+        'glow': 'var(--shadow-glow)',
+        'card': 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
