@@ -33,12 +33,54 @@ const commonProblems = [
 ];
 
 const ingredients = [
-  { name: 'Turmeric', uses: 'Anti-inflammatory, wound healing', precaution: 'Avoid with blood thinners' },
-  { name: 'Ginger', uses: 'Nausea, digestion, cold relief', precaution: 'Limit if stomach ulcers' },
-  { name: 'Honey', uses: 'Cough suppressant, wound healing', precaution: 'Not for babies under 1 year' },
-  { name: 'Tulsi', uses: 'Immunity, respiratory issues', precaution: 'May lower blood sugar' },
-  { name: 'Neem', uses: 'Skin problems, antibacterial', precaution: 'Bitter taste, use in moderation' },
-  { name: 'Fennel Seeds', uses: 'Digestion, gas relief', precaution: 'May cause allergic reactions' }
+  { 
+    name: 'Turmeric', 
+    uses: 'Anti-inflammatory, wound healing, immunity boost', 
+    precaution: 'Avoid with blood thinners, may stain clothes',
+    conditions: 'Cold, cough, cuts, joint pain'
+  },
+  { 
+    name: 'Ginger', 
+    uses: 'Nausea relief, digestion aid, cold remedy', 
+    precaution: 'Limit intake if you have stomach ulcers',
+    conditions: 'Motion sickness, indigestion, sore throat'
+  },
+  { 
+    name: 'Honey', 
+    uses: 'Natural cough suppressant, antibacterial, energy booster', 
+    precaution: 'Never give to babies under 1 year old',
+    conditions: 'Cough, sore throat, burns, fatigue'
+  },
+  { 
+    name: 'Tulsi (Holy Basil)', 
+    uses: 'Immunity builder, stress relief, respiratory health', 
+    precaution: 'May lower blood sugar levels',
+    conditions: 'Fever, cough, stress, respiratory issues'
+  },
+  { 
+    name: 'Neem', 
+    uses: 'Antibacterial, antifungal, skin purifier', 
+    precaution: 'Very bitter, use in small amounts only',
+    conditions: 'Skin problems, acne, fungal infections'
+  },
+  { 
+    name: 'Fennel Seeds', 
+    uses: 'Digestive aid, gas relief, breath freshener', 
+    precaution: 'May cause allergic reactions in sensitive people',
+    conditions: 'Bloating, gas, bad breath, indigestion'
+  },
+  { 
+    name: 'Ajwain (Carom Seeds)', 
+    uses: 'Digestive relief, gas reduction, respiratory aid', 
+    precaution: 'Avoid during pregnancy, may increase heat',
+    conditions: 'Stomach ache, gas, cough, bloating'
+  },
+  { 
+    name: 'Cinnamon', 
+    uses: 'Blood sugar control, warming spice, circulation', 
+    precaution: 'Avoid large amounts if on blood sugar medication',
+    conditions: 'Diabetes management, cold hands/feet, cough'
+  }
 ];
 
 export function Sidebar({ isOpen, onClose, userName, starredMessages, onSignOut }: SidebarProps) {
@@ -66,18 +108,21 @@ export function Sidebar({ isOpen, onClose, userName, starredMessages, onSignOut 
   const renderBrowseIngredients = () => (
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Common ingredients and their uses:
+        Common home remedy ingredients and their healing powers:
       </p>
       {ingredients.map((ingredient) => (
         <Card key={ingredient.name} className="p-3 border shadow-sm">
           <h4 className="font-medium text-sm text-primary mb-1">{ingredient.name}</h4>
-          <p className="text-xs text-muted-foreground mb-2">
+          <p className="text-xs text-muted-foreground mb-1">
             <strong>Uses:</strong> {ingredient.uses}
+          </p>
+          <p className="text-xs text-green-600 mb-1">
+            <strong>Helps with:</strong> {ingredient.conditions}
           </p>
           <p className="text-xs text-orange-600">
             <strong>Precaution:</strong> {ingredient.precaution}
           </p>
-          <p className="text-xs text-primary mt-2 font-medium">Stay safe beta! 💛</p>
+          <p className="text-xs text-primary mt-2 font-medium">Got it, Nani! Thanks 🧡</p>
         </Card>
       ))}
     </div>
@@ -203,7 +248,7 @@ export function Sidebar({ isOpen, onClose, userName, starredMessages, onSignOut 
   const sidebarSections = [
     { id: 'profile', label: 'Profile', icon: User },
     { id: 'quick-help', label: 'Quick Help', icon: HelpCircle },
-    { id: 'ingredients', label: 'Browse Ingredients', icon: Leaf },
+    { id: 'ingredients', label: 'Browse Remedies', icon: Leaf },
     { id: 'starred', label: 'Starred Nuske', icon: Star },
     { id: 'about', label: 'About', icon: Info },
     { id: 'feedback', label: 'Feedback', icon: MessageSquare },

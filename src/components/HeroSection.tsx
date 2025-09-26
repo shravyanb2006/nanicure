@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onGetStarted, isLoggedIn }: HeroSectionProps) {
   return (
-    <section className="gradient-hero py-16 px-4">
+    <section className="gradient-hero py-16 px-4 indian-motifs">
       <div className="container mx-auto text-center max-w-4xl">
         <div className="mb-6">
           <h2 className="text-lg font-medium text-primary mb-2 flex items-center justify-center gap-2">
@@ -17,7 +17,7 @@ export function HeroSection({ onGetStarted, isLoggedIn }: HeroSectionProps) {
             <Sparkles className="h-5 w-5" />
           </h2>
           
-          <h1 className="text-6xl md:text-8xl font-bold text-primary font-serif mb-4">
+          <h1 className="calligraphy-title text-6xl md:text-8xl text-primary mb-4">
             Nani<span className="text-secondary">Cure</span>
           </h1>
           
@@ -28,14 +28,16 @@ export function HeroSection({ onGetStarted, isLoggedIn }: HeroSectionProps) {
         </div>
 
         {!isLoggedIn && (
-          <Button 
-            onClick={onGetStarted}
-            size="lg"
-            className="btn-nani text-lg px-8 py-4 shadow-glow hover:shadow-warm transition-all"
-          >
-            <Heart className="mr-2 h-5 w-5 fill-current" />
-            Start Your Journey with Nani
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Button 
+              onClick={onGetStarted}
+              size="lg"
+              className="btn-nani text-lg px-8 py-4 shadow-glow hover:shadow-warm transition-all"
+            >
+              <Heart className="mr-2 h-5 w-5 fill-current" />
+              Start Your Journey with Nani
+            </Button>
+          </div>
         )}
         
         {isLoggedIn && (

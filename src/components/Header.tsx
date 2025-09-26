@@ -35,27 +35,13 @@ export function Header({ onMenuClick, selectedRegion, onRegionChange, onLoginCli
             <Heart className="h-8 w-8 text-primary fill-current" />
             <div>
               <h1 className="text-2xl font-bold text-primary font-serif">NaniCure</h1>
-              <p className="text-sm text-muted-foreground hidden sm:block">Your Caring Nani at Home</p>
+              <p className="text-sm text-muted-foreground hidden sm:block">Wisdom and Wellness</p>
             </div>
           </div>
         </div>
 
         {/* Navigation and Actions */}
         <div className="flex items-center space-x-4">
-          {/* Region Selection */}
-          <Select value={selectedRegion} onValueChange={onRegionChange}>
-            <SelectTrigger className="w-40 bg-background">
-              <SelectValue placeholder="Select Region" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="north">North India</SelectItem>
-              <SelectItem value="south">South India</SelectItem>
-              <SelectItem value="east">East India</SelectItem>
-              <SelectItem value="west">West India</SelectItem>
-              <SelectItem value="central">Central India</SelectItem>
-            </SelectContent>
-          </Select>
-
           {/* Login/Profile */}
           {isLoggedIn ? (
             <div className="flex items-center space-x-2">

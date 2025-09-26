@@ -3,8 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Send, Star, ArrowLeft } from "lucide-react";
+import { MessageCircle, Send, Star, ArrowLeft, RotateCcw } from "lucide-react";
 import { Header } from "@/components/Header";
+import { HamburgerMenu } from "@/components/HamburgerMenu";
+import { 
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import remediesData from "@/data/remedies.json";
 
 interface Message {
@@ -17,6 +25,7 @@ interface Message {
 
 const NaniKeNuskePage = () => {
   const navigate = useNavigate();
+  const [selectedRegion, setSelectedRegion] = useState("");
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -36,6 +45,18 @@ const NaniKeNuskePage = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  const startNewChat = () => {
+    setMessages([
+      {
+        id: '1',
+        text: "Namaste beta! I'm your Nani, ready with home remedies for all your problems. Tell me what's troubling you today? 💛",
+        isUser: false,
+        timestamp: new Date(),
+      }
+    ]);
+    setInput("");
+  };
 
   const generateNaniResponse = (userInput: string): string => {
     const input_lower = userInput.toLowerCase();
@@ -150,32 +171,57 @@ ${matchedRemedy.escalation && matchedRemedy.escalation.length > 0 ?
       />
       
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="mb-6">
+        <div className="mb-6 flex items-center justify-between">
           <Button 
             variant="ghost" 
             onClick={() => navigate(-1)}
-            className="mb-4"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back
           </Button>
           
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-primary mb-4 font-serif">
-              Nani ke Nuske
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Your pocket nani, ready with a nuskha for every problem
-            </p>
+          <div className="flex items-center gap-4">
+            <HamburgerMenu currentPage="nani-ke-nuske" />
+            
+            <Select value={selectedRegion} onValueChange={setSelectedRegion}>
+              <SelectTrigger className="w-40">
+                <SelectValue placeholder="Select Region" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="north">North India</SelectItem>
+                <SelectItem value="south">South India</SelectItem>
+                <SelectItem value="east">East India</SelectItem>
+                <SelectItem value="west">West India</SelectItem>
+                <SelectItem value="central">Central India</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
+        </div>
+        
+        <div className="text-center mb-8">
+          <h1 className="nani-tagline text-4xl mb-2">
+            Nani ke Nuske
+          </h1>
+          <p className="nani-description text-lg">
+            Your pocket nani, ready with a nuskha for every problem
+          </p>
         </div>
 
         <Card className="h-[600px]">
-          <CardHeader className="pb-4">
+          <CardHeader className="pb-4 flex flex-row items-center justify-between">
             <CardTitle className="flex items-center gap-2">
               <MessageCircle className="h-5 w-5 text-primary" />
               Chat with Nani
             </CardTitle>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={startNewChat}
+              className="gap-2"
+            >
+              <RotateCcw className="h-4 w-4" />
+              Start New Chat
+            </Button>
           </CardHeader>
           
           <CardContent className="flex flex-col h-full pb-4">

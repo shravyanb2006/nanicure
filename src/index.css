@@ -139,6 +139,7 @@ All colors MUST be HSL.
   
   .gradient-hero {
     background: var(--gradient-hero);
+    position: relative;
   }
   
   .shadow-warm {
@@ -159,6 +160,69 @@ All colors MUST be HSL.
   
   .transition-bounce {
     transition: var(--transition-bounce);
+  }
+
+  /* Indian Motifs & Decorative Elements */
+  .indian-motifs {
+    position: relative;
+  }
+
+  .indian-motifs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(var(--nani-secondary)) 0.08 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, hsl(var(--nani-primary)) 0.08 1px, transparent 1px),
+      radial-gradient(circle at 40% 40%, hsl(var(--nani-accent)) 0.12 2px, transparent 2px);
+    background-size: 60px 60px, 80px 80px, 40px 40px;
+    background-position: 0 0, 30px 30px, 15px 15px;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  .lotus-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .lotus-divider::before,
+  .lotus-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, hsl(var(--nani-secondary) / 0.3), transparent);
+  }
+
+  .lotus-divider span {
+    padding: 0 1rem;
+    color: hsl(var(--nani-secondary));
+    font-size: 1.5rem;
+  }
+
+  .calligraphy-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px hsl(var(--nani-secondary) / 0.1);
+  }
+
+  .nani-tagline {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(var(--primary));
+  }
+
+  .nani-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.6;
   }
   
   /* Chat Components */
