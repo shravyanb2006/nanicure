@@ -29,7 +29,7 @@ const DoctorConnectPage = () => {
   const handleSearch = () => {
     let filtered = doctorsData.doctors;
     
-    if (selectedRegion) {
+    if (selectedRegion && selectedRegion !== "all") {
       filtered = filtered.filter(doctor => doctor.region === selectedRegion);
     }
     
@@ -105,7 +105,7 @@ const DoctorConnectPage = () => {
                   <SelectValue placeholder="Select Region" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Regions</SelectItem>
+                  <SelectItem value="all">All Regions</SelectItem>
                   {regions.map(region => (
                     <SelectItem key={region} value={region}>{region}</SelectItem>
                   ))}
