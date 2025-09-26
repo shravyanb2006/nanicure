@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { WidgetGrid } from "@/components/WidgetGrid";
 import { Sidebar } from "@/components/Sidebar";
 import { OnboardingModal } from "@/components/OnboardingModal";
+import { StarredBookmarks } from "@/components/StarredBookmarks";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   const [starredMessages, setStarredMessages] = useState<any[]>([]);
+  const [showBookmarks, setShowBookmarks] = useState(false);
   const { toast } = useToast();
 
   const handleLogin = () => {
@@ -41,10 +43,23 @@ const Index = () => {
   };
 
   const handleStarMessage = (message: any) => {
-    setStarredMessages(prev => [...prev, message]);
+    const starredMessage = {
+      ...message,
+      id: message.id || Date.now().toString(),
+      timestamp: message.timestamp || new Date(),
+    };
+    setStarredMessages(prev => [...prev, starredMessage]);
     toast({
       title: "Message saved!",
       description: "Added to your Starred Nuske collection",
+    });
+  };
+
+  const handleRemoveStarred = (id: string) => {
+    setStarredMessages(prev => prev.filter(msg => msg.id !== id));
+    toast({
+      title: "Removed from starred",
+      description: "Message removed from your collection",
     });
   };
 
@@ -64,11 +79,31 @@ const Index = () => {
         isLoggedIn={isLoggedIn}
       />
 
-      {isLoggedIn && (
+      {isLoggedIn && !showBookmarks && (
         <WidgetGrid
           onStarMessage={handleStarMessage}
           userRegion={selectedRegion}
+          onShowBookmarks={() => setShowBookmarks(true)}
         />
+      )}
+
+      {isLoggedIn && showBookmarks && (
+        <section className="py-8 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <div className="mb-6">
+              <button
+                onClick={() => setShowBookmarks(false)}
+                className="text-sm text-muted-foreground hover:text-primary mb-4"
+              >
+                ← Back to Dashboard
+              </button>
+            </div>
+            <StarredBookmarks
+              starredMessages={starredMessages}
+              onRemoveStarred={handleRemoveStarred}
+            />
+          </div>
+        </section>
       )}
 
       <Sidebar
@@ -82,6 +117,7 @@ const Index = () => {
       <OnboardingModal
         isOpen={showOnboarding}
         onComplete={handleOnboardingComplete}
+        onClose={() => setShowOnboarding(false)}
       />
 
       {/* Footer */}

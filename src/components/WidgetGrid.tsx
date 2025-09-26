@@ -6,9 +6,10 @@ import { getDailyTip } from "@/utils/dailyTips";
 interface WidgetGridProps {
   onStarMessage: (message: any) => void;
   userRegion: string;
+  onShowBookmarks: () => void;
 }
 
-export function WidgetGrid({ onStarMessage, userRegion }: WidgetGridProps) {
+export function WidgetGrid({ onStarMessage, userRegion, onShowBookmarks }: WidgetGridProps) {
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto max-w-7xl">
@@ -97,6 +98,17 @@ export function WidgetGrid({ onStarMessage, userRegion }: WidgetGridProps) {
 
         <div className="lotus-divider">
           <span>🪷</span>
+        </div>
+
+        {/* Bookmarks Access Button */}
+        <div className="text-center mb-8">
+          <button
+            onClick={onShowBookmarks}
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors duration-200"
+          >
+            <span className="text-2xl">⭐</span>
+            View Your Starred Remedies
+          </button>
         </div>
 
         {/* Footer wellness tip with dynamic content */}

@@ -23,9 +23,10 @@ import { useToast } from "@/hooks/use-toast";
 interface OnboardingModalProps {
   isOpen: boolean;
   onComplete: (userData: { name: string; region: string }) => void;
+  onClose: () => void;
 }
 
-export function OnboardingModal({ isOpen, onComplete }: OnboardingModalProps) {
+export function OnboardingModal({ isOpen, onComplete, onClose }: OnboardingModalProps) {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     name: '',
@@ -78,7 +79,7 @@ export function OnboardingModal({ isOpen, onComplete }: OnboardingModalProps) {
   };
 
   return (
-    <Dialog open={isOpen} modal>
+    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-center">
