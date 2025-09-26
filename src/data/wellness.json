@@ -1,0 +1,1499 @@
+{
+  "disclaimer": "These are general wellness exercises and lifestyle suggestions rooted in simple traditional practices and gentle modern techniques. They are NOT medical advice. If you have serious mental health issues, cardiovascular disease, uncontrolled hypertension, pregnancy complications, recent surgery, or acute medical problems, please consult a healthcare professional before attempting new exercises.",
+  "wellness": [
+    {
+      "id": "W001",
+      "problem": "acute stress / feeling overwhelmed",
+      "keywords": [
+        "stress", "overwhelmed", "feeling stressed", "panic", "too much on mind", "anxious", "anxiety spike",
+        "work stress", "exam stress", "deadline stress", "heart racing", "cannot calm down"
+      ],
+      "exercise": "🧘‍♀️ **Grounding + Box Breathing (5 minutes)**\n\n**Step 1 — Grounding (30–60 seconds):** Sit or stand comfortably. Feel both feet on the floor. Name **5 things** you can see, **4 you can touch**, **3 you can hear**, **2 you can smell**, **1 you can taste** — slowly. This brings attention to the present.\n\n**Step 2 — Box Breathing (3–4 minutes):** Inhale gently through nose for **4** counts → hold for **4** counts → exhale slowly for **4** counts → hold for **4** counts. Repeat 6–8 rounds. Keep shoulders relaxed.\n\n**Step 3 — Micro-movement (30–60 seconds):** Roll shoulders slowly 5× each direction. Shake out hands and breathe.\n\n**Result:** Calms nervous system, reduces racing thoughts, quick to do anywhere.",
+      "extra_info": "🕒 **When to use:** Whenever you feel overwhelmed — before a meeting, exam, or after a fight. \n🌿 **Variation:** If 4-second holds feel hard, try 3-3-3-3. \n🚶‍♀️ **Follow-up:** Take a short 5-minute walk in fresh air.\n\n**Tip:** Practice once daily for 2 weeks to build a quick, reliable habit.",
+      "escalation": ["panic attacks that don't settle", "thoughts of self-harm", "severe breathlessness"]
+    },
+    {
+      "id": "W002",
+      "problem": "chronic low mood / mild sadness (non-clinical)",
+      "keywords": [
+        "low mood", "feeling down", "sadness", "blue", "low energy mood", "not enjoying things",
+        "feeling flat", "mood swing", "down in the dumps"
+      ],
+      "exercise": "🌤️ **Cheer-Up Routine (10–15 minutes)**\n\n**1 — Sun & Stretch (3–5 minutes):** Step outside in morning sunshine (5–10 min). Stretch arms overhead, inhale, exhale slowly 4×. Natural light helps circadian rhythm.\n\n**2 — Gratitude Note (2–3 minutes):** Write 1–3 simple things you are grateful for today — very small things (cup of chai, phone call, warm water).\n\n**3 — Movement Burst (5 minutes):** March on spot or walk briskly for 5 minutes. Add gentle shoulder rolls and head turns.\n\n**Result:** Lightens mood through movement, sunlight and cognitive shift.",
+      "extra_info": "🍽️ **Food tip:** Add a small protein (like dal or yogurt) at breakfast to stabilize energy. \n🎶 **Audio tip:** Play 1–2 uplifting songs you like. \n📆 **Routine:** Try this 4–5 times weekly for mood maintenance.",
+      "escalation": ["persistent sadness > 2 weeks", "loss of appetite/weight", "thoughts of self-harm"]
+    },
+    {
+      "id": "W003",
+      "problem": "difficulty falling asleep / insomnia (mild)",
+      "keywords": [
+        "insomnia", "cannot sleep", "difficulty sleeping", "restless night", "late at night", "sleepless",
+        "sleep trouble", "can't fall asleep"
+      ],
+      "exercise": "🛌 **Gentle Bedtime Wind-down (20–30 minutes)**\n\n**1 — Screen OFF (30–60 minutes before bed):** Put phone away; switch off bright lights. \n\n**2 — Warm Ritual (5–8 minutes):** Sip warm milk (or warm water with a little honey) or chamomile tea. Do a **2–3 minute** progressive muscle relaxation: tense toes → release, move upward to calves, thighs, belly, shoulders, neck.\n\n**3 — 4-7-8 Breathing (5 minutes):** Inhale for 4 → hold for 7 → exhale slowly for 8. Repeat 4–6 rounds.\n\n**Result:** Lowers body arousal and readies the body for sleep.",
+      "extra_info": "🛏️ **Sleep environment:** Keep room cool, dark, and quiet. Use cotton sheets. \n⏰ **Routine:** Keep consistent wake time. \n⚠️ **Avoid:** heavy meals, caffeine after 2pm, long naps late in day.",
+      "escalation": ["chronic insomnia affecting daily life", "extreme daytime sleepiness", "hallucinations"]
+    },
+    {
+      "id": "W004",
+      "problem": "mental fatigue / brain fog",
+      "keywords": [
+        "brain fog", "mental fog", "can't focus", "cloudy mind", "forgetful", "lack of clarity",
+        "concentration problems", "slow thinking"
+      ],
+      "exercise": "🧠 **Focus Reset (10 minutes)**\n\n**1 — Mini-brain break (2 min):** Stand, stretch side-to-side, take 3 deep breaths. \n\n**2 — Pomodoro Mini (25 minutes):** Work focused for 25 minutes, then 5-minute break. During break: move, hydrate, look 20 feet away for 20 seconds.\n\n**3 — Short Memory Drill (3–4 min):** Read 4–5 short words, close eyes, try to recall. Or name 5 things you saw in the room in reverse order.\n\n**Result:** Improves attention span and mental clarity with short, repeatable practices.",
+      "extra_info": "💧 **Hydration:** Keep water nearby. \n🍊 **Snack:** A small fruit or handful of nuts helps brain fuel. \n🧘 **Weekly:** Do a longer 10–15 min meditation twice weekly to sharpen mind.",
+      "escalation": ["sudden memory loss", "confusion", "difficulty performing daily tasks"]
+    },
+    {
+      "id": "W005",
+      "problem": "low energy / morning sluggishness",
+      "keywords": [
+        "low energy", "sluggish in morning", "morning fatigue", "slow to start", "morning tired",
+        "can't wake up", "need more energy"
+      ],
+      "exercise": "🌅 **Morning Wake-Up Routine (7–10 minutes)**\n\n**1 — Hydrate (immediate):** Drink a glass of warm water with lemon or plain warm water.\n\n**2 — Energizing Stretch (3–5 min):** Stand tall, inhale arms overhead, exhale & fold forward (5×). March in place for 1 minute.\n\n**3 — 30-second Cold Splash (optional):** Splash face with cool water or a short cool shower to stimulate alertness.\n\n**Result:** Gradually wakes up body with gentle movement and hydration.",
+      "extra_info": "☀️ **Sunlight exposure** for 5–10 minutes after waking helps the body clock. \n🍽️ **Breakfast:** Small protein + fruit (eg. curd + banana) helps energy.",
+      "escalation": ["extreme fatigue despite rest", "unexplained weight loss", "dizziness"]
+    },
+    {
+      "id": "W006",
+      "problem": "panic attack / acute strong anxiety",
+      "keywords": [
+        "panic attack", "sudden anxiety", "heart racing", "can't breathe", "hyperventilation",
+        "feeling faint", "intense fear suddenly"
+      ],
+      "exercise": "🆘 **Immediate Ground & Slow-Breathe (5–10 minutes)**\n\n**1 — Sit Down:** Sit and lean slightly forward (helps breathing). \n\n**2 — 4-4-8 Breathing:** Inhale 4 counts — exhale 8 counts, mouth slightly open if needed. This prevents hyperventilation.\n\n**3 — Grounding:** Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Repeat until breathing slows.\n\n**Result:** Rapidly reduces physiological arousal and anchors attention to present.",
+      "extra_info": "☎️ **If with chest pain or fainting, call emergency services.** \n🧑‍⚕️ After the event, consider a counselor for recurring panic.",
+      "escalation": ["loss of consciousness", "chest pain not relieved", "ongoing breathing difficulty"]
+    },
+    {
+      "id": "W007",
+      "problem": "mild depression / persistent low mood (non-urgent)",
+      "keywords": [
+        "depression", "persistent sadness", "feeling hopeless", "lack of interest", "not motivated",
+        "can't enjoy things", "low mood for long"
+      ],
+      "exercise": "🌱 **Gentle Activation + Social Connection (daily routine)**\n\n**1 — Small Activation (10–15 min):** Pick 1 small task you can complete (make tea, open window, water plant). Completing small tasks improves mood.\n\n**2 — Movement (10 min):** Walk outside with attention on senses — notice 3 things you see, 2 you hear, 1 you smell.\n\n**3 — Connect (5 min):** Call or message one caring person. Share one small thing.\n\n**Result:** Encourages behavioral activation and reduces isolation.",
+      "extra_info": "📋 **Journal:** Note 1 small positive thing each day. \n⚠️ **If symptoms > 2 weeks**, consult a mental health professional.",
+      "escalation": ["self-harm thoughts", "inability to care for self", "severe hopelessness"]
+    },
+    {
+      "id": "W008",
+      "problem": "difficulty concentrating / distractibility",
+      "keywords": [
+        "can't focus", "easily distracted", "attention problems", "mind wanders", "short attention span",
+        "work can't finish"
+      ],
+      "exercise": "🎯 **Focus Builder (20–30 minutes)**\n\n**1 — Setup (2 min):** Remove obvious distractions; put phone on Do Not Disturb. \n\n**2 — Timed Work (25 min):** Use Pomodoro: work for 25 minutes, then 5-minute break. During break, move and look away from screen.\n\n**3 — Short Reset (2 min):** On each break, do 10 deep breaths or a 30-second walk.\n\n**Result:** Strengthens focused work intervals and reduces cognitive fatigue.",
+      "extra_info": "🗂️ **Chunk tasks** into smaller steps. \n🍎 **Snack tip:** A small protein snack before focus session helps (nuts, yogurt).",
+      "escalation": ["severe attention problems affecting daily life", "sudden cognitive changes"]
+    },
+    {
+      "id": "W009",
+      "problem": "mild digestive discomfort / bloating",
+      "keywords": [
+        "bloating", "stomach discomfort", "gas", "feeling heavy", "belching", "slow digestion",
+        "abdominal bloating", "gassy"
+      ],
+      "exercise": "🍃 **Gentle Digestive Care (10–15 minutes)**\n\n**1 — Warm Water:** Sip warm water slowly for 5 minutes. \n\n**2 — Seated Twist (2–3 min):** Sit cross-legged or on chair, inhale raise arms, exhale twist gently to right, then left. Repeat 4× each side.\n\n**3 — Walking (5–10 min):** Gentle walk after meal helps move gas and digestion.\n\n**Result:** Encourages gentle mobility and reduces trapped gas.",
+      "extra_info": "🌿 **Herbal tip:** Cumin, ajwain (carom), or fennel infusion after meals helps digestion. \n🍽️ **Diet tip:** Eat slowly and avoid carbonated drinks.",
+      "escalation": ["severe abdominal pain", "blood in stool", "persistent vomiting"]
+    },
+    {
+      "id": "W010",
+      "problem": "mild low back stiffness",
+      "keywords": [
+        "lower back pain", "back stiffness", "stiff lower back", "sore back", "lumbar ache", "back tightness"
+      ],
+      "exercise": "🧘 **Simple Back Mobility (8–10 minutes)**\n\n**1 — Pelvic Tilt (2 min):** Lie on back, knees bent, feet flat. Tighten belly and press low back into floor, hold 3 secs, release. Repeat 10×.\n\n**2 — Cat-Cow (2 min):** On hands & knees, inhale arch (cow), exhale round (cat). 10 slow rounds.\n\n**3 — Child's Pose Hold (2 min):** Kneel and sit back on heels, stretch arms forward, rest forehead on floor or block.\n\n**Result:** Relieves stiffness and improves spinal mobility.",
+      "extra_info": "🪑 **Chair tip:** Use lumbar support while sitting. \n🚫 **Avoid:** heavy lifting until back feels better.",
+      "escalation": ["numbness in legs", "loss of bladder control", "severe sharp pain"]
+    },
+    {
+      "id": "W011",
+      "problem": "tight shoulders / neck tension",
+      "keywords": [
+        "shoulder tightness", "neck tension", "desk neck", "stiff shoulders", "upper back tightness", "stiff neck"
+      ],
+      "exercise": "💆 **Neck & Shoulder Release (5–8 minutes)**\n\n**1 — Shoulder Rolls (1 min):** Roll both shoulders up-back-down 10×, then reverse.\n\n**2 — Lateral Neck Stretch (2 min):** Tilt head right ear to shoulder, hold 20–30s, breathe. Repeat left.\n\n**3 — Corner Stretch (2 min):** Stand facing a corner, hands on walls at shoulder height, lean forward to open chest and shoulders.\n\n**Result:** Releases upper body tension from screen work.",
+      "extra_info": "🧴 **Heat:** Apply warm towel for 5 mins before stretching for extra relief. \n⏱️ **Repeat** every 60–90 minutes if working at desk.",
+      "escalation": ["persistent numbness", "arm weakness", "severe headache with neck stiffness"]
+    },
+    {
+      "id": "W012",
+      "problem": "mild breathlessness with anxiety (non-cardiac)",
+      "keywords": [
+        "shortness of breath", "breathless", "can't breathe", "heavy breathing", "panting",
+        "breathless due to anxiety", "breathing fast"
+      ],
+      "exercise": "🌬️ **Calm Breathing Sequence (6–8 minutes)**\n\n**1 — Foundational Breath (60s):** Sit upright, inhale 3–4 counts, exhale 4–6 counts slowly.\n\n**2 — Pursed-Lip Breathing (2–3 minutes):** Inhale through nose 2 counts, exhale through pursed lips 4–6 counts.\n\n**3 — Gentle Movement (2 min):** Stand and gently stretch arms overhead while breathing slowly.\n\n**Result:** Regulates breathing pattern and lowers panic-driven hyperventilation.",
+      "extra_info": "⚠️ If breathlessness is sudden and severe, seek emergency care. \n🌿 Use only when you are confident it is anxiety-related and not due to heart or lung disease.",
+      "escalation": ["chest pain", "bluish lips/face", "severe breathlessness"]
+    },
+    {
+      "id": "W013",
+      "problem": "mild memory sharpening",
+      "keywords": [
+        "memory problems", "forgetful", "can't remember", "bad memory", "brain sharpness",
+        "recall difficulty"
+      ],
+      "exercise": "🧩 **Memory Boost Mini-Set (8–10 minutes)**\n\n**1 — Word Recall (3 min):** Read a short 6-word list, look away, recall in order. Repeat with new sets.\n\n**2 — Visualization (2 min):** Close eyes, visualize a 6-step daily routine in order (e.g., brush → water → tea → keys → door → walk).\n\n**3 — Movement + Naming (2–3 min):** Walk 2–3 minutes while naming items of a category (fruits, colors) — engages memory + movement.",
+      "extra_info": "🥜 **Diet:** Add nuts, seeds, and leafy greens. \n📚 **Routine:** Practice 3× weekly to notice improvement.",
+      "escalation": ["sudden memory loss", "confusion", "difficulty performing daily tasks"]
+    },
+    {
+      "id": "W014",
+      "problem": "mild loneliness / social isolation",
+      "keywords": [
+        "lonely", "feeling alone", "isolated", "no company", "socially isolated", "missing people"
+      ],
+      "exercise": "🤝 **Connection Starter (daily small steps)**\n\n**1 — Reach Out (5 min):** Send a short greeting or voice note to one person you like. Small consistent contact helps.\n\n**2 — Community Micro-step (5–10 min):** Join a short local walk group, religious/community prayer, or a neighborhood chat. \n\n**3 — Helping Act (5 min):** Offer a small help (call neighbor, water plant for someone) — doing for others boosts belonging.",
+      "extra_info": "📌 **Tip:** Schedule 1 social contact/day (call, message, meet) — even 5 minutes matters. \n🌿 **Volunteering** helps sustained connection.",
+      "escalation": ["severe withdrawal", "thoughts of self-harm", "feeling hopeless"]
+    },
+    {
+      "id": "W015",
+      "problem": "low motivation / procrastination",
+      "keywords": [
+        "no motivation", "can't start", "procrastination", "lazy feeling", "push to start", "avoid tasks"
+      ],
+      "exercise": "⚒️ **Motivation Micro-Habit (15–20 minutes)**\n\n**1 — 2-Minute Start Rule:** Pick a task and commit to just 2 minutes. Most times you’ll continue.\n\n**2 — Break into Steps:** Write 3 tiny steps to finish a task. Check off first step immediately.\n\n**3 — Reward (1 min):** After completion, do a micro-reward (tea sip, 30s music).\n\n**Result:** Builds momentum and reduces inertia.",
+      "extra_info": "📅 **Plan:** Do this daily for one task. \n🎯 **Avoid:** setting huge, vague goals — break them down.",
+      "escalation": ["persistent inability to function", "severe depressive symptoms"]
+    },
+    {
+      "id": "W016",
+      "problem": "mild digestive sluggishness (slow digestion)",
+      "keywords": [
+        "slow digestion", "heavy after meals", "sluggish stomach", "slow gut", "digestive sluggishness"
+      ],
+      "exercise": "🚶 **Digestive Mini-Walk & Massage (10 minutes)**\n\n**1 — Gentle Walk (5–7 min):** After a meal, walk slowly for 5–7 minutes outdoors if possible.\n\n**2 — Abdominal Clock Massage (2–3 min):** Use flat palm to massage belly in clockwise circles, gentle pressure.\n\n**Result:** Stimulates bowel motility and reduces heaviness.",
+      "extra_info": "🍽️ **Meal tip:** Smaller portions, chew well. \n🌿 **Herbal:** Warm fennel or cumin water after meals helps digestion.",
+      "escalation": ["persistent severe pain", "blood in stool", "chronic constipation"]
+    },
+    {
+      "id": "W017",
+      "problem": "mild PMS emotional discomfort",
+      "keywords": [
+        "PMS", "mood swings before period", "irritable before period", "period emotional", "pre-menstrual"
+      ],
+      "exercise": "🌺 **PMS Calm Routine (10–15 minutes)**\n\n**1 — Gentle Breathing (3 min):** Sit comfortably, inhale 4, exhale 6 slowly for 3 minutes.\n\n**2 — Pelvic Relax (3–5 min):** Lie down, knees bent, gentle pelvic tilts (10×).\n\n**3 — Herbal Comfort Drink:** Warm fennel or ginger tea (avoid too much sugar).\n\n**Result:** Reduces irritability and physical discomfort.",
+      "extra_info": "🍽️ **Food:** Eat iron & magnesium sources (leafy greens, nuts). \n🧴 **Self-care:** Warm bath and light massage help mood.",
+      "escalation": ["severe premenstrual symptoms affecting life", "heavy bleeding", "severe mood swings"]
+    },
+    {
+      "id": "W018",
+      "problem": "mild postpartum fatigue & adjustment",
+      "keywords": [
+        "postpartum tired", "new mom tired", "low energy after birth", "baby care fatigue", "exhausted after delivery"
+      ],
+      "exercise": "🤱 **New-Mom Gentle Recovery (daily small steps)**\n\n**1 — Micro-rests:** Nap when baby naps (10–20 min). \n\n**2 — Gentle Pelvic Floor & Breath (3 min):** Kegel-like pelvic floor lifts + 3 deep belly breaths.\n\n**3 — Nourish Snack:** Keep easy protein-rich snacks (nuts, yogurt) handy.\n\n**Result:** Small recovery habits build resilience.",
+      "extra_info": "👩‍⚕️ **Support:** Share baby duties where possible. \n🍲 **Hydrate & eat nutrient-dense foods.**",
+      "escalation": ["postpartum depression signs", "excessive bleeding", "severe mood changes"]
+    },
+    {
+      "id": "W019",
+      "problem": "mild joint mobility (elder-friendly)",
+      "keywords": [
+        "joint movement", "stiff joints elderly", "aging joints", "mobility", "joint stiffness elderly",
+        "gentle joint exercise", "move joints"
+      ],
+      "exercise": "🦵 **Gentle Joint Mobility Flow (10 minutes)**\n\n**1 — Ankle Circles (2 min):** While seated, rotate each ankle 10× clockwise, 10× counter.\n\n**2 — Knee March (3 min):** Seated or standing, lift knees one by one slowly for 1–2 min.\n\n**3 — Shoulder Opener (2–3 min):** Seated, interlace fingers behind and open chest gently.\n\n**Result:** Maintains circulation, reduces stiffness and improves function.",
+      "extra_info": "🚶 **Daily:** Aim for a 10–20 min gentle walk. \n⚠️ **Avoid sudden jerks** or heavy weights without guidance.",
+      "escalation": ["severe joint pain", "sudden swelling", "loss of limb function"]
+    },
+    {
+      "id": "W020",
+      "problem": "mild breathing improvement / stamina",
+      "keywords": [
+        "breathing exercise", "improve breath", "stamina", "low lung capacity", "breath control",
+        "breath stamina"
+      ],
+      "exercise": "🌬️ **Breath Building (8–10 minutes)**\n\n**1 — Diaphragmatic Breath (3 min):** Lie or sit, place hand on belly. Breathe in so belly rises, exhale slowly. 10 slow breaths.\n\n**2 — Alternate Nostril Breath (Nadi Shodhana) (3–4 min):** Using right thumb close right nostril, inhale left, close left with ring finger, exhale right. Repeat 8–10 cycles.\n\n**Result:** Calms mind and gradually increases breath control and tolerance.",
+      "extra_info": "⚠️ **Do not hold breath** if you have heart or lung disease without medical advice. \n🏃‍♂️ **Follow-up:** Add a gentle 10-minute walk 3× weekly to build stamina.",
+      "escalation": ["severe shortness of breath", "chest pain", "dizziness while breathing"]
+    },
+    {
+      "id": "W021",
+      "problem": "mild anxiety before exams or presentations",
+      "keywords": ["anxiety", "nervousness", "exam stress", "presentation fear", "pre-performance jitters", "worry", "tension"],
+      "exercise": "**🧘 Deep Breathing & Visualization:** Sit comfortably, close your eyes, and take 5 slow deep breaths. Visualize yourself confidently completing the exam or presentation. Repeat 5–10 minutes.\n\n**📝 Quick Journaling:** Write down worries and possible solutions for 5 minutes. Helps declutter the mind.\n\n**🏃 Light Walk or Stretch:** 5–10 minutes of gentle movement to release tension and boost circulation.",
+      "extra_info": "Avoid excessive caffeine. Drink warm herbal tea like tulsi or chamomile. Maintain positive self-talk, reminding yourself that effort is more important than perfection. Music that soothes you can be played in background.",
+      "escalation": ["anxiety interfering with sleep", "panic attacks", "inability to focus on daily tasks"]
+    },
+    {
+      "id": "W022",
+      "problem": "feeling low energy / fatigue during the day",
+      "keywords": ["fatigue", "low energy", "sluggishness", "tiredness", "lack of motivation", "daytime sleepiness", "lethargy"],
+      "exercise": "**☀️ Morning Sun Stretch:** Stand near a window or outside, raise arms overhead, stretch up, take 5 deep breaths.\n\n**🏃 Quick Cardio Burst:** March in place or do jumping jacks for 2–3 minutes to awaken circulation.\n\n**🧘‍♀️ Mini Meditation:** Close eyes, focus on breathing, visualize energy flowing through body.",
+      "extra_info": "Drink water regularly. Small protein-rich snacks like nuts can help. Avoid long periods of sitting; get up every hour for a short stretch. If fatigue persists beyond a week, check with a doctor.",
+      "escalation": ["persistent tiredness despite rest", "dizziness", "rapid heartbeat"]
+    },
+    {
+      "id": "W023",
+      "problem": "back stiffness after long sitting",
+      "keywords": ["back pain", "stiffness", "posture", "sedentary", "lower back ache", "upper back tightness", "sitting discomfort"],
+      "exercise": "**🧘 Cat-Cow Stretch:** On hands and knees, alternate arching and rounding your back slowly 10–15 times.\n\n**💪 Standing Side Stretch:** Stand, interlace fingers above head, lean gently left and right, hold 10 seconds each side.\n\n**🚶 Short Walk:** 5–10 minutes to loosen muscles and improve circulation.",
+      "extra_info": "Ensure ergonomic seating. Take mini breaks every 45–60 minutes. Use a rolled towel behind lower back if needed. Persistent pain may require physiotherapy consultation.",
+      "escalation": ["pain radiating to legs", "numbness", "loss of mobility"]
+    },
+    {
+      "id": "W024",
+      "problem": "neck tension from phone or computer",
+      "keywords": ["neck pain", "stiff neck", "text neck", "screen fatigue", "tension", "upper back discomfort", "headaches from posture"],
+      "exercise": "**💆 Neck Rotations:** Slowly rotate neck clockwise 5 times, then counterclockwise 5 times.\n\n**🧘 Shoulder Rolls:** Roll shoulders forward 10 times, backward 10 times.\n\n**🪑 Chin Tucks:** Sit straight, gently tuck chin towards chest and hold 5 seconds, repeat 10 times.",
+      "extra_info": "Adjust screen height to eye level. Take breaks every hour. Warm compress on neck for 5 minutes can relieve stiffness.",
+      "escalation": ["persistent sharp pain", "tingling in arms or hands", "severe headaches"]
+    },
+    {
+      "id": "W025",
+      "problem": "insomnia or difficulty sleeping",
+      "keywords": ["sleep issues", "insomnia", "difficulty falling asleep", "restless night", "trouble sleeping", "sleep deprivation"],
+      "exercise": "**🌙 Evening Breathing Routine:** Sit or lie comfortably, inhale for 4 counts, hold 4, exhale 6 counts, repeat 10 times.\n\n**🛌 Leg-Up-the-Wall Pose:** Lie on back, legs up against wall, relax arms, hold 5–10 minutes.\n\n**🧘 Body Scan Meditation:** Focus on relaxing each body part from toes to head.",
+      "extra_info": "Avoid screens 1 hour before bed. Drink warm milk or chamomile tea. Keep room slightly dark and cool. If insomnia persists more than 2 weeks, consult a doctor.",
+      "escalation": ["chronic sleep loss", "daytime drowsiness affecting work", "severe anxiety preventing sleep"]
+    },
+    {
+      "id": "W026",
+      "problem": "mild stress from work",
+      "keywords": ["stress", "work pressure", "mental fatigue", "burnout", "overthinking", "irritability", "head tension"],
+      "exercise": "**🧘 5-Minute Desk Meditation:** Close eyes, focus on breath, inhale 4 counts, exhale 6 counts.\n\n**💪 Shoulder & Upper Back Stretch:** Stretch arms overhead, pull gently to sides, roll shoulders.\n\n**🏃 Short Walk Outside:** 5–10 minutes of fresh air to reset mind.",
+      "extra_info": "Keep hydrated. Listen to calming music. Break large tasks into small steps. Avoid over-caffeinating. Regular short breaks prevent long-term stress.",
+      "escalation": ["persistent anxiety", "headaches or digestive issues from stress", "sleep disturbances"]
+    },
+    {
+      "id": "W027",
+      "problem": "eye strain from screens",
+      "keywords": ["eye strain", "screen fatigue", "digital eye strain", "dry eyes", "blurred vision", "headache from screens", "computer vision syndrome"],
+      "exercise": "**👀 20-20-20 Rule:** Every 20 minutes, look at something 20 feet away for 20 seconds.\n\n**🧘 Palming:** Rub hands to warm, cover eyes lightly, relax for 1–2 minutes.\n\n**💧 Blink & Lubricate:** Blink slowly 10 times every hour; use artificial tears if necessary.",
+      "extra_info": "Adjust screen brightness and distance. Maintain proper posture. Take frequent short breaks. If vision worsens, see an ophthalmologist.",
+      "escalation": ["persistent blurred vision", "eye pain", "headaches not relieved by rest"]
+    },
+    {
+      "id": "W028",
+      "problem": "low mood or mild depression",
+      "keywords": ["low mood", "sadness", "lack of motivation", "anhedonia", "emotional fatigue", "gloominess", "melancholy"],
+      "exercise": "**☀️ Sunlight Exposure:** Spend 10–15 minutes outside morning light.\n\n**🧘‍♀️ Gentle Yoga Flow:** Cat-Cow, Child’s Pose, Downward Dog, 5–10 minutes.\n\n**📝 Gratitude Journaling:** Write 3 things you are grateful for each day.",
+      "extra_info": "Stay socially connected. Listen to uplifting music. Engage in a hobby. If sadness persists beyond 2 weeks, seek professional help.",
+      "escalation": ["persistent sadness", "loss of interest in daily activities", "self-harm thoughts"]
+    },
+    {
+      "id": "W029",
+      "problem": "mild memory lapses / forgetfulness",
+      "keywords": ["memory", "forgetfulness", "mental clarity", "brain fog", "concentration issues", "absent-mindedness", "cognitive lapses"],
+      "exercise": "**🧠 Brain Teasers & Puzzles:** Solve a crossword, sudoku, or memory game 10–15 minutes daily.\n\n**🧘 Meditation for Focus:** 5–10 minutes focusing on breath or a single object.\n\n**🏃 Light Aerobic Activity:** 10–15 minute walk to increase oxygen flow to brain.",
+      "extra_info": "Eat brain-healthy foods like nuts, seeds, and fruits. Stay hydrated. Ensure 7–8 hours of sleep. Persistent memory issues should be discussed with a doctor.",
+      "escalation": ["frequent forgetfulness affecting daily life", "confusion", "sudden memory loss"]
+    },
+    {
+      "id": "W030",
+      "problem": "mild headaches from dehydration",
+      "keywords": ["headache", "dehydration", "thirst", "lightheadedness", "fatigue", "dry mouth", "brain fog"],
+      "exercise": "**💧 Hydration:** Drink a glass of water slowly, continue sipping over next hour.\n\n**🧘 Resting Pose:** Lie down in a quiet dark room, gently massage temples.\n\n**🏃 Short Walk Outside:** 5 minutes for fresh air and blood circulation.",
+      "extra_info": "Avoid excessive caffeine or alcohol. Include water-rich fruits like watermelon or cucumber. If headache is severe or accompanied by vomiting, see a doctor.",
+      "escalation": ["persistent severe headache", "dizziness or fainting", "confusion"]
+    },
+    {
+      "id": "W031",
+      "problem": "mild stress from traffic or commuting",
+      "keywords": ["stress", "commute", "traffic", "frustration", "tension", "irritability", "road rage"],
+      "exercise": "**🧘 Breathing Pause:** Close your eyes at a safe stop, inhale deeply for 4 counts, exhale 6 counts, repeat 5 times.\n\n**💆 Shoulder Relaxation:** Shrug shoulders up and down slowly 10 times.\n\n**🎧 Calming Music or Podcast:** Listen to relaxing tunes or short meditation audio during commute if safe.",
+      "extra_info": "Avoid over-caffeinating. Keep water handy. Maintain positive self-talk. If commuting stress persists, plan alternative routes or times.",
+      "escalation": ["frequent anxiety during commute", "high blood pressure spikes", "panic attacks while traveling"]
+    },
+    {
+      "id": "W032",
+      "problem": "low motivation or procrastination",
+      "keywords": ["procrastination", "low motivation", "lack of focus", "mental fatigue", "unproductiveness", "sluggishness"],
+      "exercise": "**📝 Micro-Tasking:** Break work into 10–15 min tasks.\n\n**🏃 Short Physical Break:** Walk 5 minutes or stretch to refresh mind.\n\n**🧘 Visualization:** Close eyes and visualize completing tasks with satisfaction.",
+      "extra_info": "Reward yourself for completed tasks. Keep distractions minimal. Drink water. Persistent lack of motivation may need professional guidance.",
+      "escalation": ["persistent low motivation affecting daily life", "chronic fatigue", "mental health decline"]
+    },
+    {
+      "id": "W033",
+      "problem": "mild digestive discomfort after heavy meal",
+      "keywords": ["indigestion", "bloated stomach", "gas", "heartburn", "stomach heaviness", "abdominal discomfort"],
+      "exercise": "**💨 Gentle Walking:** 5–10 minutes after meal to improve digestion.\n\n**🧘 Seated Forward Bend:** Sit straight, gently bend forward, hold 15–20 seconds.\n\n**🫁 Deep Breathing:** Inhale slowly, expand belly, exhale slowly for 5 breaths.",
+      "extra_info": "Avoid lying down immediately. Drink warm water or herbal tea like ginger or mint. If discomfort persists, consult a doctor.",
+      "escalation": ["persistent pain", "vomiting", "blood in stool"]
+    },
+    {
+      "id": "W034",
+      "problem": "mild shoulder stiffness",
+      "keywords": ["shoulder pain", "stiffness", "limited movement", "upper back tension", "muscle tightness"],
+      "exercise": "**💪 Arm Circles:** Small then large circles forward 10, backward 10.\n\n**🧘 Shoulder Shrugs:** Lift shoulders to ears, hold 2 seconds, release slowly, repeat 10 times.\n\n**💆 Gentle Massage:** Use fingers or warm oil to massage shoulder and upper back.",
+      "extra_info": "Maintain ergonomic posture. Avoid carrying heavy bags. Persistent stiffness may need physiotherapy consultation.",
+      "escalation": ["sharp pain", "numbness in arms", "swelling or redness"]
+    },
+    {
+      "id": "W035",
+      "problem": "mild digestive bloating",
+      "keywords": ["bloating", "gas", "stomach fullness", "abdominal discomfort", "indigestion", "flatulence"],
+      "exercise": "**🚶 Gentle Walk:** 5–10 minutes to aid digestion.\n\n**🧘 Wind-Relieving Pose:** Lie on back, hug knees to chest, gently rock side to side.\n\n**💨 Deep Exhales:** Focus on slowly exhaling to relieve trapped gas.",
+      "extra_info": "Avoid carbonated drinks. Chew food properly. Drink warm water. Persistent bloating requires medical advice.",
+      "escalation": ["severe pain", "vomiting", "blood in stool"]
+    },
+    {
+      "id": "W036",
+      "problem": "mental fatigue from continuous work",
+      "keywords": ["mental fatigue", "brain fog", "cognitive exhaustion", "sluggish thinking", "tired mind"],
+      "exercise": "**🧘 Eye Rest:** Close eyes for 2–5 minutes, take slow breaths.\n\n**🏃 Quick Physical Break:** Stand, stretch, or take 5–10 minutes walk.\n\n**📝 Mindful Journaling:** Note thoughts to declutter mind.",
+      "extra_info": "Avoid multitasking. Drink water. Snack on nuts or fruits. Regular breaks prevent cognitive overload.",
+      "escalation": ["persistent confusion", "difficulty focusing", "headaches"]
+    },
+    {
+      "id": "W037",
+      "problem": "mild lower back pain from standing long",
+      "keywords": ["lower back pain", "lumbar stiffness", "aching back", "posture fatigue", "standing discomfort"],
+      "exercise": "**🧘 Forward Bend Stretch:** Slowly bend forward from hips, knees slightly bent, hold 10–15 seconds.\n\n**💪 Pelvic Tilts:** Lie on back, knees bent, tilt pelvis up gently, repeat 10 times.\n\n**🚶 Walk and Stretch:** Short 5-minute walk and gentle back stretch every hour.",
+      "extra_info": "Avoid heavy lifting. Support back while standing. Persistent pain may require physiotherapy.",
+      "escalation": ["sharp radiating pain", "numbness in legs", "loss of mobility"]
+    },
+    {
+      "id": "W038",
+      "problem": "mild knee discomfort after walking",
+      "keywords": ["knee pain", "joint ache", "stiff knees", "walking discomfort", "minor swelling", "joint fatigue"],
+      "exercise": "**🦵 Knee Flexion Stretch:** Sit, bend knee gently, hold 5–10 seconds, repeat 10 times.\n\n**🚶 Short Walks:** Avoid long stretches, take breaks.\n\n**💆 Warm Compress:** Apply to knees 5–10 minutes to ease stiffness.",
+      "extra_info": "Maintain healthy weight. Use supportive shoes. Persistent pain requires medical evaluation.",
+      "escalation": ["swelling", "sharp pain", "difficulty walking"]
+    },
+    {
+      "id": "W039",
+      "problem": "feeling stressed after social interactions",
+      "keywords": ["social anxiety", "stress", "overwhelm", "introvert fatigue", "mental exhaustion", "overthinking social events"],
+      "exercise": "**🧘 Grounding Breaths:** Sit, inhale 4 counts, exhale 6 counts, focus on sensation in feet.\n\n**📝 Reflective Journaling:** Note thoughts and emotions to release mental tension.\n\n**🚶 Gentle Walk in Nature:** 5–10 minutes outdoors to reset mind.",
+      "extra_info": "Limit social exposure if overwhelmed. Avoid multitasking. Drink herbal tea for calming effect.",
+      "escalation": ["persistent social anxiety", "panic attacks", "isolation"]
+    },
+    {
+      "id": "W040",
+      "problem": "mild irritability or anger",
+      "keywords": ["irritability", "anger", "frustration", "short temper", "emotional outbursts", "tension"],
+      "exercise": "**🧘 Box Breathing:** Inhale 4, hold 4, exhale 4, hold 4, repeat 5 rounds.\n\n**💆 Shoulder & Neck Release:** Gentle rolls and stretches.\n\n**🏃 Physical Release:** Jumping jacks or brisk walk 3–5 minutes to release pent-up energy.",
+      "extra_info": "Pause before responding to triggers. Drink water. Reflective journaling can help understand triggers.",
+      "escalation": ["frequent anger affecting relationships", "aggressive outbursts", "persistent irritability"]
+    },
+    {
+      "id": "W041",
+      "problem": "mild joint stiffness in fingers",
+      "keywords": ["finger stiffness", "joint pain", "hand cramps", "limited mobility", "typing discomfort"],
+      "exercise": "**🖐 Finger Stretch:** Spread fingers wide, hold 5 seconds, repeat 10 times.\n\n**✋ Fist Open-Close:** Make fist, then open wide, repeat 10–15 times.\n\n**💆 Gentle Massage:** Rub fingers and hands with warm oil.",
+      "extra_info": "Take breaks while typing. Avoid repetitive strain. Persistent stiffness may require medical evaluation.",
+      "escalation": ["painful swelling", "loss of grip strength", "persistent stiffness"]
+    },
+    {
+      "id": "W042",
+      "problem": "mild mood swings",
+      "keywords": ["mood swings", "emotional ups and downs", "irritability", "sadness", "joy fluctuation", "hormonal changes"],
+      "exercise": "**🧘 Breathing for Calm:** 5–10 slow deep breaths focusing on release of tension.\n\n**🏃 Light Walk Outside:** 10–15 minutes in fresh air.\n\n**📝 Journaling:** Write emotions to process feelings.",
+      "extra_info": "Stay hydrated. Eat balanced meals. Listen to calming music. Avoid negative news overload.",
+      "escalation": ["frequent uncontrollable mood swings", "aggression", "persistent sadness"]
+    },
+    {
+      "id": "W043",
+      "problem": "mild restlessness at night",
+      "keywords": ["restlessness", "difficulty sleeping", "tossing and turning", "agitation", "uneasy sleep", "nighttime tension"],
+      "exercise": "**🛌 Leg-Up-the-Wall Pose:** Lie back, legs up wall, relax for 5–10 minutes.\n\n**🧘 Deep Breathing:** Inhale 4, exhale 6, repeat 10 rounds.\n\n**💤 Gentle Stretch:** Stretch arms overhead and sides before sleep.",
+      "extra_info": "Keep room dark and cool. Avoid screens 1 hour before bed. Herbal tea like chamomile can help relax.",
+      "escalation": ["chronic insomnia", "sleep disturbance affecting daily life", "severe anxiety at night"]
+    },
+    {
+      "id": "W044",
+      "problem": "mild digestive sluggishness",
+      "keywords": ["slow digestion", "constipation", "bloating", "stomach heaviness", "indigestion", "tired digestion"],
+      "exercise": "**🚶 Short Walk:** 5–10 minutes post meals to stimulate digestion.\n\n**🧘 Seated Twist:** Sit straight, twist torso gently side to side 5 times each.\n\n**💨 Deep Exhales:** Focus on abdominal contraction and relaxation.",
+      "extra_info": "Drink warm water. Eat fiber-rich foods. Avoid overeating. Persistent sluggishness needs medical advice.",
+      "escalation": ["persistent constipation", "pain", "vomiting"]
+    },
+    {
+      "id": "W045",
+      "problem": "mild tension headache",
+      "keywords": ["headache", "tension", "stress headache", "temple ache", "pressure", "fatigue-related headache"],
+      "exercise": "**💆 Scalp Massage:** Gently massage temples and back of head.\n\n**🧘 Neck Stretch:** Tilt head left, hold 5 seconds, right 5 seconds, repeat 5 times.\n\n**💨 Deep Breathing:** Inhale 4, exhale 6 slowly 5 rounds.",
+      "extra_info": "Reduce screen glare. Take breaks from work. Hydrate well. If persistent or severe, see doctor.",
+      "escalation": ["migraine-level headache", "vision changes", "vomiting with headache"]
+    },
+    {
+      "id": "W046",
+      "problem": "mild foot fatigue after standing",
+      "keywords": ["foot pain", "tired feet", "swelling", "aching feet", "plantar fatigue", "standing discomfort"],
+      "exercise": "**🦶 Foot Roll:** Roll foot over a small ball or bottle 1–2 minutes each.\n\n**🧘 Ankle Circles:** Lift foot, rotate clockwise and counterclockwise 10 times.\n\n**💆 Massage with Oil:** Warm sesame oil massage on soles.",
+      "extra_info": "Elevate feet after long standing. Wear supportive footwear. Persistent pain may need physiotherapy.",
+      "escalation": ["sharp pain", "swelling", "difficulty walking"]
+    },
+    {
+      "id": "W047",
+      "problem": "mild mental distraction or fog",
+      "keywords": ["mental fog", "brain fog", "lack of focus", "distraction", "cognitive sluggishness", "tired mind"],
+      "exercise": "**🧘 Focused Breathing:** 5 minutes focusing on inhale/exhale.\n\n**📝 Quick Mental Tasks:** Solve a puzzle, sudoku, or memory game for 10 minutes.\n\n**🏃 Walk Outside:** 5–10 minutes for fresh air and mental clarity.",
+      "extra_info": "Avoid multitasking. Hydrate well. Small snacks like nuts help. Persistent fog may require medical evaluation.",
+      "escalation": ["frequent inability to focus", "confusion", "memory lapses"]
+    },
+    {
+      "id": "W048",
+      "problem": "mild leg stiffness from sitting long",
+      "keywords": ["leg stiffness", "circulation issues", "sitting fatigue", "muscle tightness", "swollen legs"],
+      "exercise": "**🦵 Leg Lifts:** While seated, lift legs one at a time 10 times.\n\n**🧘 Ankle Rotations:** Rotate ankles clockwise and counterclockwise 10 times each.\n\n**🏃 Short Walk Break:** Stand and walk 5 minutes every hour.",
+      "extra_info": "Hydrate well. Avoid crossing legs for long periods. Persistent stiffness needs medical checkup.",
+      "escalation": ["persistent swelling", "pain while walking", "numbness"]
+    },
+    {
+      "id": "W049",
+      "problem": "mild eye strain from reading",
+      "keywords": ["eye fatigue", "reading strain", "dry eyes", "blurred vision", "eye discomfort"],
+      "exercise": "**👀 20-20-20 Rule:** Every 20 minutes, look 20 feet away for 20 seconds.\n\n**🧘 Eye Rolling:** Slowly roll eyes clockwise and counterclockwise 5 times.\n\n**💨 Palming:** Rub hands, place over eyes, relax for 1–2 minutes.",
+      "extra_info": "Proper lighting. Avoid glare. Hydrate and blink frequently. Persistent discomfort needs eye doctor.",
+      "escalation": ["blurred vision", "headaches", "eye pain"]
+    },
+    {
+      "id": "W050",
+      "problem": "mild stiffness in fingers from typing",
+      "keywords": ["finger stiffness", "typing discomfort", "hand fatigue", "joint stiffness", "muscle fatigue"],
+      "exercise": "**🖐 Finger Stretch:** Spread fingers wide, hold 5 seconds, repeat 10 times.\n\n**✋ Fist Open-Close:** Repeat 10–15 times.\n\n**💆 Warm Massage:** Rub hands with warm oil for 2–3 minutes.",
+      "extra_info": "Take breaks from typing. Avoid repetitive strain. Persistent pain may require physiotherapy.",
+      "escalation": ["swelling", "persistent pain", "loss of grip strength"]
+    },
+    {
+      "id": "W051",
+      "problem": "mild anxiety before presentations",
+      "keywords": ["anxiety", "nervousness", "stage fright", "presentation stress", "performance anxiety"],
+      "exercise": "**🧘 Deep Breathing:** Inhale for 4 counts, hold 2, exhale 6, repeat 5 rounds.\n\n**💆 Shoulder & Neck Release:** Roll shoulders and gently tilt neck 5 times each side.\n\n**📝 Positive Visualization:** Close eyes, imagine a confident presentation and calm audience.",
+      "extra_info": "Drink warm water. Practice mini rehearsals. Avoid caffeine overload. If anxiety is persistent, consult a professional.",
+      "escalation": ["panic attacks", "persistent nervousness", "physical symptoms like trembling"]
+    },
+    {
+      "id": "W052",
+      "problem": "mild fatigue from screen time",
+      "keywords": ["eye strain", "screen fatigue", "digital exhaustion", "tired eyes", "mental fatigue"],
+      "exercise": "**👀 20-20-20 Rule:** Every 20 minutes, look 20 feet away for 20 seconds.\n\n**🧘 Neck Stretch:** Tilt head slowly left and right 5 times.\n\n**💨 Deep Breathing:** Inhale 4, exhale 6, focus on relaxation for 5 rounds.",
+      "extra_info": "Adjust lighting. Blink often. Limit unnecessary screen time. Hydrate well.",
+      "escalation": ["blurred vision", "headaches", "persistent fatigue"]
+    },
+    {
+      "id": "W053",
+      "problem": "mild tension from household chores",
+      "keywords": ["fatigue", "muscle strain", "back tension", "shoulder stiffness", "domestic chores"],
+      "exercise": "**🧘 Standing Side Stretch:** Lift arms overhead, bend gently sideways 5 times each side.\n\n**💪 Gentle Squats:** 5–10 reps for leg strength.\n\n**💆 Shoulder Rolls:** 10 forward, 10 backward.",
+      "extra_info": "Take short breaks. Use proper lifting techniques. Hydrate. Persistent strain may need physiotherapy.",
+      "escalation": ["sharp pain", "persistent stiffness", "joint swelling"]
+    },
+    {
+      "id": "W054",
+      "problem": "mild boredom or lack of engagement",
+      "keywords": ["boredom", "mental dullness", "lack of focus", "disinterest", "lethargy"],
+      "exercise": "**📝 Creative Journaling:** Write ideas, thoughts, or doodles 10 minutes.\n\n**🏃 Quick Walk Outside:** 5–10 minutes to refresh mind.\n\n**🧘 Breathing Exercise:** Inhale 4, hold 2, exhale 6, repeat 5 rounds.",
+      "extra_info": "Try new hobbies or short online courses. Limit passive scrolling on devices.",
+      "escalation": ["persistent disengagement", "low mood", "apathy affecting life"]
+    },
+    {
+      "id": "W055",
+      "problem": "mild neck stiffness from phone or computer",
+      "keywords": ["neck pain", "stiffness", "tech neck", "upper back tension", "headache", "screen posture"],
+      "exercise": "**🧘 Neck Stretch:** Tilt head slowly left, right, forward, hold 5 seconds each.\n\n**💆 Shoulder Rolls:** 10 forward, 10 backward.\n\n**🏃 Short Walk Break:** 5 minutes every hour to relieve tension.",
+      "extra_info": "Adjust screen height. Avoid slouching. Persistent stiffness may need professional advice.",
+      "escalation": ["persistent pain", "numbness in arms", "restricted motion"]
+    },
+    {
+      "id": "W056",
+      "problem": "mild fatigue after gardening",
+      "keywords": ["tired muscles", "back strain", "arm fatigue", "gardening pain", "stiffness"],
+      "exercise": "**🧘 Forward Bend Stretch:** Bend from hips, knees slightly bent, hold 15 seconds.\n\n**💪 Arm Stretch:** Stretch arms overhead and behind, hold 10 seconds.\n\n**💆 Gentle Massage:** Massage hands, back, and arms with warm oil.",
+      "extra_info": "Stay hydrated. Take breaks during gardening. Persistent strain may require physiotherapy.",
+      "escalation": ["sharp pain", "swelling", "muscle cramps"]
+    },
+    {
+      "id": "W057",
+      "problem": "mild fatigue from walking or light jogging",
+      "keywords": ["tired legs", "muscle fatigue", "leg soreness", "exercise fatigue", "mild cramps"],
+      "exercise": "**🦵 Calf Stretch:** Stand, press heel to floor, hold 15 seconds each leg.\n\n**🧘 Leg Swings:** Forward-backward and side swings, 5 times each leg.\n\n**💆 Foot Massage:** Roll foot over ball or bottle 2–3 minutes.",
+      "extra_info": "Hydrate. Light snack if needed. Persistent pain requires checkup.",
+      "escalation": ["sharp pain", "swelling", "inability to walk"]
+    },
+    {
+      "id": "W058",
+      "problem": "mild anxiety about upcoming events",
+      "keywords": ["anticipation stress", "nervousness", "worry", "event anxiety", "restlessness"],
+      "exercise": "**🧘 Diaphragmatic Breathing:** Place hand on belly, inhale deeply, exhale slowly 5 rounds.\n\n**💆 Shoulder Release:** Gentle shoulder rolls 10 forward, 10 backward.\n\n**📝 Journaling:** Note worries and possible solutions for clarity.",
+      "extra_info": "Drink herbal tea. Listen to calming music. Persistent anxiety may need professional support.",
+      "escalation": ["panic attacks", "persistent stress", "sleep disturbance"]
+    },
+    {
+      "id": "W059",
+      "problem": "mild eye dryness",
+      "keywords": ["dry eyes", "itchy eyes", "screen fatigue", "burning eyes", "eye irritation"],
+      "exercise": "**👀 Palming:** Rub hands, place over eyes, relax 2–3 minutes.\n\n**🧘 Eye Movements:** Look up, down, left, right slowly, 5 times each.\n\n**💨 Blinking Exercise:** Blink slowly 10–15 times to moisten eyes.",
+      "extra_info": "Adjust screen brightness. Keep hydrated. Use warm compress if needed. Persistent dryness may require eye drops.",
+      "escalation": ["persistent redness", "pain", "blurred vision"]
+    },
+    {
+      "id": "W060",
+      "problem": "mild wrist stiffness from typing or cooking",
+      "keywords": ["wrist pain", "stiffness", "hand discomfort", "typing strain", "repetitive use", "cooking fatigue"],
+      "exercise": "**🖐 Wrist Circles:** Rotate wrists clockwise and counterclockwise 10 times each.\n\n**✋ Fist Stretch:** Make a fist, then open fingers wide, repeat 10–15 times.\n\n**💆 Massage:** Rub wrists and palms with warm oil 2–3 minutes.",
+      "extra_info": "Take breaks during repetitive tasks. Avoid heavy lifting. Persistent pain may need physiotherapy.",
+      "escalation": ["swelling", "numbness", "persistent pain"]
+    },
+    {
+      "id": "W061",
+      "problem": "mild tension in shoulders from stress",
+      "keywords": ["shoulder stiffness", "tension", "stress pain", "upper back fatigue", "tight muscles"],
+      "exercise": "**💆 Shoulder Rolls:** 10 forward, 10 backward.\n\n**🧘 Shoulder Stretch:** Pull one arm across chest, hold 10 seconds each side.\n\n**🏃 Quick Walk:** 5 minutes outdoors for relaxation.",
+      "extra_info": "Maintain ergonomic posture. Drink water. Persistent tension may require physiotherapy.",
+      "escalation": ["sharp pain", "restricted movement", "numbness"]
+    },
+    {
+      "id": "W062",
+      "problem": "mild mental tiredness from studying",
+      "keywords": ["brain fatigue", "mental exhaustion", "study fatigue", "concentration drop", "tired mind"],
+      "exercise": "**🧘 Eye Rest:** Close eyes 2–5 minutes, breathe deeply.\n\n**🏃 Short Walk:** 5–10 minutes outside.\n\n**📝 Mindful Journaling:** Write down thoughts to reset mind.",
+      "extra_info": "Avoid continuous long study sessions. Hydrate and snack lightly. Persistent fatigue may need consultation.",
+      "escalation": ["persistent inability to focus", "headaches", "memory issues"]
+    },
+    {
+      "id": "W063",
+      "problem": "mild insomnia or difficulty falling asleep",
+      "keywords": ["sleep trouble", "restless mind", "tossing", "turning", "late-night wakefulness"],
+      "exercise": "**🛌 Legs-Up-the-Wall:** 5–10 minutes to calm body.\n\n**🧘 Deep Breathing:** Inhale 4, exhale 6, repeat 5–10 rounds.\n\n**💤 Gentle Stretch:** Arms overhead, roll shoulders, relax muscles.",
+      "extra_info": "Keep room dark, cool, and quiet. Avoid screens 1 hour before bed. Chamomile or warm milk can help.",
+      "escalation": ["persistent insomnia", "daytime fatigue", "sleep disturbance affecting life"]
+    },
+    {
+      "id": "W064",
+      "problem": "mild low mood",
+      "keywords": ["sadness", "low spirits", "feeling down", "lack of motivation", "mild depression"],
+      "exercise": "**🏃 Morning Walk:** 10–15 minutes for fresh air and sunlight.\n\n**🧘 Heart-Opening Yoga:** Cobra pose or gentle chest stretch 5 reps.\n\n**📝 Gratitude Journaling:** List 3 things you are thankful for.",
+      "extra_info": "Talk to family or friends. Listen to uplifting music. Persistent low mood may need professional support.",
+      "escalation": ["persistent sadness", "loss of interest", "daily functioning affected"]
+    },
+    {
+      "id": "W065",
+      "problem": "mild digestive bloating",
+      "keywords": ["bloating", "stomach heaviness", "gas", "indigestion", "mild discomfort"],
+      "exercise": "**🚶 Post-Meal Walk:** 5–10 minutes.\n\n**🧘 Seated Forward Bend:** Sit, stretch forward gently, hold 10–15 seconds.\n\n**💨 Deep Belly Breathing:** Inhale 4, exhale 6, focus on abdomen 5 rounds.",
+      "extra_info": "Drink warm water. Avoid carbonated drinks. Persistent bloating may require medical evaluation.",
+      "escalation": ["sharp pain", "persistent bloating", "vomiting"]
+    },
+    {
+      "id": "W066",
+      "problem": "mild stiffness from prolonged sitting",
+      "keywords": ["muscle stiffness", "leg fatigue", "back stiffness", "circulation issues", "sitting discomfort"],
+      "exercise": "**🦵 Leg Lifts:** While seated, lift legs one at a time 10 reps.\n\n**🧘 Seated Spinal Twist:** Twist torso gently left and right 5 times each.\n\n**🏃 Short Walk Break:** Stand and walk 5–10 minutes each hour.",
+      "extra_info": "Hydrate well. Avoid crossing legs for long periods. Persistent stiffness may need checkup.",
+      "escalation": ["swelling", "persistent pain", "numbness"]
+    },
+    {
+      "id": "W067",
+      "problem": "mild fatigue from household cleaning",
+      "keywords": ["muscle fatigue", "tired arms", "back strain", "housework discomfort"],
+      "exercise": "**🧘 Standing Side Stretch:** 5 times each side.\n\n**💪 Gentle Squats:** 5–10 reps for leg support.\n\n**💆 Shoulder Massage:** 2–3 minutes with warm oil or lotion.",
+      "extra_info": "Take breaks. Lift objects carefully. Hydrate. Persistent pain may need physiotherapy.",
+      "escalation": ["sharp pain", "muscle cramp", "swelling"]
+    },
+    {
+      "id": "W068",
+      "problem": "mild anxiety about exams or work deadlines",
+      "keywords": ["exam stress", "deadline pressure", "work anxiety", "restlessness", "nervousness"],
+      "exercise": "**🧘 Box Breathing:** Inhale 4, hold 4, exhale 4, hold 4, repeat 5 rounds.\n\n**💆 Neck & Shoulder Release:** Shoulder rolls, neck tilts 5 reps each.\n\n**📝 Write Worries Down:** Clarifies thoughts and reduces tension.",
+      "extra_info": "Avoid caffeine overload. Take short breaks. Persistent anxiety may need counseling.",
+      "escalation": ["panic attacks", "sleep disturbance", "persistent stress"]
+    },
+    {
+      "id": "W069",
+      "problem": "mild low energy in morning",
+      "keywords": ["tired morning", "lack of energy", "morning fatigue", "lethargy", "sluggish start"],
+      "exercise": "**🏃 Morning Stretch Walk:** 10 minutes outside.\n\n**🧘 Sun Salutations:** 3 rounds gentle pace.\n\n**💨 Deep Breathing:** Inhale fully, exhale slowly, 5 rounds.",
+      "extra_info": "Drink warm water with lemon. Eat light nutritious breakfast. Persistent fatigue may need medical evaluation.",
+      "escalation": ["chronic tiredness", "sleep disturbance", "low mood"]
+    },
+    {
+      "id": "W070",
+      "problem": "mild restlessness in evening",
+      "keywords": ["fidgety", "evening agitation", "mild stress", "uneasy body", "restless mind"],
+      "exercise": "**🧘 Seated Forward Fold:** Hold 10 seconds, repeat 3 times.\n\n**💆 Shoulder Rolls:** 5 forward, 5 backward.\n\n**🏃 Light Walk or Dance:** 5–10 minutes to release energy.",
+      "extra_info": "Avoid screens. Drink warm herbal tea. Persistent restlessness may require relaxation techniques or professional guidance.",
+      "escalation": ["insomnia", "persistent agitation", "anxiety"]
+    },
+    {
+      "id": "W071",
+      "problem": "mild backache from bending or lifting",
+      "keywords": ["back pain", "lumbar stiffness", "muscle fatigue", "posture strain", "lower back discomfort"],
+      "exercise": "**🧘 Cat-Cow Stretch:** 5–10 reps to mobilize spine.\n\n**💆 Lower Back Massage:** Gentle circular motions 2–3 minutes.\n\n**🏃 Short Walk:** 5 minutes to reduce stiffness.",
+      "extra_info": "Avoid heavy lifting. Maintain posture. Persistent pain may require medical evaluation.",
+      "escalation": ["sharp pain", "radiating leg pain", "numbness"]
+    },
+    {
+      "id": "W072",
+      "problem": "mild shoulder stiffness",
+      "keywords": ["shoulder pain", "tight muscles", "muscle stiffness", "upper back discomfort", "limited mobility"],
+      "exercise": "**💆 Shoulder Rolls:** 10 forward, 10 backward.\n\n**🧘 Arm Stretch Across Chest:** Hold 10 seconds each.\n\n**🏃 Quick Walk:** 5 minutes to relax muscles.",
+      "extra_info": "Maintain ergonomic posture. Hydrate well. Persistent stiffness may require physiotherapy.",
+      "escalation": ["sharp pain", "restricted movement", "swelling"]
+    },
+    {
+      "id": "W073",
+      "problem": "mild knee stiffness",
+      "keywords": ["knee pain", "joint stiffness", "tired legs", "light swelling", "walking discomfort"],
+      "exercise": "**🦵 Knee Flex & Extend:** Sit, bend and straighten 10 reps each.\n\n**🏃 Short Walk:** 5–10 minutes.\n\n**💆 Gentle Massage:** Warm oil on knee 2–3 minutes.",
+      "extra_info": "Avoid prolonged sitting. Use supportive shoes. Persistent pain may require professional evaluation.",
+      "escalation": ["swelling", "persistent pain", "difficulty walking"]
+    },
+    {
+      "id": "W074",
+      "problem": "mild mental fatigue from multitasking",
+      "keywords": ["cognitive fatigue", "mental exhaustion", "overthinking", "lack of focus", "tired mind"],
+      "exercise": "**🧘 Mindful Breathing:** 5 minutes, focus on inhale/exhale.\n\n**📝 Single-Task Journaling:** Write down priorities to reduce overload.\n\n**🏃 Short Walk Outside:** 5 minutes to refresh mind.",
+      "extra_info": "Avoid multitasking. Hydrate. Persistent fatigue may need medical evaluation.",
+      "escalation": ["chronic exhaustion", "inability to focus", "headaches"]
+    },
+    {
+      "id": "W075",
+      "problem": "mild wrist or hand fatigue from typing",
+      "keywords": ["wrist pain", "hand stiffness", "typing discomfort", "muscle fatigue", "repetitive strain"],
+      "exercise": "**🖐 Wrist Circles:** 10 clockwise, 10 counterclockwise.\n\n**✋ Fist Open-Close:** 10–15 times.\n\n**💆 Massage:** Rub hands and wrists with warm oil 2–3 minutes.",
+      "extra_info": "Take typing breaks. Avoid repetitive strain. Persistent discomfort may require physiotherapy.",
+      "escalation": ["swelling", "numbness", "persistent pain"]
+    },
+    {
+      "id": "W076",
+      "problem": "mild hip stiffness from sitting",
+      "keywords": ["hip pain", "stiff hips", "sitting discomfort", "lower back tension", "muscle fatigue"],
+      "exercise": "**🦵 Hip Circles:** Stand and gently rotate each hip clockwise and counterclockwise 5 times.\n\n**🧘 Seated Figure-Four Stretch:** Cross one ankle over opposite knee, lean forward slightly, hold 15 seconds each side.\n\n**🏃 Short Walk:** 5–10 minutes to release tension.",
+      "extra_info": "Avoid crossing legs for long periods. Hydrate well. Persistent stiffness may need physiotherapy.",
+      "escalation": ["sharp pain", "limited mobility", "swelling"]
+    },
+    {
+      "id": "W077",
+      "problem": "mild dizziness after standing up quickly",
+      "keywords": ["lightheadedness", "dizziness", "vertigo", "blood pressure change", "sudden standing"],
+      "exercise": "**💨 Deep Breathing:** Inhale 4, exhale 6, repeat 5 rounds while seated.\n\n**🏃 Slow Standing:** Rise slowly from seated position, pause before moving.\n\n**🧘 Gentle Neck Tilt:** Tilt head slowly left and right 5 times.",
+      "extra_info": "Stay hydrated. Eat small meals regularly. Persistent dizziness may need medical evaluation.",
+      "escalation": ["fainting", "persistent dizziness", "vision problems"]
+    },
+    {
+      "id": "W078",
+      "problem": "mild mental fatigue from long meetings",
+      "keywords": ["cognitive exhaustion", "brain fatigue", "mental dullness", "long meetings", "low focus"],
+      "exercise": "**🧘 Eye Palming:** Rub hands, cover eyes, relax 2–3 minutes.\n\n**💆 Shoulder Rolls:** 10 forward, 10 backward.\n\n**🏃 Quick Walk or Stretch:** 5 minutes to refresh mind.",
+      "extra_info": "Avoid screen overload. Take mini-breaks during meetings. Persistent mental fatigue may need consultation.",
+      "escalation": ["headaches", "persistent inability to focus", "sleep disturbance"]
+    },
+    {
+      "id": "W079",
+      "problem": "mild fatigue from cooking or kitchen work",
+      "keywords": ["muscle fatigue", "tired arms", "back strain", "standing discomfort", "domestic work fatigue"],
+      "exercise": "**💆 Shoulder & Neck Stretch:** Gentle rolls and tilts 5 times each.\n\n**🦵 Calf Raises:** 10–15 reps to reduce leg fatigue.\n\n**🏃 Short Walk:** 5 minutes for blood circulation.",
+      "extra_info": "Hydrate during work. Take breaks between tasks. Persistent pain may require physiotherapy.",
+      "escalation": ["sharp pain", "swelling", "muscle cramps"]
+    },
+    {
+      "id": "W080",
+      "problem": "mild stress from multitasking at home",
+      "keywords": ["home stress", "mental overload", "anxiety", "distraction", "task pressure"],
+      "exercise": "**🧘 Mindful Breathing:** Inhale 4, hold 2, exhale 6, repeat 5 rounds.\n\n**📝 Prioritize Tasks:** Write down 3 key things to focus on.\n\n**🏃 Light Physical Activity:** Walk, stretch, or do gentle yoga 5–10 minutes.",
+      "extra_info": "Avoid multitasking continuously. Drink warm herbal tea. Persistent stress may need counseling.",
+      "escalation": ["chronic anxiety", "sleep disturbance", "difficulty concentrating"]
+    },
+    {
+      "id": "W081",
+      "problem": "excess belly fat",
+      "keywords": ["belly fat", "abdomen fat", "side belly", "stomach flab", "tummy fat", "obesity concern"],
+      "exercise": "**🧘 Seated Side Stretch:** Sit straight, lift one arm and bend sideways, hold 20s each side, 5 reps.\n\n**🏃 Brisk Walking:** 20–30 minutes daily to burn fat.\n\n**💪 Plank:** Hold 20–30 seconds, 3 sets to strengthen core.",
+      "extra_info": "Avoid sugary drinks and junk food. Drink warm water with lemon in the morning. Consistency matters more than intensity.",
+      "escalation": ["sudden weight gain", "difficulty breathing", "persistent bloating"]
+    },
+    {
+      "id": "W082",
+      "problem": "side belly fat",
+      "keywords": ["love handles", "waist fat", "side flab", "obliques fat", "stomach sides"],
+      "exercise": "**🧘 Standing Oblique Stretch:** Hands above head, bend sideways slowly, hold 20s each side, 5 reps.\n\n**💪 Side Plank:** Hold 15–20s each side, 2–3 reps.\n\n**🏃 Light Jog or Walk:** 20 minutes daily.",
+      "extra_info": "Reduce fried foods. Include green vegetables and high-fiber foods. Gentle yoga breathing helps reduce fat accumulation.",
+      "escalation": ["abdominal pain", "rapid weight change", "swelling"]
+    },
+    {
+      "id": "W083",
+      "problem": "neck fat or double chin",
+      "keywords": ["neck fat", "double chin", "submental fat", "face fat", "jowls"],
+      "exercise": "**💆 Chin Lifts:** Tilt head back, lift chin, hold 5s, repeat 10–15 reps.\n\n**🧘 Neck Stretch:** Tilt head sideways, hold 10s each side, 5 reps.\n\n**🏃 Cardio:** Brisk walking or skipping 15–20 min daily.",
+      "extra_info": "Chew slowly to engage jaw muscles. Avoid heavy sugar intake. Consistency improves tone gradually.",
+      "escalation": ["sudden swelling", "pain", "difficulty moving neck"]
+    },
+    {
+      "id": "W084",
+      "problem": "general obesity",
+      "keywords": ["overweight", "obese", "fat gain", "high BMI", "body fat", "stamina low"],
+      "exercise": "**🏃 Brisk Walking or Jogging:** 30 minutes daily.\n\n**💪 Bodyweight Squats:** 10–15 reps, 3 sets.\n\n**🧘 Sun Salutation (Surya Namaskar):** 3–5 rounds daily for flexibility and fat burn.",
+      "extra_info": "Avoid processed foods. Eat small frequent meals. Stay hydrated and get adequate sleep for metabolism.",
+      "escalation": ["chest pain", "difficulty breathing", "joint pain"]
+    },
+    {
+      "id": "W085",
+      "problem": "low stamina",
+      "keywords": ["fatigue", "tired easily", "low energy", "stamina", "endurance"],
+      "exercise": "**🏃 Interval Walking/Jogging:** Alternate 2 min brisk walk, 1 min jog, repeat 10 times.\n\n**💪 Bodyweight Exercises:** Push-ups, squats, and lunges, 2 sets each.\n\n**🧘 Deep Breathing:** 5 min pranayama (inhaling deeply, exhaling slowly).",
+      "extra_info": "Eat protein-rich foods. Avoid excess sugar. Regular exercise gradually improves endurance.",
+      "escalation": ["persistent fatigue", "dizziness", "chest discomfort"]
+    },
+    {
+      "id": "W086",
+      "problem": "shortness of breath during activity",
+      "keywords": ["breathing issues", "shortness of breath", "low oxygen", "asthma-like", "fatigue breathing"],
+      "exercise": "**🧘 Diaphragmatic Breathing:** Sit or lie comfortably, inhale deeply through nose, expand belly, exhale slowly. Repeat 10 rounds.\n\n**🏃 Walking:** Gentle walks, gradually increasing duration.\n\n**💪 Arm Raises:** Lift arms overhead while inhaling, lower slowly while exhaling, 10 reps.",
+      "extra_info": "Avoid smoke and dusty environments. Keep a water bottle nearby. If breathing worsens, seek medical help immediately.",
+      "escalation": ["persistent wheezing", "chest pain", "blue lips or fingers"]
+    },
+    {
+      "id": "W087",
+      "problem": "low energy in evening",
+      "keywords": ["evening fatigue", "sluggishness", "drowsy", "tired after work", "energy dip"],
+      "exercise": "**🏃 Quick Walk or Light Jog:** 5–10 minutes outdoors.\n\n**🧘 Stretch:** Shoulder rolls, side bends, hamstring stretch.\n\n**💪 Bodyweight Mini-Circuit:** 5 squats, 5 push-ups, repeat twice.",
+      "extra_info": "Avoid heavy meals in the evening. Drink water or herbal tea. Short breaks rejuvenate energy levels.",
+      "escalation": ["persistent exhaustion", "dizziness", "heart palpitations"]
+    },
+    {
+      "id": "W088",
+      "problem": "fat accumulation in arms",
+      "keywords": ["arm fat", "flabby arms", "bingo wings", "triceps fat", "upper arm fat"],
+      "exercise": "**💪 Triceps Dips:** Use chair, 10 reps, 2 sets.\n\n**🧘 Arm Circles:** Small and large circles, 10 each direction.\n\n**🏃 Light Cardio:** Brisk walking 15–20 min daily.",
+      "extra_info": "Avoid fried foods. Include protein-rich snacks. Consistency helps tone the arms.",
+      "escalation": ["joint pain", "muscle weakness", "swelling"]
+    },
+    {
+      "id": "W089",
+      "problem": "fat in thighs",
+      "keywords": ["thigh fat", "inner thigh", "leg fat", "bulkiness", "lower body fat"],
+      "exercise": "**💪 Squats:** 10–15 reps, 3 sets.\n\n**🧘 Side-Lying Leg Raises:** 10 reps each leg, 2 sets.\n\n**🏃 Brisk Walking or Light Jogging:** 20 min daily.",
+      "extra_info": "Include high-fiber foods. Avoid prolonged sitting. Stretch after exercise to prevent stiffness.",
+      "escalation": ["pain in knee", "swelling", "muscle cramps"]
+    },
+    {
+      "id": "W090",
+      "problem": "fat in back or love handles",
+      "keywords": ["back fat", "love handles", "side flab", "obliques", "lower back fat"],
+      "exercise": "**🧘 Side Bends:** Stand straight, lift arms, bend sideways slowly, hold 20s each side, 5 reps.\n\n**💪 Plank with Hip Twist:** Hold 20s, twist hips gently, 2 sets.\n\n**🏃 Brisk Walk or Jog:** 20 min daily.",
+      "extra_info": "Avoid late-night heavy meals. Keep core engaged during daily activities.",
+      "escalation": ["lower back pain", "mobility issues", "swelling"]
+    },
+    {
+      "id": "W091",
+      "problem": "stamina for household chores",
+      "keywords": ["energy for chores", "tiredness", "home fatigue", "low endurance", "task exhaustion"],
+      "exercise": "**🏃 Short Walking Breaks:** Every hour, 5 min walk.\n\n**💪 Light Bodyweight Exercises:** Squats, wall push-ups 5–10 reps.\n\n**🧘 Deep Breathing:** 5 min pranayama between chores.",
+      "extra_info": "Stay hydrated. Eat light snacks if energy dips. Avoid overexertion.",
+      "escalation": ["persistent fatigue", "dizziness", "muscle pain"]
+    },
+    {
+      "id": "W092",
+      "problem": "poor lung capacity",
+      "keywords": ["lung health", "breathing exercises", "oxygen intake", "shortness of breath", "low endurance"],
+      "exercise": "**🧘 Pranayama Exercises:** Alternate nostril breathing, deep belly breaths, 5 min.\n\n**🏃 Brisk Walking or Stair Climbing:** Gradually increase duration, 10–15 min.\n\n**💪 Arm Raises While Breathing Deeply:** 10 reps, 2 sets.",
+      "extra_info": "Avoid dusty or polluted areas. Stop if feeling lightheaded. Consistent practice improves lung capacity.",
+      "escalation": ["chest pain", "persistent breathlessness", "dizziness"]
+    },
+    {
+      "id": "W093",
+      "problem": "fat around chest area",
+      "keywords": ["chest fat", "upper body fat", "breast area fat", "torso flab", "pectorals fat"],
+      "exercise": "**💪 Push-ups:** 5–10 reps, 2 sets.\n\n**🧘 Arm Stretch:** Reach arms overhead and side, hold 20s, 5 reps.\n\n**🏃 Cardio:** Brisk walk or light jog 20 min daily.",
+      "extra_info": "Avoid sugary beverages. Include high-protein diet. Consistency improves chest toning.",
+      "escalation": ["joint pain", "persistent discomfort", "muscle strain"]
+    },
+    {
+      "id": "W094",
+      "problem": "difficulty climbing stairs",
+      "keywords": ["low stamina", "breathlessness", "leg weakness", "fatigue", "cardio capacity"],
+      "exercise": "**🏃 Stair Practice:** Start with 1–2 flights, slowly increase.\n\n**💪 Leg Strengthening:** Bodyweight squats 10 reps, calf raises 10 reps.\n\n**🧘 Breathing Exercise:** Deep inhale while going up, exhale while down.",
+      "extra_info": "Hydrate before climbing. Avoid rushing. Stop if pain or dizziness occurs.",
+      "escalation": ["shortness of breath", "chest pain", "dizziness"]
+    },
+    {
+      "id": "W095",
+      "problem": "neck stiffness from fat accumulation",
+      "keywords": ["neck fat", "stiff neck", "double chin", "limited mobility", "poor posture"],
+      "exercise": "**💆 Neck Rolls:** Gently roll head clockwise and counterclockwise 5 times.\n\n**🧘 Chin Tucks:** Pull chin gently towards chest, hold 5s, repeat 10 reps.\n\n**🏃 Shoulder Shrugs:** Lift shoulders up and down 10 times.",
+      "extra_info": "Avoid long screen hours. Hydrate and stretch often. Persistent stiffness may need physiotherapy.",
+      "escalation": ["sharp neck pain", "limited movement", "dizziness"]
+    },
+    {
+      "id": "W096",
+      "problem": "general fatigue due to obesity",
+      "keywords": ["overweight", "tiredness", "low energy", "fatigue", "obese"],
+      "exercise": "**🏃 Brisk Walking:** 20–30 min daily.\n\n**💪 Bodyweight Circuit:** Squats, lunges, push-ups 5–10 reps each, 2 sets.\n\n**🧘 Gentle Yoga:** Cat-Cow stretch, Seated Forward Fold 5 min.",
+      "extra_info": "Avoid junk and processed foods. Stay hydrated. Regular exercise improves energy gradually.",
+      "escalation": ["persistent fatigue", "shortness of breath", "joint pain"]
+    },
+    {
+      "id": "W097",
+      "problem": "fat accumulation in thighs and hips",
+      "keywords": ["thigh fat", "hip fat", "lower body fat", "saddlebag", "inner thigh"],
+      "exercise": "**💪 Squats:** 10–15 reps, 3 sets.\n\n**🧘 Side-Lying Leg Lifts:** 10 reps each leg, 2 sets.\n\n**🏃 Brisk Walk:** 20 min daily for circulation.",
+      "extra_info": "Avoid sitting for long periods. High-fiber foods help reduce fat retention.",
+      "escalation": ["knee pain", "hip pain", "muscle strain"]
+    },
+    {
+      "id": "W098",
+      "problem": "fat accumulation in lower back",
+      "keywords": ["lower back fat", "love handles", "side flab", "back flab"],
+      "exercise": "**🧘 Standing Side Stretch:** Lift arms overhead, bend sideways 20s each side, 5 reps.\n\n**💪 Plank:** Hold 20–30 seconds, 3 sets.\n\n**🏃 Cardio Walk:** 20 min daily.",
+      "extra_info": "Avoid heavy late-night meals. Maintain posture while sitting. Stretch often.",
+      "escalation": ["back pain", "mobility limitation", "swelling"]
+    },
+    {
+      "id": "W099",
+      "problem": "difficulty breathing during mild exercise",
+      "keywords": ["shortness of breath", "low stamina", "fatigue", "low oxygen", "exercise intolerance"],
+      "exercise": "**🧘 Deep Breathing:** Inhale 4, hold 2, exhale 6, repeat 10 rounds.\n\n**🏃 Gentle Walk:** Start 5–10 min, increase gradually.\n\n**💪 Arm Lifts:** Inhale up, exhale down, 10 reps.",
+      "extra_info": "Avoid dusty or polluted areas. Stop if dizzy. Gradually increase intensity.",
+      "escalation": ["persistent breathlessness", "chest pain", "dizziness"]
+    },
+    {
+      "id": "W100",
+      "problem": "low stamina during sports",
+      "keywords": ["fatigue", "sports endurance", "low energy", "tired quickly", "exercise intolerance"],
+      "exercise": "**🏃 Interval Training:** Alternate 1 min brisk run, 2 min walk, repeat 5–10 times.\n\n**💪 Bodyweight Exercises:** Push-ups, squats, lunges, 2 sets.\n\n**🧘 Deep Breathing:** Before and after activity, 5 min pranayama.",
+      "extra_info": "Eat small high-protein meals. Hydrate. Gradual practice increases stamina.",
+      "escalation": ["dizziness", "chest pain", "muscle cramps"]
+    },
+    {
+      "id": "W101",
+      "problem": "fat accumulation around waist",
+      "keywords": ["waist fat", "love handles", "obesity", "tummy flab", "side fat"],
+      "exercise": "**🧘 Standing Side Stretch:** Lift arms, bend sideways, hold 20s, 5 reps each.\n\n**💪 Side Plank:** Hold 15–20s each side, 2 sets.\n\n**🏃 Brisk Walk or Jog:** 20 min daily.",
+      "extra_info": "Reduce sugar intake. Include fiber-rich meals. Stretch before and after exercise.",
+      "escalation": ["back pain", "persistent bloating", "mobility issues"]
+    },
+    {
+      "id": "W102",
+      "problem": "low endurance in daily activities",
+      "keywords": ["tired quickly", "low energy", "fatigue", "endurance", "weak stamina"],
+      "exercise": "**🏃 Light Jog or Walk:** 10–15 min daily.\n\n**💪 Bodyweight Circuit:** 5 squats, 5 push-ups, 5 lunges, repeat twice.\n\n**🧘 Deep Breathing:** 5 min daily to improve oxygen flow.",
+      "extra_info": "Maintain hydration. Avoid heavy sugary snacks. Regularity improves endurance.",
+      "escalation": ["persistent fatigue", "dizziness", "chest discomfort"]
+    },
+    {
+      "id": "W103",
+      "problem": "fat accumulation in chest and arms",
+      "keywords": ["chest fat", "arm fat", "upper body flab", "torso flab"],
+      "exercise": "**💪 Push-ups:** 5–10 reps, 2 sets.\n\n**🧘 Arm Raises:** Lift arms overhead slowly, 10 reps.\n\n**🏃 Brisk Walk:** 20 min daily.",
+      "extra_info": "Avoid processed foods. Protein-rich snacks improve muscle tone.",
+      "escalation": ["joint pain", "persistent soreness", "muscle strain"]
+    },
+    {
+      "id": "W104",
+      "problem": "fat accumulation in legs",
+      "keywords": ["leg fat", "thigh fat", "calf fat", "lower body flab"],
+      "exercise": "**💪 Squats:** 10–15 reps, 3 sets.\n\n**🧘 Side-Lying Leg Lifts:** 10 reps each leg, 2 sets.\n\n**🏃 Brisk Walk or Light Jog:** 20 min daily.",
+      "extra_info": "Avoid prolonged sitting. Stretch after workouts. Include high-fiber foods.",
+      "escalation": ["knee pain", "swelling", "muscle strain"]
+    },
+    {
+      "id": "W105",
+      "problem": "fat accumulation in back and love handles",
+      "keywords": ["back fat", "love handles", "lower back flab", "obliques fat"],
+      "exercise": "**🧘 Side Bends:** Lift arms overhead, bend sideways, hold 20s, 5 reps.\n\n**💪 Plank:** 20–30s hold, 3 sets.\n\n**🏃 Cardio Walk:** 20 min daily.",
+      "extra_info": "Avoid late-night heavy meals. Maintain good posture. Stretch frequently.",
+      "escalation": ["back pain", "mobility issues", "persistent fatigue"]
+    },
+    {
+      "id": "W106",
+      "problem": "shortness of breath during walking",
+      "keywords": ["breathing issues", "fatigue", "low stamina", "oxygen intake", "walking difficulty"],
+      "exercise": "**🧘 Diaphragmatic Breathing:** 10 deep breaths, focus on belly expansion.\n\n**🏃 Gentle Walk:** Start 5–10 min, increase gradually.\n\n**💪 Arm Raises:** Lift while inhaling, lower while exhaling, 10 reps.",
+      "extra_info": "Avoid smoke or dusty areas. Stop if feeling dizzy. Gradually increase intensity.",
+      "escalation": ["chest pain", "persistent breathlessness", "dizziness"]
+    },
+    {
+      "id": "W107",
+      "problem": "low stamina during household activity",
+      "keywords": ["tired quickly", "energy low", "fatigue", "home chores", "endurance"],
+      "exercise": "**🏃 Short Walking Breaks:** Every 30–60 minutes, 5 min walk.\n\n**💪 Light Bodyweight Exercises:** Squats, wall push-ups 5–10 reps.\n\n**🧘 Deep Breathing:** 5 min pranayama.",
+      "extra_info": "Stay hydrated. Eat light snacks if energy dips. Avoid overexertion.",
+      "escalation": ["persistent fatigue", "dizziness", "muscle pain"]
+    },
+    {
+      "id": "W108",
+      "problem": "fat in face and neck",
+      "keywords": ["face fat", "double chin", "neck flab", "jowls", "chubby face"],
+      "exercise": "**💆 Chin Lifts:** Tilt head back, lift chin, hold 5s, repeat 10–15 reps.\n\n**🧘 Neck Stretch:** Tilt head sideways, hold 10s each side, 5 reps.\n\n**🏃 Brisk Walking:** 20 min daily.",
+      "extra_info": "Chew slowly to engage jaw muscles. Avoid sugary drinks. Regular practice improves face tone.",
+      "escalation": ["swelling", "pain", "difficulty moving neck"]
+    },
+    {
+      "id": "W109",
+      "problem": "difficulty breathing during light exercise",
+      "keywords": ["shortness of breath", "low oxygen", "fatigue", "exercise intolerance"],
+      "exercise": "**🧘 Deep Breathing:** Inhale 4, hold 2, exhale 6, repeat 10 rounds.\n\n**🏃 Gentle Walk:** Start 5–10 min, increase gradually.\n\n**💪 Arm Lifts:** 10 reps while breathing deeply.",
+      "extra_info": "Avoid dusty areas. Stop if dizzy. Gradually increase exercise intensity.",
+      "escalation": ["persistent breathlessness", "chest pain", "dizziness"]
+    },
+    {
+      "id": "W110",
+      "problem": "low endurance during walking or climbing",
+      "keywords": ["low stamina", "fatigue", "breathlessness", "tired quickly", "exercise intolerance"],
+      "exercise": "**🏃 Interval Walking:** Alternate 2 min brisk walk, 1 min slow walk, repeat 5–10 times.\n\n**💪 Bodyweight Circuit:** Squats, lunges, push-ups 5 reps each, 2 sets.\n\n**🧘 Deep Breathing:** 5 min daily.",
+      "extra_info": "Hydrate before walking. Eat small nutritious meals. Gradual improvement is normal.",
+      "escalation": ["dizziness", "chest pain", "persistent fatigue"]
+    },
+    {
+      "id": "W111",
+      "problem": "loneliness",
+      "keywords": ["lonely", "isolated", "alone", "friendless", "social anxiety", "feeling left out"],
+      "exercise": "**🧘 Mindful Breathing:** Sit comfortably, inhale deeply for 4 sec, hold 2 sec, exhale 6 sec, 10 rounds.\n\n**💪 Light Walk or Jog:** 10–15 min outdoors to uplift mood.\n\n**🧘 Yoga Posture – Child Pose (Balasana):** Kneel, bend forward, arms stretched, hold 30s–1min, repeat 3 times.",
+      "extra_info": "Write your thoughts in a journal 📝. Reach out to family or friends via messages or calls. Joining small hobby groups online or offline can help socialize gradually.",
+      "escalation": ["persistent sadness", "social withdrawal", "thoughts of self-harm"]
+    },
+    {
+      "id": "W112",
+      "problem": "anxiety",
+      "keywords": ["anxious", "nervous", "panic", "worry", "overthinking", "stress"],
+      "exercise": "**🧘 Box Breathing:** Inhale 4 sec, hold 4 sec, exhale 4 sec, hold 4 sec, repeat 8 rounds.\n\n**💪 Gentle Stretching:** Neck rolls, shoulder rolls, side bends 5–10 reps each.\n\n**🧘 Yoga Posture – Cat-Cow (Marjaryasana-Bitilasana):** Alternate arching and rounding back 10 reps.",
+      "extra_info": "Limit screen time 📱, especially before bed. Engage in hobbies or music 🎵 to relax. Talk with someone you trust if worries persist.",
+      "escalation": ["panic attacks", "persistent insomnia", "trouble functioning daily"]
+    },
+    {
+      "id": "W113",
+      "problem": "anger management",
+      "keywords": ["anger", "irritability", "frustration", "short-tempered", "stress outbursts"],
+      "exercise": "**🧘 Deep Breathing:** Inhale slowly, exhale forcefully through mouth, 10 rounds.\n\n**💪 Physical Release:** Punch a pillow gently 5–10 times.\n\n**🧘 Yoga Posture – Standing Forward Bend (Uttanasana):** Bend forward, let head hang, hold 20–30s, repeat 3 times.",
+      "extra_info": "Count to 10 before reacting. Walk away from the trigger if possible 🚶. Keep a stress journal and note triggers and reactions.",
+      "escalation": ["aggressive behavior", "hurting others", "persistent irritability"]
+    },
+    {
+      "id": "W114",
+      "problem": "depression",
+      "keywords": ["sadness", "hopelessness", "low mood", "unmotivated", "tearfulness", "apathy"],
+      "exercise": "**🧘 Morning Sun Salutation (Surya Namaskar):** 3–5 rounds to energize the body.\n\n**💪 Light Cardio:** 10–15 min walk or jog outdoors.\n\n**🧘 Yoga Posture – Legs Up Wall (Viparita Karani):** Lie on back, legs on wall, hold 3–5 min.",
+      "extra_info": "Talk to trusted friends/family ❤️. Keep a gratitude journal daily. Music, art, or dance therapy helps mood. Seek professional help if sadness persists.",
+      "escalation": ["persistent low mood", "self-harm thoughts", "loss of appetite or sleep"]
+    },
+    {
+      "id": "W115",
+      "problem": "excessive masturbation",
+      "keywords": ["masturbation", "self-pleasure", "low self-control", "habitual masturbation", "addiction"],
+      "exercise": "**🧘 Mindful Awareness:** Observe urges without acting, breathe deeply 10 rounds.\n\n**💪 Physical Activity:** 15–20 min of brisk walk, skipping, or push-ups to redirect energy.\n\n**🧘 Yoga Posture – Cobra Pose (Bhujangasana):** Lie on stomach, lift chest gently, hold 20–30s, repeat 3 times.",
+      "extra_info": "Engage in hobbies or sports to divert mind. Limit exposure to triggering content. Maintain a regular sleep schedule and balanced meals.",
+      "escalation": ["interference with daily life", "physical discomfort", "emotional distress"]
+    },
+    {
+      "id": "W116",
+      "problem": "low self-control",
+      "keywords": ["impulsivity", "cannot resist urges", "low discipline", "habitual behavior", "overreacting"],
+      "exercise": "**🧘 Meditation:** Sit quietly, focus on breathing 10 min daily.\n\n**💪 Delayed Gratification Practice:** Pause 5–10s before any impulse.\n\n**🧘 Yoga Posture – Mountain Pose (Tadasana):** Stand tall, arms relaxed, focus on posture 2–3 min.",
+      "extra_info": "Keep a daily routine. Break tasks into smaller achievable steps ✅. Celebrate small wins to reinforce self-control.",
+      "escalation": ["persistent impulsive behavior", "hurting self or others", "disruption in work or studies"]
+    },
+    {
+      "id": "W117",
+      "problem": "low self-confidence",
+      "keywords": ["low confidence", "self-doubt", "insecurity", "fear of failure", "shyness"],
+      "exercise": "**🧘 Power Poses:** Stand tall, hands on hips, hold 2 min daily.\n\n**💪 Light Physical Activity:** Walking, jogging, or yoga to feel energetic.\n\n**🧘 Yoga Posture – Tree Pose (Vrikshasana):** Balance on one leg, arms overhead, hold 20–30s each leg.",
+      "extra_info": "Maintain eye contact in conversations. Compliment yourself for small achievements. Write affirmations daily.",
+      "escalation": ["social withdrawal", "persistent self-doubt", "avoidance of opportunities"]
+    },
+    {
+      "id": "W118",
+      "problem": "excessive stress",
+      "keywords": ["stress", "tension", "overwork", "mental fatigue", "burnout"],
+      "exercise": "**🧘 Deep Breathing:** Inhale 4, hold 4, exhale 6, repeat 10 rounds.\n\n**💪 Short Walks:** 5–10 min outdoors.\n\n**🧘 Yoga Posture – Cat-Cow:** Arch and round back 10–15 reps to release tension.",
+      "extra_info": "Avoid caffeine late in the day. Listen to calming music 🎵. Practice mindfulness in daily activities.",
+      "escalation": ["sleep disturbances", "anxiety attacks", "persistent fatigue"]
+    },
+    {
+      "id": "W119",
+      "problem": "feeling unmotivated",
+      "keywords": ["lack of motivation", "lazy", "procrastination", "low energy", "apathy"],
+      "exercise": "**🧘 Morning Sun Salutation:** 3 rounds to energize body.\n\n**💪 Quick Home Circuit:** 5 squats, 5 push-ups, 5 lunges, repeat twice.\n\n**🧘 Yoga Posture – Warrior II (Virabhadrasana II):** Hold 20–30s each side, 2 reps.",
+      "extra_info": "Set small achievable goals daily. Reward yourself for completing tasks 🎯. Keep environment tidy to feel productive.",
+      "escalation": ["persistent apathy", "failure to complete tasks", "emotional distress"]
+    },
+    {
+      "id": "W120",
+      "problem": "overthinking",
+      "keywords": ["rumination", "excessive thinking", "worrying", "mental chatter", "obsessing"],
+      "exercise": "**🧘 Mindfulness Meditation:** Sit 10 min, observe thoughts without judgment.\n\n**💪 Physical Activity:** Walk 10–15 min to break thought cycles.\n\n**🧘 Yoga Posture – Seated Forward Bend (Paschimottanasana):** Hold 20–30s, repeat 2–3 times.",
+      "extra_info": "Write down worries to externalize thoughts. Focus on small actionable tasks. Avoid excessive social media scrolling.",
+      "escalation": ["sleep disruption", "persistent anxiety", "inability to focus"]
+    },
+    {
+        "id": "121",
+        "problem": "anxiety",
+        "keywords": ["anxiety", "nervousness", "stress", "overthinking", "worry"],
+        "remedy": "**🧘 Calm Your Mind – Anxiety Relief**\nBeta, feeling anxious is normal. Start with deep belly breathing: inhale 4 counts, hold 2, exhale 6. Do this for 5 minutes. Practice a short meditation daily, focusing on gentle thoughts.\n\n**🏃 Physical Exercise:** Light jogging or brisk walking helps release stress hormones.\n\n**🧘 Yoga Postures:** Try **Balasana (Child’s Pose)** and **Viparita Karani (Legs-Up-the-Wall)** for calming the nervous system.\n\n**💡 Extra Tip:** Journal your worries; writing them down reduces mental load.\n\nIf anxiety persists or impacts daily life, speak with a mental health professional."
+      },
+      {
+        "id": "122",
+        "problem": "low self-confidence",
+        "keywords": ["self-esteem", "shyness", "low confidence", "self-doubt", "timid"],
+        "remedy": "**🌟 Boost Confidence Naturally**\nBeta, believe in yourself! Start small: achieve one daily task and celebrate it. Stand tall and practice power poses in front of a mirror.\n\n**🏃 Physical Exercise:** Strength training or push-ups increase energy and self-belief.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)** and **Utkatasana (Chair Pose)** improve posture and presence.\n\n**💡 Extra Tip:** Compliment yourself once daily in front of a mirror.\n\nGradually, small wins add up to big confidence."
+      },
+      {
+        "id": "123",
+        "problem": "anger management",
+        "keywords": ["anger", "irritability", "frustration", "rage", "short temper"],
+        "remedy": "**🔥 Cool Down Anger**\nBeta, when anger rises, pause and take 5 slow breaths. Count to 10 silently. Walk a few steps to release tension.\n\n**🏃 Physical Exercise:** Punching bag, jogging, or skipping rope to channel energy.\n\n**🧘 Yoga Postures:** **Marjariasana (Cat-Cow Pose)** and **Adho Mukha Svanasana (Downward Dog)** to release tension from the spine.\n\n**💡 Extra Tip:** Express feelings in a journal instead of shouting.\n\nIf anger is affecting relationships, consider professional counseling."
+      },
+      {
+        "id": "124",
+        "problem": "depression",
+        "keywords": ["depression", "sadness", "low mood", "lack of energy", "hopelessness"],
+        "remedy": "**🌈 Gentle Mood Lifting**\nBeta, start with 5–10 minutes of sunlight exposure every morning. Take a short walk outdoors.\n\n**🏃 Physical Exercise:** Light aerobic exercises, stretching, or dancing to boost endorphins.\n\n**🧘 Yoga Postures:** **Setu Bandhasana (Bridge Pose)** and **Bhujangasana (Cobra Pose)** for gentle chest opening and energy lift.\n\n**💡 Extra Tip:** Talk to a loved one daily, write down one positive thought each morning.\n\nPersistent sadness may require professional support; never hesitate to seek it."
+      },
+      {
+        "id": "125",
+        "problem": "loneliness",
+        "keywords": ["lonely", "isolation", "alone", "friendless", "sadness"],
+        "remedy": "**🤗 Feeling Connected**\nBeta, reach out to a friend or family member daily. Even a short chat helps.\n\n**🏃 Physical Exercise:** Group walks or joining a hobby class to meet people.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with mindful breathing to reduce stress and calm mind.\n\n**💡 Extra Tip:** Keep a gratitude journal and note three things daily.\n\nIf loneliness feels overwhelming, a counselor or support group can help immensely."
+      },
+      {
+        "id": "126",
+        "problem": "excessive masturbation",
+        "keywords": ["masturbation", "habit", "urge control", "addiction", "self-control"],
+        "remedy": "**💪 Regain Self-Control**\nBeta, understand it’s normal but control is important. Identify triggers like boredom or stress. Engage in physical activity instead.\n\n**🏃 Physical Exercise:** Push-ups, running, swimming — redirect energy.\n\n**🧘 Yoga Postures:** **Vrikshasana (Tree Pose)** and **Dhanurasana (Bow Pose)** to improve focus and body awareness.\n\n**💡 Extra Tip:** Meditate for 5–10 minutes daily. Keep hands busy with hobbies or creative work.\n\nIf urges feel uncontrollable, consider talking to a professional discreetly."
+      },
+      {
+        "id": "127",
+        "problem": "stress",
+        "keywords": ["stress", "pressure", "tension", "overload", "work stress"],
+        "remedy": "**🌿 Stress Relief Routine**\nBeta, pause often during work. Close your eyes and breathe deeply for 2–3 minutes.\n\n**🏃 Physical Exercise:** Short walks, stretching, or yoga flow to release tension.\n\n**🧘 Yoga Postures:** **Paschimottanasana (Seated Forward Bend)** and **Janu Sirsasana (Head-to-Knee Pose)** to relax the spine and mind.\n\n**💡 Extra Tip:** Listen to calming music or practice mindful coloring.\n\nAvoid caffeine overload and prioritize sleep."
+      },
+      {
+        "id": "128",
+        "problem": "low energy",
+        "keywords": ["fatigue", "low energy", "tiredness", "sleepiness", "lethargy"],
+        "remedy": "**⚡ Boost Energy Naturally**\nBeta, start your day with light stretching and deep breathing. Drink water and eat a healthy breakfast with fruits and nuts.\n\n**🏃 Physical Exercise:** Short cardio or brisk walk outdoors to awaken body.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** series to energize.\n\n**💡 Extra Tip:** Avoid heavy sugar, take breaks if studying or working long.\n\nEnsure 7–8 hours of sleep nightly for sustained energy."
+      },
+      {
+        "id": "129",
+        "problem": "sleep problems",
+        "keywords": ["insomnia", "trouble sleeping", "restless night", "late sleep", "night anxiety"],
+        "remedy": "**🌙 Sleep Better Tonight**\nBeta, turn off screens 1 hour before bed. Sip warm milk with a pinch of turmeric.\n\n**🏃 Physical Exercise:** Light stretching or yoga 2–3 hours before bed.\n\n**🧘 Yoga Postures:** **Supta Baddha Konasana (Reclining Bound Angle Pose)** and **Shavasana (Corpse Pose)** to relax body and mind.\n\n**💡 Extra Tip:** Practice deep breathing or guided meditation. Keep room dark and cool.\n\nIf insomnia persists for weeks, consult a doctor."
+      },
+      {
+        "id": "130",
+        "problem": "low focus",
+        "keywords": ["concentration", "attention", "mind wandering", "distraction", "study problem"],
+        "remedy": "**🎯 Improve Focus**\nBeta, create a quiet, tidy space to study. Break work into small 25-minute chunks.\n\n**🏃 Physical Exercise:** Short brisk walk to improve oxygen flow to brain.\n\n**🧘 Yoga Postures:** **Vajrasana (Thunderbolt Pose)** and **Trikonasana (Triangle Pose)** for stability and mental clarity.\n\n**💡 Extra Tip:** Use a timer, practice deep breathing before study. Avoid multitasking.\n\nConsistency daily improves focus over time."
+      },
+      {
+        "id": "131",
+        "problem": "procrastination",
+        "keywords": ["procrastination", "delay", "avoid work", "lazy", "task avoidance"],
+        "remedy": "**⏳ Beat Procrastination**\nBeta, list tasks for today. Pick the smallest one and finish it first.\n\n**🏃 Physical Exercise:** Short jog or stretching to refresh mind.\n\n**🧘 Yoga Postures:** **Virabhadrasana (Warrior Pose)** to feel empowered and ready for action.\n\n**💡 Extra Tip:** Reward yourself after completing tasks. Break large tasks into tiny steps."
+      },
+      {
+        "id": "132",
+        "problem": "shyness",
+        "keywords": ["shy", "social anxiety", "timid", "reserved", "introvert"],
+        "remedy": "**😊 Overcome Shyness**\nBeta, practice greeting people with a smile. Maintain eye contact gradually.\n\n**🏃 Physical Exercise:** Group walks or light sports to increase comfort in social settings.\n\n**🧘 Yoga Postures:** **Anjali Mudra (Prayer Pose)** for grounding and confidence.\n\n**💡 Extra Tip:** Join hobby classes, speak in front of mirror daily. Small practice builds courage."
+      },
+      {
+        "id": "133",
+        "problem": "excessive phone use",
+        "keywords": ["phone addiction", "screen time", "phone overuse", "digital detox", "distraction"],
+        "remedy": "**📵 Reduce Screen Time**\nBeta, schedule phone-free periods during day. Keep phone away at meals and bedtime.\n\n**🏃 Physical Exercise:** Step outside, walk or do light yoga.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)** with eyes closed for mindfulness.\n\n**💡 Extra Tip:** Replace phone time with reading, drawing, or meditation."
+      },
+      {
+        "id": "134",
+        "problem": "impatience",
+        "keywords": ["impatient", "irritable", "rush", "quick temper", "annoyed easily"],
+        "remedy": "**⏳ Cultivate Patience**\nBeta, pause before reacting. Take deep breaths and count to 5.\n\n**🏃 Physical Exercise:** Short walk to release tension.\n\n**🧘 Yoga Postures:** **Vrikshasana (Tree Pose)** for balance and calm.\n\n**💡 Extra Tip:** Practice mindfulness; focus on present moment tasks."
+      },
+      {
+        "id": "135",
+        "problem": "overthinking",
+        "keywords": ["overthinking", "mind racing", "thought loops", "stress thinking", "rumination"],
+        "remedy": "**🧘 Quiet the Mind**\nBeta, write down thoughts in a journal. Prioritize them and let go of unnecessary worries.\n\n**🏃 Physical Exercise:** Light jogging or skipping helps release mental tension.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with hands on knees, eyes closed, focus on breath.\n\n**💡 Extra Tip:** Practice guided meditation 5–10 minutes daily."
+      },
+      {
+        "id": "136",
+        "problem": "low motivation",
+        "keywords": ["unmotivated", "lazy", "lack of drive", "not feeling like doing anything", "demotivated"],
+        "remedy": "**🚀 Find Your Spark**\nBeta, set small achievable goals each day. Celebrate completion.\n\n**🏃 Physical Exercise:** Morning walk or jog to energize body.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** to wake up mind and body.\n\n**💡 Extra Tip:** Surround yourself with motivational quotes or friends."
+      },
+      {
+        "id": "137",
+        "problem": "lack of social skills",
+        "keywords": ["social skills", "awkwardness", "difficulty talking", "shyness", "communication issues"],
+        "remedy": "**💬 Improve Social Skills**\nBeta, practice small talk daily. Start with greeting people.\n\n**🏃 Physical Exercise:** Group sports or hobby classes.\n\n**🧘 Yoga Postures:** **Anjali Mudra (Prayer Pose)** to feel grounded before social interaction.\n\n**💡 Extra Tip:** Mirror exercises: practice facial expressions and tone of voice."
+      },
+      {
+        "id": "138",
+        "problem": "lack of emotional control",
+        "keywords": ["emotional control", "mood swings", "tearful", "overreaction", "irritability"],
+        "remedy": "**🧘 Emotional Balance**\nBeta, pause before reacting. Count breaths, observe feelings without judgment.\n\n**🏃 Physical Exercise:** Brisk walking, running, or dancing helps regulate hormones.\n\n**🧘 Yoga Postures:** **Balasana (Child’s Pose)** and **Adho Mukha Svanasana (Downward Dog)** for calming nervous system.\n\n**💡 Extra Tip:** Journal your emotions daily; talk to trusted friend or mentor."
+      },
+      {
+        "id": "139",
+        "problem": "nervousness",
+        "keywords": ["nervous", "jitters", "butterflies", "anxiety", "tension"],
+        "remedy": "**🌿 Calm Nervous Energy**\nBeta, practice deep belly breathing for 2–3 minutes.\n\n**🏃 Physical Exercise:** Quick walk or gentle stretch to release tension.\n\n**🧘 Yoga Postures:** **Vajrasana (Thunderbolt Pose)** to stabilize mind and body.\n\n**💡 Extra Tip:** Visualize calm and positive scenarios before events."
+      },
+      {
+        "id": "140",
+        "problem": "difficulty concentrating",
+        "keywords": ["concentration", "focus", "attention deficit", "mind wandering", "distracted easily"],
+        "remedy": "**🎯 Sharpen Focus**\nBeta, work in short 25-minute focused sessions. Take 5-minute breaks.\n\n**🏃 Physical Exercise:** Light walk or jumping jacks to refresh mind.\n\n**🧘 Yoga Postures:** **Trikonasana (Triangle Pose)** for alertness and balance.\n\n**💡 Extra Tip:** Remove distractions, practice deep breathing before studying or working."
+      },
+    {
+      "id": "141",
+      "problem": "poor posture",
+      "keywords": ["posture", "slouching", "back hunched", "neck pain", "spine alignment"],
+      "remedy": "**🧍 Improve Posture**\nBeta, sit and stand tall. Imagine a string pulling your head upward.\n\n**🏃 Physical Exercise:** Shoulder rolls, wall angels, and core strengthening exercises.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)**, **Bhujangasana (Cobra Pose)** to open chest and align spine.\n\n**💡 Extra Tip:** Take screen breaks every 30–40 mins. Set reminders to correct posture."
+    },
+    {
+      "id": "142",
+      "problem": "eye strain",
+      "keywords": ["eye strain", "dry eyes", "computer eyes", "blurred vision", "headache"],
+      "remedy": "**👀 Relieve Eye Strain**\nBeta, take a break from screens every hour. Blink often to keep eyes moist.\n\n**🏃 Physical Exercise:** Palming (covering eyes with hands), eye rotations.\n\n**🧘 Yoga Postures:** **Trataka (Fixed Gazing)** at a candle flame for a few minutes.\n\n**💡 Extra Tip:** Keep screens at eye level and maintain proper lighting."
+    },
+    {
+      "id": "143",
+      "problem": "back pain",
+      "keywords": ["back pain", "lower back ache", "stiff back", "muscle strain", "lumbar pain"],
+      "remedy": "**🛋️ Soothe Back Pain**\nBeta, apply warm compress or take a warm bath. Avoid heavy lifting and rest the back.\n\n**🏃 Physical Exercise:** Pelvic tilts, gentle bridges, and cat-cow stretches.\n\n**🧘 Yoga Postures:** **Marjariasana (Cat-Cow Pose)**, **Setu Bandhasana (Bridge Pose)** to ease spine tension.\n\n**💡 Extra Tip:** Sit on supportive chairs and avoid prolonged slouching."
+    },
+    {
+      "id": "144",
+      "problem": "neck stiffness",
+      "keywords": ["neck pain", "stiff neck", "tight neck", "limited motion", "neck tension"],
+      "remedy": "**🧖‍♂️ Relax Neck Muscles**\nBeta, gently rotate your neck clockwise and counter-clockwise. Apply warm compress if stiff.\n\n**🏃 Physical Exercise:** Shoulder shrugs, gentle side stretches.\n\n**🧘 Yoga Postures:** **Gomukhasana arms (Cow Face Pose arms)**, **Uttanasana (Standing Forward Bend)** to release tension.\n\n**💡 Extra Tip:** Adjust screen height and pillow support while sleeping."
+    },
+    {
+      "id": "145",
+      "problem": "shoulder tension",
+      "keywords": ["shoulder pain", "tight shoulders", "muscle stiffness", "upper back ache", "frozen shoulder"],
+      "remedy": "**💪 Ease Shoulder Tension**\nBeta, gently roll shoulders forward and backward. Massage upper shoulder muscles with warm oil.\n\n**🏃 Physical Exercise:** Arm circles, wall stretches.\n\n**🧘 Yoga Postures:** **Gomukhasana (Cow Face Pose)** arms, **Bhujangasana (Cobra Pose)** for shoulder opening.\n\n**💡 Extra Tip:** Take breaks from desk work and stretch every hour."
+    },
+    {
+      "id": "146",
+      "problem": "fatigue & low energy",
+      "keywords": ["fatigue", "low energy", "tiredness", "lethargy", "sluggishness"],
+      "remedy": "**⚡ Boost Energy**\nBeta, wake up early and drink a glass of warm water. Light breakfast with fruits and nuts.\n\n**🏃 Physical Exercise:** Quick 10–15 min walk, jumping jacks, or light jogging.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** for overall vitality.\n\n**💡 Extra Tip:** Deep breathing exercises help oxygenate blood and reduce tiredness."
+    },
+    {
+      "id": "147",
+      "problem": "obesity & weight gain",
+      "keywords": ["obesity", "overweight", "fat loss", "belly fat", "side fat", "neck fat", "weight management"],
+      "remedy": "**⚖️ Reduce Extra Fat**\nBeta, eat small, frequent meals with plenty of vegetables and lean proteins. Drink warm water and herbal teas.\n\n**🏃 Physical Exercise:** Brisk walking, cycling, light jogging, and bodyweight exercises.\n\n**🧘 Yoga Postures:** **Trikonasana (Triangle Pose)**, **Vrikshasana (Tree Pose)**, and **Bhujangasana (Cobra Pose)** to improve metabolism and posture.\n\n**💡 Extra Tip:** Avoid late-night eating. Maintain a consistent sleep schedule."
+    },
+    {
+      "id": "148",
+      "problem": "breathing issues & asthma relief",
+      "keywords": ["breathing difficulty", "shortness of breath", "asthma", "wheezing", "lung capacity", "chest tightness"],
+      "remedy": "**🌬️ Improve Breathing**\nBeta, practice slow, deep breaths. Sit upright and open your chest.\n\n**🏃 Physical Exercise:** Brisk walking or light jogging in fresh air.\n\n**🧘 Yoga Postures:** **Pranayama (Breathing Exercises)**, **Ardha Matsyendrasana (Seated Twist)** to expand lungs.\n\n**💡 Extra Tip:** Avoid smoke and allergens. Stay hydrated."
+    },
+    {
+      "id": "149",
+      "problem": "stamina & endurance",
+      "keywords": ["low stamina", "endurance", "tired quickly", "fatigue", "low energy", "weakness"],
+      "remedy": "**💪 Build Stamina**\nBeta, start with light exercises and gradually increase intensity. Stay hydrated and eat energy-rich snacks like nuts and bananas.\n\n**🏃 Physical Exercise:** Brisk walking, cycling, short jogs.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)**, **Virabhadrasana II (Warrior II Pose)** to build strength and endurance.\n\n**💡 Extra Tip:** Regular sleep and balanced diet improve overall energy levels."
+    },
+    {
+      "id": "150",
+      "problem": "side belly fat & abdominal toning",
+      "keywords": ["side belly fat", "love handles", "abdominal fat", "waist fat", "core strength"],
+      "remedy": "**🧘 Flatten Your Belly**\nBeta, eat small meals and avoid fried foods. Stay hydrated.\n\n**🏃 Physical Exercise:** Side planks, leg raises, bicycle crunches.\n\n**🧘 Yoga Postures:** **Parivrtta Trikonasana (Revolved Triangle Pose)**, **Navasana (Boat Pose)** for core strengthening.\n\n**💡 Extra Tip:** Take a 20–30 min walk after meals to improve digestion and reduce waist fat."
+    },
+    {
+      "id": "151",
+      "problem": "weak immune system",
+      "keywords": ["low immunity", "frequent illness", "susceptible to cold", "weak defense", "body weakness"],
+      "remedy": "**🛡️ Strengthen Immunity**\nBeta, include vitamin-rich fruits, vegetables, and warm herbal teas like tulsi, ginger, or lemon-honey water.\n\n**🏃 Physical Exercise:** Morning walk, light jogging, and stretching.\n\n**🧘 Yoga Postures:** **Vrikshasana (Tree Pose)**, **Tadasana (Mountain Pose)** to improve blood circulation.\n\n**💡 Extra Tip:** Sleep 7–8 hours daily. Practice deep breathing to reduce stress and strengthen immunity."
+    },
+    {
+      "id": "152",
+      "problem": "low concentration & focus",
+      "keywords": ["low focus", "lack of attention", "forgetfulness", "distraction", "mental fatigue"],
+      "remedy": "**🧠 Improve Focus**\nBeta, take short study/work breaks. Use the Pomodoro technique for productivity.\n\n**🏃 Physical Exercise:** Light stretching and brisk walk to refresh mind.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)** with deep breathing, **Balasana (Child Pose)** to relax and refocus.\n\n**💡 Extra Tip:** Reduce phone distractions and maintain a quiet workspace."
+    },
+    {
+      "id": "153",
+      "problem": "anxiety & nervousness",
+      "keywords": ["anxiety", "nervousness", "worry", "stress", "panic", "uneasiness"],
+      "remedy": "**😌 Calm Your Mind**\nBeta, practice slow deep breathing, sip warm chamomile or tulsi tea.\n\n**🏃 Physical Exercise:** Short walks in fresh air, light stretching.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with deep breathing, **Shavasana (Corpse Pose)** for complete relaxation.\n\n**💡 Extra Tip:** Journaling or talking to a trusted person reduces anxiety levels."
+    },
+    {
+      "id": "154",
+      "problem": "loneliness & isolation",
+      "keywords": ["loneliness", "isolation", "feeling alone", "sadness", "withdrawn", "social anxiety"],
+      "remedy": "**🤗 Overcome Loneliness**\nBeta, connect with family or friends over a call or chat. Engage in hobbies.\n\n**🏃 Physical Exercise:** Light outdoor walks to see people and nature.\n\n**🧘 Yoga Postures:** **Anulom Vilom (Alternate Nostril Breathing)** to calm mind.\n\n**💡 Extra Tip:** Join a small community or online group of interest to interact and feel connected."
+    },
+    {
+      "id": "155",
+      "problem": "anger management",
+      "keywords": ["anger", "irritation", "frustration", "hot temper", "emotional control"],
+      "remedy": "**🔥 Control Anger**\nBeta, pause before reacting. Count slowly to 10. Drink warm water or herbal tea.\n\n**🏃 Physical Exercise:** Brisk walk, shadow boxing, or hitting a pillow gently.\n\n**🧘 Yoga Postures:** **Shavasana (Corpse Pose)** with deep breathing, **Baddha Konasana (Bound Angle Pose)** to relax hips and mind.\n\n**💡 Extra Tip:** Express feelings in writing. Avoid making impulsive decisions during anger."
+    },
+    {
+      "id": "156",
+      "problem": "low self-confidence",
+      "keywords": ["self-confidence", "low esteem", "shyness", "lack of confidence", "insecurity"],
+      "remedy": "**💪 Boost Self-Confidence**\nBeta, speak positive affirmations daily. Stand tall and maintain eye contact.\n\n**🏃 Physical Exercise:** Daily brisk walk or light jogging improves body awareness and energy.\n\n**🧘 Yoga Postures:** **Virabhadrasana I & II (Warrior Poses)** to feel strong and grounded.\n\n**💡 Extra Tip:** Celebrate small achievements. Avoid negative self-talk."
+    },
+    {
+      "id": "157",
+      "problem": "excessive masturbation / self-control issues",
+      "keywords": ["masturbation", "self-control", "habit control", "impulse", "addiction", "urge"],
+      "remedy": "**🧘‍♂️ Gain Self-Control**\nBeta, redirect energy to hobbies, creative work, or outdoor activities.\n\n**🏃 Physical Exercise:** Brisk walks, swimming, or gym workouts to release pent-up energy.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)**, **Vrikshasana (Tree Pose)** for discipline and focus.\n\n**💡 Extra Tip:** Maintain a structured daily routine. Practice meditation and deep breathing to control urges."
+    },
+    {
+      "id": "158",
+      "problem": "depression & sadness",
+      "keywords": ["depression", "sadness", "low mood", "lack of interest", "gloomy", "emotional heaviness"],
+      "remedy": "**🌤️ Lift Mood**\nBeta, expose yourself to sunlight daily. Talk to friends or family.\n\n**🏃 Physical Exercise:** Light jogging, dancing, or brisk walk to release endorphins.\n\n**🧘 Yoga Postures:** **Bhujangasana (Cobra Pose)**, **Setu Bandhasana (Bridge Pose)** to open chest and improve energy.\n\n**💡 Extra Tip:** Listen to uplifting music, write gratitude journals. Seek professional help if mood is persistently low."
+    },
+    {
+      "id": "159",
+      "problem": "stress & tension",
+      "keywords": ["stress", "tension", "overthinking", "mental pressure", "workload", "anxiety"],
+      "remedy": "**🧘 Relieve Stress**\nBeta, take 5–10 minutes for deep breathing daily. Practice mindfulness and slow down tasks.\n\n**🏃 Physical Exercise:** Short walks, stretching, or cycling in fresh air.\n\n**🧘 Yoga Postures:** **Shavasana (Corpse Pose)**, **Paschimottanasana (Seated Forward Bend)** for relaxation.\n\n**💡 Extra Tip:** Avoid multitasking excessively. Practice meditation or guided visualization."
+    },
+    {
+      "id": "160",
+      "problem": "overthinking",
+      "keywords": ["overthinking", "mental clutter", "rumination", "worrying", "stress"],
+      "remedy": "**🧠 Calm Your Mind**\nBeta, write down thoughts to release mental load.\n\n**🏃 Physical Exercise:** Walking outdoors or light jogging to refresh mind.\n\n**🧘 Yoga Postures:** **Anulom Vilom (Alternate Nostril Breathing)**, **Balasana (Child Pose)** to regain mental clarity.\n\n**💡 Extra Tip:** Practice focusing on the present moment. Avoid dwelling on past mistakes."
+    },
+    {
+      "id": "161",
+      "problem": "loneliness in youth",
+      "keywords": ["loneliness", "isolation", "social withdrawal", "friends issues", "alone"],
+      "remedy": "**🤗 Overcome Loneliness**\nBeta, engage in community or hobby groups. Call or meet friends.\n\n**🏃 Physical Exercise:** Outdoor walks, sports activities, cycling with friends.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)** for grounding and energy.\n\n**💡 Extra Tip:** Adopt a pet or volunteer. Maintain small social interactions daily."
+    },
+    {
+      "id": "162",
+      "problem": "anger & irritability",
+      "keywords": ["anger", "irritation", "short temper", "frustration", "emotional control"],
+      "remedy": "**🔥 Manage Anger**\nBeta, pause before reacting. Count to 10 slowly.\n\n**🏃 Physical Exercise:** Brisk walk, running, or punching bag for release.\n\n**🧘 Yoga Postures:** **Baddha Konasana (Bound Angle Pose)**, **Shavasana (Corpse Pose)** to calm nerves.\n\n**💡 Extra Tip:** Journal emotions, practice gratitude to reduce triggers."
+    },
+    {
+      "id": "163",
+      "problem": "sleep issues & insomnia",
+      "keywords": ["sleep problem", "insomnia", "restless nights", "difficulty sleeping", "poor sleep"],
+      "remedy": "**🌙 Improve Sleep**\nBeta, maintain a consistent sleep schedule. Avoid screens 1 hour before bed.\n\n**🏃 Physical Exercise:** Evening walk or light stretching.\n\n**🧘 Yoga Postures:** **Supta Baddha Konasana (Reclined Bound Angle Pose)**, **Viparita Karani (Legs-up-the-wall Pose)**.\n\n**💡 Extra Tip:** Drink warm milk or herbal teas like chamomile. Keep bedroom cool and dark."
+    },
+    {
+      "id": "164",
+      "problem": "lack of motivation",
+      "keywords": ["motivation", "low drive", "apathy", "laziness", "procrastination"],
+      "remedy": "**💡 Gain Motivation**\nBeta, start small daily goals. Reward yourself for small achievements.\n\n**🏃 Physical Exercise:** Morning walk, light jogging, or yoga sun salutations.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** for energy and discipline.\n\n**💡 Extra Tip:** Listen to motivational talks. Keep a vision board or goal list."
+    },
+    {
+      "id": "165",
+      "problem": "social anxiety",
+      "keywords": ["social anxiety", "shyness", "fear of people", "nervousness in crowd", "introvert struggle"],
+      "remedy": "**🤝 Reduce Social Anxiety**\nBeta, practice speaking in front of a mirror. Start with small social interactions.\n\n**🏃 Physical Exercise:** Outdoor walking in small groups, light running.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with deep breathing to calm nerves.\n\n**💡 Extra Tip:** Gradually increase exposure to social settings. Practice positive self-talk."
+    },
+    {
+      "id": "166",
+      "problem": "low energy & laziness",
+      "keywords": ["low energy", "laziness", "tiredness", "fatigue", "sluggishness"],
+      "remedy": "**⚡ Boost Energy**\nBeta, start the day with warm water and sunlight exposure.\n\n**🏃 Physical Exercise:** Brisk walk, skipping, jumping jacks.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)**, **Tadasana (Mountain Pose)**.\n\n**💡 Extra Tip:** Eat fresh fruits, nuts, and stay hydrated throughout the day."
+    },
+    {
+      "id": "167",
+      "problem": "excessive screen time",
+      "keywords": ["screen addiction", "phone addiction", "gaming addiction", "eye strain", "digital overload"],
+      "remedy": "**📵 Reduce Screen Time**\nBeta, take breaks every hour. Engage in offline hobbies.\n\n**🏃 Physical Exercise:** Outdoor walks, cycling, sports.\n\n**🧘 Yoga Postures:** **Trataka (Candle Gazing)** for eye focus, **Balasana (Child Pose)** to relax.\n\n**💡 Extra Tip:** Keep phone out of bedroom. Practice mindfulness to control urges."
+    },
+    {
+      "id": "168",
+      "problem": "body image & self-esteem",
+      "keywords": ["body image", "self-esteem", "insecurity", "appearance anxiety", "low confidence"],
+      "remedy": "**🌟 Improve Self-Esteem**\nBeta, focus on strengths and talents. Speak kind words to yourself daily.\n\n**🏃 Physical Exercise:** Yoga, light exercise, dancing to feel comfortable in body.\n\n**🧘 Yoga Postures:** **Virabhadrasana (Warrior Pose)**, **Tadasana (Mountain Pose)** to feel strong.\n\n**💡 Extra Tip:** Avoid comparing with others. Celebrate personal progress."
+    },
+    {
+      "id": "169",
+      "problem": "fear & phobias",
+      "keywords": ["fear", "phobia", "anxiety", "panic", "nervousness", "worry"],
+      "remedy": "**😌 Overcome Fear**\nBeta, face fear gradually in controlled environment. Practice deep breathing.\n\n**🏃 Physical Exercise:** Light walks or gentle movement to release tension.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with pranayama, **Shavasana (Corpse Pose)**.\n\n**💡 Extra Tip:** Talk to someone trusted. Note down fears to rationally address them."
+    },
+    {
+      "id": "170",
+      "problem": "decision making difficulty",
+      "keywords": ["decision making", "indecisiveness", "confusion", "mental block", "procrastination"],
+      "remedy": "**🧠 Improve Decision Making**\nBeta, write pros and cons for each option.\n\n**🏃 Physical Exercise:** Morning walk or light jog for mental clarity.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)** with deep breathing, **Vajrasana (Thunderbolt Pose)** for focus.\n\n**💡 Extra Tip:** Start with small decisions. Gradually tackle bigger choices with confidence."
+    },
+    {
+      "id": "171",
+      "problem": "emotional instability",
+      "keywords": ["emotional instability", "mood swings", "irritability", "sudden sadness", "overreaction"],
+      "remedy": "**💖 Stabilize Emotions**\nBeta, practice deep breathing during emotional moments. Note triggers.\n\n**🏃 Physical Exercise:** Light jogging, cycling, or walking in nature.\n\n**🧘 Yoga Postures:** **Balasana (Child Pose)**, **Anulom Vilom (Alternate Nostril Breathing)**.\n\n**💡 Extra Tip:** Journaling emotions daily helps awareness and control."
+    },
+    {
+      "id": "172",
+      "problem": "lack of creativity",
+      "keywords": ["creativity", "mental block", "ideas shortage", "uninspired", "stagnant thinking"],
+      "remedy": "**🎨 Boost Creativity**\nBeta, try doodling, painting, or free writing for 10–15 mins daily.\n\n**🏃 Physical Exercise:** Walk in nature, observe surroundings.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)**, **Vajrasana (Thunderbolt Pose)** with focused breathing.\n\n**💡 Extra Tip:** Keep a notebook for spontaneous ideas. Listen to music to stimulate imagination."
+    },
+    {
+      "id": "173",
+      "problem": "memory & recall issues",
+      "keywords": ["memory", "forgetfulness", "poor recall", "mental fatigue", "concentration"],
+      "remedy": "**🧠 Improve Memory**\nBeta, practice visualization techniques and repeat important information aloud.\n\n**🏃 Physical Exercise:** Walk, jogging, or dancing to improve blood flow.\n\n**🧘 Yoga Postures:** **Vajrasana (Thunderbolt Pose)**, **Dhanurasana (Bow Pose)**.\n\n**💡 Extra Tip:** Eat brain foods like nuts, seeds, and maintain proper sleep schedule."
+    },
+    {
+      "id": "174",
+      "problem": "mental exhaustion",
+      "keywords": ["mental fatigue", "burnout", "stress", "overthinking", "lack of focus"],
+      "remedy": "**😴 Reduce Mental Fatigue**\nBeta, take micro-breaks, power naps, and avoid overloading tasks.\n\n**🏃 Physical Exercise:** Short walks in fresh air, gentle stretching.\n\n**🧘 Yoga Postures:** **Shavasana (Corpse Pose)**, **Sukhasana (Easy Pose)** with deep breathing.\n\n**💡 Extra Tip:** Listen to calming music, disconnect from social media for a few hours."
+    },
+    {
+      "id": "175",
+      "problem": "mental clarity & focus",
+      "keywords": ["focus", "clarity", "concentration", "mental sharpness", "productivity"],
+      "remedy": "**🧘 Enhance Focus**\nBeta, start the day with deep breathing and meditation.\n\n**🏃 Physical Exercise:** Morning walk or yoga stretches.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)**, **Ardha Matsyendrasana (Seated Twist)**.\n\n**💡 Extra Tip:** Avoid multitasking. Keep a clean workspace and prioritize tasks."
+    },
+    {
+      "id": "176",
+      "problem": "lack of discipline",
+      "keywords": ["discipline", "routine", "self-control", "habit formation", "time management"],
+      "remedy": "**⏰ Build Discipline**\nBeta, create a structured daily schedule and stick to it.\n\n**🏃 Physical Exercise:** Regular morning walks or short workouts.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** daily to instill discipline.\n\n**💡 Extra Tip:** Track daily goals and reward small accomplishments."
+    },
+    {
+      "id": "177",
+      "problem": "overthinking about future",
+      "keywords": ["overthinking", "worrying about future", "anxiety", "mental clutter", "stress"],
+      "remedy": "**🌤️ Stay Present**\nBeta, practice grounding techniques and focus on current tasks.\n\n**🏃 Physical Exercise:** Walk in nature or light jogging.\n\n**🧘 Yoga Postures:** **Anulom Vilom (Alternate Nostril Breathing)**, **Balasana (Child Pose)** to calm the mind.\n\n**💡 Extra Tip:** Limit exposure to negative news. Write down future worries and strategize solutions."
+    },
+    {
+      "id": "178",
+      "problem": "impulse control issues",
+      "keywords": ["impulsivity", "lack of control", "hasty decisions", "overreacting", "poor restraint"],
+      "remedy": "**🧘 Improve Self-Control**\nBeta, pause before making decisions. Reflect for 5–10 seconds before action.\n\n**🏃 Physical Exercise:** Light jogging, stretching, or shadow boxing.\n\n**🧘 Yoga Postures:** **Vrikshasana (Tree Pose)**, **Shavasana (Corpse Pose)** for patience and grounding.\n\n**💡 Extra Tip:** Keep distractions minimal and maintain a daily routine."
+    },
+    {
+      "id": "179",
+      "problem": "social withdrawal",
+      "keywords": ["withdrawn", "isolated", "avoiding people", "lonely", "introvert struggle"],
+      "remedy": "**🤝 Re-engage Socially**\nBeta, reach out to one friend or family member daily.\n\n**🏃 Physical Exercise:** Outdoor walks in parks or small group sports.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)** to feel grounded, **Anulom Vilom (Alternate Nostril Breathing)** to calm nerves.\n\n**💡 Extra Tip:** Gradually increase social interactions. Avoid self-isolation for extended periods."
+    },
+    {
+      "id": "180",
+      "problem": "self-doubt",
+      "keywords": ["self-doubt", "insecurity", "hesitation", "lack of belief", "fear of failure"],
+      "remedy": "**🌟 Overcome Self-Doubt**\nBeta, list achievements and strengths. Use positive affirmations daily.\n\n**🏃 Physical Exercise:** Morning walk or light jogging to boost energy.\n\n**🧘 Yoga Postures:** **Virabhadrasana (Warrior Pose)**, **Tadasana (Mountain Pose)** for confidence.\n\n**💡 Extra Tip:** Seek constructive feedback. Avoid comparing yourself to others."
+    },
+    {
+      "id": "181",
+      "problem": "emotional fatigue",
+      "keywords": ["emotional fatigue", "overwhelm", "stress", "emotional drain", "mental tiredness"],
+      "remedy": "**😌 Rejuvenate Emotionally**\nBeta, take short breaks, listen to calming music, or practice light meditation.\n\n**🏃 Physical Exercise:** Walk in fresh air, light stretching, or yoga flow.\n\n**🧘 Yoga Postures:** **Shavasana (Corpse Pose)**, **Balasana (Child Pose)** to relax fully.\n\n**💡 Extra Tip:** Avoid overcommitment. Talk to a trusted friend about feelings."
+    },
+    {
+      "id": "182",
+      "problem": "mind wandering / distraction",
+      "keywords": ["mind wandering", "distracted", "inattentive", "lack of focus", "scattered thoughts"],
+      "remedy": "**🧘 Sharpen Focus**\nBeta, try short mindfulness meditation sessions.\n\n**🏃 Physical Exercise:** Brisk walking to refresh the mind.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)**, **Anulom Vilom (Alternate Nostril Breathing)**.\n\n**💡 Extra Tip:** Keep a tidy workspace. Write a to-do list to stay organized."
+    },
+    {
+      "id": "183",
+      "problem": "nervousness before exams or performance",
+      "keywords": ["exam anxiety", "performance fear", "nervousness", "stage fear", "test stress"],
+      "remedy": "**📚 Calm Pre-Performance Nerves**\nBeta, take 5–10 deep breaths before starting.\n\n**🏃 Physical Exercise:** Short walk or light stretching.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)** with deep breathing, **Shavasana (Corpse Pose)** to relax.\n\n**💡 Extra Tip:** Prepare thoroughly and maintain a positive mindset. Avoid last-minute cramming."
+    },
+    {
+      "id": "184",
+      "problem": "procrastination",
+      "keywords": ["procrastination", "delay", "habitual delay", "avoidance", "time management"],
+      "remedy": "**⏳ Beat Procrastination**\nBeta, break tasks into smaller steps and start immediately.\n\n**🏃 Physical Exercise:** Morning walk or light jogging to energize.\n\n**🧘 Yoga Postures:** **Surya Namaskar (Sun Salutation)** for focus and discipline.\n\n**💡 Extra Tip:** Use timers and reward small completions. Avoid distractions."
+    },
+    {
+      "id": "185",
+      "problem": "excessive worry",
+      "keywords": ["worrying", "overthinking", "stress", "anxiety", "mental clutter"],
+      "remedy": "**😌 Reduce Worry**\nBeta, write down worries and solutions. Practice letting go of uncontrollable events.\n\n**🏃 Physical Exercise:** Short outdoor walks, light stretching.\n\n**🧘 Yoga Postures:** **Anulom Vilom (Alternate Nostril Breathing)**, **Balasana (Child Pose)**.\n\n**💡 Extra Tip:** Focus on present tasks. Limit exposure to negative news."
+    },
+    {
+      "id": "186",
+      "problem": "mood swings",
+      "keywords": ["mood swings", "irritability", "emotional fluctuation", "upset", "unstable emotions"],
+      "remedy": "**🌈 Stabilize Mood**\nBeta, note triggers and practice deep breathing.\n\n**🏃 Physical Exercise:** Light jogging or outdoor walk.\n\n**🧘 Yoga Postures:** **Baddha Konasana (Bound Angle Pose)**, **Shavasana (Corpse Pose)**.\n\n**💡 Extra Tip:** Maintain a balanced diet, sleep well, and avoid caffeine or alcohol."
+    },
+    {
+      "id": "187",
+      "problem": "restlessness",
+      "keywords": ["restlessness", "fidgety", "uneasy", "inability to focus", "mental agitation"],
+      "remedy": "**🧘 Calm Restlessness**\nBeta, practice slow breathing and grounding techniques.\n\n**🏃 Physical Exercise:** Light outdoor walk or stretching.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)**, **Shavasana (Corpse Pose)**.\n\n**💡 Extra Tip:** Engage in a calming hobby like drawing or reading."
+    },
+    {
+      "id": "188",
+      "problem": "over-sensitivity",
+      "keywords": ["over-sensitivity", "emotional reactions", "touchy", "hyper-emotional", "easily upset"],
+      "remedy": "**💖 Manage Sensitivity**\nBeta, pause before reacting. Practice mindfulness meditation.\n\n**🏃 Physical Exercise:** Walk, light yoga stretches.\n\n**🧘 Yoga Postures:** **Balasana (Child Pose)**, **Anulom Vilom (Alternate Nostril Breathing)**.\n\n**💡 Extra Tip:** Journal feelings and reflect before responding. Avoid negative environments."
+    },
+    {
+      "id": "189",
+      "problem": "lack of social skills",
+      "keywords": ["social skills", "communication difficulty", "awkwardness", "shyness", "interaction issues"],
+      "remedy": "**🤝 Improve Social Skills**\nBeta, practice small talk with friends or family.\n\n**🏃 Physical Exercise:** Outdoor group sports or walking with friends.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)**, **Anulom Vilom (Alternate Nostril Breathing)** to feel confident.\n\n**💡 Extra Tip:** Observe social interactions and practice polite conversation daily."
+    },
+    {
+      "id": "190",
+      "problem": "excessive thinking / overanalyzing",
+      "keywords": ["overthinking", "analysis paralysis", "mental clutter", "stress", "rumination"],
+      "remedy": "**🧠 Calm the Mind**\nBeta, schedule thinking time but limit it. Write down thoughts to release them.\n\n**🏃 Physical Exercise:** Walk outdoors or light jogging.\n\n**🧘 Yoga Postures:** **Balasana (Child Pose)**, **Anulom Vilom (Alternate Nostril Breathing)**.\n\n**💡 Extra Tip:** Focus on actionable tasks. Avoid dwelling on hypotheticals."
+    },
+    {
+      "id": "191",
+      "problem": "loneliness & isolation",
+      "keywords": ["lonely", "isolated", "alone", "social withdrawal", "friendless"],
+      "remedy": "**🤗 Overcome Loneliness**\nBeta, connect with friends or community groups. Consider volunteering.\n\n**🏃 Physical Exercise:** Walks in nature, small group exercise.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)**, **Sukhasana (Easy Pose)** with deep breathing.\n\n**💡 Extra Tip:** Adopt a hobby. Focus on personal growth and connection."
+    },
+    {
+      "id": "192",
+      "problem": "anxiety & nervousness",
+      "keywords": ["anxiety", "nervous", "overthinking", "panic", "stress"],
+      "remedy": "**😌 Reduce Anxiety**\nBeta, practice deep breathing or guided meditation.\n\n**🏃 Physical Exercise:** Walk outdoors or light jogging.\n\n**🧘 Yoga Postures:** **Anulom Vilom (Alternate Nostril Breathing)**, **Shavasana (Corpse Pose)**.\n\n**💡 Extra Tip:** Limit caffeine, maintain consistent sleep, and seek supportive friends."
+    },
+    {
+      "id": "193",
+      "problem": "anger management",
+      "keywords": ["anger", "irritation", "frustration", "rage", "short temper"],
+      "remedy": "**🔥 Control Anger**\nBeta, pause and count to ten before reacting.\n\n**🏃 Physical Exercise:** Boxing, jogging, or brisk walking to release tension.\n\n**🧘 Yoga Postures:** **Baddha Konasana (Bound Angle Pose)**, **Shavasana (Corpse Pose)**.\n\n**💡 Extra Tip:** Journal feelings, practice gratitude, and reflect before responding."
+    },
+    {
+      "id": "194",
+      "problem": "low self-esteem",
+      "keywords": ["self-esteem", "insecurity", "lack of confidence", "low value", "self-doubt"],
+      "remedy": "**💖 Build Self-Esteem**\nBeta, acknowledge achievements daily. Speak positive affirmations.\n\n**🏃 Physical Exercise:** Yoga, dancing, or brisk walking.\n\n**🧘 Yoga Postures:** **Virabhadrasana (Warrior Pose)**, **Tadasana (Mountain Pose)**.\n\n**💡 Extra Tip:** Surround yourself with supportive people. Avoid negative self-talk."
+    },
+    {
+      "id": "195",
+      "problem": "lack of concentration",
+      "keywords": ["concentration", "focus", "attention", "distraction", "mind wandering"],
+      "remedy": "**🧘 Improve Concentration**\nBeta, practice 10–15 minutes of meditation daily.\n\n**🏃 Physical Exercise:** Morning walk or light exercise.\n\n**🧘 Yoga Postures:** **Padmasana (Lotus Pose)**, **Ardha Matsyendrasana (Seated Twist)**.\n\n**💡 Extra Tip:** Minimize distractions and create a clean workspace."
+    },
+    {
+      "id": "196",
+      "problem": "fear of failure",
+      "keywords": ["fear", "failure", "nervousness", "insecurity", "lack of courage"],
+      "remedy": "**💪 Overcome Fear of Failure**\nBeta, view failure as learning. Start small and gradually take challenges.\n\n**🏃 Physical Exercise:** Brisk walking, jogging, or yoga.\n\n**🧘 Yoga Postures:** **Virabhadrasana (Warrior Pose)**, **Tadasana (Mountain Pose)** for courage.\n\n**💡 Extra Tip:** Positive self-talk and reflection after mistakes strengthens resilience."
+    },
+    {
+      "id": "197",
+      "problem": "lack of happiness / joy",
+      "keywords": ["happiness", "joy", "low mood", "unhappiness", "discontent"],
+      "remedy": "**😊 Increase Happiness**\nBeta, spend time with loved ones, indulge in hobbies, smile often.\n\n**🏃 Physical Exercise:** Dance, jogging, or outdoor play.\n\n**🧘 Yoga Postures:** **Bhujangasana (Cobra Pose)**, **Setu Bandhasana (Bridge Pose)**.\n\n**💡 Extra Tip:** Practice gratitude journaling. Focus on present joys rather than past regrets."
+    },
+    {
+      "id": "198",
+      "problem": "guilt & regret",
+      "keywords": ["guilt", "regret", "remorse", "self-blame", "past mistakes"],
+      "remedy": "**💭 Overcome Guilt**\nBeta, forgive yourself and learn from mistakes.\n\n**🏃 Physical Exercise:** Light walk or stretching to refresh mind.\n\n**🧘 Yoga Postures:** **Sukhasana (Easy Pose)**, **Shavasana (Corpse Pose)** to relax.\n\n**💡 Extra Tip:** Write letters to yourself expressing forgiveness and acceptance."
+    },
+    {
+      "id": "199",
+      "problem": "over-dependence on others",
+      "keywords": ["dependence", "reliance", "lack of independence", "neediness", "dependency"],
+      "remedy": "**💪 Build Independence**\nBeta, start completing small tasks alone.\n\n**🏃 Physical Exercise:** Outdoor solo activities like walking or cycling.\n\n**🧘 Yoga Postures:** **Tadasana (Mountain Pose)**, **Vrikshasana (Tree Pose)** to instill self-reliance.\n\n**💡 Extra Tip:** Maintain a daily routine and decision journal to track independent actions."
+    },
+    {
+      "id": "200",
+      "problem": "pimples & acne (mental stress related)",
+      "keywords": ["acne", "pimples", "breakout", "skin stress", "hormonal acne", "blemishes"],
+      "remedy": "**✨ Clear Skin Naturally**\nBeta, wash face twice daily with mild soap. Avoid touching face.\n\n**🏃 Physical Exercise:** Light jogging or brisk walk to reduce stress and improve circulation.\n\n**🧘 Yoga Postures:** **Simhasana (Lion Pose)** for facial circulation, **Shavasana (Corpse Pose)** for stress relief.\n\n**💡 Extra Tip:** Drink plenty of water, eat fresh fruits, and manage stress through meditation."
+    }
+
+  ]
+}

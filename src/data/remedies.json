@@ -1,0 +1,1808 @@
+{
+  "disclaimer": "This information is for general knowledge and first-aid guidance only. These are home remedies, not medical prescriptions. Always consult a qualified healthcare provider for serious conditions.",
+  "remedies": [
+    {
+      "id": "R1",
+      "problem": "common cold",
+      "keywords": ["cold", "flu", "runny nose", "sneezing", "blocked nose", "congestion", "chills", "fever", "throat irritation"],
+      "remedy": "Arre beta, it seems like the little cold bug has caught you! Don’t worry, Nani has a few simple tricks. Drink plenty of warm water to keep your throat and nose comfortable. Boil water with ginger slices, a pinch of black pepper, and a teaspoon of honey — sip slowly. Steam inhalation helps: add a few drops of eucalyptus or mint oil to hot water and inhale gently. Eat warm khichdi or soups, avoid cold drinks and sweets for a day or two. Rest well and wrap yourself in a warm shawl if you feel chilly.",
+      "extra_info": "Crush garlic and ginger, wrap in a clean cloth, place on your chest for 5–10 minutes — eases congestion. Drink carrot and beetroot juice for vitamins. Gently massage sides of your nose to ease blockage. If fever lasts more than 3 days, or breathing gets hard, see a doctor.",
+      "escalation": ["persistent high fever", "breathing difficulty", "chest pain"]
+    },
+    {
+      "id": "R2",
+      "problem": "sore throat",
+      "keywords": ["sore throat", "throat pain", "tonsils", "scratchy throat", "painful swallow", "burning throat", "dry throat"],
+      "remedy": "Oh beta, your throat seems irritated. Warm salt-water gargles 2–3 times a day will soothe swelling and pain. Drink warm ginger or tulsi tea with a teaspoon of honey. Suck on warm honey-lemon drops to ease dryness. Avoid yelling or speaking too much. Sip water regularly. Keep your room slightly warm.",
+      "extra_info": "Boil tulsi leaves with crushed black pepper and sip the strained water. Steam inhalation with a pinch of salt in warm water helps. Avoid cold drinks and spicy foods for a couple of days. If swallowing becomes very painful or fever appears, see a doctor.",
+      "escalation": ["difficulty swallowing saliva", "severe swelling", "trouble breathing"]
+    },
+    {
+      "id": "R3",
+      "problem": "headache",
+      "keywords": ["headache", "migraine", "pulsating head", "pain in head", "pressure in head", "temple pain"],
+      "remedy": "Arre beta, headaches are exhausting! Lie down in a quiet, dark room. Apply a cool or warm compress on your forehead, whichever feels soothing. Drink plenty of water. Gently massage temples and back of your neck. Aromas like peppermint or eucalyptus can help relieve tension.",
+      "extra_info": "Avoid staring at screens for long. Drink ginger or tulsi tea to relax nerves. Close your eyes and take deep, slow breaths. If headache is severe, sudden, or comes with vision issues, see a doctor immediately.",
+      "escalation": ["sudden severe headache", "blurred vision", "vomiting with headache"]
+    },
+    {
+      "id": "R4",
+      "problem": "fever",
+      "keywords": ["fever", "high temperature", "body ache", "chills", "hot body", "sweating", "weakness"],
+      "remedy": "Beta, if your body is feeling hot and weak, rest is most important. Drink lots of warm water and herbal teas like tulsi or mint. Light food like khichdi or soup is gentle on your stomach. Use a damp cloth on your forehead to feel a little better. Wear light clothes and rest under a comfortable blanket if you feel chills.",
+      "extra_info": "Sip honey-lemon water to boost immunity. Avoid heavy oily foods. If fever exceeds 102°F or persists more than 3 days, consult a doctor.",
+      "escalation": ["persistent high fever", "confusion", "breathing difficulty"]
+    },
+    {
+      "id": "R5",
+      "problem": "indigestion",
+      "keywords": ["indigestion", "upset stomach", "gas", "bloating", "heartburn", "acid reflux", "stomach pain"],
+      "remedy": "Oh baccha, tummy upset is common. Drink warm water with a pinch of cumin seeds boiled for a few minutes. Ginger tea also helps digestion. Eat light meals, avoid oily or spicy foods for a day or two. Chew food slowly and take small bites.",
+      "extra_info": "Fennel seeds can be chewed after meals to reduce bloating. Gentle walking after meals helps digestion. Avoid lying down immediately after eating. If pain is sharp, severe, or vomiting occurs, consult a doctor.",
+      "escalation": ["persistent vomiting", "blood in stool", "severe abdominal pain"]
+    },
+    {
+      "id": "R6",
+      "problem": "constipation",
+      "keywords": ["constipation", "hard stools", "irregular bowel", "difficulty passing stool", "bloated tummy", "stomach heaviness"],
+      "remedy": "Beta, Nani says drink plenty of warm water and include fibrous foods like soaked chia seeds, fruits like papaya, and green leafy vegetables. Drink warm water in the morning to stimulate your bowels. Gentle abdominal massage in a clockwise direction also helps.",
+      "extra_info": "Prunes or figs can be eaten for natural relief. Avoid heavy fried foods for a day. If constipation lasts more than 5 days or pain is severe, see a doctor.",
+      "escalation": ["severe abdominal pain", "blood in stool", "persistent constipation"]
+    },
+    {
+      "id": "R7",
+      "problem": "acidity",
+      "keywords": ["acidity", "heartburn", "burning chest", "acid reflux", "sour burps", "gas", "indigestion"],
+      "remedy": "Beta, drink a glass of warm water with half teaspoon of baking soda or a few tulsi leaves boiled in water. Eat small meals slowly and avoid spicy, oily foods. Avoid lying down immediately after eating. Light walking after meals helps.",
+      "extra_info": "Chew fennel seeds after meals. Drink coconut water to soothe the stomach. If symptoms persist for more than a few days or chest pain occurs, consult a doctor.",
+      "escalation": ["chest pain", "vomiting blood", "severe persistent heartburn"]
+    },
+    {
+      "id": "R8",
+      "problem": "cough",
+      "keywords": ["cough", "dry cough", "wet cough", "phlegm", "tickling throat", "bronchial irritation"],
+      "remedy": "Oh baccha, cough is irritating! Drink warm honey-lemon water. Ginger tea or tulsi tea helps calm the throat. Gargle warm salt water if throat is sore. Steam inhalation clears congestion. Rest your voice as much as possible.",
+      "extra_info": "Avoid cold drinks and ice cream. Gentle chest massage with warm sesame oil can reduce irritation. If cough persists more than a week, or comes with fever, see a doctor.",
+      "escalation": ["persistent high fever", "difficulty breathing", "blood in sputum"]
+    },
+    {
+      "id": "R9",
+      "problem": "muscle pain",
+      "keywords": ["muscle pain", "body ache", "soreness", "back pain", "joint pain", "stiffness", "cramps"],
+      "remedy": "Beta, gentle stretching and warm compress help. Take a warm bath with a pinch of salt. Massage affected area with warm mustard or sesame oil. Rest the muscles and avoid heavy lifting for a couple of days.",
+      "extra_info": "Epsom salt bath if available. Drink plenty of water to reduce stiffness. If pain is sharp, swelling appears, or weakness occurs, see a doctor.",
+      "escalation": ["swelling", "severe pain", "inability to move limb"]
+    },
+    {
+      "id": "R10",
+      "problem": "minor cuts and bruises",
+      "keywords": ["cut", "scratch", "bruise", "bleeding", "skin injury", "minor wound"],
+      "remedy": "Arre baccha, wash the wound gently with clean water. Apply turmeric powder or aloe vera gel to aid healing. Cover with a clean bandage. For bruises, apply a cold compress to reduce swelling.",
+      "extra_info": "Keep the wound clean and dry. Change dressing daily. For bigger cuts, or if redness and pus appear, see a doctor.",
+      "escalation": ["excessive bleeding", "infection", "deep wounds"]
+    },
+    {
+      "id": "R11",
+      "problem": "dandruff",
+      "keywords": ["dandruff", "itchy scalp", "flaky scalp", "white flakes", "dry scalp"],
+      "remedy": "Beta, massage warm coconut oil with a few drops of lemon juice on the scalp. Leave for 30–45 minutes, then wash with mild shampoo. Regular oiling helps reduce dryness and flakes.",
+      "extra_info": "Aloe vera gel can be applied to scalp once a week. Drink plenty of water. Avoid harsh hair products. Persistent dandruff may need medical advice.",
+      "escalation": ["severe itching", "hair fall", "infection on scalp"]
+    },
+    {
+      "id": "R12",
+      "problem": "hair fall",
+      "keywords": ["hair fall", "hair loss", "thinning hair", "bald patches", "weak hair"],
+      "remedy": "Beta, gently massage your scalp with warm coconut or almond oil 2–3 times a week. Avoid excessive heat and harsh chemicals. Eat protein-rich foods like lentils, eggs, and nuts.",
+      "extra_info": "Amla or fenugreek paste applied once a week strengthens hair. Stay hydrated and sleep well. If hair loss is sudden or in clumps, see a doctor.",
+      "escalation": ["sudden hair loss", "scalp infection", "patchy baldness"]
+    },
+    {
+      "id": "R13",
+      "problem": "skin rash",
+      "keywords": ["rash", "itchy skin", "red spots", "allergic reaction", "skin irritation"],
+      "remedy": "Beta, keep the skin clean and dry. Apply cool compresses or aloe vera gel to soothe irritation. Wear loose cotton clothes. Avoid harsh soaps or chemicals on skin.",
+      "extra_info": "Oatmeal paste can calm itching. If rash spreads or pus appears, see a doctor.",
+      "escalation": ["severe itching", "infection", "spreading rash"]
+    },
+    {
+      "id": "R14",
+      "problem": "burns",
+      "keywords": ["burn", "scald", "heat burn", "minor burn", "skin injury"],
+      "remedy": "Arre baccha, immediately run cool water over the burn for 10–15 minutes. Apply aloe vera gel or honey to soothe the skin. Do not pop blisters.",
+      "extra_info": "Keep burn clean and covered with sterile gauze. Avoid applying ice or butter directly. For large or deep burns, seek medical attention.",
+      "escalation": ["deep burn", "blistering", "infection"]
+    },
+    {
+      "id": "R15",
+      "problem": "foot pain",
+      "keywords": ["foot pain", "heel pain", "arch pain", "plantar fasciitis", "swelling", "muscle strain", "foot cramps"],
+      "remedy": "Beta, soak feet in warm water with Epsom salt for 10–15 minutes. Massage with warm oil to relax muscles. Avoid standing for long hours and wear comfortable shoes.",
+      "extra_info": "Stretch calves and feet gently. If swelling persists or pain is sharp, see a doctor.",
+      "escalation": ["severe pain", "swelling", "inability to walk"]
+    },
+    {
+      "id": "R16",
+      "problem": "eye strain",
+      "keywords": ["eye strain", "tired eyes", "dry eyes", "burning eyes", "headache from eyes", "blurred vision"],
+      "remedy": "Beta, give your eyes a gentle break! Close them for 5–10 minutes frequently. Wash eyes with cool water or apply a cool compress. Look away from screens every 30 minutes and blink often.",
+      "extra_info": "Do palming: rub hands, cup over closed eyes for 2–3 minutes. Eat vitamin-rich foods like carrots and spinach. Avoid harsh lighting. If vision blurs suddenly, see a doctor.",
+      "escalation": ["sudden vision loss", "persistent eye pain", "redness with discharge"]
+    },
+    {
+      "id": "R17",
+      "problem": "nosebleed",
+      "keywords": ["nosebleed", "nose bleeding", "bloody nose", "epistaxis", "nose injury", "dry nose"],
+      "remedy": "Arre baccha, sit upright and lean slightly forward. Pinch the soft part of your nose for 10–15 minutes. Breathe through your mouth and stay calm.",
+      "extra_info": "Apply a cool compress to the nose bridge. Avoid picking or blowing the nose immediately after bleeding stops. Keep nasal passages moist with saline drops.",
+      "escalation": ["bleeding longer than 20 minutes", "frequent nosebleeds", "associated dizziness or fainting"]
+    },
+    {
+      "id": "R18",
+      "problem": "toothache",
+      "keywords": ["toothache", "tooth pain", "tooth cavity", "gum pain", "sensitive teeth", "wisdom tooth pain"],
+      "remedy": "Beta, rinse your mouth with warm salt water to ease pain. Apply a small piece of clove or clove oil to the affected tooth. Drink warm water and avoid very cold or hot foods.",
+      "extra_info": "Chew a fresh garlic clove lightly if tolerated. Maintain oral hygiene. Persistent toothache may need a dentist check.",
+      "escalation": ["severe swelling", "fever with tooth pain", "difficulty opening mouth"]
+    },
+    {
+      "id": "R19",
+      "problem": "earache",
+      "keywords": ["earache", "ear pain", "ear infection", "pain in ear", "blocked ear", "ear inflammation"],
+      "remedy": "Arre beta, lie down with the painful ear facing up. Apply a warm compress outside the ear for comfort. Keep ear dry and avoid inserting objects.",
+      "extra_info": "Steam inhalation can ease Eustachian tube pressure. Garlic oil warmed slightly may help, applied carefully at ear entrance (not deep inside). See a doctor if pain persists.",
+      "escalation": ["fluid discharge from ear", "hearing loss", "high fever"]
+    },
+    {
+      "id": "R20",
+      "problem": "menstrual cramps",
+      "keywords": ["period pain", "menstrual cramps", "stomach cramps", "abdominal pain", "back pain during periods", "dysmenorrhea"],
+      "remedy": "Beta, lie down comfortably and place a warm water bottle on your lower abdomen. Drink warm ginger or chamomile tea. Gentle stretching and light walking can help ease cramps.",
+      "extra_info": "Avoid cold foods and drinks. Light massage with warm sesame oil on lower abdomen can soothe pain. If cramps are very severe or unusual, consult a doctor.",
+      "escalation": ["very heavy bleeding", "severe pain unrelieved by home remedies", "fainting"]
+    },
+    {
+      "id": "R21",
+      "problem": "nausea",
+      "keywords": ["nausea", "vomiting feeling", "queasy", "upset stomach", "motion sickness", "pregnancy nausea"],
+      "remedy": "Oh baccha, sip small amounts of warm ginger tea or plain water frequently. Sit upright and breathe slowly. Avoid strong smells and heavy foods.",
+      "extra_info": "Chew fennel or cardamom seeds to reduce queasiness. Take fresh air if possible. If nausea persists, see a doctor for proper care.",
+      "escalation": ["persistent vomiting", "dehydration", "blood in vomit"]
+    },
+    {
+      "id": "R22",
+      "problem": "insomnia",
+      "keywords": ["insomnia", "sleeplessness", "trouble sleeping", "restless sleep", "cannot sleep", "late night awake"],
+      "remedy": "Beta, dim the lights and avoid screens 1 hour before sleep. Drink warm milk with a pinch of turmeric or nutmeg. Practice deep breathing or gentle meditation before bed.",
+      "extra_info": "Take a warm bath 30 minutes before sleeping. Keep room cool and quiet. Avoid caffeine in the evening. If sleeplessness continues, consult a doctor.",
+      "escalation": ["chronic insomnia", "severe daytime fatigue", "hallucinations"]
+    },
+    {
+      "id": "R23",
+      "problem": "nose congestion",
+      "keywords": ["blocked nose", "stuffy nose", "nasal congestion", "difficulty breathing", "runny nose", "sinus blockage"],
+      "remedy": "Arre beta, inhale steam from hot water with a few drops of eucalyptus or peppermint oil. Drink warm liquids to thin mucus. Sleep with head slightly elevated.",
+      "extra_info": "Gently massage sides of the nose. Use saline nasal spray. Avoid dust and cold drafts. Persistent congestion may require medical advice.",
+      "escalation": ["high fever", "facial swelling", "breathing difficulty"]
+    },
+    {
+      "id": "R24",
+      "problem": "allergic reactions",
+      "keywords": ["allergy", "allergic reaction", "itching", "rash", "sneezing", "swelling", "hives"],
+      "remedy": "Beta, wash affected skin with cool water. Apply aloe vera gel or cold compress to soothe itching. Avoid the allergen if known.",
+      "extra_info": "Wear loose, cotton clothing. Drink plenty of water to flush allergens. If reaction worsens, seek medical attention immediately.",
+      "escalation": ["difficulty breathing", "swelling of lips or tongue", "rash spreading quickly"]
+    },
+    {
+      "id": "R25",
+      "problem": "dehydration",
+      "keywords": ["dehydration", "dry mouth", "thirst", "dizziness", "weakness", "low fluid", "fatigue"],
+      "remedy": "Arre baccha, sip small amounts of water frequently. Drink coconut water or oral rehydration solution (ORS). Rest in a cool place.",
+      "extra_info": "Avoid sugary or caffeinated drinks. Eat juicy fruits like watermelon or oranges. If dizziness continues, seek medical help.",
+      "escalation": ["confusion", "persistent fainting", "very low urine output"]
+    },
+    {
+      "id": "R26",
+      "problem": "motion sickness",
+      "keywords": ["motion sickness", "travel sickness", "nausea during travel", "vomiting in car", "sea sickness", "dizzy while traveling"],
+      "remedy": "Beta, sit facing forward, focus on the horizon. Breathe slowly and sip water or ginger tea. Take breaks to stretch if traveling by car.",
+      "extra_info": "Chew small pieces of ginger. Avoid heavy meals before travel. If symptoms persist, consider consulting a doctor.",
+      "escalation": ["persistent vomiting", "dehydration", "severe dizziness"]
+    },
+    {
+      "id": "R27",
+      "problem": "cold feet or hands",
+      "keywords": ["cold hands", "cold feet", "poor circulation", "numbness", "chilly extremities"],
+      "remedy": "Beta, rub hands and feet gently to stimulate circulation. Soak in warm water for 5–10 minutes. Keep them covered with socks or gloves.",
+      "extra_info": "Move fingers and toes frequently. Drink warm liquids to improve blood flow. Persistent cold may need medical evaluation.",
+      "escalation": ["persistent numbness", "discoloration of fingers/toes", "pain in extremities"]
+    },
+    {
+      "id": "R28",
+      "problem": "minor burns",
+      "keywords": ["burn", "scald", "hot water burn", "kitchen burn", "skin injury"],
+      "remedy": "Immediately rinse the area with cool running water for 10–15 minutes. Apply aloe vera gel or honey to soothe skin.",
+      "extra_info": "Do not pop blisters. Keep area clean and lightly covered. For deep or large burns, seek medical attention.",
+      "escalation": ["deep burn", "blistering", "infection"]
+    },
+    {
+      "id": "R29",
+      "problem": "minor sprains",
+      "keywords": ["sprain", "twist", "ankle pain", "wrist sprain", "joint injury", "swelling"],
+      "remedy": "Arre beta, rest the affected joint. Apply a cold compress for 15–20 minutes. Elevate the limb. Gentle massage with warm oil after 24 hours may help.",
+      "extra_info": "Avoid putting weight on the joint immediately. Use bandage support if needed. Persistent pain requires medical evaluation.",
+      "escalation": ["severe swelling", "inability to move joint", "extreme pain"]
+    },
+    {
+      "id": "R30",
+      "problem": "sunburn",
+      "keywords": ["sunburn", "skin redness", "burned skin", "heat burn", "sun exposure", "peeling skin"],
+      "remedy": "Beta, apply cool compress or aloe vera gel on sunburnt skin. Drink water to stay hydrated. Stay out of direct sun until skin heals.",
+      "extra_info": "Oatmeal paste soothes irritation. Moisturize gently. If blisters appear or skin is severely damaged, consult a doctor.",
+      "escalation": ["blistering", "severe pain", "fever or chills"]
+    },
+    {
+      "id": "R31",
+      "problem": "anxiety or stress",
+      "keywords": ["stress", "anxiety", "worry", "nervousness", "restlessness", "tension", "overthinking"],
+      "remedy": "Beta, take a deep breath and sit comfortably. Close your eyes and focus on your breathing. Drink warm chamomile or tulsi tea. Listen to calming music or nature sounds.",
+      "extra_info": "Gentle stretching or yoga helps relax muscles. Write down your worries to relieve the mind. Avoid caffeine and screens before sleeping. Persistent anxiety should be discussed with a counselor.",
+      "escalation": ["panic attacks", "persistent insomnia", "severe emotional distress"]
+    },
+    {
+      "id": "R32",
+      "problem": "dry skin",
+      "keywords": ["dry skin", "flaky skin", "rough skin", "itchy skin", "chapped skin", "cracked skin"],
+      "remedy": "Beta, massage coconut or almond oil on the skin after bathing. Drink plenty of water to stay hydrated. Use mild soap and avoid hot water showers.",
+      "extra_info": "Apply aloe vera gel to very dry patches. Eat foods rich in omega-3 like flax seeds or walnuts. If dryness persists or cracks bleed, consult a doctor.",
+      "escalation": ["bleeding cracks", "infection", "severe itch"]
+    },
+    {
+      "id": "R33",
+      "problem": "dry lips",
+      "keywords": ["chapped lips", "dry lips", "cracked lips", "bleeding lips", "peeling lips"],
+      "remedy": "Arre baccha, apply a thin layer of honey or petroleum jelly to lips. Drink enough water. Avoid licking lips frequently.",
+      "extra_info": "Exfoliate gently with sugar and honey once a week. Include vitamin-rich foods in diet. Persistent dry or bleeding lips may need a doctor.",
+      "escalation": ["bleeding lips", "painful cracks", "infection"]
+    },
+    {
+      "id": "R34",
+      "problem": "cold hands",
+      "keywords": ["cold hands", "numb hands", "poor circulation", "chilly fingers", "hand discomfort"],
+      "remedy": "Beta, rub hands gently to increase blood flow. Soak in warm water. Keep hands covered with gloves.",
+      "extra_info": "Move fingers frequently. Drink warm liquids. Persistent cold or numbness should be checked by a doctor.",
+      "escalation": ["persistent numbness", "discoloration", "pain in hands"]
+    },
+    {
+      "id": "R35",
+      "problem": "cold feet",
+      "keywords": ["cold feet", "numb feet", "poor circulation", "chilly toes", "foot discomfort"],
+      "remedy": "Arre baccha, soak feet in warm water with a little salt. Massage with warm oil. Keep feet covered with socks.",
+      "extra_info": "Stretch toes and move feet often. Drink warm beverages to improve circulation. Persistent cold or numbness may need medical evaluation.",
+      "escalation": ["persistent numbness", "discoloration", "pain in feet"]
+    },
+    {
+      "id": "R36",
+      "problem": "ear wax blockage",
+      "keywords": ["ear wax", "ear blockage", "ear congestion", "hearing difficulty", "ear discomfort"],
+      "remedy": "Beta, soften wax by putting a few drops of warm olive or sesame oil in the ear for a few minutes. Do not insert objects inside.",
+      "extra_info": "Tilt head to allow wax to drain naturally. See a doctor if wax persists or causes pain.",
+      "escalation": ["hearing loss", "painful ear", "discharge from ear"]
+    },
+    {
+      "id": "R37",
+      "problem": "foot odor",
+      "keywords": ["foot odor", "smelly feet", "sweaty feet", "foot hygiene", "bad smell from feet"],
+      "remedy": "Beta, wash feet daily with mild soap and dry thoroughly. Soak in warm water with salt or baking soda for 10 minutes.",
+      "extra_info": "Wear clean socks and breathable shoes. Sprinkle talcum powder if necessary. Persistent odor may need medical attention.",
+      "escalation": ["persistent odor despite hygiene", "infection", "skin irritation"]
+    },
+    {
+      "id": "R38",
+      "problem": "bloated stomach",
+      "keywords": ["bloating", "stomach swelling", "gas", "abdominal discomfort", "full stomach", "indigestion"],
+      "remedy": "Beta, drink warm water with a pinch of cumin seeds boiled for a few minutes. Gentle tummy massage clockwise helps. Avoid carbonated drinks and heavy meals.",
+      "extra_info": "Walk gently after meals to aid digestion. Chew fennel seeds. If bloating persists or is painful, consult a doctor.",
+      "escalation": ["sharp abdominal pain", "vomiting", "persistent bloating"]
+    },
+    {
+      "id": "R39",
+      "problem": "flatulence",
+      "keywords": ["gas", "flatulence", "belching", "stomach noise", "abdominal discomfort"],
+      "remedy": "Beta, drink warm water with a pinch of carom seeds. Eat slowly and avoid gulping air while eating.",
+      "extra_info": "Light walking after meals helps. Avoid carbonated drinks. Persistent severe gas may need doctor consultation.",
+      "escalation": ["severe pain", "bloody stool", "vomiting"]
+    },
+    {
+      "id": "R40",
+      "problem": "back pain",
+      "keywords": ["back pain", "lower back ache", "muscle strain", "stiffness", "posture pain", "lumbar pain"],
+      "remedy": "Beta, gentle stretching and applying a warm compress helps. Lie on a firm mattress. Avoid lifting heavy objects.",
+      "extra_info": "Walk gently to keep muscles active. Massage with warm oil. Persistent or sharp pain should be checked by a doctor.",
+      "escalation": ["numbness in legs", "severe pain", "weakness"]
+    },
+    {
+      "id": "R41",
+      "problem": "neck stiffness",
+      "keywords": ["neck pain", "stiff neck", "muscle stiffness", "tension", "pain in neck"],
+      "remedy": "Arre baccha, gently rotate neck and apply a warm compress. Maintain proper posture while sitting or sleeping.",
+      "extra_info": "Massage with warm oil. Avoid sudden movements. If stiffness persists or radiates to arms, see a doctor.",
+      "escalation": ["numbness in arms", "sharp pain", "weakness"]
+    },
+    {
+      "id": "R42",
+      "problem": "shoulder pain",
+      "keywords": ["shoulder pain", "muscle pain", "joint pain", "frozen shoulder", "stiffness", "discomfort"],
+      "remedy": "Beta, gently stretch shoulders and apply warm oil massage. Avoid lifting heavy weights.",
+      "extra_info": "Light exercises improve mobility. Persistent severe pain should be evaluated by a doctor.",
+      "escalation": ["loss of motion", "sharp pain", "swelling"]
+    },
+    {
+      "id": "R43",
+      "problem": "knee pain",
+      "keywords": ["knee pain", "joint pain", "arthritis", "stiff knee", "swelling", "muscle strain"],
+      "remedy": "Beta, rest the knee, apply warm compress or gentle massage with warm oil. Avoid sudden movements or heavy lifting.",
+      "extra_info": "Gentle stretching and walking helps. Persistent swelling or sharp pain should be checked by a doctor.",
+      "escalation": ["swelling", "sharp pain", "inability to move knee"]
+    },
+    {
+      "id": "R44",
+      "problem": "sun headache",
+      "keywords": ["sun headache", "heat headache", "migraine", "head pressure", "throbbing head"],
+      "remedy": "Beta, rest in a cool, shaded place. Drink water and apply a cool compress on your forehead.",
+      "extra_info": "Wear a hat in sun, avoid direct sunlight. If headache persists or is severe, consult a doctor.",
+      "escalation": ["nausea", "blurred vision", "confusion"]
+    },
+    {
+      "id": "R45",
+      "problem": "jet lag",
+      "keywords": ["jet lag", "travel fatigue", "sleep disturbance", "time zone change", "fatigue after travel"],
+      "remedy": "Beta, try to adjust sleep according to new time zone gradually. Drink water, avoid heavy meals at night. Take short walks to refresh.",
+      "extra_info": "Expose yourself to sunlight in morning. Avoid caffeine close to bedtime. Persistent sleep disruption may need doctor consultation.",
+      "escalation": ["severe fatigue", "insomnia", "dizziness"]
+    },
+    {
+      "id": "R46",
+      "problem": "insomnia",
+      "keywords": ["insomnia", "sleeplessness", "difficulty sleeping", "restless night", "trouble sleeping"],
+      "remedy": "Beta, drink warm milk with a pinch of turmeric or a few drops of honey before bed. Sit quietly, dim lights, and take deep breaths to relax.",
+      "extra_info": "Gentle stretching or yoga helps calm the mind. Avoid screens and caffeine in the evening. Persistent sleep issues may need a doctor.",
+      "escalation": ["persistent sleeplessness", "severe fatigue", "drowsiness during day"]
+    },
+    {
+      "id": "R47",
+      "problem": "morning fatigue",
+      "keywords": ["morning fatigue", "tiredness", "lack of energy", "low motivation", "sleepiness"],
+      "remedy": "Beta, wake up slowly and stretch your body gently. Drink a glass of warm water to kickstart metabolism. Eat a light, nutritious breakfast.",
+      "extra_info": "Short walk in sunlight helps energize. Avoid heavy meals late at night. Persistent fatigue should be checked by a doctor.",
+      "escalation": ["persistent tiredness", "dizziness", "rapid heartbeat"]
+    },
+    {
+      "id": "R48",
+      "problem": "toothache",
+      "keywords": ["toothache", "dental pain", "sensitive tooth", "swollen gums", "tooth discomfort"],
+      "remedy": "Beta, rinse mouth with warm salt water. Apply clove oil gently on the aching tooth or gum. Chew a small piece of clove if tolerable.",
+      "extra_info": "Avoid very hot or cold foods. Brush gently. If pain persists or swelling increases, see a dentist.",
+      "escalation": ["severe swelling", "fever", "pus discharge"]
+    },
+    {
+      "id": "R49",
+      "problem": "nausea",
+      "keywords": ["nausea", "feeling sick", "upset stomach", "vomiting urge", "queasy"],
+      "remedy": "Beta, sip warm ginger water or chew a small piece of fresh ginger. Stay hydrated and take small sips of water or herbal tea.",
+      "extra_info": "Eat light meals like toast or rice if hungry. Avoid strong smells. Persistent nausea should be evaluated by a doctor.",
+      "escalation": ["vomiting blood", "persistent nausea", "dehydration"]
+    },
+    {
+      "id": "R50",
+      "problem": "diarrhea",
+      "keywords": ["diarrhea", "loose stool", "frequent bowel movement", "stomach upset", "watery stool"],
+      "remedy": "Beta, drink plenty of warm water with a pinch of salt and sugar. Eat soft foods like rice, khichdi, or bananas. Avoid oily and spicy foods.",
+      "extra_info": "Yogurt helps restore gut bacteria. Rest well. Persistent or severe diarrhea may need doctor consultation.",
+      "escalation": ["blood in stool", "dehydration", "persistent diarrhea"]
+    },
+    {
+      "id": "R51",
+      "problem": "vomiting",
+      "keywords": ["vomiting", "throwing up", "nausea", "stomach upset", "queasy"],
+      "remedy": "Beta, sip small amounts of warm water or ginger tea slowly. Rest in a comfortable position. Avoid solid food until vomiting stops.",
+      "extra_info": "After vomiting settles, eat light foods like rice or toast. Persistent vomiting requires immediate medical attention.",
+      "escalation": ["persistent vomiting", "vomiting blood", "dehydration"]
+    },
+    {
+      "id": "R52",
+      "problem": "menstrual cramps",
+      "keywords": ["period pain", "menstrual cramps", "lower abdomen pain", "dysmenorrhea", "stomach ache during period"],
+      "remedy": "Beta, place a warm heating pad or hot water bottle on lower abdomen. Drink warm ginger or fennel tea. Light stretching can help ease cramps.",
+      "extra_info": "Rest and avoid heavy lifting. Gentle massage on lower back may provide relief. Severe or irregular cramps should be checked by a doctor.",
+      "escalation": ["heavy bleeding", "severe pain", "dizziness"]
+    },
+    {
+      "id": "R53",
+      "problem": "morning sickness",
+      "keywords": ["morning sickness", "nausea during pregnancy", "vomiting", "pregnancy upset stomach"],
+      "remedy": "Beta, sip small amounts of warm ginger or mint tea. Eat small, frequent meals and avoid strong smells.",
+      "extra_info": "Crackers or dry toast before getting out of bed helps. Persistent or severe nausea during pregnancy should be discussed with a doctor.",
+      "escalation": ["persistent vomiting", "dehydration", "weight loss"]
+    },
+    {
+      "id": "R54",
+      "problem": "cold sores",
+      "keywords": ["cold sore", "lip sore", "blister on lips", "herpes simplex", "painful lip"],
+      "remedy": "Beta, apply a small amount of aloe vera gel or honey on the sore. Keep lips clean and avoid touching.",
+      "extra_info": "Avoid sharing utensils or towels. Cold compress can reduce discomfort. Persistent or large sores require a doctor.",
+      "escalation": ["spreading sores", "severe pain", "fever"]
+    },
+    {
+      "id": "R55",
+      "problem": "eye strain",
+      "keywords": ["eye strain", "tired eyes", "dry eyes", "screen fatigue", "headache from eyes"],
+      "remedy": "Beta, close your eyes for a few minutes and gently massage around eyes. Take breaks from screens every 30–40 minutes. Blink often.",
+      "extra_info": "Use warm compress on eyes. Drink water to stay hydrated. Persistent pain or blurred vision requires an eye doctor.",
+      "escalation": ["blurred vision", "eye pain", "sensitivity to light"]
+    },
+    {
+      "id": "R56",
+      "problem": "watery eyes",
+      "keywords": ["watery eyes", "tearing", "eye irritation", "itchy eyes", "allergic eyes"],
+      "remedy": "Beta, rinse eyes with clean water or saline. Avoid rubbing eyes. Apply a cool compress to soothe.",
+      "extra_info": "Check for allergens around. Persistent redness or discharge needs a doctor.",
+      "escalation": ["redness", "painful eyes", "infection"]
+    },
+    {
+      "id": "R57",
+      "problem": "runny nose",
+      "keywords": ["runny nose", "nasal discharge", "sneezing", "blocked nose", "cold"],
+      "remedy": "Arre baccha, use a soft tissue to gently wipe. Drink warm fluids like ginger or tulsi tea. Steam inhalation helps clear nose.",
+      "extra_info": "Massage sides of nose gently. Avoid cold drinks. Persistent or thick colored discharge may need doctor advice.",
+      "escalation": ["persistent fever", "breathing difficulty", "green/yellow discharge"]
+    },
+    {
+      "id": "R58",
+      "problem": "sneezing",
+      "keywords": ["sneezing", "allergy", "cold", "nasal irritation", "itchy nose"],
+      "remedy": "Beta, wash hands often and avoid dust or allergens. Steam inhalation with mint helps. Drink warm water and tulsi tea.",
+      "extra_info": "Keep your environment clean. Persistent sneezing with fever may need a doctor.",
+      "escalation": ["breathing difficulty", "high fever", "severe nasal congestion"]
+    },
+    {
+      "id": "R59",
+      "problem": "earache",
+      "keywords": ["earache", "ear pain", "ear infection", "swollen ear", "ear discomfort"],
+      "remedy": "Beta, apply a warm compress outside the ear. Lie on the other side to ease discomfort. Avoid inserting anything into ear.",
+      "extra_info": "Sip warm fluids to stay hydrated. Persistent ear pain with fever requires medical attention.",
+      "escalation": ["hearing loss", "pus from ear", "severe swelling"]
+    },
+    {
+      "id": "R60",
+      "problem": "tonsillitis",
+      "keywords": ["tonsillitis", "swollen tonsils", "sore throat", "painful swallowing", "red throat"],
+      "remedy": "Beta, gargle warm salt water 2–3 times a day. Drink warm herbal teas like tulsi or ginger with honey. Rest your voice.",
+      "extra_info": "Soft foods are easier to swallow. Persistent high fever or difficulty swallowing requires a doctor.",
+      "escalation": ["severe swelling", "breathing difficulty", "persistent high fever"]
+    },
+    {
+      "id": "R61",
+      "problem": "flu",
+      "keywords": ["influenza", "flu", "fever", "body ache", "chills", "weakness"],
+      "remedy": "Beta, rest well and drink warm fluids like herbal teas. Eat light, nutritious food like khichdi. Use a warm compress for body aches.",
+      "extra_info": "Steam inhalation helps breathing. Avoid cold drinks and heavy food. Persistent high fever or breathing difficulty needs a doctor.",
+      "escalation": ["high fever", "breathing issues", "severe body ache"]
+    },
+    {
+      "id": "R62",
+      "problem": "cough with phlegm",
+      "keywords": ["wet cough", "phlegm", "chest congestion", "productive cough", "thick mucus"],
+      "remedy": "Beta, drink warm ginger-tulsi tea. Steam inhalation loosens mucus. Gently massage chest with warm sesame oil.",
+      "extra_info": "Avoid cold drinks and ice cream. Persistent cough for more than a week requires a doctor.",
+      "escalation": ["blood in sputum", "breathing difficulty", "high fever"]
+    },
+    {
+      "id": "R63",
+      "problem": "dry cough",
+      "keywords": ["dry cough", "tickling throat", "non-productive cough", "irritating cough", "persistent cough"],
+      "remedy": "Beta, sip warm honey-lemon water. Tulsi or ginger tea helps soothe throat. Avoid speaking too much.",
+      "extra_info": "Steam inhalation can reduce irritation. Persistent cough or pain should be checked by a doctor.",
+      "escalation": ["breathing difficulty", "high fever", "chest pain"]
+    },
+    {
+      "id": "R64",
+      "problem": "nosebleed",
+      "keywords": ["nosebleed", "bleeding nose", "epistaxis", "blood from nose"],
+      "remedy": "Beta, sit upright and pinch the soft part of your nose for 10–15 minutes. Lean slightly forward.",
+      "extra_info": "Avoid tilting head back. Apply cold compress on nose bridge. Persistent or heavy bleeding needs a doctor.",
+      "escalation": ["heavy bleeding", "dizziness", "recurrent nosebleeds"]
+    },
+    {
+      "id": "R65",
+      "problem": "motion sickness",
+      "keywords": ["motion sickness", "travel sickness", "nausea in vehicle", "dizziness in car or bus"],
+      "remedy": "Beta, look at the horizon and breathe slowly. Eat light before travel. Sip ginger tea or chew ginger.",
+      "extra_info": "Avoid reading or screens while traveling. Persistent nausea needs doctor attention.",
+      "escalation": ["vomiting", "severe dizziness", "dehydration"]
+    },
+    {
+      "id": "R66",
+      "problem": "hangover",
+      "keywords": ["hangover", "headache after drinking", "nausea after alcohol", "fatigue", "body ache after alcohol"],
+      "remedy": "Beta, drink plenty of water and warm lemon water. Eat light meals like toast or fruits. Rest in a quiet place.",
+      "extra_info": "Ginger tea helps with nausea. Avoid alcohol until fully recovered. Persistent headache or vomiting may need medical check.",
+      "escalation": ["persistent vomiting", "severe dehydration", "confusion"]
+    },
+    {
+      "id": "R67",
+      "problem": "blisters",
+      "keywords": ["blisters", "small fluid pockets", "friction sores", "minor skin injury"],
+      "remedy": "Beta, keep blisters clean and do not pop them. Cover with a soft bandage if necessary.",
+      "extra_info": "Apply aloe vera or honey gently. If blisters get red, swollen, or painful, see a doctor.",
+      "escalation": ["infection", "spreading blisters", "severe pain"]
+    },
+    {
+      "id": "R68",
+      "problem": "sweaty hands",
+      "keywords": ["sweaty hands", "excessive sweating", "palms moisture", "hand sweat", "hyperhidrosis"],
+      "remedy": "Beta, wash hands with mild soap and dry well. Apply a little talcum powder or cornstarch to absorb moisture.",
+      "extra_info": "Avoid spicy food and caffeine. Persistent excessive sweating may need medical evaluation.",
+      "escalation": ["persistent wet hands", "skin irritation", "odor"]
+    },
+    {
+      "id": "R69",
+      "problem": "sweaty feet",
+      "keywords": ["sweaty feet", "excessive foot sweat", "smelly feet", "moist feet", "foot hyperhidrosis"],
+      "remedy": "Beta, wash feet daily, dry thoroughly. Use breathable shoes and cotton socks.",
+      "extra_info": "Soak feet in warm water with salt or baking soda. Persistent sweat or odor may need medical advice.",
+      "escalation": ["persistent odor", "skin infection", "blisters"]
+    },
+    {
+      "id": "R70",
+      "problem": "snoring",
+      "keywords": ["snoring", "sleep apnea", "loud breathing during sleep", "disrupted sleep"],
+      "remedy": "Beta, sleep on your side instead of back. Elevate your head slightly. Avoid heavy meals before bed.",
+      "extra_info": "Keep nasal passages clear. Persistent loud snoring may need a doctor to check for sleep apnea.",
+      "escalation": ["breathing pauses", "daytime sleepiness", "chest pain"]
+    },
+    {
+      "id": "R71",
+      "problem": "bad breath",
+      "keywords": ["bad breath", "halitosis", "mouth odor", "unpleasant breath", "smelly mouth"],
+      "remedy": "Beta, brush teeth twice a day, use tongue cleaner. Drink water frequently.",
+      "extra_info": "Chew fennel seeds or mint leaves. Avoid strong-smelling foods. Persistent odor may need dentist consultation.",
+      "escalation": ["persistent odor", "gum bleeding", "tooth pain"]
+    },
+    {
+      "id": "R72",
+      "problem": "ingrown toenail",
+      "keywords": ["ingrown toenail", "painful nail", "swollen toe", "nail infection", "toe discomfort"],
+      "remedy": "Beta, soak foot in warm water with salt for 10–15 minutes. Gently lift nail edge without force.",
+      "extra_info": "Wear comfortable shoes. Persistent pain, swelling, or pus requires a doctor.",
+      "escalation": ["infection", "severe pain", "spreading redness"]
+    },
+    {
+      "id": "R73",
+      "problem": "sunburn",
+      "keywords": ["sunburn", "burned skin", "red skin from sun", "skin pain", "heat burn"],
+      "remedy": "Beta, apply cool compresses and aloe vera gel. Drink plenty of water. Stay out of sun until healed.",
+      "extra_info": "Avoid scratching or peeling skin. Persistent pain or blistering needs doctor attention.",
+      "escalation": ["blisters", "severe pain", "infection"]
+    },
+    {
+      "id": "R74",
+      "problem": "chapped hands",
+      "keywords": ["chapped hands", "dry hands", "cracked skin", "rough hands", "hand dryness"],
+      "remedy": "Beta, apply coconut or almond oil after washing hands. Wear gloves while cleaning or in cold weather.",
+      "extra_info": "Use mild soap. Persistent cracks or bleeding require doctor consultation.",
+      "escalation": ["bleeding cracks", "painful hands", "infection"]
+    },
+    {
+      "id": "R75",
+      "problem": "chapped feet",
+      "keywords": ["chapped feet", "dry feet", "cracked heels", "rough feet", "foot dryness"],
+      "remedy": "Beta, soak feet in warm water for 10 minutes. Apply thick layer of coconut or shea butter before bed and wear socks.",
+      "extra_info": "Avoid walking barefoot on hard surfaces. Persistent cracks or bleeding require a doctor.",
+      "escalation": ["bleeding cracks", "painful heels", "infection"]
+    },
+    {
+      "id": "R76",
+      "problem": "dry hair",
+      "keywords": ["dry hair", "frizzy hair", "brittle hair", "rough hair", "lack of moisture"],
+      "remedy": "Beta, massage your scalp gently with warm coconut or almond oil once or twice a week. Avoid washing hair with very hot water.",
+      "extra_info": "Apply a hair mask with yogurt and honey for 30 minutes once a week. Eat foods rich in omega-3 like flaxseeds and nuts. Persistent dryness may need dermatologist advice.",
+      "escalation": ["severe hair breakage", "hair loss", "scalp irritation"]
+    },
+    {
+      "id": "R77",
+      "problem": "oily hair",
+      "keywords": ["oily hair", "greasy hair", "scalp oiliness", "hair looks wet", "sticky hair"],
+      "remedy": "Beta, rinse hair with lukewarm water and use mild herbal shampoo. Avoid excessive oiling. Wash hair regularly but gently.",
+      "extra_info": "Rinse hair with a mixture of water and a teaspoon of lemon juice to control oil. Avoid touching hair too often. Persistent oiliness may need dermatologist check.",
+      "escalation": ["scalp infection", "persistent itching", "hair fall"]
+    },
+    {
+      "id": "R78",
+      "problem": "dandruff",
+      "keywords": ["dandruff", "flaky scalp", "white flakes", "itchy scalp", "dry scalp"],
+      "remedy": "Beta, massage warm coconut oil with a few drops of lemon juice on scalp. Leave 30–45 minutes, then wash gently.",
+      "extra_info": "Aloe vera gel applied once a week can soothe scalp. Avoid harsh chemicals. Persistent dandruff may need dermatologist advice.",
+      "escalation": ["severe itching", "hair fall", "infection on scalp"]
+    },
+    {
+      "id": "R79",
+      "problem": "hair fall",
+      "keywords": ["hair fall", "thinning hair", "bald patches", "weak hair", "hair shedding"],
+      "remedy": "Beta, massage scalp gently with warm coconut or almond oil 2–3 times a week. Eat protein-rich foods like eggs, lentils, and nuts.",
+      "extra_info": "Fenugreek or amla paste once a week strengthens hair. Avoid excessive heat and chemical treatments. Sudden hair fall may need medical evaluation.",
+      "escalation": ["patchy baldness", "sudden hair loss", "scalp infection"]
+    },
+    {
+      "id": "R80",
+      "problem": "split ends",
+      "keywords": ["split ends", "hair tips damage", "hair breakage", "frayed ends", "damaged hair"],
+      "remedy": "Beta, apply a few drops of coconut or argan oil on tips before sleep. Trim hair every 6–8 weeks.",
+      "extra_info": "Avoid excessive heat styling. Use gentle hair combs. Persistent breakage may require dermatologist consultation.",
+      "escalation": ["excessive breakage", "thinning hair", "brittle hair"]
+    },
+    {
+      "id": "R81",
+      "problem": "frizzy hair",
+      "keywords": ["frizzy hair", "unmanageable hair", "hair flyaways", "rough hair", "dry hair"],
+      "remedy": "Beta, apply a small amount of warm coconut or almond oil on damp hair. Avoid rubbing hair roughly while drying.",
+      "extra_info": "Use silk pillow covers. Light hair serum can help tame frizz. Persistent frizz may need hair specialist advice.",
+      "escalation": ["severe dryness", "hair breakage", "scalp irritation"]
+    },
+    {
+      "id": "R82",
+      "problem": "greying hair",
+      "keywords": ["grey hair", "premature greying", "white hair", "ageing hair", "hair color loss"],
+      "remedy": "Beta, massage scalp with amla oil or coconut oil mixed with curry leaves oil weekly. Eat iron and vitamin B-rich foods.",
+      "extra_info": "Avoid stress and harsh chemical dyes. Grey hair is natural, but sudden premature greying may require doctor advice.",
+      "escalation": ["sudden greying", "patchy hair color", "nutritional deficiencies"]
+    },
+    {
+      "id": "R83",
+      "problem": "scalp itch",
+      "keywords": ["itchy scalp", "scratching scalp", "dry scalp", "scalp irritation", "itching hair"],
+      "remedy": "Beta, rinse hair with cool water and herbal shampoo. Massage scalp with aloe vera gel to soothe.",
+      "extra_info": "Avoid harsh chemical hair products. Persistent itching with redness may require dermatologist consultation.",
+      "escalation": ["redness", "scalp infection", "hair loss"]
+    },
+    {
+      "id": "R84",
+      "problem": "hair thinning",
+      "keywords": ["thinning hair", "loss of volume", "weak hair", "receding hairline", "scalp visibility"],
+      "remedy": "Beta, eat protein-rich and vitamin-rich foods. Massage scalp gently with warm coconut or almond oil 2–3 times a week.",
+      "extra_info": "Fenugreek paste once a week can strengthen hair. Avoid excessive chemical treatments. Persistent thinning should be evaluated by a doctor.",
+      "escalation": ["patchy hair loss", "sudden thinning", "scalp infection"]
+    },
+    {
+      "id": "R85",
+      "problem": "oily scalp",
+      "keywords": ["oily scalp", "greasy scalp", "hair oiliness", "scalp sweat", "sticky hair"],
+      "remedy": "Beta, rinse hair with lukewarm water and mild herbal shampoo. Limit oiling hair excessively.",
+      "extra_info": "Rinse scalp with lemon water occasionally. Persistent oiliness may need dermatologist advice.",
+      "escalation": ["hair fall", "scalp infection", "persistent oiliness"]
+    },
+    {
+      "id": "R86",
+      "problem": "dry scalp",
+      "keywords": ["dry scalp", "flaky scalp", "itchy scalp", "scalp irritation", "scalp dryness"],
+      "remedy": "Beta, massage scalp gently with warm coconut or almond oil. Use mild shampoo and avoid hot water.",
+      "extra_info": "Aloe vera gel or yogurt masks help soothe dryness. Persistent dryness or redness may need dermatologist advice.",
+      "escalation": ["severe itching", "hair fall", "scalp infection"]
+    },
+    {
+      "id": "R87",
+      "problem": "hair breakage",
+      "keywords": ["hair breakage", "weak hair", "brittle hair", "split ends", "damaged hair"],
+      "remedy": "Beta, trim hair regularly. Massage scalp with warm oil weekly. Avoid heat styling and harsh chemicals.",
+      "extra_info": "Use wide-tooth combs and silk pillow covers. Persistent breakage may need doctor or trichologist evaluation.",
+      "escalation": ["severe hair loss", "patchy hair", "scalp irritation"]
+    },
+    {
+      "id": "R88",
+      "problem": "hair dandruff with oiliness",
+      "keywords": ["oily dandruff", "greasy flakes", "itchy scalp", "scalp oiliness", "dandruff"],
+      "remedy": "Beta, wash hair with mild anti-dandruff herbal shampoo. Massage scalp with aloe vera gel or lemon juice diluted in water.",
+      "extra_info": "Avoid excessive oiling and harsh chemicals. Persistent problem needs dermatologist check.",
+      "escalation": ["infection", "hair fall", "persistent itching"]
+    },
+    {
+      "id": "R89",
+      "problem": "hair lice",
+      "keywords": ["lice", "head lice", "nits", "hair parasites", "itchy scalp"],
+      "remedy": "Beta, apply neem oil or coconut oil on scalp and comb hair with fine-tooth comb to remove lice.",
+      "extra_info": "Wash hair thoroughly after treatment. Avoid sharing combs or hats. Persistent infestation may need medical attention.",
+      "escalation": ["severe itching", "infection", "persistent lice"]
+    },
+    {
+      "id": "R90",
+      "problem": "oily scalp with dandruff",
+      "keywords": ["dandruff", "oily scalp", "greasy flakes", "itchy scalp", "flaky hair"],
+      "remedy": "Beta, wash hair 2–3 times a week with mild herbal shampoo. Apply a mixture of lemon juice and water to scalp occasionally.",
+      "extra_info": "Avoid harsh chemicals and over-oiling. Persistent problem may need dermatologist advice.",
+      "escalation": ["hair fall", "infection", "persistent dandruff"]
+    },
+    {
+      "id": "R91",
+      "problem": "hair volume loss",
+      "keywords": ["thin hair", "loss of hair volume", "flat hair", "weak hair", "loss of body"],
+      "remedy": "Beta, massage scalp with warm almond or coconut oil to stimulate circulation. Eat protein-rich foods.",
+      "extra_info": "Fenugreek or amla hair mask weekly increases strength. Persistent loss of volume may need hair specialist advice.",
+      "escalation": ["sudden thinning", "patchy hair loss", "scalp irritation"]
+    },
+    {
+      "id": "R92",
+      "problem": "curly hair frizz",
+      "keywords": ["curly hair", "frizz", "unmanageable curls", "dry curls", "hair flyaways"],
+      "remedy": "Beta, apply leave-in conditioner or a few drops of coconut oil on damp curls. Avoid combing dry curls roughly.",
+      "extra_info": "Use wide-tooth combs. Silk pillowcases reduce frizz. Persistent frizz may need hair specialist advice.",
+      "escalation": ["split ends", "dry hair", "hair breakage"]
+    },
+    {
+      "id": "R93",
+      "problem": "hair thinning at crown",
+      "keywords": ["thinning crown", "hair loss crown", "bald spot", "receding hair", "scalp visibility"],
+      "remedy": "Beta, massage crown area with warm oil daily. Eat iron, vitamin B, and protein-rich foods.",
+      "extra_info": "Fenugreek paste weekly can help strengthen hair. Sudden hair thinning needs medical evaluation.",
+      "escalation": ["patchy bald spot", "sudden thinning", "scalp infection"]
+    },
+    {
+      "id": "R94",
+      "problem": "split ends on long hair",
+      "keywords": ["split ends", "long hair damage", "hair breakage", "frayed tips", "damaged hair"],
+      "remedy": "Beta, apply almond or coconut oil to tips before bed. Trim hair regularly every 6–8 weeks.",
+      "extra_info": "Avoid excessive heat and harsh chemicals. Persistent damage may require hair specialist advice.",
+      "escalation": ["excessive breakage", "brittle hair", "scalp irritation"]
+    },
+    {
+      "id": "R95",
+      "problem": "dry scalp with flakes",
+      "keywords": ["dry scalp", "flaky scalp", "itchy scalp", "white flakes", "hair dryness"],
+      "remedy": "Beta, massage scalp with warm coconut oil. Use aloe vera gel weekly to soothe dryness.",
+      "extra_info": "Avoid hot water and harsh shampoos. Persistent dryness may need dermatologist advice.",
+      "escalation": ["severe itching", "hair fall", "scalp infection"]
+    },
+    {
+      "id": "R96",
+      "problem": "excessive hair shedding",
+      "keywords": ["hair shedding", "falling hair", "weak hair", "thin hair", "hair loss"],
+      "remedy": "Beta, massage scalp gently with warm oil. Eat protein-rich diet and stay hydrated.",
+      "extra_info": "Avoid stress and harsh chemical treatments. Persistent shedding may need medical evaluation.",
+      "escalation": ["sudden hair loss", "patchy baldness", "scalp infection"]
+    },
+    {
+      "id": "R97",
+      "problem": "hair dryness in winter",
+      "keywords": ["dry hair winter", "frizzy hair", "brittle hair", "static hair", "dry scalp"],
+      "remedy": "Beta, apply warm coconut or almond oil weekly. Cover hair with scarf in cold windy weather.",
+      "extra_info": "Use gentle shampoo. Avoid heat styling. Persistent dryness may need dermatologist advice.",
+      "escalation": ["split ends", "hair breakage", "scalp irritation"]
+    },
+    {
+      "id": "R98",
+      "problem": "oily hair in summer",
+      "keywords": ["oily hair summer", "greasy hair", "sweaty scalp", "sticky hair", "hair oiliness"],
+      "remedy": "Beta, rinse hair frequently with mild herbal shampoo. Avoid over-oiling. Keep scalp clean and dry.",
+      "extra_info": "Rinse with lemon-water occasionally. Persistent oiliness may need dermatologist advice.",
+      "escalation": ["scalp infection", "hair fall", "persistent oiliness"]
+    },
+    {
+      "id": "R99",
+      "problem": "hair matting",
+      "keywords": ["hair matting", "tangled hair", "knots", "unmanageable hair", "hair knots"],
+      "remedy": "Beta, apply warm oil and gently detangle with wide-tooth comb. Avoid pulling hair.",
+      "extra_info": "Leave-in conditioner helps. Persistent matting may need hair specialist advice.",
+      "escalation": ["hair breakage", "split ends", "painful tangles"]
+    },
+    {
+      "id": "R100",
+      "problem": "greasy roots with dry tips",
+      "keywords": ["greasy roots", "dry tips", "oily scalp dry ends", "hair imbalance", "frizz"],
+      "remedy": "Beta, wash roots frequently with mild shampoo. Apply oil only to dry tips, not scalp.",
+      "extra_info": "Avoid excessive heat. Persistent imbalance may need dermatologist advice.",
+      "escalation": ["hair breakage", "split ends", "scalp irritation"]
+    },
+    {
+      "id": "R101",
+      "problem": "hair dullness",
+      "keywords": ["dull hair", "lack of shine", "lifeless hair", "dry hair", "rough hair"],
+      "remedy": "Beta, rinse hair with cold water after washing to seal cuticles. Use warm oil massage weekly.",
+      "extra_info": "Eat fruits and nuts for vitamins. Persistent dullness may need dermatologist check.",
+      "escalation": ["hair breakage", "dryness", "lack of shine"]
+    },
+    {
+      "id": "R102",
+      "problem": "curly hair dryness",
+      "keywords": ["curly dry hair", "frizz", "rough curls", "unmanageable curls", "dry hair"],
+      "remedy": "Beta, apply coconut or argan oil to damp curls. Avoid excessive combing or heat styling.",
+      "extra_info": "Use leave-in conditioner. Persistent dryness may need hair specialist advice.",
+      "escalation": ["split ends", "frizz", "hair breakage"]
+    },
+    {
+      "id": "R103",
+      "problem": "hair split ends after chemical treatment",
+      "keywords": ["split ends", "chemical hair damage", "bleach hair", "hair breakage", "damaged tips"],
+      "remedy": "Beta, trim hair regularly. Massage tips with almond oil. Avoid heat styling and chemical treatments for some time.",
+      "extra_info": "Use mild shampoo and deep conditioning. Persistent damage may need trichologist advice.",
+      "escalation": ["excessive breakage", "hair loss", "scalp irritation"]
+    },
+    {
+      "id": "R104",
+      "problem": "hair thinning due to stress",
+      "keywords": ["stress hair loss", "thinning hair", "shedding hair", "weak hair", "bald spots"],
+      "remedy": "Beta, practice relaxation techniques like yoga or meditation. Massage scalp with warm oil weekly.",
+      "extra_info": "Eat protein-rich diet and stay hydrated. Persistent thinning may require medical evaluation.",
+      "escalation": ["patchy hair loss", "sudden shedding", "scalp irritation"]
+    },
+    {
+      "id": "R105",
+      "problem": "dry scalp with dandruff",
+      "keywords": ["dry scalp", "dandruff", "flaky scalp", "itchy scalp", "hair dryness"],
+      "remedy": "Beta, massage scalp with warm coconut or almond oil weekly. Wash with mild herbal shampoo.",
+      "extra_info": "Use aloe vera gel occasionally to soothe dryness. Persistent dandruff may need dermatologist advice.",
+      "escalation": ["severe itching", "hair fall", "scalp infection"]
+    },
+    {
+      "id": "R106",
+      "problem": "dry skin",
+      "keywords": ["dry skin", "rough skin", "flaky skin", "itchy skin", "cracked skin"],
+      "remedy": "Beta, keep your skin moisturized with coconut oil or shea butter after bath. Avoid hot showers that strip natural oils.",
+      "extra_info": "Apply aloe vera gel for soothing. Drink plenty of water and eat fruits rich in vitamins. Persistent dryness may need dermatologist advice.",
+      "escalation": ["cracks with bleeding", "infection", "severe itch"]
+    },
+    {
+      "id": "R107",
+      "problem": "oily skin",
+      "keywords": ["oily skin", "shiny face", "greasy skin", "pimples", "blackheads"],
+      "remedy": "Beta, wash face twice daily with mild herbal cleanser. Dab face with blotting paper to absorb excess oil.",
+      "extra_info": "Apply a light mask of multani mitti (fuller’s earth) once a week. Avoid heavy oily creams. Persistent acne may need dermatologist advice.",
+      "escalation": ["severe acne", "infection", "persistent blackheads"]
+    },
+    {
+      "id": "R108",
+      "problem": "pimples",
+      "keywords": ["pimples", "acne", "spots", "red bumps", "whiteheads", "blackheads"],
+      "remedy": "Beta, wash your face gently twice daily. Apply a small dab of neem paste or honey on pimples. Avoid squeezing them.",
+      "extra_info": "Use tea tree oil diluted in carrier oil for stubborn spots. Eat less oily food and drink plenty of water. Persistent or cystic acne may need dermatologist advice.",
+      "escalation": ["cystic acne", "infection", "severe inflammation"]
+    },
+    {
+      "id": "R109",
+      "problem": "dark circles",
+      "keywords": ["dark circles", "under eye bags", "puffy eyes", "eye fatigue", "tired eyes"],
+      "remedy": "Beta, place cool cucumber slices or cold tea bags on eyes for 10–15 minutes. Sleep well and avoid excessive screen time.",
+      "extra_info": "Gentle massage with almond oil under eyes at night. Stay hydrated. Persistent dark circles may need medical advice.",
+      "escalation": ["swelling", "redness", "eye pain"]
+    },
+    {
+      "id": "R110",
+      "problem": "sunburn",
+      "keywords": ["sunburn", "red skin", "burnt skin", "heat rash", "sun exposure"],
+      "remedy": "Beta, rinse affected area with cool water. Apply aloe vera gel or yogurt to soothe skin. Avoid further sun exposure.",
+      "extra_info": "Wear loose cotton clothes. Drink water to stay hydrated. Severe burns may require medical care.",
+      "escalation": ["blistering", "fever", "infection"]
+    },
+    {
+      "id": "R111",
+      "problem": "minor cuts",
+      "keywords": ["cut", "scratch", "small wound", "skin injury", "bleeding"],
+      "remedy": "Arre beta, wash wound gently with clean water. Apply turmeric paste or aloe vera gel. Cover with a clean bandage.",
+      "extra_info": "Change dressing daily. Watch for redness or pus. Large cuts need doctor’s attention.",
+      "escalation": ["heavy bleeding", "infection", "deep wounds"]
+    },
+    {
+      "id": "R112",
+      "problem": "bruises",
+      "keywords": ["bruise", "black and blue", "swelling", "pain", "skin injury"],
+      "remedy": "Beta, apply a cold compress immediately to reduce swelling. After 24 hours, gentle massage with warm sesame oil helps healing.",
+      "extra_info": "Rest the affected area. Avoid massaging too hard. Persistent swelling or pain requires doctor check.",
+      "escalation": ["severe pain", "swelling", "restricted movement"]
+    },
+    {
+      "id": "R113",
+      "problem": "eczema",
+      "keywords": ["eczema", "dry patches", "itchy skin", "red rashes", "skin irritation"],
+      "remedy": "Beta, apply coconut oil or aloe vera gel on affected areas. Wear loose cotton clothes and avoid harsh soaps.",
+      "extra_info": "Oatmeal paste can soothe itching. Persistent eczema may need dermatologist treatment.",
+      "escalation": ["severe itching", "infection", "spread of rash"]
+    },
+    {
+      "id": "R114",
+      "problem": "rash",
+      "keywords": ["rash", "red bumps", "allergic rash", "skin irritation", "itchy skin"],
+      "remedy": "Beta, keep the area clean and dry. Apply aloe vera or cold compress for soothing. Avoid scratching.",
+      "extra_info": "Wear loose clothing. Persistent rash may need medical evaluation.",
+      "escalation": ["infection", "spreading rash", "severe itching"]
+    },
+    {
+      "id": "R115",
+      "problem": "dry lips",
+      "keywords": ["chapped lips", "dry lips", "cracked lips", "lip dryness", "rough lips"],
+      "remedy": "Beta, apply honey, ghee, or coconut oil to lips multiple times a day. Drink plenty of water.",
+      "extra_info": "Avoid licking lips. Use sugar-honey scrub gently once a week. Persistent cracking may need doctor advice.",
+      "escalation": ["bleeding", "infection", "severe cracks"]
+    },
+    {
+      "id": "R116",
+      "problem": "lip cold sores",
+      "keywords": ["cold sores", "herpes labialis", "blisters on lips", "painful lips", "lip sores"],
+      "remedy": "Beta, apply aloe vera gel or honey gently on sores. Avoid touching them frequently.",
+      "extra_info": "Keep lips clean and avoid sharing utensils. Persistent or worsening sores may need medical treatment.",
+      "escalation": ["spreading sores", "severe pain", "fever"]
+    },
+    {
+      "id": "R117",
+      "problem": "dry hands",
+      "keywords": ["dry hands", "cracked hands", "rough hands", "chapped hands", "hand skin dryness"],
+      "remedy": "Beta, apply coconut or almond oil after washing hands. Wear cotton gloves while doing housework.",
+      "extra_info": "Use gentle soap and avoid hot water. Persistent dryness may need dermatologist advice.",
+      "escalation": ["bleeding", "infection", "deep cracks"]
+    },
+    {
+      "id": "R118",
+      "problem": "calluses",
+      "keywords": ["callus", "hard skin", "rough skin", "thick skin", "foot callus", "hand callus"],
+      "remedy": "Beta, soak affected area in warm water, then gently rub with pumice stone. Apply coconut oil to soften.",
+      "extra_info": "Wear comfortable shoes and gloves. Persistent or painful calluses may need podiatrist advice.",
+      "escalation": ["pain", "infection", "bleeding"]
+    },
+    {
+      "id": "R119",
+      "problem": "dry feet",
+      "keywords": ["dry feet", "cracked heels", "rough feet", "chapped feet", "foot dryness"],
+      "remedy": "Beta, soak feet in warm water and massage with coconut oil. Wear cotton socks after massage.",
+      "extra_info": "Avoid walking barefoot on rough surfaces. Persistent cracks may need podiatrist advice.",
+      "escalation": ["bleeding", "infection", "deep cracks"]
+    },
+    {
+      "id": "R120",
+      "problem": "athlete's foot",
+      "keywords": ["athlete foot", "fungal infection", "itchy feet", "red skin", "peeling skin"],
+      "remedy": "Beta, keep feet dry and clean. Apply neem paste or antifungal herbal powder on affected area.",
+      "extra_info": "Change socks regularly. Avoid wearing damp shoes. Persistent infection needs medical attention.",
+      "escalation": ["spreading infection", "severe itching", "pain"]
+    },
+    {
+      "id": "R121",
+      "problem": "sun tan",
+      "keywords": ["tan", "dark skin", "sun exposure", "skin pigmentation", "uneven skin tone"],
+      "remedy": "Beta, apply aloe vera gel to soothe skin and help lighten tan. Use natural face packs like yogurt and turmeric.",
+      "extra_info": "Stay hydrated. Avoid direct sun exposure during peak hours. Persistent pigmentation may need dermatologist advice.",
+      "escalation": ["burns", "severe redness", "blisters"]
+    },
+    {
+      "id": "R122",
+      "problem": "dark spots",
+      "keywords": ["dark spots", "blemishes", "pigmentation", "marks", "skin spots"],
+      "remedy": "Beta, apply lemon juice or aloe vera gel on spots gently. Protect skin from sun.",
+      "extra_info": "Use mild moisturizer and stay hydrated. Persistent dark spots may need dermatologist advice.",
+      "escalation": ["infection", "spreading marks", "skin irritation"]
+    },
+    {
+      "id": "R123",
+      "problem": "body odor",
+      "keywords": ["body odor", "sweat", "smell", "perspiration", "odor"],
+      "remedy": "Beta, bathe daily and use neem leaves paste or dry powder under arms. Wear cotton clothes.",
+      "extra_info": "Drink plenty of water and avoid strong smelling food. Persistent odor may need medical advice.",
+      "escalation": ["skin infection", "excessive sweating", "persistent smell"]
+    },
+    {
+      "id": "R124",
+      "problem": "chapped heels",
+      "keywords": ["chapped heels", "cracked heels", "rough feet", "dry feet", "heel pain"],
+      "remedy": "Beta, soak feet in warm water and massage with ghee or coconut oil. Cover with socks overnight.",
+      "extra_info": "Wear comfortable shoes and avoid walking barefoot. Persistent cracks may need podiatrist advice.",
+      "escalation": ["bleeding", "infection", "deep cracks"]
+    },
+    {
+      "id": "R125",
+      "problem": "sunburn on face",
+      "keywords": ["sunburn face", "red skin", "burnt face", "heat rash", "facial sunburn"],
+      "remedy": "Beta, rinse face with cool water and apply aloe vera gel. Avoid direct sun and wear a hat outdoors.",
+      "extra_info": "Stay hydrated. Persistent redness may need dermatologist advice.",
+      "escalation": ["blistering", "pain", "infection"]
+    },
+    {
+      "id": "R126",
+      "problem": "minor insect bites",
+      "keywords": ["mosquito bite", "ant bite", "insect bite", "itchy skin", "red bumps"],
+      "remedy": "Beta, clean area with water and apply neem paste or aloe vera gel. Avoid scratching.",
+      "extra_info": "Cool compress reduces itch. Persistent swelling or redness may need doctor advice.",
+      "escalation": ["severe swelling", "infection", "allergic reaction"]
+    },
+    {
+      "id": "R127",
+      "problem": "mosquito bites",
+      "keywords": ["mosquito bite", "itch", "red bumps", "swelling", "insect bite"],
+      "remedy": "Beta, dab bites with a paste of turmeric and water or apply aloe vera gel.",
+      "extra_info": "Avoid scratching. Persistent itch or swelling may need medical attention.",
+      "escalation": ["severe swelling", "infection", "allergic reaction"]
+    },
+    {
+      "id": "R128",
+      "problem": "insect sting",
+      "keywords": ["bee sting", "wasp sting", "painful sting", "swelling", "red spot"],
+      "remedy": "Beta, remove stinger if present, apply cool water, then aloe vera or honey.",
+      "extra_info": "Monitor for allergy signs. Persistent pain or swelling may need doctor.",
+      "escalation": ["allergic reaction", "severe swelling", "fever"]
+    },
+    {
+      "id": "R129",
+      "problem": "itchy skin",
+      "keywords": ["itching", "skin irritation", "rash", "allergy", "dry skin"],
+      "remedy": "Beta, apply cool compress or aloe vera gel. Keep skin clean and moisturized.",
+      "extra_info": "Oatmeal paste helps. Persistent itch may need medical evaluation.",
+      "escalation": ["infection", "redness", "severe itching"]
+    },
+    {
+      "id": "R130",
+      "problem": "facial puffiness",
+      "keywords": ["puffy face", "swollen eyes", "water retention", "face swelling", "bags under eyes"],
+      "remedy": "Beta, apply cool cucumber slices or cold compress. Reduce salt intake and sleep well.",
+      "extra_info": "Gentle massage helps lymphatic drainage. Persistent puffiness may need medical advice.",
+      "escalation": ["eye pain", "redness", "severe swelling"]
+    },
+    {
+      "id": "R131",
+      "problem": "under eye bags",
+      "keywords": ["under eye bags", "dark circles", "puffy eyes", "tired eyes", "swelling"],
+      "remedy": "Beta, place cold tea bags or cucumber slices on eyes. Sleep well and hydrate.",
+      "extra_info": "Gentle massage with almond oil at night. Persistent bags may need dermatologist advice.",
+      "escalation": ["swelling", "redness", "eye pain"]
+    },
+    {
+      "id": "R132",
+      "problem": "facial dryness",
+      "keywords": ["dry face", "rough skin", "flaky skin", "tight skin", "parched skin"],
+      "remedy": "Beta, moisturize with aloe vera gel, coconut oil, or glycerin-based cream.",
+      "extra_info": "Drink water and avoid harsh soaps. Persistent dryness may need dermatologist advice.",
+      "escalation": ["cracks", "redness", "skin irritation"]
+    },
+    {
+      "id": "R133",
+      "problem": "blackheads",
+      "keywords": ["blackheads", "clogged pores", "pimples", "whiteheads", "acne spots"],
+      "remedy": "Beta, steam your face gently and apply multani mitti mask to clean pores.",
+      "extra_info": "Use gentle exfoliation weekly. Avoid squeezing. Persistent blackheads may need dermatologist advice.",
+      "escalation": ["infection", "scarring", "severe acne"]
+    },
+    {
+      "id": "R134",
+      "problem": "whiteheads",
+      "keywords": ["whiteheads", "clogged pores", "pimples", "acne spots", "small bumps"],
+      "remedy": "Beta, steam face, then gently cleanse with mild herbal soap. Apply honey locally if needed.",
+      "extra_info": "Avoid squeezing. Persistent whiteheads may need dermatologist evaluation.",
+      "escalation": ["infection", "spread", "severe acne"]
+    },
+    {
+      "id": "R135",
+      "problem": "minor burns while cooking",
+      "keywords": ["burn", "kitchen burn", "hot water burn", "minor burn", "skin injury"],
+      "remedy": "Beta, immediately run cool water for 10–15 minutes. Apply aloe vera gel or yogurt to soothe skin.",
+      "extra_info": "Do not apply butter or oil directly. Cover lightly if needed. Persistent burns may need medical attention.",
+      "escalation": ["blisters", "severe pain", "infection"]
+    },
+    {
+      "id": "R136",
+      "problem": "back ache",
+      "keywords": ["back pain", "lower back ache", "stiff back", "muscle strain", "tension"],
+      "remedy": "Beta, lie down on a firm surface with a pillow under your knees. Apply warm compress or a hot water bottle on the sore area. Gentle stretching can help relieve stiffness.",
+      "extra_info": "Avoid lifting heavy objects. Take short walks to keep muscles active. Persistent or severe pain may need doctor’s advice.",
+      "escalation": ["numbness", "weakness", "severe persistent pain"]
+    },
+    {
+      "id": "R137",
+      "problem": "neck sprain",
+      "keywords": ["neck pain", "stiff neck", "neck strain", "muscle tension", "cervical discomfort"],
+      "remedy": "Beta, rest your neck and avoid sudden movements. Apply warm compress or massage gently with sesame oil. Do gentle neck rotations if comfortable.",
+      "extra_info": "Maintain good posture while sitting or sleeping. Persistent stiffness may need doctor consultation.",
+      "escalation": ["numbness", "swelling", "severe pain"]
+    },
+    {
+      "id": "R138",
+      "problem": "leg sprain",
+      "keywords": ["leg sprain", "ankle sprain", "knee sprain", "swelling", "pain in leg", "muscle strain"],
+      "remedy": "Beta, rest the leg and elevate it on a pillow. Apply cold compress for 15–20 minutes to reduce swelling. Wrap with elastic bandage gently for support.",
+      "extra_info": "Avoid walking on the sprained leg immediately. After 48 hours, gentle warm compress may help. Persistent swelling or pain needs medical advice.",
+      "escalation": ["severe swelling", "inability to walk", "bruising"]
+    },
+    {
+      "id": "R139",
+      "problem": "knee pain",
+      "keywords": ["knee pain", "stiff knee", "joint pain", "swelling knee", "arthritis pain"],
+      "remedy": "Beta, apply warm compress or massage gently with sesame or mustard oil. Avoid bending the knee excessively.",
+      "extra_info": "Gentle stretching or walking helps. Persistent or sharp pain may require doctor consultation.",
+      "escalation": ["swelling", "locking knee", "severe pain"]
+    },
+    {
+      "id": "R140",
+      "problem": "foot sprain",
+      "keywords": ["foot sprain", "ankle pain", "twisted foot", "swelling foot", "painful walk"],
+      "remedy": "Beta, rest and elevate your foot. Apply cold compress for 15–20 minutes. Wrap lightly with elastic bandage for support.",
+      "extra_info": "Avoid weight on the foot initially. Persistent swelling or pain needs doctor evaluation.",
+      "escalation": ["severe swelling", "inability to walk", "bruising"]
+    },
+    {
+      "id": "R141",
+      "problem": "hand sprain",
+      "keywords": ["hand sprain", "wrist pain", "swelling hand", "pain hand", "injury hand"],
+      "remedy": "Beta, rest your hand and apply cold compress for 15 minutes. Wrap lightly with a soft bandage. Keep hand elevated.",
+      "extra_info": "Avoid lifting heavy objects. Persistent pain or swelling may need doctor evaluation.",
+      "escalation": ["severe swelling", "inability to move hand", "bruise"]
+    },
+    {
+      "id": "R142",
+      "problem": "muscle cramps",
+      "keywords": ["muscle cramps", "leg cramps", "calf cramps", "painful muscles", "sudden pain"],
+      "remedy": "Beta, gently stretch the affected muscle and massage with warm oil. Drink water with a pinch of salt or banana for potassium.",
+      "extra_info": "Warm bath relaxes muscles. Persistent cramps may need doctor consultation.",
+      "escalation": ["persistent cramps", "swelling", "muscle weakness"]
+    },
+    {
+      "id": "R143",
+      "problem": "joint stiffness",
+      "keywords": ["joint stiffness", "arthritic pain", "swollen joints", "reduced mobility", "pain in joints"],
+      "remedy": "Beta, gently massage joints with warm mustard or sesame oil. Light movement or stretching helps mobility.",
+      "extra_info": "Avoid heavy lifting. Persistent stiffness may need medical evaluation.",
+      "escalation": ["swelling", "pain", "inability to move"]
+    },
+    {
+      "id": "R144",
+      "problem": "shoulder pain",
+      "keywords": ["shoulder pain", "rotator cuff", "stiff shoulder", "joint pain", "muscle ache"],
+      "remedy": "Beta, apply warm compress or massage with warm oil. Gentle shoulder rotations help reduce stiffness.",
+      "extra_info": "Avoid lifting heavy weights. Persistent pain may need doctor consultation.",
+      "escalation": ["swelling", "severe pain", "restricted movement"]
+    },
+    {
+      "id": "R145",
+      "problem": "arm pain",
+      "keywords": ["arm pain", "muscle ache", "joint pain", "swelling arm", "shoulder to hand pain"],
+      "remedy": "Beta, rest your arm and gently massage with warm oil. Apply warm compress if sore.",
+      "extra_info": "Avoid heavy lifting. Persistent pain may need doctor evaluation.",
+      "escalation": ["swelling", "loss of strength", "numbness"]
+    },
+    {
+      "id": "R146",
+      "problem": "back muscle strain",
+      "keywords": ["back strain", "muscle pain", "lower back ache", "tight muscles", "soreness"],
+      "remedy": "Beta, rest on a firm surface and apply warm compress. Gentle stretching helps relieve tension.",
+      "extra_info": "Avoid lifting heavy objects. Persistent sharp pain requires medical attention.",
+      "escalation": ["numbness", "weakness", "severe pain"]
+    },
+    {
+      "id": "R147",
+      "problem": "leg pain",
+      "keywords": ["leg pain", "muscle ache", "leg soreness", "thigh pain", "calf pain"],
+      "remedy": "Beta, apply warm compress or massage with warm oil. Gentle stretching helps circulation.",
+      "extra_info": "Rest and elevate legs when possible. Persistent or sharp pain may need doctor advice.",
+      "escalation": ["swelling", "persistent pain", "difficulty walking"]
+    },
+    {
+      "id": "R148",
+      "problem": "foot pain",
+      "keywords": ["foot pain", "heel pain", "arch pain", "muscle soreness", "tired feet"],
+      "remedy": "Beta, soak feet in warm water with a little salt. Massage gently with warm oil. Rest your feet as much as possible.",
+      "extra_info": "Stretch calves gently. Persistent pain may need medical advice.",
+      "escalation": ["swelling", "severe pain", "difficulty walking"]
+    },
+    {
+      "id": "R149",
+      "problem": "neck ache",
+      "keywords": ["neck pain", "stiff neck", "neck strain", "muscle pain", "tension"],
+      "remedy": "Beta, apply warm compress or massage gently with warm oil. Do slow neck rotations to relieve stiffness.",
+      "extra_info": "Maintain good posture. Persistent pain may need medical evaluation.",
+      "escalation": ["numbness", "severe pain", "restricted movement"]
+    },
+    {
+      "id": "R150",
+      "problem": "acne/pimples",
+      "keywords": ["acne", "pimples", "spots", "blemishes", "whiteheads", "blackheads"],
+      "remedy": "Beta, wash face gently twice a day. Apply a paste of neem or honey on spots. Avoid touching or squeezing them.",
+      "extra_info": "Use multani mitti (fuller’s earth) mask once a week. Eat balanced diet and drink water. Persistent or cystic acne may need dermatologist advice.",
+      "escalation": ["cystic acne", "infection", "severe inflammation"]
+    },
+    {
+      "id": "R151",
+      "problem": "joint stiffness",
+      "keywords": ["stiff joints", "arthritis", "knee pain", "hip pain", "joint ache", "morning stiffness"],
+      "remedy": "Beta, gently warm the joints using a warm towel or heating pad for 10–15 minutes. Light stretching and short walks help maintain flexibility. Sit comfortably while doing daily chores to avoid strain.",
+      "extra_info": "Include ginger or turmeric in daily meals to support joint comfort. Drink warm water regularly. If swelling or redness appears, consult a doctor.",
+      "escalation": ["severe swelling", "joint deformity", "sudden sharp pain"]
+    },
+    {
+      "id": "R152",
+      "problem": "lower back ache",
+      "keywords": ["back pain", "lower back", "lumbar pain", "soreness", "muscle strain"],
+      "remedy": "Beta, lie down on a firm mattress. Apply warm compress to the lower back for relief. Gentle knee-to-chest stretches while lying down can ease tension. Avoid lifting heavy objects suddenly.",
+      "extra_info": "Walk short distances daily to keep muscles active. Drink warm water to relax muscles. If pain radiates to legs or is sharp, see a doctor.",
+      "escalation": ["numbness in legs", "severe persistent pain", "loss of bladder control"]
+    },
+    {
+      "id": "R153",
+      "problem": "neck stiffness",
+      "keywords": ["neck pain", "stiff neck", "cervical pain", "limited neck movement", "neck ache"],
+      "remedy": "Beta, gently massage your neck with warm mustard or sesame oil. Move your neck slowly in circles and side-to-side to release tension. Use a small pillow while sleeping for support.",
+      "extra_info": "Avoid prolonged screen time. Take breaks and do shoulder rolls. If severe pain or numbness occurs, consult a doctor.",
+      "escalation": ["tingling in arms", "severe pain", "headache with fever"]
+    },
+    {
+      "id": "R154",
+      "problem": "insomnia",
+      "keywords": ["sleep problems", "difficulty sleeping", "restless night", "trouble falling asleep"],
+      "remedy": "Beta, create a calm bedtime routine. Sip warm milk with a pinch of turmeric or cardamom. Avoid screens 1 hour before bed. Gentle breathing exercises or light reading helps relax the mind.",
+      "extra_info": "A few drops of lavender or chamomile in warm water for aroma may help. Keep your room cool and dark. Persistent sleeplessness should be discussed with a doctor.",
+      "escalation": ["persistent insomnia", "severe anxiety", "daytime drowsiness affecting daily life"]
+    },
+    {
+      "id": "R155",
+      "problem": "fatigue",
+      "keywords": ["tiredness", "low energy", "exhaustion", "weakness", "lethargy"],
+      "remedy": "Beta, rest is important. Take short breaks during daily chores. Drink warm water with lemon to refresh. Light stretching or gentle yoga in the morning improves energy.",
+      "extra_info": "Eat small frequent meals with fruits and nuts. Avoid heavy meals late in the day. If fatigue persists despite rest, consult a doctor.",
+      "escalation": ["persistent weakness", "fainting", "unexplained weight loss"]
+    },
+    {
+      "id": "R156",
+      "problem": "mild constipation",
+      "keywords": ["constipation", "hard stools", "irregular bowel", "bloated tummy", "stomach heaviness"],
+      "remedy": "Beta, drink warm water first thing in the morning. Include soaked flax seeds, fruits like papaya and figs, and vegetables. Gentle abdominal massage clockwise helps stimulate bowels.",
+      "extra_info": "Take short walks after meals. Avoid processed foods. Persistent constipation or blood in stool requires a doctor.",
+      "escalation": ["severe abdominal pain", "blood in stool", "persistent constipation"]
+    },
+    {
+      "id": "R157",
+      "problem": "indigestion",
+      "keywords": ["indigestion", "gas", "bloating", "heartburn", "acid reflux"],
+      "remedy": "Beta, sip warm ginger or fennel tea after meals. Eat small, frequent meals. Chew slowly and avoid lying down immediately after eating.",
+      "extra_info": "Gentle walking after meals helps digestion. Avoid very oily, spicy, or fried foods. Persistent severe pain or vomiting requires doctor attention.",
+      "escalation": ["persistent vomiting", "blood in stool", "chest pain"]
+    },
+    {
+      "id": "R158",
+      "problem": "dizziness",
+      "keywords": ["lightheadedness", "vertigo", "unsteady", "balance issues", "faint feeling"],
+      "remedy": "Beta, sit or lie down immediately when feeling dizzy. Drink warm water and take slow deep breaths. Eat something small if blood sugar is low.",
+      "extra_info": "Avoid sudden standing or bending. Ensure enough hydration. If dizziness is frequent or accompanied by chest pain, see a doctor.",
+      "escalation": ["frequent fainting", "chest pain", "vision changes"]
+    },
+    {
+      "id": "R159",
+      "problem": "weak immunity",
+      "keywords": ["weak immune system", "frequent colds", "susceptible to infections", "low energy"],
+      "remedy": "Beta, include vitamin-rich fruits like oranges, papaya, and guava. Drink warm herbal teas like tulsi, ginger, or chamomile. Rest and maintain a balanced diet.",
+      "extra_info": "Wash hands frequently and avoid crowded places during flu season. Regular light exercise helps. Persistent infections need doctor consultation.",
+      "escalation": ["frequent severe infections", "fever lasting more than 3 days"]
+    },
+    {
+      "id": "R160",
+      "problem": "eye strain",
+      "keywords": ["tired eyes", "blurry vision", "dry eyes", "headache from eyes", "screen strain"],
+      "remedy": "Beta, close your eyes and massage eyelids gently. Follow the 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds. Use warm compress to relax eyes.",
+      "extra_info": "Eat carrots, spinach, and foods rich in Vitamin A. Blink frequently and reduce screen brightness. If vision blurs persist, see an eye specialist.",
+      "escalation": ["sudden vision loss", "persistent eye pain", "double vision"]
+    },
+    {
+      "id": "R161",
+      "problem": "mild memory issues",
+      "keywords": ["forgetfulness", "memory lapses", "difficulty recalling", "mental fatigue"],
+      "remedy": "Beta, keep your mind active with light reading, puzzles, or simple games. Drink warm herbal teas like rosemary or tulsi. Get proper sleep and rest.",
+      "extra_info": "Include nuts like almonds and walnuts in your diet. If memory loss becomes frequent or severe, consult a doctor.",
+      "escalation": ["sudden confusion", "disorientation", "memory loss affecting daily life"]
+    },
+    {
+      "id": "R162",
+      "problem": "mild hypertension",
+      "keywords": ["high blood pressure", "mild hypertension", "elevated bp", "headache from high bp"],
+      "remedy": "Beta, relax and sit calmly. Drink warm water with a little lemon and honey. Include garlic and leafy greens in meals. Avoid too much salt. Gentle walks help regulate blood pressure.",
+      "extra_info": "Practice deep breathing or light meditation daily. If readings are consistently high, consult a doctor.",
+      "escalation": ["persistent high bp", "chest pain", "dizziness or fainting"]
+    },
+    {
+      "id": "R163",
+      "problem": "leg swelling",
+      "keywords": ["swollen legs", "ankle swelling", "feet swelling", "fluid retention", "edema"],
+      "remedy": "Beta, elevate your legs on a pillow for 15–20 minutes a few times a day. Massage gently from toes to knees with warm oil. Avoid sitting for long periods.",
+      "extra_info": "Drink enough water and reduce salty foods. Light ankle rotations help circulation. If swelling is sudden or painful, see a doctor.",
+      "escalation": ["sudden swelling", "painful swelling", "shortness of breath"]
+    },
+    {
+      "id": "R164",
+      "problem": "mild cough",
+      "keywords": ["cough", "dry cough", "throat irritation", "tickling throat", "mild bronchial irritation"],
+      "remedy": "Beta, sip warm honey-lemon water regularly. Drink tulsi or ginger tea. Gargle warm salt water if throat is itchy. Rest your voice.",
+      "extra_info": "Steam inhalation helps clear airways. Avoid cold drinks and ice cream. If cough persists more than a week, see a doctor.",
+      "escalation": ["persistent high fever", "difficulty breathing", "blood in sputum"]
+    },
+    {
+      "id": "R165",
+      "problem": "mild cold",
+      "keywords": ["runny nose", "sneezing", "congestion", "mild flu", "blocked nose", "chills"],
+      "remedy": "Beta, drink warm ginger-honey water and sip tulsi tea. Steam inhalation with mint or eucalyptus helps relieve blockage. Keep warm and rest.",
+      "extra_info": "Eat warm soups or khichdi. If fever persists more than 3 days, or breathing becomes difficult, consult a doctor.",
+      "escalation": ["persistent high fever", "breathing difficulty", "chest pain"]
+    },
+    {
+      "id": "R166",
+      "problem": "weak appetite",
+      "keywords": ["loss of appetite", "poor appetite", "low hunger", "not eating well"],
+      "remedy": "Beta, eat small frequent meals. Warm soups, khichdi, or fruit smoothies help. Ginger or mint tea before meals can stimulate appetite.",
+      "extra_info": "Include easy-to-digest protein like dal, yogurt, or eggs. Avoid heavy or oily meals. If appetite loss continues, consult a doctor.",
+      "escalation": ["unintended weight loss", "persistent weakness", "malnutrition"]
+    },
+    {
+      "id": "R167",
+      "problem": "mild fatigue",
+      "keywords": ["tiredness", "low energy", "exhaustion", "lethargy"],
+      "remedy": "Beta, rest intermittently during the day. Light stretching or short walks in sunlight improves energy. Drink warm water or herbal teas.",
+      "extra_info": "Eat balanced meals and hydrate well. If fatigue is persistent or severe, consult a doctor.",
+      "escalation": ["severe exhaustion", "fainting", "inability to perform daily activities"]
+    },
+    {
+      "id": "R168",
+      "problem": "mild constipation",
+      "keywords": ["constipation", "hard stools", "irregular bowel", "bloating"],
+      "remedy": "Beta, drink warm water in the morning. Eat fruits like papaya, figs, or soaked raisins. Gentle abdominal massage clockwise helps stimulate bowel movements.",
+      "extra_info": "Take short walks after meals. Avoid processed foods. If constipation lasts more than 5 days, see a doctor.",
+      "escalation": ["severe pain", "blood in stool", "persistent constipation"]
+    },
+    {
+      "id": "R169",
+      "problem": "dry skin",
+      "keywords": ["dry skin", "flaky skin", "rough skin", "itchy skin", "elderly skin care"],
+      "remedy": "Beta, apply gentle coconut or almond oil after bathing. Use lukewarm water instead of hot showers. Wear cotton clothes to avoid irritation.",
+      "extra_info": "Drink enough water. Oatmeal paste can calm itching. If redness or cracking occurs, consult a doctor.",
+      "escalation": ["severe itching", "infection", "bleeding cracks"]
+    },
+    {
+      "id": "R170",
+      "problem": "mild dizziness",
+      "keywords": ["lightheadedness", "vertigo", "faint feeling", "balance issues"],
+      "remedy": "Beta, sit or lie down immediately. Drink warm water. Take deep, slow breaths. Stand up slowly after resting.",
+      "extra_info": "Avoid sudden head movements. Eat small meals. Persistent dizziness should be discussed with a doctor.",
+      "escalation": ["frequent fainting", "chest pain", "vision changes"]
+    },
+    {
+      "id": "R171",
+      "problem": "arthritis discomfort",
+      "keywords": ["arthritis", "joint pain", "stiff joints", "knees", "hands", "fingers"],
+      "remedy": "Beta, apply warm oil or warm compress to affected joints. Gentle range-of-motion exercises help. Rest affected joints as needed.",
+      "extra_info": "Include turmeric in food for natural anti-inflammatory effect. If swelling or redness increases, see a doctor.",
+      "escalation": ["sudden severe pain", "joint deformity", "inability to move joint"]
+    },
+    {
+      "id": "R172",
+      "problem": "mild back pain",
+      "keywords": ["back pain", "lower back ache", "stiffness", "lumbar discomfort"],
+      "remedy": "Beta, lie on a firm mattress. Apply warm compress. Gentle stretching or walking helps relieve stiffness. Avoid lifting heavy objects suddenly.",
+      "extra_info": "Maintain good posture. Drink warm water. If pain radiates to legs or is severe, consult a doctor.",
+      "escalation": ["numbness", "loss of bladder control", "sharp pain"]
+    },
+    {
+      "id": "R173",
+      "problem": "leg cramps",
+      "keywords": ["leg cramps", "calf pain", "muscle spasm", "night cramps"],
+      "remedy": "Beta, gently stretch the leg. Massage with warm oil. Drink warm water and include bananas or dates for potassium.",
+      "extra_info": "Light daily walks prevent cramps. Persistent cramps should be checked by a doctor.",
+      "escalation": ["severe cramps", "swelling", "unable to move leg"]
+    },
+    {
+      "id": "R174",
+      "problem": "sleep issues",
+      "keywords": ["difficulty sleeping", "insomnia", "restless night", "frequent waking"],
+      "remedy": "Beta, maintain a calm bedtime routine. Warm milk with a pinch of turmeric or cardamom helps. Gentle breathing or meditation aids sleep.",
+      "extra_info": "Keep room dark and quiet. Avoid screens before bed. Persistent insomnia requires doctor consultation.",
+      "escalation": ["persistent insomnia", "daytime drowsiness", "anxiety affecting sleep"]
+    },
+    {
+      "id": "R175",
+      "problem": "mild cough with cold",
+      "keywords": ["cough", "runny nose", "mild flu", "throat irritation"],
+      "remedy": "Beta, sip warm honey-lemon water. Drink tulsi or ginger tea. Gargle warm salt water. Rest your voice.",
+      "extra_info": "Steam inhalation helps relieve congestion. Avoid cold drinks. If symptoms persist, consult a doctor.",
+      "escalation": ["persistent high fever", "difficulty breathing", "blood in sputum"]
+    },
+    {
+      "id": "R176",
+      "problem": "mild fatigue after walking",
+      "keywords": ["tiredness", "low energy", "walking fatigue"],
+      "remedy": "Beta, rest immediately and drink warm water. Light stretching helps muscles relax. Short naps rejuvenate energy.",
+      "extra_info": "Eat small nutritious snacks like fruits or nuts. Persistent fatigue may need medical attention.",
+      "escalation": ["persistent exhaustion", "fainting", "unable to perform daily activities"]
+    },
+    {
+      "id": "R177",
+      "problem": "muscle soreness",
+      "keywords": ["muscle ache", "soreness", "body ache", "post-exercise pain"],
+      "remedy": "Beta, apply warm compress or oil massage to sore muscles. Gentle stretching improves blood circulation. Rest is essential.",
+      "extra_info": "Drink warm water or herbal tea. If soreness persists more than a few days, consult a doctor.",
+      "escalation": ["swelling", "severe pain", "inability to move muscle"]
+    },
+    {
+      "id": "R178",
+      "problem": "minor bruises",
+      "keywords": ["bruise", "swelling", "bump", "skin discoloration"],
+      "remedy": "Beta, apply cold compress immediately to reduce swelling. Light massage with warm oil after 24 hours helps healing.",
+      "extra_info": "Rest the affected area. If bruise is large or painful, consult a doctor.",
+      "escalation": ["severe pain", "excessive swelling", "difficulty moving limb"]
+    },
+    {
+      "id": "R179",
+      "problem": "mild skin irritation",
+      "keywords": ["itchy skin", "rash", "dry patches", "sensitive skin"],
+      "remedy": "Beta, apply cool aloe vera gel or coconut oil. Wear loose cotton clothes. Avoid harsh soaps or chemicals.",
+      "extra_info": "Oatmeal paste can reduce itchiness. Persistent rash should be checked by a doctor.",
+      "escalation": ["spreading rash", "infection", "bleeding skin"]
+    },
+    {
+      "id": "R180",
+      "problem": "minor foot pain",
+      "keywords": ["foot ache", "heel pain", "plantar discomfort", "swollen feet"],
+      "remedy": "Beta, soak feet in warm water with Epsom salt. Massage gently with warm oil. Wear comfortable shoes and avoid standing long.",
+      "extra_info": "Stretch calves and feet gently. If pain persists, consult a doctor.",
+      "escalation": ["sharp pain", "swelling", "inability to walk"]
+    },
+    {
+      "id": "R181",
+      "problem": "back stiffness",
+      "keywords": ["stiff back", "spine discomfort", "limited mobility", "muscle tightness"],
+      "remedy": "Beta, apply warm compress and do gentle stretching. Short daily walks help maintain flexibility.",
+      "extra_info": "Sit with good posture. Drink warm water. If stiffness is severe or radiates to limbs, consult a doctor.",
+      "escalation": ["numbness", "severe pain", "loss of function"]
+    },
+    {
+      "id": "R182",
+      "problem": "swollen joints",
+      "keywords": ["joint swelling", "knee swelling", "ankle swelling", "hands swelling"],
+      "remedy": "Beta, elevate the joint, apply cold compress initially, then gentle warm massage later. Rest and avoid stress on joint.",
+      "extra_info": "Include anti-inflammatory foods like turmeric. If swelling increases or pain is severe, see a doctor.",
+      "escalation": ["sudden severe swelling", "painful redness", "loss of movement"]
+    },
+    {
+      "id": "R183",
+      "problem": "weak bones",
+      "keywords": ["bone weakness", "fragile bones", "osteoporosis risk", "joint pain"],
+      "remedy": "Beta, include calcium-rich foods like milk, curd, and leafy greens. Gentle weight-bearing exercises like walking help strengthen bones.",
+      "extra_info": "Sunlight exposure for Vitamin D. Persistent pain or fractures need medical attention.",
+      "escalation": ["sudden fractures", "persistent bone pain", "mobility issues"]
+    },
+    {
+      "id": "R184",
+      "problem": "acne or pimples",
+      "keywords": ["acne", "pimples", "face spots", "skin blemishes", "breakouts"],
+      "remedy": "Beta, wash face gently twice a day with mild soap and lukewarm water. Avoid touching or squeezing pimples. Apply aloe vera gel to calm inflammation.",
+      "extra_info": "Keep hair clean and avoid oily creams. Eat a balanced diet. If acne is severe or painful, consult a dermatologist.",
+      "escalation": ["severe infection", "pus formation", "scarring"]
+    },
+    {
+      "id": "R185",
+      "problem": "ear discomfort",
+      "keywords": ["earache", "mild ear pain", "itchy ear", "ear irritation"],
+      "remedy": "Beta, gently apply warm cloth on ear for comfort. Avoid inserting objects into ear. Rest and sip warm herbal tea.",
+      "extra_info": "Keep ear dry. If pain persists or hearing reduces, consult a doctor.",
+      "escalation": ["severe pain", "pus discharge", "hearing loss"]
+    },
+    {
+      "id": "R186",
+      "problem": "dry throat",
+      "keywords": ["sore throat", "scratchy throat", "dryness", "throat irritation"],
+      "remedy": "Beta, sip warm honey-lemon water. Drink tulsi or ginger tea. Avoid talking loudly. Keep room slightly humid.",
+      "extra_info": "Gargle warm salt water. If severe pain or fever appears, see a doctor.",
+      "escalation": ["difficulty swallowing", "high fever", "trouble breathing"]
+    },
+    {
+      "id": "R187",
+      "problem": "mild swelling in feet",
+      "keywords": ["foot swelling", "ankle swelling", "water retention", "edema"],
+      "remedy": "Beta, elevate feet on pillow, massage gently, and soak in warm water with Epsom salt. Avoid prolonged standing.",
+      "extra_info": "Reduce salty foods. Short daily walks help circulation. Persistent swelling requires doctor.",
+      "escalation": ["sudden swelling", "pain", "difficulty walking"]
+    },
+    {
+      "id": "R188",
+      "problem": "eye irritation",
+      "keywords": ["red eyes", "dry eyes", "itchy eyes", "eye discomfort"],
+      "remedy": "Beta, gently close eyes and apply a warm compress. Blink often and take breaks from reading or screens.",
+      "extra_info": "Drink warm water. Use mild eye drops if needed. Persistent redness or pain requires doctor.",
+      "escalation": ["sudden vision loss", "persistent redness", "painful eyes"]
+    },
+    {
+      "id": "R189",
+      "problem": "mild nausea",
+      "keywords": ["nausea", "queasy", "stomach upset", "mild vomiting sensation"],
+      "remedy": "Beta, sip warm ginger tea or plain warm water. Eat small bland snacks like toast or rice. Rest in a comfortable position.",
+      "extra_info": "Avoid strong odors and oily foods. Persistent nausea requires doctor consultation.",
+      "escalation": ["persistent vomiting", "dehydration", "severe abdominal pain"]
+    },
+    {
+      "id": "R190",
+      "problem": "mild fever",
+      "keywords": ["low-grade fever", "body ache", "warm body", "slight chills"],
+      "remedy": "Beta, rest under light blankets, drink warm fluids like herbal teas. Eat light food like khichdi or soup.",
+      "extra_info": "Use damp cloth on forehead to cool. Monitor temperature. If fever persists more than 3 days or rises high, consult a doctor.",
+      "escalation": ["persistent high fever", "breathing difficulty", "confusion"]
+    },
+    {
+      "id": "R191",
+      "problem": "menstrual cramps",
+      "keywords": ["period pain", "menstrual cramps", "abdominal pain during periods", "stomach cramps"],
+      "remedy": "Beta, place a warm water bottle on your lower abdomen. Drink warm ginger or cinnamon tea to relax muscles. Gentle yoga stretches like cat-cow pose help relieve tension.",
+      "extra_info": "Eat light, warm meals and avoid cold drinks. Massage lower back with warm sesame oil. If pain is severe or unusual, consult a doctor.",
+      "escalation": ["severe pain", "heavy bleeding", "dizziness or fainting"]
+    },
+    {
+      "id": "R192",
+      "problem": "bloating during periods",
+      "keywords": ["period bloating", "abdominal swelling", "water retention", "puffy stomach"],
+      "remedy": "Beta, drink warm fennel or cumin seed water. Gentle walking aids digestion and reduces bloating. Avoid salty or processed foods.",
+      "extra_info": "Eat small frequent meals. Light massage of the abdomen in clockwise direction can relieve discomfort. Persistent bloating should be discussed with a doctor.",
+      "escalation": ["severe pain", "persistent bloating", "unusual swelling"]
+    },
+    {
+      "id": "R193",
+      "problem": "back pain during periods",
+      "keywords": ["period back pain", "menstrual lower back ache", "lumbar pain"],
+      "remedy": "Beta, lie on your side with a pillow between knees. Apply warm oil or heat pack on lower back. Gentle stretches and cat-cow yoga pose help ease tension.",
+      "extra_info": "Avoid lifting heavy objects. Drink warm herbal tea. Severe or sudden pain should be checked by a doctor.",
+      "escalation": ["sharp pain", "numbness", "persistent discomfort"]
+    },
+    {
+      "id": "R194",
+      "problem": "nausea during periods",
+      "keywords": ["period nausea", "vomiting during period", "queasiness", "stomach upset during periods"],
+      "remedy": "Beta, sip warm ginger tea in small amounts. Keep hydrated with warm water or diluted lemon water. Eat bland, easy-to-digest foods like khichdi or toast.",
+      "extra_info": "Rest in a comfortable position. Avoid oily or spicy foods. If nausea is persistent or vomiting is severe, consult a doctor.",
+      "escalation": ["persistent vomiting", "dehydration", "severe abdominal pain"]
+    },
+    {
+      "id": "R195",
+      "problem": "heavy menstrual bleeding",
+      "keywords": ["heavy period", "excessive bleeding", "menorrhagia", "long periods"],
+      "remedy": "Beta, rest well and stay hydrated. Drink pomegranate or black grape juice to support blood. Eat iron-rich foods like spinach, lentils, and sesame seeds.",
+      "extra_info": "Track your cycle. If bleeding is soaking more than one pad per hour or lasts more than 7 days, consult a doctor.",
+      "escalation": ["very heavy bleeding", "dizziness", "fainting"]
+    },
+    {
+      "id": "R196",
+      "problem": "fatigue during periods",
+      "keywords": ["tiredness", "low energy", "lethargy during periods"],
+      "remedy": "Beta, drink warm milk with a pinch of turmeric or cinnamon. Light walking and gentle stretching helps circulation. Rest as needed.",
+      "extra_info": "Eat small, nutrient-rich meals. Avoid caffeine or heavy oily foods. Persistent fatigue beyond periods should be checked by a doctor.",
+      "escalation": ["extreme fatigue", "dizziness", "persistent weakness"]
+    },
+    {
+      "id": "R197",
+      "problem": "pregnancy nausea",
+      "keywords": ["morning sickness", "pregnancy nausea", "vomiting during pregnancy", "queasiness"],
+      "remedy": "Beta, sip warm ginger tea or fennel water slowly. Eat small frequent meals, like dry toast or soaked almonds. Rest in an upright position after meals.",
+      "extra_info": "Avoid strong smells and oily foods. Persistent nausea or inability to retain food requires medical guidance.",
+      "escalation": ["persistent vomiting", "dehydration", "weight loss"]
+    },
+    {
+      "id": "R198",
+      "problem": "swelling during pregnancy",
+      "keywords": ["pregnancy swelling", "edema", "ankle swelling", "hand swelling"],
+      "remedy": "Beta, elevate legs when resting. Gentle ankle rotations and short walks improve circulation. Drink plenty of water and reduce salt intake.",
+      "extra_info": "Comfortable footwear and loose clothing help. Sudden swelling or pain requires immediate medical attention.",
+      "escalation": ["sudden swelling", "headache", "blurred vision"]
+    },
+    {
+      "id": "R199",
+      "problem": "back pain during pregnancy",
+      "keywords": ["pregnancy back pain", "lumbar pain", "lower back ache", "pregnancy discomfort"],
+      "remedy": "Beta, lie on side with pillow support. Warm compress or gentle massage helps. Prenatal yoga stretches like cat-cow are beneficial.",
+      "extra_info": "Avoid lifting heavy objects. Persistent or sharp pain should be discussed with doctor.",
+      "escalation": ["sharp pain", "numbness", "unable to move"]
+    },
+    {
+      "id": "R200",
+      "problem": "leg cramps during pregnancy",
+      "keywords": ["pregnancy leg cramps", "calf pain", "muscle spasm", "night cramps"],
+      "remedy": "Beta, stretch calves gently, massage with warm oil. Drink warm water and eat potassium-rich foods like bananas or dates.",
+      "extra_info": "Short walks daily. Persistent cramps should be evaluated by doctor.",
+      "escalation": ["severe cramps", "swelling", "inability to move leg"]
+    },
+    {
+      "id": "R201",
+      "problem": "mild anemia",
+      "keywords": ["low hemoglobin", "tiredness", "pale skin", "iron deficiency"],
+      "remedy": "Beta, include spinach, beetroot, lentils, and jaggery in meals. Drink warm water with lemon to aid absorption.",
+      "extra_info": "Avoid tea or coffee during meals. Persistent tiredness requires doctor consultation.",
+      "escalation": ["extreme fatigue", "shortness of breath", "dizziness"]
+    },
+    {
+      "id": "R202",
+      "problem": "heartburn during pregnancy",
+      "keywords": ["acid reflux", "indigestion", "burning chest", "pregnancy heartburn"],
+      "remedy": "Beta, eat small frequent meals. Drink warm water with a pinch of baking soda or fennel tea. Avoid spicy and oily foods.",
+      "extra_info": "Sit upright after meals. Persistent or severe heartburn should be checked by doctor.",
+      "escalation": ["vomiting blood", "chest pain", "persistent severe heartburn"]
+    },
+    {
+      "id": "R203",
+      "problem": "mild insomnia during pregnancy",
+      "keywords": ["difficulty sleeping", "restless night", "sleep issues", "pregnancy insomnia"],
+      "remedy": "Beta, establish calm bedtime routine. Sip warm milk with a pinch of cardamom or fennel. Gentle breathing or prenatal meditation helps.",
+      "extra_info": "Keep room dark and quiet. Avoid screens before bed. Persistent insomnia should be discussed with doctor.",
+      "escalation": ["persistent insomnia", "daytime drowsiness", "anxiety affecting sleep"]
+    },
+    {
+      "id": "R204",
+      "problem": "constipation during pregnancy",
+      "keywords": ["pregnancy constipation", "hard stools", "irregular bowel", "bloating"],
+      "remedy": "Beta, drink warm water and eat fibrous foods like papaya, figs, and green vegetables. Gentle abdominal massage helps bowel movement.",
+      "extra_info": "Short walks after meals. Avoid processed foods. Persistent constipation requires doctor consultation.",
+      "escalation": ["severe abdominal pain", "blood in stool", "persistent constipation"]
+    },
+    {
+      "id": "R205",
+      "problem": "mild swelling in hands",
+      "keywords": ["hand swelling", "puffy fingers", "pregnancy edema", "water retention"],
+      "remedy": "Beta, elevate hands and gently massage. Drink sufficient water. Avoid prolonged standing.",
+      "extra_info": "Short gentle exercises. Persistent swelling or pain should be checked by doctor.",
+      "escalation": ["sudden swelling", "pain", "difficulty moving hands"]
+    },
+    {
+      "id": "R206",
+      "problem": "acne during pregnancy",
+      "keywords": ["pregnancy acne", "pimples", "skin breakouts", "facial blemishes"],
+      "remedy": "Beta, wash face twice a day with mild lukewarm water. Apply aloe vera gel. Avoid squeezing pimples and oily creams.",
+      "extra_info": "Eat balanced meals, hydrate well. Persistent acne should be checked by dermatologist.",
+      "escalation": ["infection", "pus formation", "scarring"]
+    },
+    {
+      "id": "R207",
+      "problem": "mild nausea postpartum",
+      "keywords": ["postpartum nausea", "queasy", "vomiting after delivery", "stomach upset"],
+      "remedy": "Beta, sip warm ginger water or fennel tea. Eat small frequent light meals like khichdi or toast. Rest and hydrate.",
+      "extra_info": "Avoid strong odors. Persistent vomiting should be checked by doctor.",
+      "escalation": ["persistent vomiting", "dehydration", "weight loss"]
+    },
+    {
+      "id": "R208",
+      "problem": "fatigue postpartum",
+      "keywords": ["postpartum tiredness", "low energy after delivery", "exhaustion"],
+      "remedy": "Beta, rest whenever possible. Drink warm milk or herbal teas. Gentle short walks can revive energy.",
+      "extra_info": "Eat balanced meals rich in protein and iron. Persistent fatigue should be discussed with doctor.",
+      "escalation": ["extreme fatigue", "dizziness", "persistent weakness"]
+    },
+    {
+      "id": "R209",
+      "problem": "breast tenderness",
+      "keywords": ["breast pain", "lactation discomfort", "soreness", "breast swelling"],
+      "remedy": "Beta, use warm compress to relieve discomfort. Gentle massage helps circulation. Wear a supportive bra.",
+      "extra_info": "Apply cold compress if swelling occurs after feeding. Persistent pain or redness should be checked by doctor.",
+      "escalation": ["infection", "persistent pain", "redness or fever"]
+    },
+    {
+      "id": "R210",
+      "problem": "back pain postpartum",
+      "keywords": ["postpartum back pain", "lumbar ache", "lower back soreness"],
+      "remedy": "Beta, gentle stretches and warm compress help. Maintain good posture while breastfeeding. Short walks aid recovery.",
+      "extra_info": "Avoid lifting heavy weights. Persistent sharp pain should be checked by doctor.",
+      "escalation": ["sharp pain", "numbness", "unable to move"]
+    },
+    {
+      "id": "R211",
+      "problem": "urinary discomfort",
+      "keywords": ["urinary discomfort", "burning urination", "frequent urination"],
+      "remedy": "Beta, drink plenty of water and cranberry juice. Maintain hygiene and avoid irritants.",
+      "extra_info": "Seek medical attention if burning persists or urine is discolored.",
+      "escalation": ["severe burning", "blood in urine", "fever with pain"]
+    },
+    {
+      "id": "R212",
+      "problem": "mild constipation postpartum",
+      "keywords": ["postpartum constipation", "hard stools", "bloating", "irregular bowel"],
+      "remedy": "Beta, drink warm water, include fibrous fruits like papaya, figs, and leafy vegetables. Gentle abdominal massage aids movement.",
+      "extra_info": "Short walks help digestion. Persistent constipation requires doctor consultation.",
+      "escalation": ["severe abdominal pain", "blood in stool", "persistent constipation"]
+    },
+    {
+      "id": "R213",
+      "problem": "hair fall postpartum",
+      "keywords": ["postpartum hair loss", "thinning hair after delivery", "hair shedding"],
+      "remedy": "Beta, gently massage scalp with warm coconut or almond oil. Eat protein-rich foods. Avoid harsh chemicals and heat styling.",
+      "extra_info": "Use mild shampoo. Hair usually regrows naturally. Excessive sudden loss should be checked by doctor.",
+      "escalation": ["sudden excessive hair fall", "scalp infection", "bald patches"]
+    },
+    {
+      "id": "R214",
+      "problem": "dry skin during pregnancy",
+      "keywords": ["dry skin", "flaky skin", "rough skin", "itchy skin"],
+      "remedy": "Beta, apply coconut or sesame oil daily. Drink plenty of water. Use mild soaps and avoid long hot showers.",
+      "extra_info": "Eat fruits and nuts for hydration. Persistent itching or rashes should be checked by doctor.",
+      "escalation": ["severe itching", "infection", "rash spreading"]
+    },
+    {
+      "id": "R215",
+      "problem": "leg swelling postpartum",
+      "keywords": ["leg swelling", "ankle puffiness", "edema after delivery"],
+      "remedy": "Beta, elevate legs when resting. Gentle massage and short walks help circulation. Stay hydrated.",
+      "extra_info": "Avoid prolonged standing. Sudden severe swelling should be checked immediately.",
+      "escalation": ["sudden swelling", "pain", "difficulty walking"]
+    },
+    {
+      "id": "R216",
+      "problem": "back stiffness during pregnancy",
+      "keywords": ["stiff back", "pregnancy back discomfort", "lumbar stiffness"],
+      "remedy": "Beta, gentle stretches and warm compress help relieve stiffness. Use pillows for support while sleeping.",
+      "extra_info": "Prenatal yoga can improve flexibility. Persistent stiffness with pain should be checked by doctor.",
+      "escalation": ["sharp pain", "numbness", "movement difficulty"]
+    },
+    {
+      "id": "R217",
+      "problem": "cramps during pregnancy",
+      "keywords": ["leg cramps", "muscle spasms", "calf pain", "night cramps"],
+      "remedy": "Beta, stretch calves gently before sleep. Massage with warm oil. Include potassium-rich foods like bananas, dates, and milk.",
+      "extra_info": "Short walks help. Persistent or severe cramps require doctor.",
+      "escalation": ["severe cramps", "swelling", "inability to move leg"]
+    },
+    {
+      "id": "R218",
+      "problem": "hemorrhoids during pregnancy",
+      "keywords": ["piles", "swollen veins", "anal discomfort", "pain during bowel movement"],
+      "remedy": "Beta, take warm sitz baths several times a day. Increase fiber in diet, drink warm water frequently. Avoid straining during bowel movements.",
+      "extra_info": "Use soft toilet paper. Persistent pain or bleeding should be checked by doctor.",
+      "escalation": ["bleeding", "severe pain", "infection"]
+    },
+    {
+      "id": "R219",
+      "problem": "urinary tract discomfort during pregnancy",
+      "keywords": ["UTI", "urinary discomfort", "burning urination", "frequent urination"],
+      "remedy": "Beta, drink plenty of water and unsweetened cranberry juice. Maintain hygiene and avoid irritants.",
+      "extra_info": "Persistent burning or cloudy urine needs doctor consultation.",
+      "escalation": ["severe burning", "blood in urine", "fever with pain"]
+    },
+    {
+      "id": "R220",
+      "problem": "mild swelling in hands during pregnancy",
+      "keywords": ["hand swelling", "puffy fingers", "edema", "water retention"],
+      "remedy": "Beta, elevate hands and gently massage. Drink sufficient water. Avoid prolonged standing.",
+      "extra_info": "Short gentle exercises help. Sudden swelling requires immediate attention.",
+      "escalation": ["sudden swelling", "pain", "difficulty moving hands"]
+    },
+    {
+      "id": "R221",
+      "problem": "hair dryness during pregnancy",
+      "keywords": ["dry hair", "frizzy hair", "hair breakage", "split ends"],
+      "remedy": "Beta, regularly massage scalp with warm coconut or almond oil. Avoid harsh chemicals and excessive heat styling.",
+      "extra_info": "Use mild shampoo. Eat protein-rich diet. Persistent dryness may require specialist advice.",
+      "escalation": ["severe hair breakage", "bald patches", "scalp infection"]
+    },
+    {
+      "id": "R222",
+      "problem": "mild anxiety during pregnancy",
+      "keywords": ["anxiety", "stress", "nervousness", "restlessness"],
+      "remedy": "Beta, practice deep breathing and meditation. Drink warm herbal teas like chamomile or tulsi. Gentle walks help calm mind.",
+      "extra_info": "Talk to supportive family or friends. Persistent anxiety should be discussed with doctor or counselor.",
+      "escalation": ["severe anxiety", "panic attacks", "inability to sleep"]
+    },
+    {
+      "id": "R223",
+      "problem": "mild headaches during pregnancy",
+      "keywords": ["headache", "migraine", "head pressure", "temple pain"],
+      "remedy": "Beta, rest in a quiet, cool room. Drink warm water or herbal teas. Apply cool or warm compress to forehead as preferred.",
+      "extra_info": "Avoid long screen time. Persistent or severe headache requires medical consultation.",
+      "escalation": ["sudden severe headache", "blurred vision", "dizziness"]
+    },
+    {
+      "id": "R224",
+      "problem": "skin dryness postpartum",
+      "keywords": ["dry skin", "flaky skin", "rough skin", "postpartum skin"],
+      "remedy": "Beta, apply coconut or sesame oil regularly. Drink plenty of water. Eat fruits and nuts for hydration.",
+      "extra_info": "Avoid hot long baths. Persistent skin irritation should be checked by doctor.",
+      "escalation": ["severe itching", "rash", "infection"]
+    },
+    {
+      "id": "R225",
+      "problem": "mild acne postpartum",
+      "keywords": ["postpartum acne", "pimples", "skin breakouts", "facial blemishes"],
+      "remedy": "Beta, wash face gently twice a day with lukewarm water. Apply aloe vera gel to soothe inflammation. Avoid squeezing pimples.",
+      "extra_info": "Maintain balanced diet and hydration. Persistent or painful acne should be checked by dermatologist.",
+      "escalation": ["infection", "pus formation", "scarring"]
+    }
+
+
+  ]
+}
+  

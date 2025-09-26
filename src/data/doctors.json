@@ -1,0 +1,1504 @@
+{
+  "doctors": [
+    {
+      "id": "D001-NORTH",
+      "name": "Dr. Ravi Singh",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-23456789",
+      "email": "ravi.singh@example.com",
+      "keywords": ["fever", "cold", "general health", "consultation"]
+    },
+    {
+      "id": "D002-NORTH",
+      "name": "Dr. Meera Sharma",
+      "specialty": "Ayurvedic Practitioner",
+      "region": "North India",
+      "state": "Uttar Pradesh",
+      "contact": "0522-9876543",
+      "email": "meera.sharma@ayurvedic.in",
+      "keywords": ["bone pain", "joint pain", "ayurvedic", "bones"]
+    },
+    {
+      "id": "D003-SOUTH",
+      "name": "Dr. Arjun Rao",
+      "specialty": "Pulmonologist",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-12345678",
+      "email": "arjun.rao@lungcare.com",
+      "keywords": ["breathing", "asthma", "lungs", "respiratory"]
+    },
+    {
+      "id": "D004-SOUTH",
+      "name": "Dr. Lakshmi Devi",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-87654321",
+      "email": "lakshmi.devi@womenhealth.in",
+      "keywords": ["period", "pregnancy", "women health", "gynecology"]
+    },
+    {
+      "id": "D005-WEST",
+      "name": "Dr. Rahul Mehta",
+      "specialty": "Dermatologist",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-55551234",
+      "email": "rahul.mehta@skinclinic.in",
+      "keywords": ["acne", "eczema", "skin", "dermatology"]
+    },
+    {
+      "id": "D006-WEST",
+      "name": "Dr. Pooja Joshi",
+      "specialty": "Dietitian",
+      "region": "West India",
+      "state": "Goa",
+      "contact": "0832-1234567",
+      "email": "pooja.joshi@nutrition.in",
+      "keywords": ["weight loss", "diet", "nutrition", "obesity"]
+    },
+    {
+      "id": "D007-EAST",
+      "name": "Dr. Arup Banerjee",
+      "specialty": "Psychiatrist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-22223344",
+      "email": "arup.banerjee@mentalcare.in",
+      "keywords": ["depression", "anxiety", "mental health", "therapy"]
+    },
+    {
+      "id": "D008-EAST",
+      "name": "Dr. Nisha Ghosh",
+      "specialty": "Neurologist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-1238899",
+      "email": "nisha.ghosh@neurology.in",
+      "keywords": ["headache", "migraines", "neurology", "nerves"]
+    },
+    {
+      "id": "D009-CENTRAL",
+      "name": "Dr. Sunita Gupta",
+      "specialty": "Cardiologist",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-5566778",
+      "email": "sunita.gupta@cardio.in",
+      "keywords": ["heart", "chest pain", "cardiovascular", "cardiology"]
+    },
+    {
+      "id": "D010-CENTRAL",
+      "name": "Dr. Amit Verma",
+      "specialty": "Orthopedic",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-8899001",
+      "email": "amit.verma@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D011-NORTH",
+      "name": "Dr. Kavita Bansal",
+      "specialty": "ENT Specialist",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-3344556",
+      "email": "kavita.bansal@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "hearing", "ENT"]
+    },
+    {
+      "id": "D012-NORTH",
+      "name": "Dr. Manoj Yadav",
+      "specialty": "Pediatrician",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-4455667",
+      "email": "manoj.yadav@childcare.in",
+      "keywords": ["children", "infant", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D013-SOUTH",
+      "name": "Dr. Shreya Menon",
+      "specialty": "Endocrinologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-9988776",
+      "email": "shreya.menon@endocare.in",
+      "keywords": ["diabetes", "thyroid", "hormones", "endocrinology"]
+    },
+    {
+      "id": "D014-SOUTH",
+      "name": "Dr. Ramesh Chandra",
+      "specialty": "Oncologist",
+      "region": "South India",
+      "state": "Andhra Pradesh",
+      "contact": "0866-2233445",
+      "email": "ramesh.chandra@oncocare.in",
+      "keywords": ["cancer", "tumor", "oncology", "chemotherapy"]
+    },
+    {
+      "id": "D015-WEST",
+      "name": "Dr. Sneha Deshmukh",
+      "specialty": "Rheumatologist",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-6677889",
+      "email": "sneha.deshmukh@rheumacare.in",
+      "keywords": ["arthritis", "autoimmune", "joints", "rheumatology"]
+    },
+    {
+      "id": "D016-WEST",
+      "name": "Dr. Farhan Qureshi",
+      "specialty": "Nephrologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-4455667",
+      "email": "farhan.qureshi@kidneycare.in",
+      "keywords": ["kidney", "dialysis", "renal", "nephrology"]
+    },
+    {
+      "id": "D017-EAST",
+      "name": "Dr. Priyanka Sen",
+      "specialty": "Ophthalmologist",
+      "region": "East India",
+      "state": "Assam",
+      "contact": "0361-2233445",
+      "email": "priyanka.sen@eyecare.in",
+      "keywords": ["vision", "eye", "cataract", "ophthalmology"]
+    },
+    {
+      "id": "D018-EAST",
+      "name": "Dr. Subhash Mishra",
+      "specialty": "Gastroenterologist",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-3344556",
+      "email": "subhash.mishra@gastrocare.in",
+      "keywords": ["stomach", "digestion", "liver", "gastroenterology"]
+    },
+    {
+      "id": "D019-CENTRAL",
+      "name": "Dr. Vandana Khare",
+      "specialty": "Immunologist",
+      "region": "Central India",
+      "state": "Jharkhand",
+      "contact": "0651-7788990",
+      "email": "vandana.khare@immunocare.in",
+      "keywords": ["allergy", "immune system", "asthma", "immunology"]
+    },
+    {
+      "id": "D020-CENTRAL",
+      "name": "Dr. Deepak Tiwari",
+      "specialty": "Urologist",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-5566778",
+      "email": "deepak.tiwari@urology.in",
+      "keywords": ["urine", "bladder", "kidney stones", "urology"]
+    },
+    {
+      "id": "D021-NORTH",
+      "name": "Dr. Anjali Verma",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-33445567",
+      "email": "anjali.verma@generalhealth.in",
+      "keywords": ["fever", "cold", "cough", "general health"]
+    },
+    {
+      "id": "D022-NORTH",
+      "name": "Dr. Rajat Kapoor",
+      "specialty": "MBBS Physician",
+      "region": "North India",
+      "state": "Uttar Pradesh",
+      "contact": "0522-5566778",
+      "email": "rajat.kapoor@healthcare.in",
+      "keywords": ["headache", "stomach ache", "common illness", "general"]
+    },
+    {
+      "id": "D023-NORTH",
+      "name": "Dr. Neha Sharma",
+      "specialty": "Dentist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-6677889",
+      "email": "neha.sharma@dentalcare.in",
+      "keywords": ["toothache", "oral care", "cavities", "dental"]
+    },
+    {
+      "id": "D024-SOUTH",
+      "name": "Dr. Suresh Reddy",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-33445566",
+      "email": "suresh.reddy@generalhealth.in",
+      "keywords": ["cold", "fever", "minor injuries", "common ailments"]
+    },
+    {
+      "id": "D025-SOUTH",
+      "name": "Dr. Ananya Iyer",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-5566778",
+      "email": "ananya.iyer@womenhealth.in",
+      "keywords": ["pregnancy", "period issues", "gynecology", "women health"]
+    },
+    {
+      "id": "D026-SOUTH",
+      "name": "Dr. Praveen Kumar",
+      "specialty": "Pediatrician",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-6677889",
+      "email": "praveen.kumar@childcare.in",
+      "keywords": ["child health", "vaccination", "infants", "pediatrics"]
+    },
+    {
+      "id": "D027-WEST",
+      "name": "Dr. Meera Patil",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-33445577",
+      "email": "meera.patil@generalhealth.in",
+      "keywords": ["fever", "cold", "flu", "common ailments"]
+    },
+    {
+      "id": "D028-WEST",
+      "name": "Dr. Rohan Desai",
+      "specialty": "Cardiologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-5566779",
+      "email": "rohan.desai@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D029-WEST",
+      "name": "Dr. Shruti Joshi",
+      "specialty": "Dermatologist",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-6677880",
+      "email": "shruti.joshi@skinclinic.in",
+      "keywords": ["acne", "skin care", "rashes", "dermatology"]
+    },
+    {
+      "id": "D030-EAST",
+      "name": "Dr. Arvind Kumar",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-3344556",
+      "email": "arvind.kumar@generalhealth.in",
+      "keywords": ["cold", "fever", "common illnesses", "minor injuries"]
+    },
+    {
+      "id": "D031-EAST",
+      "name": "Dr. Nandita Roy",
+      "specialty": "Neurologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-5566770",
+      "email": "nandita.roy@neurology.in",
+      "keywords": ["headache", "migraine", "nerves", "neurology"]
+    },
+    {
+      "id": "D032-EAST",
+      "name": "Dr. Amit Singh",
+      "specialty": "Orthopedic",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-6677881",
+      "email": "amit.singh@bonecare.in",
+      "keywords": ["joint pain", "bone health", "back pain", "orthopedic"]
+    },
+    {
+      "id": "D033-CENTRAL",
+      "name": "Dr. Sunita Rao",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-5566779",
+      "email": "sunita.rao@generalhealth.in",
+      "keywords": ["cold", "fever", "flu", "common ailments"]
+    },
+    {
+      "id": "D034-CENTRAL",
+      "name": "Dr. Ajay Tiwari",
+      "specialty": "ENT Specialist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-6677882",
+      "email": "ajay.tiwari@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "hearing", "ENT"]
+    },
+    {
+      "id": "D035-NORTH",
+      "name": "Dr. Rekha Gupta",
+      "specialty": "Dermatologist",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-6677883",
+      "email": "rekha.gupta@skinclinic.in",
+      "keywords": ["skin", "acne", "rashes", "dermatology"]
+    },
+    {
+      "id": "D036-NORTH",
+      "name": "Dr. Karan Malhotra",
+      "specialty": "Cardiologist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7788990",
+      "email": "karan.malhotra@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D037-NORTH",
+      "name": "Dr. Pooja Bhatia",
+      "specialty": "Pediatrician",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-8899001",
+      "email": "pooja.bhatia@childcare.in",
+      "keywords": ["children", "infant", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D038-SOUTH",
+      "name": "Dr. Vijay Ramesh",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Telangana",
+      "contact": "040-3344557",
+      "email": "vijay.ramesh@generalhealth.in",
+      "keywords": ["cold", "fever", "flu", "minor injuries"]
+    },
+    {
+      "id": "D039-SOUTH",
+      "name": "Dr. Nandini Sharma",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-5566771",
+      "email": "nandini.sharma@womenhealth.in",
+      "keywords": ["pregnancy", "period issues", "gynecology", "women health"]
+    },
+    {
+      "id": "D040-SOUTH",
+      "name": "Dr. Anil Menon",
+      "specialty": "Orthopedic",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-6677882",
+      "email": "anil.menon@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bone health", "orthopedic"]
+    },
+    {
+      "id": "D041-WEST",
+      "name": "Dr. Kavya Sharma",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-6677884",
+      "email": "kavya.sharma@generalhealth.in",
+      "keywords": ["cold", "fever", "common ailments", "minor injuries"]
+    },
+    {
+      "id": "D042-WEST",
+      "name": "Dr. Rohit Jain",
+      "specialty": "ENT Specialist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7788991",
+      "email": "rohit.jain@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D043-WEST",
+      "name": "Dr. Sheetal Desai",
+      "specialty": "Dermatologist",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-7788992",
+      "email": "sheetal.desai@skinclinic.in",
+      "keywords": ["skin", "acne", "eczema", "dermatology"]
+    },
+    {
+      "id": "D044-EAST",
+      "name": "Dr. Manish Kumar",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-6677883",
+      "email": "manish.kumar@generalhealth.in",
+      "keywords": ["cold", "fever", "common illness", "minor injuries"]
+    },
+    {
+      "id": "D045-EAST",
+      "name": "Dr. Ritu Sharma",
+      "specialty": "Gynecologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-6677885",
+      "email": "ritu.sharma@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D046-EAST",
+      "name": "Dr. Alok Mishra",
+      "specialty": "Cardiologist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-7788993",
+      "email": "alok.mishra@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D047-CENTRAL",
+      "name": "Dr. Anju Singh",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-6677886",
+      "email": "anju.singh@generalhealth.in",
+      "keywords": ["cold", "fever", "common ailments", "flu"]
+    },
+    {
+      "id": "D048-CENTRAL",
+      "name": "Dr. Rajesh Verma",
+      "specialty": "ENT Specialist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-7788994",
+      "email": "rajesh.verma@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D049-CENTRAL",
+      "name": "Dr. Priya Tiwari",
+      "specialty": "Dermatologist",
+      "region": "Central India",
+      "state": "Jharkhand",
+      "contact": "0651-7788995",
+      "email": "priya.tiwari@skinclinic.in",
+      "keywords": ["skin", "acne", "rashes", "dermatology"]
+    },
+    {
+      "id": "D050-CENTRAL",
+      "name": "Dr. Deepak Sharma",
+      "specialty": "Pediatrician",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-7788996",
+      "email": "deepak.sharma@childcare.in",
+      "keywords": ["children", "vaccination", "infants", "pediatrics"]
+    },
+    {
+      "id": "D051-NORTH",
+      "name": "Dr. Suman Bhatia",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7788997",
+      "email": "suman.bhatia@generalhealth.in",
+      "keywords": ["fever", "cold", "cough", "general health"]
+    },
+    {
+      "id": "D052-NORTH",
+      "name": "Dr. Rakesh Jain",
+      "specialty": "ENT Specialist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-8899002",
+      "email": "rakesh.jain@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "hearing", "ENT"]
+    },
+    {
+      "id": "D053-NORTH",
+      "name": "Dr. Priya Malhotra",
+      "specialty": "Pediatrician",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7788998",
+      "email": "priya.malhotra@childcare.in",
+      "keywords": ["children", "vaccination", "infants", "pediatrics"]
+    },
+    {
+      "id": "D054-SOUTH",
+      "name": "Dr. Sangeeta Rao",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7788999",
+      "email": "sangeeta.rao@generalhealth.in",
+      "keywords": ["cold", "fever", "common ailments", "flu"]
+    },
+    {
+      "id": "D055-SOUTH",
+      "name": "Dr. Aravind Kumar",
+      "specialty": "Cardiologist",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-7789000",
+      "email": "aravind.kumar@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D056-SOUTH",
+      "name": "Dr. Nisha Menon",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789001",
+      "email": "nisha.menon@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D057-WEST",
+      "name": "Dr. Vikram Desai",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-7789002",
+      "email": "vikram.desai@generalhealth.in",
+      "keywords": ["fever", "cold", "minor injuries", "common illness"]
+    },
+    {
+      "id": "D058-WEST",
+      "name": "Dr. Shweta Joshi",
+      "specialty": "Dermatologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7789003",
+      "email": "shweta.joshi@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D059-WEST",
+      "name": "Dr. Rohit Mehta",
+      "specialty": "Orthopedic",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-7789004",
+      "email": "rohit.mehta@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D060-EAST",
+      "name": "Dr. Suman Roy",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-7789005",
+      "email": "suman.roy@generalhealth.in",
+      "keywords": ["cold", "fever", "common ailments", "flu"]
+    },
+    {
+      "id": "D061-EAST",
+      "name": "Dr. Nandita Sinha",
+      "specialty": "Neurologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-7789006",
+      "email": "nandita.sinha@neurology.in",
+      "keywords": ["headache", "migraine", "nerves", "neurology"]
+    },
+    {
+      "id": "D062-EAST",
+      "name": "Dr. Amit Pathak",
+      "specialty": "ENT Specialist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-7789007",
+      "email": "amit.pathak@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D063-CENTRAL",
+      "name": "Dr. Priya Khare",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-7789008",
+      "email": "priya.khare@generalhealth.in",
+      "keywords": ["fever", "cold", "cough", "common ailments"]
+    },
+    {
+      "id": "D064-CENTRAL",
+      "name": "Dr. Ajay Dubey",
+      "specialty": "Cardiologist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-7789009",
+      "email": "ajay.dubey@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D065-CENTRAL",
+      "name": "Dr. Sunita Sharma",
+      "specialty": "Pediatrician",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-7789010",
+      "email": "sunita.sharma@childcare.in",
+      "keywords": ["children", "infants", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D066-NORTH",
+      "name": "Dr. Reema Kapoor",
+      "specialty": "Dermatologist",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7789011",
+      "email": "reema.kapoor@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D067-NORTH",
+      "name": "Dr. Vikas Malhotra",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7789012",
+      "email": "vikas.malhotra@generalhealth.in",
+      "keywords": ["fever", "cold", "minor illness", "common ailments"]
+    },
+    {
+      "id": "D068-NORTH",
+      "name": "Dr. Anju Bansal",
+      "specialty": "Gynecologist",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7789013",
+      "email": "anju.bansal@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D069-SOUTH",
+      "name": "Dr. Suresh Iyer",
+      "specialty": "Orthopedic",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7789014",
+      "email": "suresh.iyer@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D070-SOUTH",
+      "name": "Dr. Anjali Menon",
+      "specialty": "Dermatologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789015",
+      "email": "anjali.menon@skinclinic.in",
+      "keywords": ["acne", "eczema", "skin care", "dermatology"]
+    },
+    {
+      "id": "D071-WEST",
+      "name": "Dr. Ramesh Joshi",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-7789016",
+      "email": "ramesh.joshi@generalhealth.in",
+      "keywords": ["cold", "fever", "minor injuries", "general health"]
+    },
+    {
+      "id": "D072-WEST",
+      "name": "Dr. Priya Desai",
+      "specialty": "Gynecologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7789017",
+      "email": "priya.desai@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D073-WEST",
+      "name": "Dr. Kiran Mehta",
+      "specialty": "Pediatrician",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-7789018",
+      "email": "kiran.mehta@childcare.in",
+      "keywords": ["children", "infants", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D074-EAST",
+      "name": "Dr. Rakesh Sen",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-7789019",
+      "email": "rakesh.sen@generalhealth.in",
+      "keywords": ["cold", "fever", "flu", "common ailments"]
+    },
+    {
+      "id": "D075-EAST",
+      "name": "Dr. Nidhi Roy",
+      "specialty": "Gynecologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-7789020",
+      "email": "nidhi.roy@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D076-EAST",
+      "name": "Dr. Praveen Kumar",
+      "specialty": "Dermatologist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-7789021",
+      "email": "praveen.kumar@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D077-CENTRAL",
+      "name": "Dr. Sushma Tiwari",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-7789022",
+      "email": "sushma.tiwari@generalhealth.in",
+      "keywords": ["cold", "fever", "minor illness", "common ailments"]
+    },
+    {
+      "id": "D078-CENTRAL",
+      "name": "Dr. Rajiv Verma",
+      "specialty": "Cardiologist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-7789023",
+      "email": "rajiv.verma@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D079-CENTRAL",
+      "name": "Dr. Anita Gupta",
+      "specialty": "Pediatrician",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-7789024",
+      "email": "anita.gupta@childcare.in",
+      "keywords": ["children", "infants", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D080-NORTH",
+      "name": "Dr. Mohit Sharma",
+      "specialty": "Orthopedic",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7789025",
+      "email": "mohit.sharma@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D081-NORTH",
+      "name": "Dr. Reena Kapoor",
+      "specialty": "Dermatologist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7789026",
+      "email": "reena.kapoor@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D082-NORTH",
+      "name": "Dr. Anil Bhatia",
+      "specialty": "ENT Specialist",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7789027",
+      "email": "anil.bhatia@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D083-SOUTH",
+      "name": "Dr. Radha Iyer",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7789028",
+      "email": "radha.iyer@generalhealth.in",
+      "keywords": ["fever", "cold", "minor illness", "common ailments"]
+    },
+    {
+      "id": "D084-SOUTH",
+      "name": "Dr. Vijay Menon",
+      "specialty": "Cardiologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789029",
+      "email": "vijay.menon@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D085-SOUTH",
+      "name": "Dr. Priya Ramesh",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-7789030",
+      "email": "priya.ramesh@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D086-WEST",
+      "name": "Dr. Anil Deshmukh",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-7789031",
+      "email": "anil.deshmukh@generalhealth.in",
+      "keywords": ["cold", "fever", "minor injuries", "general health"]
+    },
+    {
+      "id": "D087-WEST",
+      "name": "Dr. Shilpa Mehta",
+      "specialty": "Dermatologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7789032",
+      "email": "shilpa.mehta@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D088-WEST",
+      "name": "Dr. Rohan Joshi",
+      "specialty": "Orthopedic",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-7789033",
+      "email": "rohan.joshi@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D089-EAST",
+      "name": "Dr. Priyanka Sinha",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-7789034",
+      "email": "priyanka.sinha@generalhealth.in",
+      "keywords": ["cold", "fever", "flu", "common ailments"]
+    },
+    {
+      "id": "D090-EAST",
+      "name": "Dr. Arjun Das",
+      "specialty": "Neurologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-7789035",
+      "email": "arjun.das@neurology.in",
+      "keywords": ["headache", "migraine", "nerves", "neurology"]
+    },
+    {
+      "id": "D091-EAST",
+      "name": "Dr. Nidhi Agarwal",
+      "specialty": "ENT Specialist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-7789036",
+      "email": "nidhi.agarwal@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D092-CENTRAL",
+      "name": "Dr. Rajesh Tiwari",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-7789037",
+      "email": "rajesh.tiwari@generalhealth.in",
+      "keywords": ["fever", "cold", "minor illness", "common ailments"]
+    },
+    {
+      "id": "D093-CENTRAL",
+      "name": "Dr. Sunita Verma",
+      "specialty": "Cardiologist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-7789038",
+      "email": "sunita.verma@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D094-CENTRAL",
+      "name": "Dr. Anjali Gupta",
+      "specialty": "Pediatrician",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-7789039",
+      "email": "anjali.gupta@childcare.in",
+      "keywords": ["children", "infants", "vaccination", "pediatrics"]
+    },
+    {
+      "id": "D095-NORTH",
+      "name": "Dr. Rohit Kapoor",
+      "specialty": "Orthopedic",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7789040",
+      "email": "rohit.kapoor@bonecare.in",
+      "keywords": ["joint pain", "back pain", "bones", "orthopedic"]
+    },
+    {
+      "id": "D096-NORTH",
+      "name": "Dr. Meena Sharma",
+      "specialty": "Dermatologist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7789041",
+      "email": "meena.sharma@skinclinic.in",
+      "keywords": ["acne", "rashes", "eczema", "dermatology"]
+    },
+    {
+      "id": "D097-NORTH",
+      "name": "Dr. Anil Malhotra",
+      "specialty": "ENT Specialist",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7789042",
+      "email": "anil.malhotra@entclinic.in",
+      "keywords": ["ear", "nose", "throat", "ENT"]
+    },
+    {
+      "id": "D098-SOUTH",
+      "name": "Dr. Radhika Iyer",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7789043",
+      "email": "radhika.iyer@generalhealth.in",
+      "keywords": ["fever", "cold", "minor illness", "common ailments"]
+    },
+    {
+      "id": "D099-SOUTH",
+      "name": "Dr. Vinay Menon",
+      "specialty": "Cardiologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789044",
+      "email": "vinay.menon@cardio.in",
+      "keywords": ["heart", "blood pressure", "chest pain", "cardiology"]
+    },
+    {
+      "id": "D100-SOUTH",
+      "name": "Dr. Anitha Ramesh",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-7789045",
+      "email": "anitha.ramesh@womenhealth.in",
+      "keywords": ["pregnancy", "period", "gynecology", "women health"]
+    },
+    {
+      "id": "D101-NORTH",
+      "name": "Dr. Neha Sharma",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7789046",
+      "email": "neha.sharma@generalhealth.in",
+      "keywords": ["fever", "cold", "cough", "flu", "common ailments"]
+    },
+    {
+      "id": "D102-NORTH",
+      "name": "Dr. Vikram Choudhary",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7789047",
+      "email": "vikram.choudhary@generalhealth.in",
+      "keywords": ["minor injuries", "headache", "fever", "general health"]
+    },
+    {
+      "id": "D103-NORTH",
+      "name": "Dr. Suman Kaur",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7789048",
+      "email": "suman.kaur@generalhealth.in",
+      "keywords": ["stomach pain", "flu", "cold", "cough", "general health"]
+    },
+    {
+      "id": "D104-SOUTH",
+      "name": "Dr. Rajesh Nair",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789049",
+      "email": "rajesh.nair@generalhealth.in",
+      "keywords": ["fever", "cold", "minor injuries", "flu", "general health"]
+    },
+    {
+      "id": "D105-SOUTH",
+      "name": "Dr. Priya Iyer",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-7789050",
+      "email": "priya.iyer@generalhealth.in",
+      "keywords": ["headache", "stomach pain", "cough", "cold", "general health"]
+    },
+    {
+      "id": "D106-SOUTH",
+      "name": "Dr. Arjun Ramesh",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7789051",
+      "email": "arjun.ramesh@generalhealth.in",
+      "keywords": ["minor injuries", "fever", "flu", "general health"]
+    },
+    {
+      "id": "D107-WEST",
+      "name": "Dr. Shilpa Mehta",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-7789052",
+      "email": "shilpa.mehta@generalhealth.in",
+      "keywords": ["fever", "cold", "stomach pain", "general health"]
+    },
+    {
+      "id": "D108-WEST",
+      "name": "Dr. Rohit Desai",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7789053",
+      "email": "rohit.desai@generalhealth.in",
+      "keywords": ["cough", "cold", "fever", "minor injuries", "general health"]
+    },
+    {
+      "id": "D109-WEST",
+      "name": "Dr. Anjali Joshi",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-7789054",
+      "email": "anjali.joshi@generalhealth.in",
+      "keywords": ["headache", "stomach pain", "flu", "general health"]
+    },
+    {
+      "id": "D110-EAST",
+      "name": "Dr. Priya Sen",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-7789055",
+      "email": "priya.sen@generalhealth.in",
+      "keywords": ["fever", "cold", "minor injuries", "general health"]
+    },
+    {
+      "id": "D111-EAST",
+      "name": "Dr. Arjun Das",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-7789056",
+      "email": "arjun.das@generalhealth.in",
+      "keywords": ["stomach pain", "cold", "flu", "general health"]
+    },
+    {
+      "id": "D112-EAST",
+      "name": "Dr. Nidhi Agarwal",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-7789057",
+      "email": "nidhi.agarwal@generalhealth.in",
+      "keywords": ["fever", "cold", "minor ailments", "general health"]
+    },
+    {
+      "id": "D113-CENTRAL",
+      "name": "Dr. Rajesh Tiwari",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-7789058",
+      "email": "rajesh.tiwari@generalhealth.in",
+      "keywords": ["cold", "fever", "minor injuries", "general health"]
+    },
+    {
+      "id": "D114-CENTRAL",
+      "name": "Dr. Sunita Verma",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-7789059",
+      "email": "sunita.verma@generalhealth.in",
+      "keywords": ["stomach pain", "fever", "flu", "general health"]
+    },
+    {
+      "id": "D115-CENTRAL",
+      "name": "Dr. Anjali Gupta",
+      "specialty": "General Physician",
+      "region": "Central India",
+      "state": "Uttarakhand",
+      "contact": "0135-7789060",
+      "email": "anjali.gupta@generalhealth.in",
+      "keywords": ["cold", "cough", "minor injuries", "general health"]
+    },
+    {
+      "id": "D116-NORTH",
+      "name": "Dr. Mohit Kapoor",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-7789061",
+      "email": "mohit.kapoor@generalhealth.in",
+      "keywords": ["fever", "cold", "flu", "general health"]
+    },
+    {
+      "id": "D117-NORTH",
+      "name": "Dr. Meena Sharma",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-7789062",
+      "email": "meena.sharma@generalhealth.in",
+      "keywords": ["stomach pain", "cold", "headache", "general health"]
+    },
+    {
+      "id": "D118-NORTH",
+      "name": "Dr. Anil Malhotra",
+      "specialty": "General Physician",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-7789063",
+      "email": "anil.malhotra@generalhealth.in",
+      "keywords": ["minor injuries", "cold", "fever", "general health"]
+    },
+    {
+      "id": "D119-SOUTH",
+      "name": "Dr. Radhika Iyer",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-7789064",
+      "email": "radhika.iyer@generalhealth.in",
+      "keywords": ["cold", "fever", "minor ailments", "general health"]
+    },
+    {
+      "id": "D120-SOUTH",
+      "name": "Dr. Vinay Menon",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-7789065",
+      "email": "vinay.menon@generalhealth.in",
+      "keywords": ["fever", "cold", "minor injuries", "general health"]
+    },
+    {
+      "id": "D121-SOUTH",
+      "name": "Dr. Anitha Ramesh",
+      "specialty": "General Physician",
+      "region": "South India",
+      "state": "Tamil Nadu",
+      "contact": "044-7789066",
+      "email": "anitha.ramesh@generalhealth.in",
+      "keywords": ["stomach pain", "flu", "cough", "general health"]
+    },{
+      "id": "D122-WEST",
+      "name": "Dr. Anil Deshmukh",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-7789067",
+      "email": "anil.deshmukh@generalhealth.in",
+      "keywords": ["fever", "cold", "minor injuries", "general health"]
+    },
+    {
+      "id": "D123-WEST",
+      "name": "Dr. Pooja Shah",
+      "specialty": "General Physician",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-7789068",
+      "email": "pooja.shah@generalhealth.in",
+      "keywords": ["stomach pain", "cold", "flu", "general health"]
+    },
+    {
+      "id": "D124-EAST",
+      "name": "Dr. Saurabh Chatterjee",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-7789069",
+      "email": "saurabh.chatterjee@generalhealth.in",
+      "keywords": ["minor injuries", "fever", "cold", "general health"]
+    },
+    {
+      "id": "D125-EAST",
+      "name": "Dr. Ritu Das",
+      "specialty": "General Physician",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-7789070",
+      "email": "ritu.das@generalhealth.in",
+      "keywords": ["cough", "cold", "flu", "general health"]
+    },    {
+      "id": "D126-NORTH",
+      "name": "Dr. Rekha Malhotra",
+      "specialty": "Endocrinologist",
+      "region": "North India",
+      "state": "Punjab",
+      "contact": "0172-9988776",
+      "email": "rekha.malhotra@endocare.in",
+      "keywords": ["diabetes", "thyroid", "hormonal disorders", "endocrinology"]
+    },
+    {
+      "id": "D127-SOUTH",
+      "name": "Dr. Anil Kumar Reddy",
+      "specialty": "Endocrinologist",
+      "region": "South India",
+      "state": "Andhra Pradesh",
+      "contact": "0866-3344556",
+      "email": "anil.reddy@endocare.in",
+      "keywords": ["diabetes", "obesity", "hormonal imbalance", "endocrinology"]
+    },
+    {
+      "id": "D128-WEST",
+      "name": "Dr. Pooja Patel",
+      "specialty": "Gastroenterologist",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-5566778",
+      "email": "pooja.patel@gastrocare.in",
+      "keywords": ["digestion", "stomach", "liver", "gastroenterology"]
+    },
+    {
+      "id": "D129-WEST",
+      "name": "Dr. Rohan Desai",
+      "specialty": "Orthopedic Surgeon",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-9988776",
+      "email": "rohan.desai@bonecare.in",
+      "keywords": ["joint pain", "fracture", "orthopedic surgery", "bones"]
+    },
+    {
+      "id": "D130-EAST",
+      "name": "Dr. Priya Chakraborty",
+      "specialty": "Dermatologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-6677889",
+      "email": "priya.chakraborty@skinclinic.in",
+      "keywords": ["acne", "eczema", "skin infections", "dermatology"]
+    },
+    {
+      "id": "D131-EAST",
+      "name": "Dr. Arjun Dutta",
+      "specialty": "Cardiologist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-3344556",
+      "email": "arjun.dutta@cardio.in",
+      "keywords": ["heart disease", "chest pain", "hypertension", "cardiology"]
+    },
+    {
+      "id": "D132-CENTRAL",
+      "name": "Dr. Sunita Sharma",
+      "specialty": "Pulmonologist",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-4455667",
+      "email": "sunita.sharma@lungcare.in",
+      "keywords": ["asthma", "breathing issues", "lung infection", "pulmonology"]
+    },
+    {
+      "id": "D133-CENTRAL",
+      "name": "Dr. Amit Tiwari",
+      "specialty": "Neurologist",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-5566778",
+      "email": "amit.tiwari@neurocare.in",
+      "keywords": ["stroke", "migraine", "neurology", "nerve disorders"]
+    },
+    {
+      "id": "D134-NORTH",
+      "name": "Dr. Meera Kapoor",
+      "specialty": "Gynecologist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-3344556",
+      "email": "meera.kapoor@womenshealth.in",
+      "keywords": ["pregnancy", "period issues", "fertility", "gynecology"]
+    },
+    {
+      "id": "D135-NORTH",
+      "name": "Dr. Rajiv Malhotra",
+      "specialty": "Psychiatrist",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-6677889",
+      "email": "rajiv.malhotra@mentalhealth.in",
+      "keywords": ["anxiety", "depression", "stress management", "psychiatry"]
+    },
+    {
+      "id": "D136-SOUTH",
+      "name": "Dr. Nandini Rao",
+      "specialty": "Psychiatrist",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-3344556",
+      "email": "nandini.rao@mindcare.in",
+      "keywords": ["stress", "anxiety", "depression", "therapy"]
+    },
+    {
+      "id": "D137-SOUTH",
+      "name": "Dr. Sanjay Kumar",
+      "specialty": "Cardiothoracic Surgeon",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-4455667",
+      "email": "sanjay.kumar@heartcare.in",
+      "keywords": ["heart surgery", "CABG", "valve replacement", "cardiology"]
+    },
+    {
+      "id": "D138-WEST",
+      "name": "Dr. Neha Shah",
+      "specialty": "Neurologist",
+      "region": "West India",
+      "state": "Rajasthan",
+      "contact": "0141-5566778",
+      "email": "neha.shah@neuroclinic.in",
+      "keywords": ["stroke", "epilepsy", "migraine", "neurology"]
+    },
+    {
+      "id": "D139-WEST",
+      "name": "Dr. Ankit Mehta",
+      "specialty": "Gastroenterologist",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-3344556",
+      "email": "ankit.mehta@gastroclinic.in",
+      "keywords": ["digestion", "ulcer", "liver", "gastroenterology"]
+    },
+    {
+      "id": "D140-EAST",
+      "name": "Dr. Ritu Verma",
+      "specialty": "Endocrinologist",
+      "region": "East India",
+      "state": "Bihar",
+      "contact": "0612-5566778",
+      "email": "ritu.verma@endocare.in",
+      "keywords": ["diabetes", "thyroid", "obesity", "hormonal"]
+    },
+    {
+      "id": "D141-EAST",
+      "name": "Dr. Prashant Sinha",
+      "specialty": "Pulmonologist",
+      "region": "East India",
+      "state": "West Bengal",
+      "contact": "033-4455667",
+      "email": "prashant.sinha@lungcare.in",
+      "keywords": ["asthma", "bronchitis", "COPD", "pulmonology"]
+    },
+    {
+      "id": "D142-CENTRAL",
+      "name": "Dr. Sunil Choudhary",
+      "specialty": "Oncologist",
+      "region": "Central India",
+      "state": "Madhya Pradesh",
+      "contact": "0755-3344556",
+      "email": "sunil.choudhary@cancercare.in",
+      "keywords": ["cancer", "chemotherapy", "tumor", "oncology"]
+    },
+    {
+      "id": "D143-CENTRAL",
+      "name": "Dr. Rekha Jain",
+      "specialty": "Orthopedic Surgeon",
+      "region": "Central India",
+      "state": "Chhattisgarh",
+      "contact": "0771-3344556",
+      "email": "rekha.jain@bonecare.in",
+      "keywords": ["fractures", "joint replacement", "orthopedic surgery"]
+    },
+    {
+      "id": "D144-NORTH",
+      "name": "Dr. Richa Malhotra",
+      "specialty": "Cardiologist",
+      "region": "North India",
+      "state": "Delhi",
+      "contact": "011-4455667",
+      "email": "richa.malhotra@heartcare.in",
+      "keywords": ["heart", "hypertension", "arrhythmia", "cardiology"]
+    },
+    {
+      "id": "D145-NORTH",
+      "name": "Dr. Ajay Khanna",
+      "specialty": "Dermatologist",
+      "region": "North India",
+      "state": "Haryana",
+      "contact": "0124-3344556",
+      "email": "ajay.khanna@skinclinic.in",
+      "keywords": ["acne", "eczema", "psoriasis", "dermatology"]
+    },
+    {
+      "id": "D146-SOUTH",
+      "name": "Dr. Meera Nair",
+      "specialty": "Gynecologist",
+      "region": "South India",
+      "state": "Kerala",
+      "contact": "0484-3344556",
+      "email": "meera.nair@womenshealth.in",
+      "keywords": ["pregnancy", "fertility", "gynecology", "period"]
+    },
+    {
+      "id": "D147-SOUTH",
+      "name": "Dr. Sanjay Varma",
+      "specialty": "Neurologist",
+      "region": "South India",
+      "state": "Karnataka",
+      "contact": "080-4455667",
+      "email": "sanjay.varma@neurocare.in",
+      "keywords": ["stroke", "migraine", "epilepsy", "neurology"]
+    },
+    {
+      "id": "D148-WEST",
+      "name": "Dr. Nisha Kapoor",
+      "specialty": "Cardiothoracic Surgeon",
+      "region": "West India",
+      "state": "Gujarat",
+      "contact": "079-3344556",
+      "email": "nisha.kapoor@heartcare.in",
+      "keywords": ["heart surgery", "CABG", "valve replacement", "cardiology"]
+    },
+    {
+      "id": "D149-WEST",
+      "name": "Dr. Rohit Deshmukh",
+      "specialty": "Pulmonologist",
+      "region": "West India",
+      "state": "Maharashtra",
+      "contact": "022-4455667",
+      "email": "rohit.deshmukh@lungcare.in",
+      "keywords": ["asthma", "bronchitis", "COPD", "pulmonology"]
+    },
+    {
+      "id": "D150-EAST",
+      "name": "Dr. Priya Roy",
+      "specialty": "Oncologist",
+      "region": "East India",
+      "state": "Odisha",
+      "contact": "0674-3344556",
+      "email": "priya.roy@cancercare.in",
+      "keywords": ["cancer", "tumor", "chemotherapy", "oncology"]
+    }
+
+
+  ]
+}

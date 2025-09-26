@@ -1,8 +1,6 @@
-import { NaniKeNuskeWidget } from "./widgets/NaniKeNuskeWidget";
-import { NaniKiVaniWidget } from "./widgets/NaniKiVaniWidget";
-import { NaniWellnessWidget } from "./widgets/NaniWellnessWidget";
-import { NaniFitnessWidget } from "./widgets/NaniFitnessWidget";
-import { DoctorConnectWidget } from "./DoctorConnectWidget";
+import { Link } from "react-router-dom";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageCircle, Mic, Heart, Stethoscope } from "lucide-react";
 
 interface WidgetGridProps {
   onStarMessage: (message: any) => void;
@@ -22,31 +20,74 @@ export function WidgetGrid({ onStarMessage, userRegion }: WidgetGridProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-8">
-          {/* Main Chat Widget - Full width on mobile, spans 2 cols on xl */}
-          <div className="xl:col-span-2">
-            <NaniKeNuskeWidget onStarMessage={onStarMessage} />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {/* Nani ke Nuske */}
+          <Link to="/nani-ke-nuske" className="block">
+            <Card className="widget-card hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5 text-primary" />
+                  Nani ke Nuske
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Your pocket nani, ready with a nuskha for every problem. Start a conversation and receive grandmother-approved cures for everyday ailments.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
 
-          {/* Voice Widget */}
-          <div>
-            <NaniKiVaniWidget />
-          </div>
+          {/* Nani ki Vani */}
+          <Link to="/nani-ki-vani" className="block">
+            <Card className="widget-card hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Mic className="h-5 w-5 text-primary" />
+                  Nani ki Vani
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Because sometimes, healing begins with a gentle voice. Press the mic, speak your issue, and listen as Nani shares remedies in her caring voice.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
 
-          {/* Wellness Widget */}
-          <div>
-            <NaniWellnessWidget />
-          </div>
+          {/* Nani Wellness */}
+          <Link to="/nani-wellness" className="block">
+            <Card className="widget-card hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Heart className="h-5 w-5 text-primary" />
+                  Nani Wellness
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Covers stress, anxiety, depression, low confidence, anger, loneliness, stamina, sleep issues, posture, obesity, fat loss, breathing exercises, and women's health.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
 
-          {/* Fitness Widget */}
-          <div>
-            <NaniFitnessWidget />
-          </div>
-
-          {/* Doctor Connect Widget */}
-          <div>
-            <DoctorConnectWidget userRegion={userRegion} />
-          </div>
+          {/* Doctor Connect */}
+          <Link to="/doctor-connect" className="block">
+            <Card className="widget-card hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Stethoscope className="h-5 w-5 text-primary" />
+                  Doctor Connect
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Suggests 5 doctors based on problem and region. Shows name, specialty, contact number, email, region with empathetic, professional recommendations.
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
         </div>
 
         {/* Footer wellness tip */}
