@@ -8,6 +8,8 @@ import NaniKeNuskePage from "./pages/NaniKeNuskePage";
 import NaniKiVaniPage from "./pages/NaniKiVaniPage";
 import NaniWellnessPage from "./pages/NaniWellnessPage";
 import DoctorConnectPage from "./pages/DoctorConnectPage";
+import ProfilePage from "./pages/ProfilePage";
+import StarredPage from "./pages/StarredPage";
 import AboutPage from "./pages/AboutPage";
 import FeedbackPage from "./pages/FeedbackPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/nani-ki-vani" element={<NaniKiVaniPage />} />
           <Route path="/nani-wellness" element={<NaniWellnessPage />} />
           <Route path="/doctor-connect" element={<DoctorConnectPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/starred" element={<StarredPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/feedback" element={<FeedbackPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

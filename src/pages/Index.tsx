@@ -27,6 +27,8 @@ const Index = () => {
     setSelectedRegion(userData.region);
     setIsLoggedIn(true);
     setShowOnboarding(false);
+    // Store user data for navigation persistence
+    localStorage.setItem('nanicure_user', JSON.stringify(userData));
   };
 
   const handleSignOut = () => {

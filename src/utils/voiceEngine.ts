@@ -300,10 +300,47 @@ class NaniVoiceEngine {
 // Export singleton instance
 export const naniVoice = new NaniVoiceEngine();
 
+// Legacy exports for compatibility
+export const generateVoiceResponse = (userInput: string, region?: string): string => {
+  // Simple remedy matching for now
+  const input = userInput.toLowerCase();
+  if (input.includes('headache')) {
+    return `**Arre beta, headache ho raha hai? Let Nani help!**
+
+**Quick Relief:**
+• Rest in a dark, quiet room
+• Apply cold compress on forehead  
+• Drink warm water slowly
+• Gently massage temples
+
+**Nani's Special:**
+• Ginger tea with honey
+• Peppermint oil on temples
+
+**⚠️ See doctor if:** Severe pain, fever, or doesn't improve in 24 hours
+
+*Rest well beta, main tumhare saath hun! 💛*`;
+  }
+  
+  return `**Beta, I heard you! Let me help.**
+
+For best results, please be specific about your symptoms. 
+Ask me about headaches, stomach issues, cold, cough, or other common problems.
+
+*Main yahan hun tumhare liye! 💛*`;
+};
+
+export const speakText = async (text: string, callbacks?: {
+  onStart?: () => void;
+  onEnd?: () => void;
+  onError?: () => void;
+}) => {
+  return naniVoice.speak(text, callbacks?.onStart, callbacks?.onEnd, callbacks?.onError);
+};
+
 // Wait for voices to be loaded
 if (typeof window !== 'undefined') {
   window.speechSynthesis.onvoiceschanged = () => {
-    // Voices are now loaded
     console.log('Voices loaded:', naniVoice.getAvailableVoices().length);
   };
 }
