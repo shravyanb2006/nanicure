@@ -178,8 +178,9 @@ export default function NaniKiVaniPage() {
     }
   };
 
-  const goToCompanions = () => {
-    navigate('/companions');
+  
+  const goToDashboard = () => {
+    navigate('/dashboard');
   };
 
   const renderResponse = (text: string) => {
@@ -212,11 +213,10 @@ export default function NaniKiVaniPage() {
         <div className="flex items-center justify-between mb-6">
           <Button
             variant="outline"
-            onClick={goToCompanions}
-            className="flex items-center gap-2"
+            onClick={() => navigate('/dashboard')}
           >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Companions
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Dashboard
           </Button>
           
           <div className="flex items-center gap-4">
