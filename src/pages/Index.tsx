@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { WidgetGrid } from "@/components/WidgetGrid";
@@ -27,8 +27,6 @@ const Index = () => {
     setSelectedRegion(userData.region);
     setIsLoggedIn(true);
     setShowOnboarding(false);
-    // Store user data for navigation persistence
-    localStorage.setItem('nanicure_user', JSON.stringify(userData));
   };
 
   const handleSignOut = () => {

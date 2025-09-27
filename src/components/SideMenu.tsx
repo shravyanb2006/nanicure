@@ -110,7 +110,7 @@ export function SideMenu({ isOpen, onClose, currentPage }: SideMenuProps) {
       <div className="fixed inset-0 bg-black/50" onClick={onClose} />
       
       {/* Side Menu */}
-      <div className="fixed left-0 top-0 h-full w-80 bg-background border-r shadow-lg">
+      <div className="fixed left-0 top-0 h-full w-80 bg-card border-r shadow-lg">
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="font-semibold text-lg">Menu</h2>
           <Button variant="ghost" size="sm" onClick={onClose}>
@@ -151,10 +151,10 @@ export function SideMenu({ isOpen, onClose, currentPage }: SideMenuProps) {
                   {ingredientsOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
                 </Button>
               </CollapsibleTrigger>
-              <CollapsibleContent className="space-y-2 ml-6 mt-2">
+              <CollapsibleContent className="space-y-2 ml-6 mt-2 bg-card rounded-lg p-2 border shadow-lg z-50">
                 <ScrollArea className="h-64">
                   {ingredients.map((ingredient, index) => (
-                    <Card key={index} className="mb-2">
+                    <Card key={index} className="mb-2 bg-background">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-sm">{ingredient.name}</CardTitle>
                       </CardHeader>
@@ -180,10 +180,10 @@ export function SideMenu({ isOpen, onClose, currentPage }: SideMenuProps) {
                   {remediesOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
                 </Button>
               </CollapsibleTrigger>
-              <CollapsibleContent className="space-y-2 ml-6 mt-2">
+              <CollapsibleContent className="space-y-2 ml-6 mt-2 bg-card rounded-lg p-2 border shadow-lg z-50">
                 <ScrollArea className="h-64">
                   {quickRemedies.map((remedy, index) => (
-                    <Card key={index} className="mb-2 cursor-pointer hover:bg-accent" 
+                    <Card key={index} className="mb-2 cursor-pointer hover:bg-accent bg-background" 
                           onClick={() => handleNavigation(`/nani-ke-nuske?remedy=${remedy.title}`)}>
                       <CardHeader className="pb-2">
                         <CardTitle className="text-sm">{remedy.title}</CardTitle>
