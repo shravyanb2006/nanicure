@@ -1,219 +1,185 @@
-import { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mic, MicOff, Volume2, VolumeX, ArrowLeft, RotateCcw, Menu } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Mic, MicOff, Volume2, VolumeX, ArrowLeft, Menu, RotateCcw, Star } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 import { Header } from "@/components/Header";
 import { SideMenu } from "@/components/SideMenu";
-import { 
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
-import { generateVoiceResponse, speakText } from "@/utils/voiceEngine";
+import { useNavigate } from "react-router-dom";
+import { enhancedVoiceEngine, SessionMessage } from "@/utils/enhancedVoiceEngine";
+import { profileManager } from "@/utils/profileManager";
 
-const NaniKiVaniPage = () => {
-  const navigate = useNavigate();
-  const { toast } = useToast();
-  const [selectedRegion, setSelectedRegion] = useState("");
+export default function NaniKiVaniPage() {
   const [isListening, setIsListening] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [response, setResponse] = useState("");
-  const [lastResponse, setLastResponse] = useState("");
-  const [audioLock, setAudioLock] = useState(false);
-  const [showSideMenu, setShowSideMenu] = useState(false);
-  
-  const recognitionRef = useRef<any>(null);
-  const silenceTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [sessionMessages, setSessionMessages] = useState<SessionMessage[]>([]);
+  const [selectedRegion, setSelectedRegion] = useState<string>("");
+  const [sideMenuOpen, setSideMenuOpen] = useState(false);
+  const [waitingForClarification, setWaitingForClarification] = useState(false);
+  const { toast } = useToast();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    return () => {
-      stopListening();
-      stopSpeaking();
-    };
+    const profile = profileManager.getProfile();
+    if (profile?.region) {
+      setSelectedRegion(profile.region);
+    }
   }, []);
 
+  const headerProps = {
+    onMenuClick: () => setSideMenuOpen(true),
+    selectedRegion: '',
+    onRegionChange: () => {},
+    onLoginClick: () => {},
+    isLoggedIn: true,
+    userName: 'Friend'
+  };
+
   const startListening = async () => {
-    if (audioLock || isSpeaking) {
+    if (enhancedVoiceEngine.locked || enhancedVoiceEngine.speaking) {
       toast({
-        title: "Please wait beta",
-        description: "Nani is still speaking, please wait for her to finish",
+        title: "Please wait",
+        description: "Nani is currently speaking. Please wait for her to finish.",
+        variant: "destructive",
       });
       return;
     }
 
     try {
-      // Request microphone permission
-      await navigator.mediaDevices.getUserMedia({ audio: true });
+      setIsListening(true);
+      setTranscript("Listening...");
       
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-      
-      if (!SpeechRecognition) {
-        toast({
-          title: "Speech recognition not supported",
-          description: "Please try typing your question instead",
-          variant: "destructive",
-        });
-        return;
-      }
-
-      const recognition = new SpeechRecognition();
-      recognitionRef.current = recognition;
-
-      recognition.continuous = true;
-      recognition.interimResults = true;
-      recognition.lang = 'en-IN';
-
-      recognition.onstart = () => {
-        setIsListening(true);
-        setTranscript("");
-        setResponse("");
-      };
-
-      recognition.onresult = (event) => {
-        if (audioLock) return; // Prevent processing during TTS
-        
-        let interimTranscript = '';
-        let finalTranscript = '';
-
-        for (let i = event.resultIndex; i < event.results.length; i++) {
-          const transcript = event.results[i][0].transcript;
-          if (event.results[i].isFinal) {
-            finalTranscript += transcript;
-          } else {
-            interimTranscript += transcript;
+      await enhancedVoiceEngine.startListening(
+        (transcript, isFinal) => {
+          setTranscript(transcript);
+          if (isFinal && transcript.trim()) {
+            handleVoiceInput(transcript);
           }
-        }
-
-        setTranscript(finalTranscript + interimTranscript);
-
-        // Clear previous timeout
-        if (silenceTimeoutRef.current) {
-          clearTimeout(silenceTimeoutRef.current);
-        }
-
-        // Auto-stop after 3 seconds of silence
-        silenceTimeoutRef.current = setTimeout(() => {
-          if (finalTranscript.trim()) {
-            handleVoiceInput(finalTranscript);
-          }
-        }, 3000);
-      };
-
-      recognition.onerror = (event) => {
-        console.error('Speech recognition error:', event.error);
-        setIsListening(false);
-        
-        if (event.error === 'no-speech') {
+        },
+        (error) => {
+          setIsListening(false);
           toast({
-            title: "I didn't catch that",
-            description: "Could you repeat slowly beta?",
+            title: "Voice Error",
+            description: error,
+            variant: "destructive",
           });
         }
-      };
-
-      recognition.onend = () => {
-        setIsListening(false);
-      };
-
-      recognition.start();
-      
+      );
     } catch (error) {
-      console.error('Microphone error:', error);
+      setIsListening(false);
       toast({
-        title: "Microphone access needed",
-        description: "Please allow microphone access to talk with Nani",
+        title: "Microphone Error",
+        description: "Could not access microphone. Please check permissions.",
         variant: "destructive",
       });
     }
   };
 
   const stopListening = () => {
-    if (recognitionRef.current) {
-      recognitionRef.current.stop();
-      recognitionRef.current = null;
-    }
-    if (silenceTimeoutRef.current) {
-      clearTimeout(silenceTimeoutRef.current);
-    }
+    enhancedVoiceEngine.stopListening();
     setIsListening(false);
   };
 
   const handleVoiceInput = async (userInput: string) => {
     if (!userInput.trim()) return;
-
-    stopListening();
-    setAudioLock(true);
-
+    
+    setIsListening(false);
+    setTranscript(userInput);
+    
     try {
-      const naniResponse = generateVoiceResponse(userInput, selectedRegion);
-      setResponse(naniResponse);
-      setLastResponse(naniResponse);
+      const result = await enhancedVoiceEngine.processUserInput(userInput, selectedRegion);
+      setResponse(result.response);
+      setWaitingForClarification(result.needsClarification);
       
-      await speakNaniResponse(naniResponse);
+      // Update session messages
+      setSessionMessages(enhancedVoiceEngine.getSessionMessages());
+      
+      await speakNaniResponse(result.response);
     } catch (error) {
-      console.error('Voice processing error:', error);
+      console.error('Error processing voice input:', error);
       toast({
-        title: "Something went wrong",
-        description: "Please try again beta",
+        title: "Processing Error",
+        description: "Could not process your request. Please try again.",
         variant: "destructive",
       });
-    } finally {
-      setAudioLock(false);
     }
   };
 
   const speakNaniResponse = async (text: string) => {
+    if (!text) return;
+    
     setIsSpeaking(true);
     
     try {
-      // Use the voice engine utility
-      await speakText(text, {
-        onStart: () => setIsSpeaking(true),
-        onEnd: () => setIsSpeaking(false),
-        onError: () => {
+      await enhancedVoiceEngine.speak(
+        text,
+        () => setIsSpeaking(true),
+        () => setIsSpeaking(false),
+        (error) => {
+          console.error('TTS Error:', error);
           setIsSpeaking(false);
           toast({
-            title: "Speech playback failed",
-            description: "Text response is still available above",
+            title: "Speech Error",
+            description: "Could not speak the response.",
+            variant: "destructive",
           });
         }
-      });
+      );
     } catch (error) {
       setIsSpeaking(false);
-      console.error('TTS Error:', error);
     }
   };
 
   const stopSpeaking = () => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-    }
+    enhancedVoiceEngine.stopSpeaking();
     setIsSpeaking(false);
   };
 
   const repeatLastResponse = () => {
-    if (lastResponse && !isSpeaking) {
-      speakNaniResponse(lastResponse);
+    if (response) {
+      speakNaniResponse(response);
     }
   };
 
   const startNewChat = () => {
-    stopListening();
-    stopSpeaking();
     setTranscript("");
     setResponse("");
-    setLastResponse("");
-    setAudioLock(false);
+    setIsSpeaking(false);
+    setIsListening(false);
+    setWaitingForClarification(false);
+    setSessionMessages([]);
+    enhancedVoiceEngine.stopSpeaking();
+    enhancedVoiceEngine.stopListening();
+    enhancedVoiceEngine.clearSession();
     
     toast({
-      title: "New conversation started",
-      description: "Nani is ready to help you again!",
+      title: "New Chat Started",
+      description: "Conversation cleared. Ready for your next question!",
     });
+  };
+
+  const starMessage = (message: SessionMessage) => {
+    if (message.remedy) {
+      profileManager.addStarredMessage({
+        id: message.id,
+        text: message.text,
+        timestamp: message.timestamp,
+        type: 'remedy',
+        source: 'voice'
+      });
+      
+      toast({
+        title: "Remedy Starred",
+        description: "Added to your starred remedies!",
+      });
+    }
+  };
+
+  const goToCompanions = () => {
+    navigate('/companions');
   };
 
   const renderResponse = (text: string) => {
@@ -237,34 +203,30 @@ const NaniKiVaniPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header
-        onMenuClick={() => {}}
-        selectedRegion=""
-        onRegionChange={() => {}}
-        onLoginClick={() => {}}
-        isLoggedIn={false}
-        userName=""
-      />
+    <div className="min-h-screen bg-gradient-to-br from-background via-accent/20 to-background">
+      <Header {...headerProps} />
+      <SideMenu isOpen={sideMenuOpen} onClose={() => setSideMenuOpen(false)} />
       
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="mb-6 flex items-center justify-between">
-          <Button 
-            variant="ghost" 
-            onClick={() => navigate(-1)}
+      <main className="container mx-auto px-4 py-8">
+        {/* Back Button & Menu */}
+        <div className="flex items-center justify-between mb-6">
+          <Button
+            variant="outline"
+            onClick={goToCompanions}
+            className="flex items-center gap-2"
           >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back
+            <ArrowLeft className="h-4 w-4" />
+            Back to Companions
           </Button>
           
           <div className="flex items-center gap-4">
             <Button
-              variant="ghost"
+              variant="outline"
               size="sm"
-              onClick={() => setShowSideMenu(true)}
-              className="p-2"
+              onClick={() => setSideMenuOpen(true)}
+              className="lg:hidden"
             >
-              <Menu className="h-5 w-5" />
+              <Menu className="h-4 w-4" />
             </Button>
             
             <Select value={selectedRegion} onValueChange={setSelectedRegion}>
@@ -281,170 +243,233 @@ const NaniKiVaniPage = () => {
             </Select>
           </div>
         </div>
-        
+
+        {/* Page Header */}
         <div className="text-center mb-8">
-          <h1 className="nani-tagline text-4xl mb-2">
-            Nani ki Vani
-          </h1>
-          <p className="nani-description text-lg">
+          <h1 className="text-4xl font-bold text-primary mb-2">Nani Ki Vani</h1>
+          <p className="text-lg text-muted-foreground">
             Voice chat with your caring virtual grandmother
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            Start a conversation and receive grandmother-approved cures for everyday ailments
+            Speak your health concerns and receive personalized home remedies
           </p>
         </div>
 
-        <div className="grid gap-6">
-          {/* Voice Chat Interface */}
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between">
-              <CardTitle className="flex items-center gap-2">
-                <Mic className="h-5 w-5 text-primary" />
-                Voice Chat with Nani
-              </CardTitle>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={startNewChat}
-                className="gap-2"
-              >
-                <RotateCcw className="h-4 w-4" />
-                Start New Chat
-              </Button>
+        {/* Session Messages */}
+        {sessionMessages.length > 0 && (
+          <Card className="mb-6 border-primary/20 bg-card/50 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="text-primary">Conversation with Nani</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
-              {/* Voice Controls */}
-              <div className="flex justify-center items-center gap-4">
-                <Button
-                  size="lg"
-                  onClick={isListening ? stopListening : startListening}
-                  disabled={isSpeaking || audioLock}
-                  className={`h-16 w-16 rounded-full ${
-                    isListening 
-                      ? 'bg-red-500 hover:bg-red-600' 
-                      : 'bg-primary hover:bg-primary/90'
+            <CardContent className="space-y-4 max-h-96 overflow-y-auto">
+              {sessionMessages.map((message, index) => (
+                <div
+                  key={message.id}
+                  className={`p-3 rounded-lg ${
+                    message.sender === 'user'
+                      ? 'bg-primary/10 ml-8'
+                      : 'bg-accent/30 mr-8'
                   }`}
                 >
-                  {isListening ? (
-                    <MicOff className="h-6 w-6" />
-                  ) : (
-                    <Mic className="h-6 w-6" />
-                  )}
-                </Button>
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1">
+                      <div className="font-medium mb-1">
+                        {message.sender === 'user' ? 'You' : 'Nani'}
+                      </div>
+                      <div className="prose prose-sm max-w-none">
+                        {renderResponse(message.text)}
+                      </div>
+                    </div>
+                    {message.remedy && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => starMessage(message)}
+                        className="ml-2 shrink-0"
+                      >
+                        <Star className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+        )}
 
-                {lastResponse && (
+        {/* Current Response Card */}
+        {response && !sessionMessages.some(m => m.text === response) && (
+          <Card className="mb-6 border-primary/20 bg-card/50 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="text-primary">Nani's Latest Advice</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="prose prose-sm max-w-none">
+                {renderResponse(response)}
+              </div>
+              
+              {/* Voice Controls */}
+              <div className="flex gap-2 mt-4 pt-4 border-t">
+                {!isSpeaking ? (
                   <Button
-                    variant="outline"
                     onClick={repeatLastResponse}
-                    disabled={isSpeaking || isListening}
-                    className="gap-2"
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
                   >
                     <Volume2 className="h-4 w-4" />
                     Repeat
                   </Button>
-                )}
-
-                {isSpeaking && (
+                ) : (
                   <Button
-                    variant="outline"
                     onClick={stopSpeaking}
-                    className="gap-2 text-red-600"
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-2"
                   >
                     <VolumeX className="h-4 w-4" />
                     Stop
                   </Button>
                 )}
-              </div>
-
-              {/* Status */}
-              <div className="text-center">
-                {isListening && (
-                  <p className="text-sm text-blue-600 font-medium">
-                    🎤 Listening... speak your health concern
-                  </p>
-                )}
-                {isSpeaking && (
-                  <p className="text-sm text-green-600 font-medium">
-                    🗣️ Nani is speaking...
-                  </p>
-                )}
-                {!isListening && !isSpeaking && (
-                  <p className="text-sm text-muted-foreground">
-                    Click the microphone to start talking with Nani
-                  </p>
-                )}
+                
+                <Button
+                  onClick={startNewChat}
+                  variant="outline"
+                  size="sm" 
+                  className="flex items-center gap-2"
+                >
+                  <RotateCcw className="h-4 w-4" />
+                  New Chat
+                </Button>
               </div>
             </CardContent>
           </Card>
+        )}
 
-          {/* Transcript */}
-          {transcript && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">What you said:</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-base bg-blue-50 p-4 rounded-lg border border-blue-200">
-                  "{transcript}"
+        {/* Voice Interface Card */}
+        <Card className="mb-6">
+          <CardHeader className="flex flex-row items-center justify-between">
+            <CardTitle className="flex items-center gap-2">
+              <Mic className="h-5 w-5 text-primary" />
+              Voice Chat Interface
+            </CardTitle>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={startNewChat}
+              className="gap-2"
+            >
+              <RotateCcw className="h-4 w-4" />
+              New Chat
+            </Button>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            {/* Voice Controls */}
+            <div className="flex justify-center items-center gap-4">
+              <Button
+                size="lg"
+                onClick={isListening ? stopListening : startListening}
+                disabled={isSpeaking || enhancedVoiceEngine.locked}
+                className={`h-16 w-16 rounded-full ${
+                  isListening 
+                    ? 'bg-red-500 hover:bg-red-600' 
+                    : 'bg-primary hover:bg-primary/90'
+                }`}
+              >
+                {isListening ? (
+                  <MicOff className="h-6 w-6" />
+                ) : (
+                  <Mic className="h-6 w-6" />
+                )}
+              </Button>
+
+              {response && (
+                <Button
+                  variant="outline"
+                  onClick={repeatLastResponse}
+                  disabled={isSpeaking || isListening}
+                  className="gap-2"
+                >
+                  <Volume2 className="h-4 w-4" />
+                  Repeat
+                </Button>
+              )}
+
+              {isSpeaking && (
+                <Button
+                  variant="outline"
+                  onClick={stopSpeaking}
+                  className="gap-2 text-red-600"
+                >
+                  <VolumeX className="h-4 w-4" />
+                  Stop
+                </Button>
+              )}
+            </div>
+
+            {/* Status */}
+            <div className="text-center">
+              {isListening && (
+                <p className="text-sm text-blue-600 font-medium">
+                  🎤 Listening... speak your health concern
                 </p>
-              </CardContent>
-            </Card>
-          )}
+              )}
+              {isSpeaking && (
+                <p className="text-sm text-green-600 font-medium">
+                  🗣️ Nani is speaking...
+                </p>
+              )}
+              {waitingForClarification && (
+                <p className="text-sm text-orange-600 font-medium">
+                  💬 Nani needs more details to help you better
+                </p>
+              )}
+              {!isListening && !isSpeaking && !waitingForClarification && (
+                <p className="text-sm text-muted-foreground">
+                  Click the microphone to start talking with Nani
+                </p>
+              )}
+            </div>
 
-          {/* Nani's Response */}
-          {response && (
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg flex items-center gap-2">
-                  💛 Nani's Advice
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                  {renderResponse(response)}
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Instructions */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-lg">How to Use</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <h4 className="font-medium mb-2">🎤 Voice Tips:</h4>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Speak clearly and slowly</li>
-                    <li>• Use headphones to prevent echo</li>
-                    <li>• Wait for Nani to finish speaking</li>
-                    <li>• Try: "I have a headache"</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-medium mb-2">💡 Best Results:</h4>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Be specific about symptoms</li>
-                    <li>• Mention duration if relevant</li>
-                    <li>• Ask about one problem at a time</li>
-                    <li>• Follow safety recommendations</li>
-                  </ul>
-                </div>
+            {/* Current Transcript */}
+            {transcript && transcript !== "Listening..." && (
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                <p className="text-sm font-medium mb-1">You said:</p>
+                <p className="text-base">"{transcript}"</p>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+            )}
+          </CardContent>
+        </Card>
 
-      <SideMenu 
-        currentPage="nani-ki-vani"
-        isOpen={showSideMenu}
-        onClose={() => setShowSideMenu(false)}
-      />
+        {/* Instructions */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-lg">How to Use Voice Chat</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div>
+                <h4 className="font-medium mb-2 text-primary">🎤 Voice Tips:</h4>
+                <ul className="space-y-1 text-muted-foreground">
+                  <li>• Speak clearly and slowly</li>
+                  <li>• Use headphones to prevent echo</li>
+                  <li>• Wait for Nani to finish speaking</li>
+                  <li>• Try: "I have a headache since morning"</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2 text-primary">💡 Best Results:</h4>
+                <ul className="space-y-1 text-muted-foreground">
+                  <li>• Be specific about symptoms</li>
+                  <li>• Mention duration if relevant</li>
+                  <li>• Ask about one problem at a time</li>
+                  <li>• Follow safety recommendations</li>
+                </ul>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </main>
     </div>
   );
-};
-
-export default NaniKiVaniPage;
+}
