@@ -1,9 +1,11 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { WidgetGrid } from "@/components/WidgetGrid";
 import { OnboardingModal } from "@/components/OnboardingModal";
-import DashboardPage from "@/pages/DashboardPage";
+import { StarredBookmarks } from "@/components/StarredBookmarks";
+import { SideMenu } from "@/components/SideMenu";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -11,9 +13,10 @@ const Index = () => {
   const [userName, setUserName] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
   const [showOnboarding, setShowOnboarding] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
   const [starredMessages, setStarredMessages] = useState<any[]>([]);
+  const [showBookmarks, setShowBookmarks] = useState(false);
   const { toast } = useToast();
-  const navigate = useNavigate();
 
   const handleLogin = () => {
     setShowOnboarding(true);
@@ -31,6 +34,7 @@ const Index = () => {
     setUserName("");
     setSelectedRegion("");
     setStarredMessages([]);
+    setShowSidebar(false);
     
     toast({
       title: "Signed out successfully",
@@ -59,36 +63,56 @@ const Index = () => {
     });
   };
 
-  // If logged in, show Dashboard Page
-  if (isLoggedIn) {
-    return (
-      <DashboardPage
-        userName={userName}
-        selectedRegion={selectedRegion}
-        onSignOut={handleSignOut}
-        starredMessages={starredMessages}
-        onStarMessage={handleStarMessage}
-        onRemoveStarred={handleRemoveStarred}
-      />
-    );
-  }
-
-  // If not logged in, show Home Page
   return (
     <div className="min-h-screen bg-background">
       <Header
-        onMenuClick={() => {}} // No menu on home page
+        onMenuClick={() => setShowSidebar(true)}
         selectedRegion={selectedRegion}
         onRegionChange={setSelectedRegion}
         onLoginClick={handleLogin}
-        isLoggedIn={false}
-        userName=""
+        isLoggedIn={isLoggedIn}
+        userName={userName}
       />
 
       <HeroSection
         onGetStarted={handleLogin}
-        isLoggedIn={false}
+        isLoggedIn={isLoggedIn}
       />
+
+      {isLoggedIn && !showBookmarks && (
+        <WidgetGrid
+          onStarMessage={handleStarMessage}
+          userRegion={selectedRegion}
+          onShowBookmarks={() => setShowBookmarks(true)}
+        />
+      )}
+
+      {isLoggedIn && showBookmarks && (
+        <section className="py-8 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <div className="mb-6">
+              <button
+                onClick={() => setShowBookmarks(false)}
+                className="text-sm text-muted-foreground hover:text-primary mb-4"
+              >
+                ← Back to Dashboard
+              </button>
+            </div>
+            <StarredBookmarks
+              starredMessages={starredMessages}
+              onRemoveStarred={handleRemoveStarred}
+            />
+          </div>
+        </section>
+      )}
+
+      {isLoggedIn && (
+        <SideMenu
+          isOpen={showSidebar}
+          onClose={() => setShowSidebar(false)}
+          onSignOut={handleSignOut}
+        />
+      )}
 
       <OnboardingModal
         isOpen={showOnboarding}
