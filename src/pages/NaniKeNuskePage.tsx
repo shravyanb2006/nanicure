@@ -61,53 +61,92 @@ const NaniKeNuskePage = () => {
   };
 
   const generateNaniResponse = (userInput: string): string => {
-    // First try comprehensive remedy engine
-    const remedy = comprehensiveRemedyEngine.findComprehensiveRemedy(userInput, selectedRegion);
+    const inputLower = userInput.toLowerCase();
     
-    if (remedy) {
-      const response = comprehensiveRemedyEngine.generateEnhancedResponse(remedy);
-      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
-      return response;
-    }
+    // Import and use original remedies format
+    const findMatchingRemedy = (input: string): string => {
+      // Simple keyword matching for common health issues
+      if (input.includes('cold') || input.includes('cough') || input.includes('fever')) {
+        return `**Arre beta, cold aur cough ka nuskha! 🤧**
 
-    // Try wellness advice
-    const wellness = comprehensiveRemedyEngine.findWellnessAdvice(userInput);
-    if (wellness) {
-      const response = comprehensiveRemedyEngine.generateWellnessResponse(wellness);
-      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
-      return response;
-    }
+**सरल घरेलू नुस्खा:**
+• **1 चम्मच शहद + 1/4 चम्मच हल्दी + चुटकी भर काली मिर्च** को गुनगुने पानी में मिलाएं
+• दिन में **3 बार** पिएं  
+• हर 2 घंटे में **नमक के गुनगुने पानी** से गरारे करें
+• **अदरक की चाय** पिएं
+• भाप लें और आराम करें
+
+**⏰ कब तक:** 3-5 दिन
+**⚠️ सावधानी:** 1 साल से छोटे बच्चों को शहद न दें
+
+Beta, ठंड से बचें और गर्म कपड़े पहनें! 💛`;
+      }
+      
+      if (input.includes('headache') || input.includes('head pain') || input.includes('sir') || input.includes('dard')) {
+        return `**Arre beta, sir dard ki samasyaa! 🤕**
+
+**तुरंत आराम के लिए:**
+• सिर पर **ठंडी या गर्म पट्टी** रखें (जो आराम दे)
+• **कनपटी पर हल्की मालिश** करें
+• **अदरक की चाय** पिएं
+• अंधेरे कमरे में **आराम** करें
+• पर्याप्त **पानी** पिएं
+
+**⚠️ डॉक्टर से मिलें अगर:** अचानक तेज़ दर्द हो या उल्टी के साथ हो
+
+Beta, stress kam karo aur proper neend lo! 💛`;
+      }
+      
+      if (input.includes('stomach') || input.includes('pet') || input.includes('acidity') || input.includes('gas')) {
+        return `**Beta, pet ki taklif ka ilaaj! 🤱**
+
+**घरेलू उपाय:**
+• **अजवाइन** को गुनगुने पानी में उबालकर पिएं
+• **जीरा पाउडर + नींबू** पानी में मिलाकर लें
+• **छाछ** पिएं
+• हल्का खाना खाएं (**खिचड़ी, दलिया**)
+• **पेट की मालिश** हल्के हाथों से करें
+
+**बचें:** तली हुई चीज़ों से, मसालेदार खाने से
+
+Beta, khana dhire dhire khao aur paani zyada piyo! 💛`;
+      }
+
+      if (input.includes('throat') || input.includes('gala') || input.includes('sore')) {
+        return `**Beta, gale ki kharash ka nuskha! 😷**
+
+**गले को राहत देने के लिए:**
+• **नमक के गुनगुने पानी** से दिन में 3-4 बार गरारे करें
+• **शहद + हल्दी** चाटें
+• **अदरक की चाय** में **शहद** मिलाकर पिएं
+• **गर्म पानी** पिते रहें
+• बर्फ़ या ठंडी चीज़ें न लें
+
+**⚠️ सावधानी:** निगलने में परेशानी हो तो डॉक्टर से मिलें
+
+Beta, garam paani se gargle zaroor karna! 💛`;
+      }
+
+      // Generic helpful response for other queries
+      return `Arre beta, I want to help you with that! Can you tell me more specifically about what health problem you're facing? For example:
+
+• **"Nani, mere sir mein dard hai"** (headache)
+• **"Mera pet kharab hai"** (stomach upset)  
+• **"Mujhe neend nahi aa rahi"** (can't sleep)
+• **"Mujhe zukam-khansi hai"** (cold and cough)
+
+The more details you give, the better remedy I can suggest! 💛
+
+**मैं इन समस्याओं में मदद कर सकती हूं:**
+🌿 सर दर्द, बुखार, जुकाम-खांसी
+🌿 पेट की समस्याएं, acidity, कब्ज़ 
+🌿 त्वचा की समस्याएं, बाल झड़ना
+🌿 नींद न आना, तनाव, कमज़ोरी
+
+**बस विस्तार से बताएं कि क्या समस्या है!** 🤗`;
+    };
     
-    // Enhanced default response with better coverage
-    const sessionContext = comprehensiveRemedyEngine.getSessionContext();
-    const contextualIntro = sessionContext ? 
-      `Beta, I remember our conversation. Let me help you further! 🤗\n\n` : '';
-    
-    return `${contextualIntro}**Beta, main samjhi! Let me help you! 💛**
-
-**🌿 Common Health Issues I Can Help With:**
-• **🤧 Respiratory** - Cold, cough, asthma, breathing problems
-• **💚 Digestive** - Acidity, stomach pain, constipation, diarrhea
-• **🌸 Skin & Hair** - Acne, hair fall, dry skin, dark circles
-• **🧘‍♀️ Mental Health** - Stress, anxiety, insomnia, mood issues
-• **💖 Women's Health** - Period problems, pregnancy care, hormonal issues
-• **🩺 Chronic Conditions** - Diabetes, BP, joint pain, arthritis
-
-**✨ Advanced Wellness Support:**
-• **Yoga & Exercise** - Daily routines, specific poses
-• **Nutrition** - Healthy diet plans, food remedies
-• **Lifestyle** - Sleep hygiene, stress management
-• **Ayurvedic Care** - Traditional herbs, natural healing
-
-**🗣️ Try asking:**
-"Nani, my sugar levels are high"
-"I feel very stressed lately"
-"Help with hair fall problem"
-"Natural remedy for joint pain"
-
-**⚠️ Remember:** For serious symptoms, always consult a doctor first!
-
-*What specific health concern do you have beta? Main detail mein help karungi! 🧡*`;
+    return findMatchingRemedy(inputLower);
   };
 
   const handleSend = async () => {
@@ -185,7 +224,7 @@ const NaniKeNuskePage = () => {
         <div className="mb-6 flex items-center justify-between">
           <Button 
             variant="ghost" 
-            onClick={() => navigate('/dashboard')}
+            onClick={() => navigate('/')}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Dashboard
