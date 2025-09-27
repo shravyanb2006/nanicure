@@ -15,6 +15,7 @@ import AboutPage from "./pages/AboutPage";
 import FeedbackPage from "./pages/FeedbackPage";
 import TermsPage from "./pages/TermsPage";
 import DashboardPage from "./pages/DashboardPage";
+import DoctorRegistrationPage from "./pages/DoctorRegistrationPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/nani-vani" element={<NaniKiVaniPage />} />
           <Route path="/nani-wellness" element={<NaniWellnessPage />} />
           <Route path="/doctor-connect" element={<DoctorConnectPage />} />
+          <Route path="/doctor-registration" element={<DoctorRegistrationPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/starred" element={<StarredPage />} />
           <Route path="/about" element={<AboutPage />} />
