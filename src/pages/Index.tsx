@@ -106,10 +106,13 @@ const Index = () => {
         </section>
       )}
 
-      <SideMenu
-        isOpen={showSidebar}
-        onClose={() => setShowSidebar(false)}
-      />
+      {isLoggedIn && (
+        <SideMenu
+          isOpen={showSidebar}
+          onClose={() => setShowSidebar(false)}
+          onSignOut={handleSignOut}
+        />
+      )}
 
       <OnboardingModal
         isOpen={showOnboarding}

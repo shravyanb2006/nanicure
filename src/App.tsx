@@ -4,7 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import { CompanionsPage } from "./pages/CompanionsPage";
+
 import NaniKeNuskePage from "./pages/NaniKeNuskePage";
 import NaniKiVaniPage from "./pages/NaniKiVaniPage";
 import NaniWellnessPage from "./pages/NaniWellnessPage";
@@ -26,7 +26,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/companions" element={<CompanionsPage />} />
           <Route path="/nani-ke-nuske" element={<NaniKeNuskePage />} />
           <Route path="/nani-nuske" element={<NaniKeNuskePage />} />
           <Route path="/nani-ki-vani" element={<NaniKiVaniPage />} />
