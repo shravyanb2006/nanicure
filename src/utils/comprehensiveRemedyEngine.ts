@@ -3,6 +3,7 @@ import remediesData from '@/data/remedies.json';
 import wellnessData from '@/data/wellness.json';
 import remediesExpandedData from '@/data/remedies_expanded_500.json';
 import wellnessImprovedData from '@/data/wellness_improved.json';
+import wellnessKB from '@/data/wellness_knowledge_base.json';
 
 export interface ComprehensiveRemedy {
   id: string;
@@ -34,11 +35,40 @@ export interface WellnessAdvice {
   frequency: string;
   precautions: string[];
   keywords: string[];
+  // Enhanced metadata for high-quality responses
+  contraindicationsDetailed?: string[];
+  sideEffects?: string[];
+  redFlags?: string[];
+  references?: Array<{ title: string; url?: string; note?: string; evidence_level?: 'Limited' | 'Moderate' | 'Strong' | 'Folk'; }>;
+  naniTip?: string;
+  confidence?: 'Low' | 'Medium' | 'High';
+  lastUpdated?: string;
+}
+
+// Structured knowledge base entry used to craft answers (not direct copy)
+interface WellnessKBEntry {
+  id: string;
+  topic: string;
+  synonyms: string[];
+  triggers: string[];
+  summary: string;
+  steps: Array<{ ingredient: string; quantity?: string; directions: string }>;
+  frequency: string;
+  duration: string;
+  expected_timeline?: string;
+  contraindications: string[];
+  side_effects?: string[];
+  red_flags: string[];
+  references?: Array<{ title: string; url?: string; note?: string; evidence_level?: 'Folk' | 'Limited' | 'Moderate' | 'Strong' }>;
+  nani_tip?: string;
+  confidence: 'Low' | 'Medium' | 'High';
+  lastUpdated?: string;
 }
 
 class ComprehensiveRemedyEngine {
   private remedies: ComprehensiveRemedy[] = [];
   private wellnessAdvice: WellnessAdvice[] = [];
+  private wellnessKB: WellnessKBEntry[] = [];
   private sessionMemory: Array<{query: string, response: string, timestamp: Date}> = [];
 
   constructor() {
@@ -49,6 +79,7 @@ class ComprehensiveRemedyEngine {
     this.loadBasicRemedies();
     this.loadExpandedRemedies();
     this.loadWellnessData();
+    this.loadWellnessKB();
     // this.generateAdditionalRemedies(); // Disabled to use only user's JSON datasets
   }
 
@@ -143,6 +174,18 @@ class ComprehensiveRemedyEngine {
       }
     } catch (error) {
       console.log('Could not load improved wellness data');
+    }
+  }
+
+  private loadWellnessKB() {
+    // Load our curated KB for crafting answers
+    try {
+      if (Array.isArray(wellnessKB)) {
+        this.wellnessKB = wellnessKB as WellnessKBEntry[];
+      }
+    } catch (e) {
+      console.warn('Wellness KB failed to load', e);
+      this.wellnessKB = [];
     }
   }
 
@@ -280,29 +323,73 @@ class ComprehensiveRemedyEngine {
 
   public findWellnessAdvice(userInput: string): WellnessAdvice | null {
     const input = userInput.toLowerCase();
+
+    // 1) Try our curated KB first (preferred)
+    let bestKB: { entry: WellnessKBEntry; score: number } | null = null;
+
+    for (const entry of this.wellnessKB) {
+      let score = 0;
+      const haystack = [entry.topic, ...(entry.synonyms || []), ...(entry.triggers || [])]
+        .join(' ').toLowerCase();
+
+      // Simple inclusion scoring
+      const tokens = input.split(/[^a-zA-Z]+/).filter(Boolean);
+      for (const t of tokens) {
+        if (haystack.includes(t)) score += 0.25;
+      }
+      if (input.includes(entry.topic.toLowerCase())) score += 0.4;
+
+      if (!bestKB || score > bestKB.score) {
+        bestKB = { entry, score };
+      }
+    }
+
+    if (bestKB && bestKB.score >= 0.6) {
+      const e = bestKB.entry;
+      const description = e.summary || `Supportive routine for ${e.topic}.`;
+      const stepsList = e.steps.map((s, i) => `${i + 1}. ${s.directions}${s.quantity ? ` (${s.quantity})` : ''}${s.ingredient ? ` – ${s.ingredient}` : ''}`);
+      const benefits = [e.expected_timeline ? `Expected improvement: ${e.expected_timeline}` : 'Gentle, supportive routine'];
+
+      const enriched: WellnessAdvice = {
+        id: e.id,
+        topic: e.topic,
+        category: this.categorizeWellness(e.topic),
+        description,
+        steps: stepsList,
+        benefits,
+        duration: e.duration,
+        frequency: e.frequency,
+        precautions: [],
+        keywords: [...(e.synonyms || []), ...(e.triggers || [])],
+        contraindicationsDetailed: e.contraindications || [],
+        sideEffects: e.side_effects || [],
+        redFlags: e.red_flags || [],
+        references: e.references || [],
+        naniTip: e.nani_tip,
+        confidence: e.confidence,
+        lastUpdated: e.lastUpdated
+      };
+      return enriched;
+    }
+
+    // 2) Fallback to legacy wellness lists (kept for coverage)
     let bestMatch: WellnessAdvice | null = null;
     let bestScore = 0;
 
     for (const advice of this.wellnessAdvice) {
       let score = 0;
-
       for (const keyword of advice.keywords) {
-        if (input.includes(keyword.toLowerCase())) {
-          score += 0.4;
-        }
+        if (input.includes(keyword.toLowerCase())) score += 0.4;
       }
-
-      if (input.includes(advice.topic.toLowerCase())) {
-        score += 0.3;
-      }
-
-      if (input.includes(advice.category)) {
-        score += 0.2;
-      }
+      if (input.includes(advice.topic.toLowerCase())) score += 0.3;
+      if (input.includes(advice.category)) score += 0.2;
 
       if (score > bestScore && score > 0.15) {
         bestScore = score;
-        bestMatch = advice;
+        bestMatch = {
+          ...advice,
+          description: advice.description || `Supportive routine for ${advice.topic}.`
+        };
       }
     }
 
@@ -365,38 +452,60 @@ class ComprehensiveRemedyEngine {
   }
 
   public generateWellnessResponse(advice: WellnessAdvice): string {
-    let response = `🌸 **${advice.topic}** 🌸\n\n`;
-    
-    response += `*${advice.description}* 💛\n\n`;
+    const title = advice.topic || 'Wellness Guidance';
+    const desc = advice.description || 'A gentle, supportive routine you can follow at home.';
 
-    if (advice.steps.length > 0) {
-      response += "**✨ Steps to follow:**\n";
-      advice.steps.forEach((step, index) => {
-        response += `${index + 1}. ${step}\n`;
+    let response = `🌿 **${title}**\n\n`;
+    response += `*${desc}* 💛\n\n`;
+
+    if (advice.steps?.length) {
+      response += `**✨ Step-by-step:**\n`;
+      advice.steps.forEach((step, idx) => {
+        response += `${idx + 1}. ${step}\n`;
       });
-      response += "\n";
+      response += `\n`;
     }
 
-    if (advice.benefits.length > 0) {
-      response += "**🌟 Benefits:**\n";
-      advice.benefits.forEach(benefit => {
-        response += `• ${benefit}\n`;
-      });
-      response += "\n";
+    if (advice.benefits?.length) {
+      response += `**🌟 What to expect:**\n`;
+      advice.benefits.forEach(b => (response += `• ${b}\n`));
+      response += `\n`;
     }
 
     response += `**⏰ Duration:** ${advice.duration}\n`;
     response += `**🔄 Frequency:** ${advice.frequency}\n\n`;
 
-    if (advice.precautions.length > 0) {
-      response += "**⚠️ Keep in mind:**\n";
-      advice.precautions.forEach(precaution => {
-        response += `• ${precaution}\n`;
-      });
-      response += "\n";
+    if (advice.contraindicationsDetailed?.length || advice.sideEffects?.length) {
+      response += `**⚠️ Contraindications & Side effects:**\n`;
+      advice.contraindicationsDetailed?.forEach(c => (response += `• ${c}\n`));
+      advice.sideEffects?.forEach(s => (response += `• ${s}\n`));
+      response += `\n`;
     }
 
-    response += "*Wellness is a journey, not a destination. Take it one step at a time! 🤗*";
+    if (advice.redFlags?.length) {
+      response += `**🩺 Seek medical care if:**\n`;
+      advice.redFlags.forEach(r => (response += `• ${r}\n`));
+      response += `\n`;
+    }
+
+    if (advice.naniTip) {
+      response += `**💡 Nani Tip:** ${advice.naniTip}\n\n`;
+    }
+
+    if (advice.references?.length) {
+      response += `**📚 References:**\n`;
+      advice.references.forEach(ref => {
+        response += `• ${ref.title}${ref.note ? ` — ${ref.note}` : ''}${ref.url ? ` (${ref.url})` : ''}\n`;
+      });
+      response += `\n`;
+    }
+
+    if (advice.confidence || advice.lastUpdated) {
+      response += `**Confidence:** ${advice.confidence || 'Medium'} | **Updated:** ${advice.lastUpdated || new Date().toISOString().split('T')[0]}\n\n`;
+    }
+
+    response += `> This is supportive information only — not a substitute for professional medical advice.\n\n`;
+    response += `*Nani’s blessings are with you. Take it one gentle step at a time. 🤗*`;
 
     return response.trim();
   }

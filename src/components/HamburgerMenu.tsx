@@ -100,9 +100,9 @@ export function HamburgerMenu({ currentPage }: HamburgerMenuProps) {
                   </Link>
                 ))}
                 
-                {/* Home Link */}
+                {/* Dashboard Link */}
                 <Link 
-                  to="/"
+                  to="/companions"
                   onClick={() => setIsOpen(false)}
                   className="block"
                 >
@@ -113,8 +113,8 @@ export function HamburgerMenu({ currentPage }: HamburgerMenuProps) {
                           <span className="text-xs text-primary">🏠</span>
                         </div>
                         <div>
-                          <h3 className="font-medium text-sm">Back to Home</h3>
-                          <p className="text-xs text-muted-foreground">Main dashboard</p>
+                          <h3 className="font-medium text-sm">Back to Dashboard</h3>
+                          <p className="text-xs text-muted-foreground">Companions hub</p>
                         </div>
                       </div>
                     </CardContent>

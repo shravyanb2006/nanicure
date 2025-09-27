@@ -1,0 +1,349 @@
+[
+  {
+    "id": "stress-anxiety",
+    "topic": "Stress and Anxiety Relief",
+    "synonyms": ["stress", "anxiety", "tension", "worry", "overthinking", "panic"],
+    "triggers": ["work stress", "exam stress", "family stress", "anxious", "nervous"],
+    "summary": "Calm your mind with slow breathing, warm tulsi-ginger tea, and a short grounding routine.",
+    "steps": [
+      {"ingredient": "Water", "quantity": "250 ml", "directions": "Boil in a pan."},
+      {"ingredient": "Fresh Tulsi leaves (or 1/2 tsp dried)", "quantity": "5–7 leaves", "directions": "Add to boiling water with 3–4 thin slices of ginger; simmer 5 minutes."},
+      {"ingredient": "Honey (optional)", "quantity": "1 tsp", "directions": "Stir after turning off the heat."},
+      {"ingredient": "Box Breathing", "quantity": "5 cycles", "directions": "Inhale 4 sec — hold 4 — exhale 4 — hold 4, sitting upright."}
+    ],
+    "frequency": "Tea 1–2 times/day; breathing twice daily",
+    "duration": "7–10 days, then as needed",
+    "expected_timeline": "Most people feel calmer in 10–20 minutes.",
+    "contraindications": ["Honey not for children <1 year", "If pregnant, limit strong ginger"],
+    "side_effects": ["Ginger may cause mild heartburn in sensitive people"],
+    "red_flags": ["Chest pain, breathlessness, fainting", "Anxiety with suicidal thoughts"],
+    "references": [
+      {"title": "Breath regulation and stress", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5709795/", "note": "Slow breathing reduces sympathetic arousal", "evidence_level": "Moderate"}
+    ],
+    "nani_tip": "Put your phone away for 20 minutes after tea — give your nervous system a real rest.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "insomnia",
+    "topic": "Insomnia and Poor Sleep",
+    "synonyms": ["insomnia", "can’t sleep", "sleep problem", "neend"],
+    "triggers": ["screen late night", "waking up at night"],
+    "summary": "Soothe the body with warm nutmeg-milk and a gentle wind-down routine.",
+    "steps": [
+      {"ingredient": "Milk (or oat/almond)", "quantity": "200 ml", "directions": "Warm gently; do not boil hard."},
+      {"ingredient": "Nutmeg (jaiphal)", "quantity": "1/8 tsp", "directions": "Mix well; sip 30 minutes before bed."},
+      {"ingredient": "Screen-free time", "quantity": "30–60 min", "directions": "Dim lights, read or listen to soft music."}
+    ],
+    "frequency": "Nightly",
+    "duration": "2 weeks, reassess",
+    "expected_timeline": "Sleep onset improves within 2–3 nights.",
+    "contraindications": ["Avoid nutmeg in pregnancy in medicinal doses", "Lactose intolerance — use plant milk"],
+    "side_effects": ["Nutmeg >1/2 tsp may cause dizziness"],
+    "red_flags": ["Loud snoring with gasping", "Restless legs, severe daytime sleepiness"],
+    "references": [
+      {"title": "Sleep hygiene recommendations", "url": "https://www.sleepfoundation.org/sleep-hygiene", "note": "Consistent routines aid sleep", "evidence_level": "Strong"}
+    ],
+    "nani_tip": "Keep the bedroom cool and dark; your body loves cues for sleep.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "heartburn",
+    "topic": "Acid Reflux / Heartburn",
+    "synonyms": ["acidity", "acid reflux", "heartburn", "GERD"],
+    "triggers": ["spicy food", "late meals", "coffee"],
+    "summary": "Cool the stomach with fennel-jeera tea and mindful meal spacing.",
+    "steps": [
+      {"ingredient": "Fennel (saunf)", "quantity": "1 tsp", "directions": "Lightly crush."},
+      {"ingredient": "Cumin (jeera)", "quantity": "1 tsp", "directions": "Dry roast 30 sec for aroma."},
+      {"ingredient": "Water", "quantity": "300 ml", "directions": "Boil with fennel + cumin 5–7 minutes; strain."}
+    ],
+    "frequency": "Warm cup after meals or when symptoms start",
+    "duration": "7–14 days",
+    "expected_timeline": "Burning reduces in 15–30 minutes.",
+    "contraindications": ["Avoid very hot drinks in severe esophagitis"],
+    "side_effects": ["Mild gas in some people"],
+    "red_flags": ["Chest pain on exertion", "Black stools", "Persistent vomiting"],
+    "references": [
+      {"title": "Fennel for dyspepsia (traditional support)", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Traditional use for digestion", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Finish dinner 3 hours before bed and elevate the head side slightly.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "diarrhea",
+    "topic": "Acute Diarrhea (Loose Motions)",
+    "synonyms": ["diarrhea", "loose motions", "loose stools", "dast"],
+    "triggers": ["stomach bug", "contaminated food"],
+    "summary": "Rehydrate with homemade ORS and rest the gut with mashed banana-curd.",
+    "steps": [
+      {"ingredient": "Clean water", "quantity": "1 liter", "directions": "Mix 6 level tsp sugar + 1/2 level tsp salt; stir till clear (ORS)."},
+      {"ingredient": "Banana + plain curd", "quantity": "1 small + 3 tbsp", "directions": "Mash and eat slowly."}
+    ],
+    "frequency": "Sip ORS continuously; small meals 3–4 times/day",
+    "duration": "1–3 days",
+    "expected_timeline": "Hydration improves same day; stools firm in 24–48h.",
+    "contraindications": ["Lactose intolerance — avoid curd"],
+    "side_effects": ["Excess ORS may cause bloating"],
+    "red_flags": ["High fever >39°C", "Blood in stool", "Severe dehydration (very low urine)"],
+    "references": [
+      {"title": "WHO ORS formula", "url": "https://www.who.int/health-topics/diarrhoea#tab=tab_2", "note": "Standard rehydration guidance", "evidence_level": "Strong"}
+    ],
+    "nani_tip": "Avoid raw salads for a day; choose soft warm foods like khichdi.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "stomach-ache-gas",
+    "topic": "Stomach Ache and Gas",
+    "synonyms": ["gas", "bloating", "stomach pain", "indigestion"],
+    "triggers": ["heavy meal", "fried foods"],
+    "summary": "Ajwain-hing water eases spasms and helps release gas.",
+    "steps": [
+      {"ingredient": "Ajwain (carom seeds)", "quantity": "1/2 tsp", "directions": "Crush lightly."},
+      {"ingredient": "Hing (asafoetida)", "quantity": "A pinch", "directions": "Boil both in 250 ml water for 5 minutes; strain."}
+    ],
+    "frequency": "1–2 cups/day after meals",
+    "duration": "1–3 days",
+    "expected_timeline": "Gas reduces in 30–60 minutes.",
+    "contraindications": ["Avoid high ajwain use in pregnancy"],
+    "side_effects": ["Hing may cause burping"],
+    "red_flags": ["Severe persistent pain", "Vomiting with fever", "Black stools"],
+    "references": [
+      {"title": "Traditional carminatives", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Folk use for gas relief", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Walk 10 minutes after meals; chew food slowly.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "skin-marks",
+    "topic": "Dark Spots / Skin Marks",
+    "synonyms": ["dark spots", "marks", "hyperpigmentation"],
+    "triggers": ["acne marks", "sun marks"],
+    "summary": "Gentle lemon-honey mask and daily sunscreen help lighten marks over time.",
+    "steps": [
+      {"ingredient": "Honey", "quantity": "1 tsp", "directions": "Mix with freshly squeezed lemon juice 1/2 tsp; apply as thin layer 10 minutes; rinse."}
+    ],
+    "frequency": "3x/week; sunscreen every morning",
+    "duration": "4–8 weeks",
+    "expected_timeline": "Subtle lightening after 2–3 weeks.",
+    "contraindications": ["Do not apply lemon on irritated or wounded skin", "Patch test first"],
+    "side_effects": ["Sun sensitivity — MUST use sunscreen"],
+    "red_flags": ["Rapidly changing moles", "Bleeding lesions"],
+    "references": [
+      {"title": "Honey in dermatology", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Antimicrobial and soothing", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Use a gentle moisturizer at night to support skin barrier.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "diabetes-support",
+    "topic": "Diabetes (Supportive Home Care)",
+    "synonyms": ["diabetes", "high sugar", "blood sugar"],
+    "triggers": ["fasting sugar high", "after meals high"],
+    "summary": "Bitter gourd + fenugreek seeds support sugar control along with doctor’s plan.",
+    "steps": [
+      {"ingredient": "Fenugreek (methi) seeds", "quantity": "1 tsp", "directions": "Soak overnight; chew seeds and sip water in morning."},
+      {"ingredient": "Bitter gourd (karela) juice", "quantity": "50–100 ml", "directions": "Freshly extracted; take 3–4 days/week."}
+    ],
+    "frequency": "Daily methi; karela 3–4 days/week",
+    "duration": "8–12 weeks",
+    "expected_timeline": "Gradual improvement; track with glucometer.",
+    "contraindications": ["Hypoglycemia risk with meds — monitor closely", "Pregnancy — consult doctor"],
+    "side_effects": ["Bitter taste, mild stomach upset"],
+    "red_flags": ["Very high sugars (>300 mg/dL)", "Dizziness/sweating/confusion"],
+    "references": [
+      {"title": "Fenugreek and glycemic control", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Some trials show benefit", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Keep a simple plate: 1/2 vegetables, 1/4 protein, 1/4 grains.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "hypertension-support",
+    "topic": "High Blood Pressure (Supportive)",
+    "synonyms": ["hypertension", "high bp", "bp high"],
+    "triggers": ["salt", "stress"],
+    "summary": "Garlic-lemon water and daily walking support BP control along with medicines.",
+    "steps": [
+      {"ingredient": "Garlic clove (raw)", "quantity": "1–2 cloves", "directions": "Crush and swallow with water after breakfast."},
+      {"ingredient": "Lemon water", "quantity": "1 glass", "directions": "1/2 lemon in warm water mid-morning."}
+    ],
+    "frequency": "Daily",
+    "duration": "8+ weeks",
+    "expected_timeline": "Lifestyle changes show effect in 2–4 weeks.",
+    "contraindications": ["Bleeding disorders — limit raw garlic", "Acid reflux — take with food"],
+    "side_effects": ["Garlic breath, mild stomach upset"],
+    "red_flags": ["BP >180/120 with symptoms", "Severe headache/vision change"],
+    "references": [
+      {"title": "Lifestyle for hypertension", "url": "https://www.ahajournals.org/", "note": "DASH, salt reduction help", "evidence_level": "Strong"}
+    ],
+    "nani_tip": "Walk 30 minutes daily; cut packaged snacks — hidden salt!",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "fatigue",
+    "topic": "Low Energy / Fatigue",
+    "synonyms": ["tiredness", "fatigue", "kamzori"],
+    "triggers": ["overwork", "poor diet"],
+    "summary": "Amla-honey tonic and sunlight exposure lift natural energy.",
+    "steps": [
+      {"ingredient": "Amla juice", "quantity": "20 ml", "directions": "Mix with 150 ml water; add 1 tsp honey."},
+      {"ingredient": "Sun exposure", "quantity": "10–15 min", "directions": "Morning sunlight, arms/face exposed."}
+    ],
+    "frequency": "Daily mornings",
+    "duration": "2–4 weeks",
+    "expected_timeline": "Energy improves in 1–2 weeks.",
+    "contraindications": ["Diabetes — monitor sugars with honey"],
+    "side_effects": ["Amla may cause acidity in some"],
+    "red_flags": ["Unexplained weight loss", "Breathlessness on mild activity"],
+    "references": [
+      {"title": "Vitamin C and fatigue", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Limited evidence", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Small, regular meals and 6–8 glasses of water keep you steady.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "headache",
+    "topic": "Common Headache",
+    "synonyms": ["headache", "sir dard", "migraine (mild)"],
+    "triggers": ["screen time", "dehydration"],
+    "summary": "Hydrate, cold compress on forehead, and peppermint oil on temples.",
+    "steps": [
+      {"ingredient": "Water", "quantity": "300–500 ml", "directions": "Sip slowly."},
+      {"ingredient": "Peppermint oil (diluted)", "quantity": "2–3 drops in 1 tsp carrier oil", "directions": "Apply to temples; avoid eyes."}
+    ],
+    "frequency": "As needed",
+    "duration": "1–2 days",
+    "expected_timeline": "Relief within 30–60 minutes.",
+    "contraindications": ["Peppermint not for children <6 years near face"],
+    "side_effects": ["Skin irritation if undiluted"],
+    "red_flags": ["Sudden severe headache (worst ever)", "Fever + neck stiffness"],
+    "references": [
+      {"title": "Topical menthol for headache", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Some supportive data", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Give your eyes a 20–20–20 break: every 20 minutes, look 20 feet away for 20 seconds.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "period-cramps",
+    "topic": "Period Cramps (Dysmenorrhea)",
+    "synonyms": ["period pain", "cramps", "mensuration pain"],
+    "triggers": ["first 1–2 days of cycle"],
+    "summary": "Warm ajwain-water, light stretching, and a hot compress ease cramps.",
+    "steps": [
+      {"ingredient": "Ajwain (carom)", "quantity": "1/2 tsp", "directions": "Boil in 250 ml water 5 minutes; sip warm."},
+      {"ingredient": "Heat compress", "quantity": "10–15 min", "directions": "On lower abdomen; repeat as needed."}
+    ],
+    "frequency": "2–3 times/day during cramps",
+    "duration": "1–3 days",
+    "expected_timeline": "Relief within 30 minutes.",
+    "contraindications": ["Heat compress avoid on broken skin"],
+    "side_effects": ["Ajwain can cause acidity if overused"],
+    "red_flags": ["Very heavy bleeding", "Passing large clots", "Severe pain not settling"],
+    "references": [
+      {"title": "Heat therapy for dysmenorrhea", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Helpful in pain relief", "evidence_level": "Moderate"}
+    ],
+    "nani_tip": "Gentle yoga like cat-cow and child’s pose relax pelvic muscles.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "pcos-support",
+    "topic": "PCOS – Supportive Home Measures",
+    "synonyms": ["pcos", "polycystic", "hormonal imbalance"],
+    "triggers": ["irregular period", "acne", "weight gain"],
+    "summary": "Cinnamon water and daily brisk walk support insulin sensitivity and cycles.",
+    "steps": [
+      {"ingredient": "Cinnamon stick", "quantity": "1 small", "directions": "Simmer in 300 ml water 5 minutes; sip warm."},
+      {"ingredient": "Brisk walk", "quantity": "25–30 min", "directions": "Most days of the week."}
+    ],
+    "frequency": "Daily",
+    "duration": "12 weeks",
+    "expected_timeline": "Cycle regularity may improve in 2–3 months.",
+    "contraindications": ["Cinnamon in large amounts if on blood thinners"],
+    "side_effects": ["Mouth warmth"],
+    "red_flags": ["Severe acne with hair growth", "Infertility concerns — see gynecologist"],
+    "references": [
+      {"title": "Exercise and PCOS", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Lifestyle is core therapy", "evidence_level": "Strong"}
+    ],
+    "nani_tip": "Eat meals at fixed times; avoid frequent sugary snacks.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "hair-fall",
+    "topic": "Hair Fall (Non-scarring)",
+    "synonyms": ["hair fall", "thinning", "alopecia (common)"],
+    "triggers": ["stress", "poor diet"],
+    "summary": "Amla-coconut oil scalp massage and protein-rich meals support hair health.",
+    "steps": [
+      {"ingredient": "Coconut oil + amla powder", "quantity": "2 tbsp + 1/2 tsp", "directions": "Warm slightly; massage scalp 5–7 min; wash after 1 hour."}
+    ],
+    "frequency": "2–3 times/week",
+    "duration": "8–12 weeks",
+    "expected_timeline": "Shedding improves in 4–6 weeks.",
+    "contraindications": ["Allergy to coconut/amla"],
+    "side_effects": ["Oily scalp if overused"],
+    "red_flags": ["Patchy hair loss", "Scalp scaling/itching", "Sudden severe shedding"],
+    "references": [
+      {"title": "Scalp massage and hair health", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Limited evidence", "evidence_level": "Limited"}
+    ],
+    "nani_tip": "Include eggs/daal/paneer and nuts for protein and micronutrients.",
+    "confidence": "Medium",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "cold-cough",
+    "topic": "Common Cold and Cough",
+    "synonyms": ["cold", "cough", "sore throat", "congestion"],
+    "triggers": ["seasonal", "viral"],
+    "summary": "Ginger-tulsi-honey kadha, steam inhalation, and rest.",
+    "steps": [
+      {"ingredient": "Water", "quantity": "300 ml", "directions": "Boil with 1 inch sliced ginger + 5 tulsi leaves 7 minutes; rest 2 minutes; strain; add 1 tsp honey."},
+      {"ingredient": "Steam inhalation", "quantity": "5–10 min", "directions": "Hot water bowl; towel over head; breathe gently."}
+    ],
+    "frequency": "Kadha 1–2 times/day; steam once daily",
+    "duration": "3–5 days",
+    "expected_timeline": "Sore throat eases in 24–48 hours.",
+    "contraindications": ["No honey for children <1 year"],
+    "side_effects": ["Ginger may irritate stomach"],
+    "red_flags": ["High fever >39°C", "Breathlessness", "Chest pain"],
+    "references": [
+      {"title": "Honey for cough in children", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Can reduce night cough (age-appropriate)", "evidence_level": "Moderate"}
+    ],
+    "nani_tip": "Gargle with warm salt water 2–3 times/day.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  },
+  {
+    "id": "low-mood-confidence",
+    "topic": "Low Mood and Confidence",
+    "synonyms": ["low mood", "sad", "confidence", "self-esteem"],
+    "triggers": ["setback", "work stress"],
+    "summary": "Morning sunlight, gratitude journaling, and a small win each day lift mood.",
+    "steps": [
+      {"ingredient": "Journal", "quantity": "3 lines", "directions": "Write 3 things you’re grateful for."},
+      {"ingredient": "Small win task", "quantity": "1 task/day", "directions": "Pick a 10-minute task you can finish."}
+    ],
+    "frequency": "Daily mornings",
+    "duration": "2–4 weeks",
+    "expected_timeline": "Mood often brightens within 1 week.",
+    "contraindications": [],
+    "side_effects": [],
+    "red_flags": ["Persistent sadness >2 weeks", "Thoughts of self-harm"],
+    "references": [
+      {"title": "Behavioral activation for depression", "url": "https://pubmed.ncbi.nlm.nih.gov/", "note": "Evidence-based", "evidence_level": "Strong"}
+    ],
+    "nani_tip": "Talk to a trusted person; sharing lightens the heart.",
+    "confidence": "High",
+    "lastUpdated": "2025-09-27"
+  }
+]

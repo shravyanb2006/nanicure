@@ -6,6 +6,7 @@ import { Mic, MicOff, Volume2, VolumeX, ArrowLeft, Menu, RotateCcw, Star } from 
 import { useToast } from "@/hooks/use-toast";
 import { Header } from "@/components/Header";
 import { SideMenu } from "@/components/SideMenu";
+import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { useNavigate } from "react-router-dom";
 import { enhancedVoiceEngine, SessionMessage } from "@/utils/enhancedVoiceEngine";
 import { profileManager } from "@/utils/profileManager";
@@ -216,7 +217,7 @@ export default function NaniKiVaniPage() {
             className="flex items-center gap-2"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Companions
+            Back to Dashboard
           </Button>
           
           <div className="flex items-center gap-4">
@@ -228,6 +229,9 @@ export default function NaniKiVaniPage() {
             >
               <Menu className="h-4 w-4" />
             </Button>
+
+            {/* Cross-widget navigation */}
+            <HamburgerMenu currentPage="nani-ki-vani" />
             
             <Select value={selectedRegion} onValueChange={setSelectedRegion}>
               <SelectTrigger className="w-40">
