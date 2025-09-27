@@ -40,14 +40,12 @@ class ComprehensiveRemedyEngine {
   private remedies: ComprehensiveRemedy[] = [];
   private wellnessAdvice: WellnessAdvice[] = [];
   private sessionMemory: Array<{query: string, response: string, timestamp: Date}> = [];
-  private userPreferences: {region?: string, categories?: string[]} = {};
 
   constructor() {
     this.loadAllData();
   }
 
   private loadAllData() {
-    // Load and normalize all data sources
     this.loadBasicRemedies();
     this.loadExpandedRemedies();
     this.loadWellnessData();
@@ -55,26 +53,28 @@ class ComprehensiveRemedyEngine {
   }
 
   private loadBasicRemedies() {
-    remediesData.remedies.forEach((remedy: any, index: number) => {
-      this.remedies.push({
-        id: `basic-${index}`,
-        problem: remedy.problem,
-        keywords: remedy.keywords || [],
-        symptoms: [],
-        remedy: remedy.remedy,
-        ingredients: this.extractIngredients(remedy.remedy),
-        preparation: [remedy.remedy],
-        dosage: 'As needed',
-        duration: '2-3 days',
-        precautions: remedy.escalation || [],
-        escalation: remedy.escalation || [],
-        region: 'All India',
-        category: this.categorizeRemedy(remedy.problem),
-        severity: 'mild',
-        source: 'traditional',
-        emojis: this.getEmojiForCategory(this.categorizeRemedy(remedy.problem))
+    if (remediesData.remedies) {
+      remediesData.remedies.forEach((remedy: any, index: number) => {
+        this.remedies.push({
+          id: `basic-${index}`,
+          problem: remedy.problem,
+          keywords: remedy.keywords || [],
+          symptoms: [],
+          remedy: remedy.remedy,
+          ingredients: this.extractIngredients(remedy.remedy),
+          preparation: [remedy.remedy],
+          dosage: 'As needed',
+          duration: '2-3 days',
+          precautions: remedy.escalation || [],
+          escalation: remedy.escalation || [],
+          region: 'All India',
+          category: this.categorizeRemedy(remedy.problem),
+          severity: 'mild',
+          source: 'traditional',
+          emojis: this.getEmojiForCategory(this.categorizeRemedy(remedy.problem))
+        });
       });
-    });
+    }
   }
 
   private loadExpandedRemedies() {
@@ -124,20 +124,19 @@ class ComprehensiveRemedyEngine {
       });
     }
 
-    // Load improved wellness data
     try {
       if (Array.isArray(wellnessImprovedData)) {
         wellnessImprovedData.forEach((item: any, index: number) => {
           this.wellnessAdvice.push({
             id: `improved-${index}`,
-            topic: item.topic || item.problem,
-            category: this.categorizeWellness(item.topic || item.problem),
-            description: item.description || item.exercise,
-            steps: item.steps || [item.description || item.exercise],
-            benefits: item.benefits || [item.extra_info || ''],
+            topic: item.title || item.problem || 'Wellness Routine',
+            category: this.categorizeWellness(item.title || item.problem || ''),
+            description: item.description || item.exercise || '',
+            steps: [item.description || item.exercise || ''],
+            benefits: [item.description || ''],
             duration: item.duration || '15-20 minutes',
-            frequency: item.frequency || 'Daily',
-            precautions: item.precautions || [],
+            frequency: 'Daily',
+            precautions: [],
             keywords: item.keywords || []
           });
         });
@@ -149,7 +148,6 @@ class ComprehensiveRemedyEngine {
 
   private generateAdditionalRemedies() {
     const additionalRemedies = [
-      // Diabetes Management
       {
         id: 'diabetes-1',
         problem: 'Diabetes Management',
@@ -168,7 +166,6 @@ class ComprehensiveRemedyEngine {
         source: 'ayurvedic' as const,
         emojis: ['🍃', '💚', '🌿']
       },
-      // Hypertension
       {
         id: 'hypertension-1',
         problem: 'High Blood Pressure',
@@ -186,25 +183,6 @@ class ComprehensiveRemedyEngine {
         severity: 'moderate' as const,
         source: 'ayurvedic' as const,
         emojis: ['💚', '🧄', '🍋']
-      },
-      // Anxiety and Stress
-      {
-        id: 'anxiety-1',
-        problem: 'Anxiety and Stress',
-        keywords: ['anxiety', 'stress', 'tension', 'worry', 'chinta', 'pareshan'],
-        symptoms: ['restlessness', 'worry', 'rapid heartbeat', 'sweating'],
-        remedy: 'Brahmi, Shankhpushpi, and pranayama breathing help calm the mind naturally',
-        ingredients: ['Brahmi', 'Shankhpushpi', 'Jatamansi', 'Chamomile tea'],
-        preparation: ['Take Brahmi capsules or powder', 'Practice deep breathing', 'Drink chamomile tea'],
-        dosage: 'Twice daily',
-        duration: '4-6 weeks',
-        precautions: ['Regular meditation', 'Avoid caffeine', 'Maintain sleep schedule'],
-        escalation: ['Severe panic attacks', 'Unable to perform daily activities'],
-        region: 'All India',
-        category: 'mental' as const,
-        severity: 'moderate' as const,
-        source: 'ayurvedic' as const,
-        emojis: ['🧘‍♀️', '💆‍♀️', '🌸']
       }
     ];
 
@@ -262,14 +240,11 @@ class ComprehensiveRemedyEngine {
   }
 
   public findComprehensiveRemedy(userInput: string, userRegion?: string): ComprehensiveRemedy | null {
-    // First try voice engine for voice-specific remedies
     const voiceRemedy = voiceRemedyEngine.findBestRemedy(userInput, userRegion);
     if (voiceRemedy) {
-      // Convert voice remedy to comprehensive format
       return this.convertVoiceRemedy(voiceRemedy);
     }
 
-    // Then search comprehensive remedies
     const input = userInput.toLowerCase();
     let bestMatch: ComprehensiveRemedy | null = null;
     let bestScore = 0;
@@ -277,26 +252,22 @@ class ComprehensiveRemedyEngine {
     for (const remedy of this.remedies) {
       let score = 0;
 
-      // Keyword matching
       for (const keyword of remedy.keywords) {
         if (input.includes(keyword.toLowerCase())) {
           score += 0.4;
         }
       }
 
-      // Problem name matching
       if (input.includes(remedy.problem.toLowerCase())) {
         score += 0.3;
       }
 
-      // Symptom matching
       for (const symptom of remedy.symptoms) {
         if (input.includes(symptom.toLowerCase())) {
           score += 0.2;
         }
       }
 
-      // Regional preference
       if (userRegion && remedy.region.toLowerCase().includes(userRegion.toLowerCase())) {
         score += 0.1;
       }
@@ -318,19 +289,16 @@ class ComprehensiveRemedyEngine {
     for (const advice of this.wellnessAdvice) {
       let score = 0;
 
-      // Keyword matching
       for (const keyword of advice.keywords) {
         if (input.includes(keyword.toLowerCase())) {
           score += 0.4;
         }
       }
 
-      // Topic matching
       if (input.includes(advice.topic.toLowerCase())) {
         score += 0.3;
       }
 
-      // Category matching
       if (input.includes(advice.category)) {
         score += 0.2;
       }
@@ -462,7 +430,6 @@ class ComprehensiveRemedyEngine {
       timestamp: new Date()
     });
 
-    // Keep only last 10 interactions
     if (this.sessionMemory.length > 10) {
       this.sessionMemory = this.sessionMemory.slice(-10);
     }

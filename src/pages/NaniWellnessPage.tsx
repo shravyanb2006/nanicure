@@ -252,10 +252,13 @@ const NaniWellnessPage = () => {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="mt-2 h-6 px-2 hover:bg-primary-foreground/10"
+                        className="mt-2 h-6 px-2 hover:bg-primary-foreground/10 transition-smooth"
                         onClick={() => handleStar(message)}
                       >
-                        <Star className={`h-3 w-3 ${message.starred ? 'fill-current text-yellow-400' : ''}`} />
+                        <Star className={`h-3 w-3 transition-all ${message.starred ? 'fill-current text-yellow-400 scale-110' : 'hover:text-yellow-400'}`} />
+                        <span className="ml-1 text-xs">
+                          {message.starred ? 'Starred' : 'Star'}
+                        </span>
                       </Button>
                     )}
                   </div>
@@ -281,13 +284,26 @@ const NaniWellnessPage = () => {
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                placeholder="Tell Nani about your wellness needs..."
-                className="flex-1"
+                onKeyPress={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
+                placeholder="Tell Nani about your wellness needs... 🌸"
+                className="flex-1 border-primary/20 focus:border-primary"
                 disabled={isLoading}
               />
-              <Button onClick={handleSend} disabled={isLoading || !input.trim()}>
-                <Send className="h-4 w-4" />
+              <Button 
+                onClick={handleSend} 
+                disabled={isLoading || !input.trim()}
+                className="btn-nani px-6"
+              >
+                {isLoading ? (
+                  <div className="thinking-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                ) : (
+                  <>
+                    <Send className="h-4 w-4 mr-1" />
+                    Send
+                  </>
+                )}
               </Button>
             </div>
           </CardContent>

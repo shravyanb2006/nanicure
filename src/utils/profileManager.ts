@@ -20,6 +20,14 @@ export interface StarredMessage {
   source?: string;
 }
 
+export interface StarredRemedy {
+  id: string;
+  title: string;
+  content: string;
+  timestamp: Date;
+  category: 'remedy' | 'wellness' | 'voice' | 'general';
+}
+
 export class ProfileManager {
   private profileKey = 'nanicure_profile';
   private starredKey = 'nanicure_starred';
@@ -134,8 +142,33 @@ export class ProfileManager {
     }
   }
 
-  clearStarredMessages(): void {
-    localStorage.removeItem(this.starredKey);
+  addStarredRemedy(remedy: StarredRemedy): void {
+    try {
+      const starred = this.getStarredMessages();
+      
+      // Convert remedy to StarredMessage format
+      const starredMessage: StarredMessage = {
+        id: remedy.id,
+        text: remedy.content,
+        timestamp: remedy.timestamp,
+        type: remedy.category,
+        source: remedy.title
+      };
+      
+      this.addStarredMessage(starredMessage);
+    } catch (error) {
+      console.error('Error saving starred remedy:', error);
+    }
+  }
+
+  getStarredRemedies(): StarredRemedy[] {
+    return this.getStarredMessages().map(msg => ({
+      id: msg.id,
+      title: msg.source || 'Nani ka Nuskha',
+      content: msg.text,
+      timestamp: msg.timestamp,
+      category: (msg.type as any) || 'general'
+    }));
   }
 
   exportProfile(): string {

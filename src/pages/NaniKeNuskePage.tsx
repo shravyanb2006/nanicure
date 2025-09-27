@@ -211,9 +211,12 @@ const NaniKeNuskePage = () => {
             </Select>
           </div>
         </div>
+        <div className="lotus-divider mb-8">
+          <span>🌿</span>
+        </div>
         
         <div className="text-center mb-8">
-          <h1 className="nani-tagline text-4xl mb-2">
+          <h1 className="calligraphy-title text-4xl mb-2 text-primary">
             Nani ke Nuske
           </h1>
           <p className="nani-description text-lg">
@@ -221,12 +224,15 @@ const NaniKeNuskePage = () => {
           </p>
         </div>
 
-        <Card className="h-[600px]">
+        <Card className="h-[600px] shadow-warm">
           <CardHeader className="pb-4 flex flex-row items-center justify-between">
-            <CardTitle className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <MessageCircle className="h-5 w-5 text-primary" />
-              Chat with Nani
-            </CardTitle>
+              <div>
+                <CardTitle>Chat with Nani</CardTitle>
+                <p className="text-sm text-muted-foreground">Your pocket grandmother 💛</p>
+              </div>
+            </div>
             <Button
               variant="outline"
               size="sm"
@@ -234,7 +240,7 @@ const NaniKeNuskePage = () => {
               className="gap-2"
             >
               <RotateCcw className="h-4 w-4" />
-              Start New Chat
+              New Chat
             </Button>
           </CardHeader>
           
@@ -248,10 +254,13 @@ const NaniKeNuskePage = () => {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="mt-2 h-6 px-2 hover:bg-primary-foreground/10"
+                        className="mt-2 h-6 px-2 hover:bg-primary-foreground/10 transition-smooth"
                         onClick={() => handleStar(message)}
                       >
-                        <Star className={`h-3 w-3 ${message.starred ? 'fill-current text-yellow-400' : ''}`} />
+                        <Star className={`h-3 w-3 transition-all ${message.starred ? 'fill-current text-yellow-400 scale-110' : 'hover:text-yellow-400'}`} />
+                        <span className="ml-1 text-xs">
+                          {message.starred ? 'Starred' : 'Star'}
+                        </span>
                       </Button>
                     )}
                   </div>
@@ -277,13 +286,26 @@ const NaniKeNuskePage = () => {
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                placeholder="Ask Nani about any health problem..."
-                className="flex-1"
+                onKeyPress={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
+                placeholder="Ask Nani about any health problem... 💛"
+                className="flex-1 border-primary/20 focus:border-primary"
                 disabled={isLoading}
               />
-              <Button onClick={handleSend} disabled={isLoading || !input.trim()}>
-                <Send className="h-4 w-4" />
+              <Button 
+                onClick={handleSend} 
+                disabled={isLoading || !input.trim()}
+                className="btn-nani px-6"
+              >
+                {isLoading ? (
+                  <div className="thinking-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                ) : (
+                  <>
+                    <Send className="h-4 w-4 mr-1" />
+                    Send
+                  </>
+                )}
               </Button>
             </div>
           </CardContent>
