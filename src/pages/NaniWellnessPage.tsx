@@ -185,10 +185,10 @@ const NaniWellnessPage = () => {
         <div className="mb-6 flex items-center justify-between">
           <Button 
             variant="ghost" 
-            onClick={() => navigate('/dashboard')}
+            onClick={() => navigate('/companions')}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Dashboard
+            Back to Companions
           </Button>
           
           <div className="flex items-center gap-4">
