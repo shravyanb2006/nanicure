@@ -197,14 +197,14 @@ export class VoiceRemedyEngine {
     if (recentQueries.length > 0 && !isVoice) {
       const lastQuery = recentQueries[recentQueries.length - 1];
       if (Date.now() - lastQuery.timestamp.getTime() < 300000) { // 5 minutes
-        contextualIntro = `Beta, I remember you were asking about health concerns. ${short}`;
+        contextualIntro = `I remember your previous question. ${short}`;
       }
     }
     
     let response = `🌿 **${title}** 🌿\n\n${contextualIntro}\n\n`;
     
     if (steps.length > 0) {
-      response += "**✨ Nani ke nuskhe:**\n";
+      response += "**✨ Steps:**\n";
       steps.forEach((step, index) => {
         response += `${index + 1}. ${step} 🤗\n`;
       });
@@ -212,7 +212,7 @@ export class VoiceRemedyEngine {
     }
 
     if (precautions.length > 0) {
-      response += "**⚠️ Dhyan rakhiye beta:**\n";
+      response += "**⚠️ Precautions:**\n";
       precautions.forEach(precaution => {
         response += `• ${precaution}\n`;
       });
@@ -220,21 +220,21 @@ export class VoiceRemedyEngine {
     }
 
     if (escalation.length > 0) {
-      response += "**🩺 Doctor ko kab dikhana hai:**\n";
+      response += "**🩺 When to see a doctor:**\n";
       escalation.forEach(rule => {
         response += `• ${rule}\n`;
       });
       response += "\n";
     }
 
-    response += "*Nani ka pyaar aur ashirwad aapke saath hai beta! 💛*";
+    response += "*Nani sends you love and care. 💛*";
 
     if (isVoice) {
       // For voice, add natural pauses and warm tone
       response = response.replace(/\*\*/g, ''); // Remove markdown
       response = response.replace(/🌿|✨|⚠️|🩺|🤗|💛/g, ''); // Remove emojis
       response = response.replace(/\n\n/g, '... '); // Add pauses
-      response = `Beta, ${response.replace(/\*/g, '')} Take care ji, Nani is always here for you!`;
+      response = `My child, ${response.replace(/\*/g, '')} Take care, Nani is always here for you!`;
     }
 
     return response.trim();

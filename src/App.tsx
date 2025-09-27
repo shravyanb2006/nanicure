@@ -14,6 +14,7 @@ import StarredPage from "./pages/StarredPage";
 import AboutPage from "./pages/AboutPage";
 import FeedbackPage from "./pages/FeedbackPage";
 import TermsPage from "./pages/TermsPage";
+import DashboardPage from "./pages/DashboardPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

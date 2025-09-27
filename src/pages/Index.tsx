@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { WidgetGrid } from "@/components/WidgetGrid";
@@ -17,6 +17,7 @@ const Index = () => {
   const [starredMessages, setStarredMessages] = useState<any[]>([]);
   const [showBookmarks, setShowBookmarks] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     setShowOnboarding(true);
@@ -27,6 +28,8 @@ const Index = () => {
     setSelectedRegion(userData.region);
     setIsLoggedIn(true);
     setShowOnboarding(false);
+    // After onboarding, go to Dashboard (Companions)
+    navigate('/companions');
   };
 
   const handleSignOut = () => {

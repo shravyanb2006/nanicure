@@ -1,4 +1,4 @@
-import { voiceRemedyEngine, VoiceRemedy } from './voiceRemedyEngine';
+// Removed voiceRemedyEngine import to rely solely on JSON data sources
 import remediesData from '@/data/remedies.json';
 import wellnessData from '@/data/wellness.json';
 import remediesExpandedData from '@/data/remedies_expanded_500.json';
@@ -49,7 +49,7 @@ class ComprehensiveRemedyEngine {
     this.loadBasicRemedies();
     this.loadExpandedRemedies();
     this.loadWellnessData();
-    this.generateAdditionalRemedies();
+    // this.generateAdditionalRemedies(); // Disabled to use only user's JSON datasets
   }
 
   private loadBasicRemedies() {
@@ -240,10 +240,7 @@ class ComprehensiveRemedyEngine {
   }
 
   public findComprehensiveRemedy(userInput: string, userRegion?: string): ComprehensiveRemedy | null {
-    const voiceRemedy = voiceRemedyEngine.findBestRemedy(userInput, userRegion);
-    if (voiceRemedy) {
-      return this.convertVoiceRemedy(voiceRemedy);
-    }
+    // Removed voice engine fallback to prevent generic responses; rely on comprehensive remedies only
 
     const input = userInput.toLowerCase();
     let bestMatch: ComprehensiveRemedy | null = null;
@@ -312,31 +309,12 @@ class ComprehensiveRemedyEngine {
     return bestMatch;
   }
 
-  private convertVoiceRemedy(voiceRemedy: VoiceRemedy): ComprehensiveRemedy {
-    return {
-      id: voiceRemedy.id,
-      problem: voiceRemedy.problem,
-      keywords: voiceRemedy.keywords,
-      symptoms: [],
-      remedy: voiceRemedy.response.short,
-      ingredients: this.extractIngredients(voiceRemedy.response.steps.join(' ')),
-      preparation: voiceRemedy.response.steps,
-      dosage: 'As recommended',
-      duration: '3-5 days',
-      precautions: voiceRemedy.response.precautions,
-      escalation: voiceRemedy.response.escalation,
-      region: voiceRemedy.region,
-      category: this.categorizeRemedy(voiceRemedy.problem),
-      severity: 'moderate',
-      source: 'traditional',
-      emojis: this.getEmojiForCategory(this.categorizeRemedy(voiceRemedy.problem))
-    };
-  }
+  // Removed convertVoiceRemedy; chat now uses only comprehensive JSON remedies
 
   public generateEnhancedResponse(remedy: ComprehensiveRemedy, isVoice: boolean = false): string {
     let response = `${remedy.emojis?.join(' ') || '🌿'} **${remedy.problem}** ${remedy.emojis?.join(' ') || '🌿'}\n\n`;
     
-    response += `*Beta, ${remedy.remedy}* 💛\n\n`;
+    response += `*My child, ${remedy.remedy}* 💛\n\n`;
 
     if (remedy.ingredients.length > 0) {
       response += "**🌱 Ingredients needed:**\n";
@@ -374,13 +352,13 @@ class ComprehensiveRemedyEngine {
       response += "\n";
     }
 
-    response += "*Nani ki dua aapke saath hai beta! Get well soon! 🤗*";
+    response += "*Nani's blessings are with you. Get well soon! 🤗*";
 
     if (isVoice) {
       response = response.replace(/\*\*/g, '');
       response = response.replace(/🌿|🌱|✨|⏰|⚠️|🩺|💛|🤗/g, '');
       response = response.replace(/\n\n/g, '... ');
-      response = `Beta ji, ${response.replace(/\*/g, '')} Remember, Nani is always here to help you!`;
+      response = `My child, ${response.replace(/\*/g, '')} Remember, Nani is always here to help you!`;
     }
 
     return response.trim();
@@ -418,7 +396,7 @@ class ComprehensiveRemedyEngine {
       response += "\n";
     }
 
-    response += "*Beta, wellness is a journey, not a destination. Take it one step at a time! 🤗*";
+    response += "*Wellness is a journey, not a destination. Take it one step at a time! 🤗*";
 
     return response.trim();
   }
