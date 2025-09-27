@@ -16,15 +16,13 @@ import {
   MessageSquare, 
   Shield,
   ChevronDown,
-  ChevronRight,
-  LogOut
+  ChevronRight
 } from "lucide-react";
 
 interface SideMenuProps {
   isOpen: boolean;
   onClose: () => void;
   currentPage?: string;
-  onSignOut?: () => void;
 }
 
 // Sample data for Browse Ingredients and Quick Remedies
@@ -94,7 +92,7 @@ const quickRemedies = [
   }
 ];
 
-export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuProps) {
+export function SideMenu({ isOpen, onClose, currentPage }: SideMenuProps) {
   const [ingredientsOpen, setIngredientsOpen] = useState(false);
   const [remediesOpen, setRemediesOpen] = useState(false);
   const navigate = useNavigate();
@@ -112,7 +110,7 @@ export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuPr
       <div className="fixed inset-0 bg-black/50" onClick={onClose} />
       
       {/* Side Menu */}
-      <div className="fixed left-0 top-0 h-full w-80 bg-card border-r shadow-lg z-50">
+      <div className="fixed left-0 top-0 h-full w-80 bg-card border-r shadow-lg">
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="font-semibold text-lg">Menu</h2>
           <Button variant="ghost" size="sm" onClick={onClose}>
@@ -243,23 +241,6 @@ export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuPr
               <Shield className="mr-2 h-4 w-4" />
               Privacy Policy & Terms
             </Button>
-
-            <Separator />
-
-            {/* Sign Out */}
-            {onSignOut && (
-              <Button 
-                variant="ghost" 
-                className="w-full justify-start text-red-600 hover:text-red-700 hover:bg-red-50" 
-                onClick={() => {
-                  onSignOut();
-                  onClose();
-                }}
-              >
-                <LogOut className="mr-2 h-4 w-4" />
-                Sign Out
-              </Button>
-            )}
           </div>
         </ScrollArea>
       </div>

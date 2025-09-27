@@ -179,7 +179,7 @@ export default function NaniKiVaniPage() {
   };
 
   const goToCompanions = () => {
-    navigate('/');
+    navigate('/companions');
   };
 
   const renderResponse = (text: string) => {
@@ -216,7 +216,7 @@ export default function NaniKiVaniPage() {
             className="flex items-center gap-2"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Home
+            Back to Companions
           </Button>
           
           <div className="flex items-center gap-4">
