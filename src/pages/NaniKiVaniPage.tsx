@@ -179,7 +179,7 @@ export default function NaniKiVaniPage() {
   };
 
   const goToDashboard = () => {
-    navigate('/');
+    navigate('/dashboard');
   };
 
   const renderResponse = (text: string) => {

@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { OnboardingModal } from "@/components/OnboardingModal";
-import { WidgetGrid } from "@/components/WidgetGrid";
-import { SideMenu } from "@/components/SideMenu";
+import DashboardPage from "@/pages/DashboardPage";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -13,8 +12,8 @@ const Index = () => {
   const [selectedRegion, setSelectedRegion] = useState("");
   const [showOnboarding, setShowOnboarding] = useState(false);
   const [starredMessages, setStarredMessages] = useState<any[]>([]);
-  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     setShowOnboarding(true);
@@ -60,46 +59,41 @@ const Index = () => {
     });
   };
 
-  const handleShowBookmarks = () => {
-    setIsSideMenuOpen(true);
-  };
+  // If logged in, show Dashboard Page
+  if (isLoggedIn) {
+    return (
+      <DashboardPage
+        userName={userName}
+        selectedRegion={selectedRegion}
+        onSignOut={handleSignOut}
+        starredMessages={starredMessages}
+        onStarMessage={handleStarMessage}
+        onRemoveStarred={handleRemoveStarred}
+      />
+    );
+  }
 
+  // If not logged in, show Home Page
   return (
     <div className="min-h-screen bg-background">
       <Header
-        onMenuClick={() => setIsSideMenuOpen(true)}
+        onMenuClick={() => {}} // No menu on home page
         selectedRegion={selectedRegion}
         onRegionChange={setSelectedRegion}
         onLoginClick={handleLogin}
-        isLoggedIn={isLoggedIn}
-        userName={userName}
+        isLoggedIn={false}
+        userName=""
       />
 
-      {isLoggedIn ? (
-        <div className="pt-16">
-          <WidgetGrid 
-            onStarMessage={handleStarMessage}
-            userRegion={selectedRegion}
-            onShowBookmarks={handleShowBookmarks}
-          />
-        </div>
-      ) : (
-        <HeroSection
-          onGetStarted={handleLogin}
-          isLoggedIn={isLoggedIn}
-        />
-      )}
+      <HeroSection
+        onGetStarted={handleLogin}
+        isLoggedIn={false}
+      />
 
       <OnboardingModal
         isOpen={showOnboarding}
         onComplete={handleOnboardingComplete}
         onClose={() => setShowOnboarding(false)}
-      />
-
-      <SideMenu
-        isOpen={isSideMenuOpen}
-        onClose={() => setIsSideMenuOpen(false)}
-        onSignOut={handleSignOut}
       />
 
       {/* Footer */}
