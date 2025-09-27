@@ -130,8 +130,8 @@ const Index = () => {
             <Link to="/terms" className="hover:text-primary">Terms of Use</Link>
           </div>
           
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4 max-w-4xl mx-auto">
-            <p className="text-xs text-yellow-800 font-medium">
+          <div className="bg-muted border border-border rounded-lg p-4 mb-4 max-w-4xl mx-auto">
+            <p className="text-xs text-muted-foreground font-medium">
               ⚠️ Medical Disclaimer: All remedies and advice provided by NaniCure are for informational 
               purposes only. Always consult a licensed healthcare provider for serious health concerns.
             </p>

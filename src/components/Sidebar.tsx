@@ -236,8 +236,8 @@ export function Sidebar({ isOpen, onClose, userName, starredMessages, onSignOut 
         </div>
       </Card>
       
-      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
-        <p className="text-xs text-yellow-800 font-medium">
+      <div className="bg-muted border border-border rounded-lg p-3">
+        <p className="text-xs text-muted-foreground font-medium">
           ⚠️ Important: All remedies and advice provided by NaniCure are for informational purposes only. 
           Always consult a licensed healthcare provider for serious health concerns.
         </p>

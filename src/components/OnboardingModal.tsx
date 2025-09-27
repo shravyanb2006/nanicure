@@ -131,12 +131,12 @@ export function OnboardingModal({ isOpen, onComplete, onClose }: OnboardingModal
 
         {step === 2 && (
           <div className="space-y-6 py-4">
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+            <div className="bg-muted border border-border rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-yellow-600 mt-0.5 flex-shrink-0" />
+                <AlertTriangle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <h4 className="font-medium text-yellow-800 mb-2">Important Safety Information</h4>
-                  <ul className="text-sm text-yellow-700 space-y-1">
+                  <h4 className="font-medium text-foreground mb-2">Important Safety Information</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• These are traditional home remedies for informational purposes only</li>
                     <li>• Always consult a doctor for serious health conditions</li>
                     <li>• Consider your health conditions before trying any remedy</li>

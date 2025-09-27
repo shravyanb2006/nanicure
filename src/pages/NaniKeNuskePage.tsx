@@ -257,7 +257,7 @@ const NaniKeNuskePage = () => {
                         className="mt-2 h-6 px-2 hover:bg-primary-foreground/10 transition-smooth"
                         onClick={() => handleStar(message)}
                       >
-                        <Star className={`h-3 w-3 transition-all ${message.starred ? 'fill-current text-yellow-400 scale-110' : 'hover:text-yellow-400'}`} />
+                        <Star className={`h-3 w-3 transition-all ${message.starred ? 'fill-current text-primary scale-110' : 'hover:text-primary'}`} />
                         <span className="ml-1 text-xs">
                           {message.starred ? 'Starred' : 'Star'}
                         </span>

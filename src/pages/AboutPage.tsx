@@ -72,8 +72,8 @@ const AboutPage = () => {
                 We believe in empowering people with natural, gentle remedies while ensuring they 
                 know when professional medical care is necessary.
               </p>
-              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <p className="text-sm text-yellow-800">
+              <div className="bg-muted border border-border rounded-lg p-4">
+                <p className="text-sm text-muted-foreground">
                   <strong>Important:</strong> NaniCure provides traditional remedy suggestions for informational 
                   purposes only. We always encourage consulting healthcare professionals for serious conditions.
                 </p>

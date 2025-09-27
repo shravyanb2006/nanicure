@@ -187,7 +187,7 @@ const StarredPage = () => {
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
                       <div className="flex items-center gap-2">
-                        <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                        <Star className="h-4 w-4 text-primary fill-current" />
                         <div>
                           <CardTitle className="text-base">
                             {message.type || 'Nani\'s Remedy'}

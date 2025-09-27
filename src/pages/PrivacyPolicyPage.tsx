@@ -121,8 +121,8 @@ const PrivacyPolicyPage = () => {
             <CardContent className="space-y-6">
               <div>
                 <h3 className="font-semibold text-primary mb-2">Medical Disclaimer</h3>
-                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <p className="text-sm text-yellow-800">
+                <div className="bg-muted border border-border rounded-lg p-4">
+                  <p className="text-sm text-muted-foreground">
                     <strong>Important:</strong> NaniCure provides traditional remedy suggestions for informational 
                     and educational purposes only. Our content is not a substitute for professional medical advice, 
                     diagnosis, or treatment. Always consult qualified healthcare providers for medical concerns.

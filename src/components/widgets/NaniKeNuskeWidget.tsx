@@ -219,7 +219,7 @@ export function NaniKeNuskeWidget({ onStarMessage }: NaniKeNuskeWidgetProps) {
                     className="mt-2 h-6 px-2 hover:bg-primary-foreground/10"
                     onClick={() => handleStar(message)}
                   >
-                    <Star className={`h-3 w-3 ${message.starred ? 'fill-current text-yellow-400' : ''}`} />
+                    <Star className={`h-3 w-3 ${message.starred ? 'fill-current text-primary' : ''}`} />
                   </Button>
                 )}
               </div>
