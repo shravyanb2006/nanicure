@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -17,7 +17,11 @@ import {
   Shield,
   ChevronDown,
   ChevronRight,
-  LogOut
+  LogOut,
+  MessageCircle,
+  Mic,
+  Heart,
+  Home
 } from "lucide-react";
 
 interface SideMenuProps {
@@ -97,7 +101,9 @@ const quickRemedies = [
 export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuProps) {
   const [ingredientsOpen, setIngredientsOpen] = useState(false);
   const [remediesOpen, setRemediesOpen] = useState(false);
+  const [widgetsOpen, setWidgetsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   if (!isOpen) return null;
 
@@ -105,6 +111,36 @@ export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuPr
     navigate(path);
     onClose();
   };
+
+  const isWidget = location.pathname.includes('nani-') || location.pathname.includes('doctor-connect');
+
+  // Widget navigation items
+  const widgetItems = [
+    { 
+      title: "Nani Ke Nuske", 
+      path: "/nani-ke-nuske", 
+      icon: MessageCircle,
+      description: "Chat remedies"
+    },
+    { 
+      title: "Nani Ki Vani", 
+      path: "/nani-ki-vani", 
+      icon: Mic,
+      description: "Voice assistant"
+    },
+    { 
+      title: "Nani Wellness", 
+      path: "/nani-wellness", 
+      icon: Heart,
+      description: "Wellness & fitness"
+    },
+    { 
+      title: "Doctor Connect", 
+      path: "/doctor-connect", 
+      icon: Stethoscope,
+      description: "Find doctors"
+    }
+  ];
 
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
@@ -122,6 +158,56 @@ export function SideMenu({ isOpen, onClose, currentPage, onSignOut }: SideMenuPr
 
         <ScrollArea className="h-[calc(100vh-4rem)]">
           <div className="p-4 space-y-2">
+            {/* Dashboard/Home Navigation */}
+            <Button 
+              variant="ghost" 
+              className="w-full justify-start" 
+              onClick={() => handleNavigation(isWidget ? '/dashboard' : '/')}
+            >
+              <Home className="mr-2 h-4 w-4" />
+              {isWidget ? 'Dashboard' : 'Home'}
+            </Button>
+
+            <Separator />
+
+            {/* Widget Navigation - Only show if on a widget page */}
+            {isWidget && (
+              <>
+                <Collapsible open={widgetsOpen} onOpenChange={setWidgetsOpen}>
+                  <CollapsibleTrigger asChild>
+                    <Button variant="ghost" className="w-full justify-between">
+                      <div className="flex items-center">
+                        <HeartHandshake className="mr-2 h-4 w-4" />
+                        Other Features
+                      </div>
+                      {widgetsOpen ? <ChevronDown className="h-4 w-4" /> : <ChevronRight className="h-4 w-4" />}
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="space-y-2 ml-6 mt-2">
+                    {widgetItems
+                      .filter(item => item.path !== location.pathname)
+                      .map((item, index) => (
+                        <Button
+                          key={index}
+                          variant="ghost"
+                          className="w-full justify-start text-sm"
+                          onClick={() => handleNavigation(item.path)}
+                        >
+                          <item.icon className="mr-2 h-4 w-4" />
+                          <div className="text-left">
+                            <div>{item.title}</div>
+                            <div className="text-xs text-muted-foreground">{item.description}</div>
+                          </div>
+                        </Button>
+                      ))
+                    }
+                  </CollapsibleContent>
+                </Collapsible>
+
+                <Separator />
+              </>
+            )}
+
             {/* Profile */}
             <Button 
               variant="ghost" 
