@@ -89,7 +89,7 @@ export function WidgetGrid({ onStarMessage, userRegion, onShowBookmarks }: Widge
               </CardHeader>
               <CardContent>
                 <p className="nani-description text-center">
-                  Suggests 5 doctors based on problem and region. Shows name, specialty, contact number, email, region with empathetic, professional recommendations.
+                  Find trusted doctors based on symptoms and location. Get professional recommendations with contact details.
                 </p>
               </CardContent>
             </Card>
