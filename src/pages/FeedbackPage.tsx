@@ -1,33 +1,43 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Mail, Send } from "lucide-react";
-import { Header } from "@/components/Header";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { ArrowLeft, MessageSquare, Mail, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Header } from "@/components/Header";
 
 const FeedbackPage = () => {
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    type: '',
+    rating: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+    setIsSubmitting(true);
+
     // Simulate form submission
-    toast({
-      title: "Feedback sent successfully!",
-      description: "Thank you for your feedback, beta! Nani will review it with love 💛",
-    });
-    
-    // Reset form
-    setName("");
-    setEmail("");
-    setMessage("");
+    setTimeout(() => {
+      toast({
+        title: "Feedback sent!",
+        description: "Thank you beta! Your feedback helps us improve NaniCure for everyone. 💛",
+      });
+      setFormData({ name: '', email: '', type: '', rating: '', message: '' });
+      setIsSubmitting(false);
+    }, 1000);
+  };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -37,171 +47,149 @@ const FeedbackPage = () => {
         selectedRegion=""
         onRegionChange={() => {}}
         onLoginClick={() => {}}
-        isLoggedIn={false}
+        isLoggedIn={true}
         userName=""
       />
       
       <div className="container mx-auto px-4 py-8 max-w-2xl">
         <div className="mb-6">
-          <Button 
-            variant="ghost" 
-            onClick={() => navigate(-1)}
-            className="mb-4"
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back
-          </Button>
-          
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-primary mb-4 font-serif">
-              Feedback
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              We'd love to hear from you, beta! Your thoughts help Nani become better 💛
-            </p>
-          </div>
+          <Link to="/">
+            <Button variant="ghost">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
+        </div>
+        
+        <div className="text-center mb-8">
+          <h1 className="nani-tagline text-4xl mb-2">
+            Share Your Feedback
+          </h1>
+          <p className="nani-description text-lg">
+            Help us make NaniCure even better for you and your family
+          </p>
         </div>
 
-        <div className="space-y-6">
-          {/* Contact Information */}
-          <Card className="bg-gradient-warm">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-primary" />
-                Get in Touch
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center space-y-4">
-                <p className="text-muted-foreground">
-                  Have a suggestion, found a bug, or just want to say hello? 
-                  Nani is always happy to hear from her digital family!
-                </p>
-                <div className="bg-background/50 p-4 rounded-lg">
-                  <p className="font-medium text-primary">Write to us at:</p>
-                  <a 
-                    href="mailto:support@nanicure.com" 
-                    className="text-lg font-semibold text-primary hover:underline"
-                  >
-                    support@nanicure.com
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Feedback Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Send Your Feedback</CardTitle>
+        {/* Contact Information */}
+        <Card className="gradient-warm mb-6">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Mail className="h-5 w-5 text-primary" />
+              Get in Touch
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-3">
+              Have a question or need immediate support? Feel free to reach out to us directly:
+            </p>
+            <div className="bg-white/50 p-3 rounded-lg">
+              <p className="font-medium text-primary">support@nanicure.com</p>
               <p className="text-sm text-muted-foreground">
-                Use this form for quick feedback, or email us directly for detailed discussions
+                We typically respond within 24 hours
               </p>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="text-sm font-medium mb-2 block">
-                      Name
-                    </label>
-                    <Input
-                      id="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="text-sm font-medium mb-2 block">
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="your.email@example.com"
-                      required
-                    />
-                  </div>
-                </div>
-                
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Feedback Form */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <MessageSquare className="h-5 w-5 text-primary" />
+              Feedback Form
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="message" className="text-sm font-medium mb-2 block">
-                    Your Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Tell us what's on your mind..."
-                    rows={6}
-                    required
+                  <Label htmlFor="name">Name</Label>
+                  <Input
+                    id="name"
+                    value={formData.name}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
+                    placeholder="Your name"
+                    className="mt-1"
                   />
                 </div>
-                
-                <Button type="submit" className="w-full">
-                  <Send className="h-4 w-4 mr-2" />
-                  Send Feedback
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
-          {/* Feedback Types */}
-          <Card>
-            <CardHeader>
-              <CardTitle>What Kind of Feedback Are You Sharing?</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">💡 Suggestions</h4>
-                  <p className="text-muted-foreground">
-                    New features, improvements, or remedies you'd like to see
-                  </p>
-                </div>
-                
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">🐛 Bug Reports</h4>
-                  <p className="text-muted-foreground">
-                    Something not working as expected? Let us know!
-                  </p>
-                </div>
-                
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">❤️ Appreciation</h4>
-                  <p className="text-muted-foreground">
-                    Share how NaniCure helped you - it makes our day!
-                  </p>
-                </div>
-                
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-primary">🤝 Partnerships</h4>
-                  <p className="text-muted-foreground">
-                    Interested in collaborating? We'd love to explore together
-                  </p>
+                <div>
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    placeholder="your.email@example.com"
+                    className="mt-1"
+                  />
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Response Time */}
-          <Card className="bg-blue-50 border-blue-200">
-            <CardContent className="pt-6">
-              <div className="text-center">
-                <p className="text-sm text-blue-800">
-                  <strong>Response Time:</strong> We typically respond within 24-48 hours. 
-                  For urgent matters, please mention "URGENT" in your subject line.
-                </p>
-                <p className="text-sm text-blue-600 mt-2">
-                  Thank you for helping us make NaniCure better for everyone! 🙏
-                </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <Label>Feedback Type</Label>
+                  <Select value={formData.type} onValueChange={(value) => handleInputChange('type', value)}>
+                    <SelectTrigger className="mt-1">
+                      <SelectValue placeholder="Select type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="general">General Feedback</SelectItem>
+                      <SelectItem value="bug">Bug Report</SelectItem>
+                      <SelectItem value="feature">Feature Request</SelectItem>
+                      <SelectItem value="remedy">Remedy Suggestion</SelectItem>
+                      <SelectItem value="praise">Appreciation</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Overall Rating</Label>
+                  <Select value={formData.rating} onValueChange={(value) => handleInputChange('rating', value)}>
+                    <SelectTrigger className="mt-1">
+                      <SelectValue placeholder="Rate your experience" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="5">⭐⭐⭐⭐⭐ Excellent</SelectItem>
+                      <SelectItem value="4">⭐⭐⭐⭐ Good</SelectItem>
+                      <SelectItem value="3">⭐⭐⭐ Average</SelectItem>
+                      <SelectItem value="2">⭐⭐ Needs Improvement</SelectItem>
+                      <SelectItem value="1">⭐ Poor</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
-            </CardContent>
-          </Card>
+
+              <div>
+                <Label htmlFor="message">Your Feedback</Label>
+                <Textarea
+                  id="message"
+                  value={formData.message}
+                  onChange={(e) => handleInputChange('message', e.target.value)}
+                  placeholder="Share your thoughts, suggestions, or report any issues you've encountered..."
+                  rows={5}
+                  className="mt-1"
+                  required
+                />
+              </div>
+
+              <Button 
+                type="submit" 
+                className="w-full btn-nani" 
+                disabled={isSubmitting || !formData.message.trim()}
+              >
+                {isSubmitting ? "Sending..." : "Send Feedback"}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+
+        {/* Additional Info */}
+        <div className="mt-6 text-center">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <p className="text-sm text-blue-800">
+              <strong>💡 Tip:</strong> Your feedback helps us improve NaniCure for everyone in our community. 
+              We read every message and truly appreciate your time and input!
+            </p>
+          </div>
         </div>
       </div>
     </div>

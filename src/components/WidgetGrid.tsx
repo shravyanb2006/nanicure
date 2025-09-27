@@ -22,7 +22,7 @@ export function WidgetGrid({ onStarMessage, userRegion, onShowBookmarks }: Widge
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
           {/* Nani ke Nuske */}
           <Link to="/nani-ke-nuske" className="block">
             <Card className="widget-card hover:shadow-lg transition-all duration-300 cursor-pointer">

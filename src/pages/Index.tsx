@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { WidgetGrid } from "@/components/WidgetGrid";
-import { Sidebar } from "@/components/Sidebar";
 import { OnboardingModal } from "@/components/OnboardingModal";
 import { StarredBookmarks } from "@/components/StarredBookmarks";
+import { SideMenu } from "@/components/SideMenu";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -108,12 +108,9 @@ const Index = () => {
         </section>
       )}
 
-      <Sidebar
+      <SideMenu
         isOpen={showSidebar}
         onClose={() => setShowSidebar(false)}
-        userName={userName}
-        starredMessages={starredMessages}
-        onSignOut={handleSignOut}
       />
 
       <OnboardingModal

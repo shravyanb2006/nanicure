@@ -45,14 +45,6 @@ export function HeroSection({ onGetStarted, isLoggedIn }: HeroSectionProps) {
             <p className="text-lg text-primary font-medium">
               Welcome back! How can Nani help you today? 💛
             </p>
-            <div className="flex gap-4">
-              <Button variant="secondary" className="btn-nani-secondary">
-                Quick Remedy
-              </Button>
-              <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground">
-                Browse Wellness Tips
-              </Button>
-            </div>
           </div>
         )}
       </div>

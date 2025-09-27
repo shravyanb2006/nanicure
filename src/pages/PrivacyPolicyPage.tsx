@@ -1,12 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Shield, Eye, Lock, UserCheck } from "lucide-react";
 import { Header } from "@/components/Header";
 
 const PrivacyPolicyPage = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-background">
       <Header
@@ -14,265 +12,174 @@ const PrivacyPolicyPage = () => {
         selectedRegion=""
         onRegionChange={() => {}}
         onLoginClick={() => {}}
-        isLoggedIn={false}
+        isLoggedIn={true}
         userName=""
       />
       
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="mb-6">
-          <Button 
-            variant="ghost" 
-            onClick={() => navigate(-1)}
-            className="mb-4"
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back
-          </Button>
-          
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-primary mb-4 font-serif">
-              Privacy Policy
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Your privacy and trust are precious to us, beta 💛
-            </p>
-          </div>
+          <Link to="/">
+            <Button variant="ghost">
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
+        </div>
+        
+        <div className="text-center mb-8">
+          <h1 className="nani-tagline text-4xl mb-2">
+            Privacy Policy & Terms of Use
+          </h1>
+          <p className="nani-description">
+            Your privacy and trust matter deeply to us
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Last updated: December 2024
+          </p>
         </div>
 
-        <div className="space-y-6">
-          {/* Introduction */}
+        <div className="grid gap-6">
+          {/* Privacy Policy */}
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Shield className="h-5 w-5 text-primary" />
-                Our Commitment to Your Privacy
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <Shield className="h-6 w-6 text-primary" />
+                Privacy Policy
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
-                At NaniCure, we treat your personal information with the same care and protection that a grandmother would give to her family's secrets. This Privacy Policy explains how we collect, use, protect, and handle your personal information when you use our services.
-              </p>
-              <div className="bg-gradient-warm p-4 rounded-lg">
-                <p className="text-primary font-medium">
-                  <strong>Last Updated:</strong> December 2024
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Data Collection */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Eye className="h-5 w-5 text-primary" />
-                What Information We Collect
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-3">
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Personal Information</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Name and region/location you provide during registration</li>
-                    <li>Email address (if provided for feedback or support)</li>
-                    <li>User preferences and settings</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Interaction Data</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Chat messages and health queries you share with Nani</li>
-                    <li>Starred remedies and bookmarked content</li>
-                    <li>Voice interactions (processed locally, not stored permanently)</li>
-                    <li>Usage patterns and feature preferences</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Technical Information</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Device information and browser type</li>
-                    <li>IP address and general location</li>
-                    <li>Usage analytics and performance data</li>
-                    <li>Error logs for troubleshooting</li>
-                  </ul>
+            <CardContent className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-primary mb-2 flex items-center gap-2">
+                  <Eye className="h-4 w-4" />
+                  Information We Collect
+                </h3>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <p>
+                    <strong>Personal Information:</strong> When you use NaniCure, we may collect your name, 
+                    region selection, and any health symptoms you share with our AI assistant.
+                  </p>
+                  <p>
+                    <strong>Usage Data:</strong> We collect information about how you interact with our platform, 
+                    including which remedies you view, voice interactions, and starred content.
+                  </p>
+                  <p>
+                    <strong>Device Information:</strong> Basic device and browser information to ensure 
+                    optimal performance and security.
+                  </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Data Usage */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <UserCheck className="h-5 w-5 text-primary" />
-                How We Use Your Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Personalization & Service Delivery</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Provide personalized health remedies and wellness guidance</li>
-                    <li>Remember your preferences and starred remedies</li>
-                    <li>Adapt responses based on your region and cultural context</li>
-                    <li>Maintain conversation continuity during your session</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Service Improvement</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Analyze usage patterns to improve AI responses</li>
-                    <li>Identify and fix technical issues</li>
-                    <li>Develop new features based on user needs</li>
-                    <li>Enhance the accuracy of remedy recommendations</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Communication</h4>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Respond to your support requests and feedback</li>
-                    <li>Send important service updates (with your consent)</li>
-                    <li>Provide customer support when needed</li>
-                  </ul>
+              <div>
+                <h3 className="font-semibold text-primary mb-2 flex items-center gap-2">
+                  <Lock className="h-4 w-4" />
+                  How We Use Your Information
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>• <strong>Provide Personalized Care:</strong> Tailor remedy suggestions to your region and needs</p>
+                  <p>• <strong>Improve Our Service:</strong> Enhance our AI responses and remedy database</p>
+                  <p>• <strong>Safety & Security:</strong> Protect against misuse and ensure platform security</p>
+                  <p>• <strong>Communication:</strong> Send important updates about our service (with your consent)</p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Data Protection */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Lock className="h-5 w-5 text-primary" />
-                How We Protect Your Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Data Storage & Security</h3>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-green-800 mb-2">Security Measures</h4>
-                  <ul className="list-disc list-inside text-sm text-green-700 space-y-1">
-                    <li>All data is encrypted both in transit and at rest</li>
-                    <li>Regular security audits and updates</li>
-                    <li>Access controls and authentication systems</li>
-                    <li>Secure cloud infrastructure with industry-standard protection</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Data Confidentiality</h4>
-                  <p className="text-sm text-muted-foreground">
-                    We understand that health information is deeply personal. All interactions with Nani are treated with 
-                    the highest level of confidentiality. We do not store sensitive medical details beyond what's necessary 
-                    for providing immediate guidance, and personal health information is not used for any other purposes.
+                  <p className="text-sm text-green-800">
+                    <strong>Local Storage First:</strong> Most of your data (preferences, starred remedies, profile) 
+                    is stored locally on your device. You have full control over this data.
                   </p>
+                </div>
+                <div className="mt-3 space-y-2 text-sm text-muted-foreground">
+                  <p>• All data transmission is encrypted using industry-standard SSL/TLS</p>
+                  <p>• We implement strict access controls and regular security audits</p>
+                  <p>• Health-related conversations are processed with extra privacy safeguards</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Your Rights</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>• <strong>Access:</strong> Request a copy of your personal data</p>
+                  <p>• <strong>Correction:</strong> Update or correct your information</p>
+                  <p>• <strong>Deletion:</strong> Request removal of your data (right to be forgotten)</p>
+                  <p>• <strong>Data Portability:</strong> Export your data in a common format</p>
+                  <p>• <strong>Opt-out:</strong> Unsubscribe from communications at any time</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          {/* User Rights */}
+          {/* Terms of Use */}
           <Card>
             <CardHeader>
-              <CardTitle>Your Rights & Control</CardTitle>
+              <CardTitle className="flex items-center gap-2 text-2xl">
+                <UserCheck className="h-6 w-6 text-primary" />
+                Terms of Use
+              </CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <p className="text-muted-foreground">You have complete control over your personal information:</p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-primary">Access & Review</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Request a copy of all personal data we have about you
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-primary">Correction</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Update or correct any inaccurate personal information
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-primary">Deletion</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Request deletion of your personal data and account
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-primary">Data Portability</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Export your data in a readable format
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <p className="text-sm text-blue-800">
-                    To exercise any of these rights, contact us at <strong>privacy@nanicure.com</strong> or through our feedback form.
+            <CardContent className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Medical Disclaimer</h3>
+                <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                  <p className="text-sm text-yellow-800">
+                    <strong>Important:</strong> NaniCure provides traditional remedy suggestions for informational 
+                    and educational purposes only. Our content is not a substitute for professional medical advice, 
+                    diagnosis, or treatment. Always consult qualified healthcare providers for medical concerns.
                   </p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Data Sharing */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Data Sharing & Third Parties</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-red-800 mb-2">What We DON'T Do</h4>
-                  <ul className="list-disc list-inside text-sm text-red-700 space-y-1">
-                    <li>Sell your personal information to any third parties</li>
-                    <li>Share your health queries for marketing purposes</li>
-                    <li>Use your data for advertising or promotional activities</li>
-                    <li>Share identifiable personal information with external partners</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Limited Sharing</h4>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    We may share anonymized and aggregated data (with no personal identifiers) with:
-                  </p>
-                  <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                    <li>Research institutions for improving traditional medicine practices</li>
-                    <li>Technology partners for service improvement (under strict confidentiality agreements)</li>
-                    <li>Legal authorities if required by law or to protect user safety</li>
-                  </ul>
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Acceptable Use</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>By using NaniCure, you agree to:</p>
+                  <p>• Use the service for personal, non-commercial purposes</p>
+                  <p>• Provide accurate information when interacting with our AI</p>
+                  <p>• Not attempt to misuse, hack, or disrupt our platform</p>
+                  <p>• Respect the intellectual property rights of NaniCure and third parties</p>
+                  <p>• Not share harmful, illegal, or inappropriate content</p>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Contact & Updates */}
-          <Card className="bg-gradient-warm">
-            <CardContent className="pt-6">
-              <div className="text-center space-y-4">
-                <h3 className="text-xl font-bold text-primary">Questions About Your Privacy?</h3>
-                <p className="text-muted-foreground">
-                  If you have any questions about this Privacy Policy or how we handle your data, 
-                  please don't hesitate to reach out. We're here to ensure you feel completely comfortable 
-                  and secure while using NaniCure.
-                </p>
-                <div className="space-y-2">
-                  <p className="font-medium text-primary">Contact our Privacy Team:</p>
-                  <p className="text-sm">Email: <strong>privacy@nanicure.com</strong></p>
-                  <p className="text-sm">General Support: <strong>support@nanicure.com</strong></p>
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Limitation of Liability</h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p>
+                    NaniCure is provided "as is" without warranties. We do not guarantee the accuracy, 
+                    completeness, or effectiveness of any remedy suggestions. Users assume full responsibility 
+                    for their health decisions.
+                  </p>
+                  <p>
+                    We are not liable for any direct, indirect, incidental, or consequential damages 
+                    arising from your use of our service.
+                  </p>
                 </div>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Changes to Terms</h3>
                 <p className="text-sm text-muted-foreground">
-                  We will notify you of any significant changes to this Privacy Policy via email or through the app.
+                  We may update these terms occasionally. Significant changes will be communicated through 
+                  our platform. Continued use constitutes acceptance of updated terms.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Contact Information */}
+          <Card className="gradient-warm">
+            <CardHeader>
+              <CardTitle>Questions or Concerns?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground mb-4">
+                If you have any questions about this Privacy Policy or Terms of Use, please don't hesitate to contact us:
+              </p>
+              <div className="bg-white/50 p-4 rounded-lg">
+                <p className="font-medium text-primary">Email: support@nanicure.com</p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  We're here to help and will respond within 24-48 hours.
                 </p>
               </div>
             </CardContent>
