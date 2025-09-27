@@ -28,8 +28,8 @@ const Index = () => {
     setSelectedRegion(userData.region);
     setIsLoggedIn(true);
     setShowOnboarding(false);
-    // After onboarding, go to Dashboard
-    navigate('/dashboard');
+    // After onboarding, go to Dashboard (Companions)
+    navigate('/companions');
   };
 
   const handleSignOut = () => {
