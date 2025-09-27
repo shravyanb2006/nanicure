@@ -19,6 +19,7 @@ export class VoiceRemedyEngine {
   private remedies: VoiceRemedy[] = [];
   private normalizedKeywords: Map<string, string[]> = new Map();
   private synonymMap: Map<string, string[]> = new Map();
+  private sessionHistory: Array<{query: string, response: string, timestamp: Date}> = [];
 
   constructor() {
     this.loadRemedies();
@@ -31,17 +32,25 @@ export class VoiceRemedyEngine {
   }
 
   private buildSynonymMap() {
-    // Common health-related synonyms
-    this.synonymMap.set('vomiting', ['nausea', 'throwing up', 'retching', 'sick', 'queasy']);
-    this.synonymMap.set('headache', ['head pain', 'migraine', 'head ache', 'cranial pain']);
-    this.synonymMap.set('fever', ['temperature', 'high temp', 'pyrexia', 'hot body']);
-    this.synonymMap.set('cold', ['flu', 'cough', 'sneezing', 'runny nose', 'congestion']);
-    this.synonymMap.set('stomach', ['tummy', 'belly', 'abdomen', 'gastric', 'digestive']);
-    this.synonymMap.set('acidity', ['heartburn', 'acid reflux', 'gastritis', 'burning stomach']);
-    this.synonymMap.set('diarrhea', ['loose motions', 'loose stools', 'stomach upset', 'running stomach']);
-    this.synonymMap.set('constipation', ['hard stools', 'difficulty passing', 'blocked stomach']);
-    this.synonymMap.set('hair fall', ['hair loss', 'baldness', 'thinning hair', 'alopecia']);
-    this.synonymMap.set('skin', ['dermal', 'cutaneous', 'epidermal', 'complexion']);
+    // Comprehensive health-related synonyms
+    this.synonymMap.set('vomiting', ['nausea', 'throwing up', 'retching', 'sick', 'queasy', 'ulti', 'feeling sick']);
+    this.synonymMap.set('headache', ['head pain', 'migraine', 'head ache', 'cranial pain', 'sir dard', 'brain pain']);
+    this.synonymMap.set('fever', ['temperature', 'high temp', 'pyrexia', 'hot body', 'bukhar', 'body heat']);
+    this.synonymMap.set('cold', ['flu', 'cough', 'sneezing', 'runny nose', 'congestion', 'sardi', 'zukam']);
+    this.synonymMap.set('stomach', ['tummy', 'belly', 'abdomen', 'gastric', 'digestive', 'pet', 'stomach pain']);
+    this.synonymMap.set('acidity', ['heartburn', 'acid reflux', 'gastritis', 'burning stomach', 'khatti dakaar']);
+    this.synonymMap.set('diarrhea', ['loose motions', 'loose stools', 'stomach upset', 'running stomach', 'dast', 'pet saaf']);
+    this.synonymMap.set('constipation', ['hard stools', 'difficulty passing', 'blocked stomach', 'kabz', 'pet saaf nahi']);
+    this.synonymMap.set('hair fall', ['hair loss', 'baldness', 'thinning hair', 'alopecia', 'baal girna', 'hair problem']);
+    this.synonymMap.set('skin', ['dermal', 'cutaneous', 'epidermal', 'complexion', 'face', 'skin problem', 'chamdi']);
+    this.synonymMap.set('diabetes', ['blood sugar', 'sugar problem', 'diabetic', 'madhumeh', 'sugar']);
+    this.synonymMap.set('hypertension', ['high blood pressure', 'bp problem', 'blood pressure', 'bp high', 'high bp']);
+    this.synonymMap.set('anxiety', ['stress', 'tension', 'worry', 'nervousness', 'chinta', 'pareshan', 'mental stress']);
+    this.synonymMap.set('insomnia', ['sleep problem', 'cannot sleep', 'sleeplessness', 'neend nahi aati', 'jagrat']);
+    this.synonymMap.set('fatigue', ['tiredness', 'weakness', 'lack of energy', 'thakaan', 'kamzori', 'energy nahi']);
+    this.synonymMap.set('joint pain', ['arthritis', 'knee pain', 'joint ache', 'jodo ka dard', 'ghutno ka dard']);
+    this.synonymMap.set('periods', ['menstruation', 'monthly cycle', 'women health', 'mc', 'periods problem', 'mahavari']);
+    this.synonymMap.set('pregnancy', ['garbhavastha', 'expecting', 'pregnant', 'baby coming', 'conceive']);
   }
 
   private preprocessKeywords() {
@@ -119,6 +128,13 @@ export class VoiceRemedyEngine {
   public findBestRemedy(userInput: string, userRegion?: string): VoiceRemedy | null {
     if (!userInput.trim()) return null;
 
+    // Store query in session history
+    this.sessionHistory.push({
+      query: userInput,
+      response: '',
+      timestamp: new Date()
+    });
+
     let bestMatch: VoiceRemedy | null = null;
     let bestScore = 0;
 
@@ -130,7 +146,18 @@ export class VoiceRemedyEngine {
         score += 0.1;
       }
 
-      if (score > bestScore && score > 0.2) { // Minimum threshold
+      // Session context bonus - if user asked about related topics recently
+      const recentQueries = this.sessionHistory.slice(-3);
+      for (const recent of recentQueries) {
+        const recentWords = recent.query.toLowerCase().split(' ');
+        const currentWords = userInput.toLowerCase().split(' ');
+        const overlap = recentWords.filter(word => currentWords.includes(word));
+        if (overlap.length > 1 && remedy.keywords.some(k => overlap.includes(k.toLowerCase()))) {
+          score += 0.05;
+        }
+      }
+
+      if (score > bestScore && score > 0.15) { // Lowered threshold for better coverage
         bestScore = score;
         bestMatch = remedy;
       }
@@ -163,18 +190,29 @@ export class VoiceRemedyEngine {
   public generateNaniResponse(remedy: VoiceRemedy, isVoice: boolean = false): string {
     const { title, short, steps, precautions, escalation } = remedy.response;
     
-    let response = `${short}\n\n`;
+    // Add session memory context
+    const recentQueries = this.sessionHistory.slice(-2);
+    let contextualIntro = short;
+    
+    if (recentQueries.length > 0 && !isVoice) {
+      const lastQuery = recentQueries[recentQueries.length - 1];
+      if (Date.now() - lastQuery.timestamp.getTime() < 300000) { // 5 minutes
+        contextualIntro = `Beta, I remember you were asking about health concerns. ${short}`;
+      }
+    }
+    
+    let response = `🌿 **${title}** 🌿\n\n${contextualIntro}\n\n`;
     
     if (steps.length > 0) {
-      response += "**Nani ke nuskhe:**\n";
+      response += "**✨ Nani ke nuskhe:**\n";
       steps.forEach((step, index) => {
-        response += `${index + 1}. ${step}\n`;
+        response += `${index + 1}. ${step} 🤗\n`;
       });
       response += "\n";
     }
 
     if (precautions.length > 0) {
-      response += "**Dhyan rakhiye beta:**\n";
+      response += "**⚠️ Dhyan rakhiye beta:**\n";
       precautions.forEach(precaution => {
         response += `• ${precaution}\n`;
       });
@@ -182,17 +220,21 @@ export class VoiceRemedyEngine {
     }
 
     if (escalation.length > 0) {
-      response += "**Doctor ko kab dikhana hai:**\n";
+      response += "**🩺 Doctor ko kab dikhana hai:**\n";
       escalation.forEach(rule => {
         response += `• ${rule}\n`;
       });
+      response += "\n";
     }
+
+    response += "*Nani ka pyaar aur ashirwad aapke saath hai beta! 💛*";
 
     if (isVoice) {
       // For voice, add natural pauses and warm tone
       response = response.replace(/\*\*/g, ''); // Remove markdown
+      response = response.replace(/🌿|✨|⚠️|🩺|🤗|💛/g, ''); // Remove emojis
       response = response.replace(/\n\n/g, '... '); // Add pauses
-      response = `Beta, ${response} Take care, and remember Nani is always here for you!`;
+      response = `Beta, ${response.replace(/\*/g, '')} Take care ji, Nani is always here for you!`;
     }
 
     return response.trim();

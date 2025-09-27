@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Send, Star, ArrowLeft } from "lucide-react";
-import { Header } from "@/components/Header";
-import wellnessData from "@/data/wellness.json";
+import { Heart, Send, Star, ArrowLeft, RotateCcw } from "lucide-react";
+import { HamburgerMenu } from "@/components/HamburgerMenu";
+import { comprehensiveRemedyEngine } from '@/utils/comprehensiveRemedyEngine';
+import { profileManager } from '@/utils/profileManager';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface Message {
   id: string;
@@ -17,10 +19,12 @@ interface Message {
 
 const NaniWellnessPage = () => {
   const navigate = useNavigate();
+  const profile = profileManager.getProfile();
+  const [selectedRegion, setSelectedRegion] = useState(profile?.region || "");
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Namaste beta! I'm here to help with your wellness journey - whether it's stress, anxiety, fitness, or finding inner peace. Tell me what's weighing on your heart today? 💛",
+      text: `Namaste ${profile?.name ? profile.name + ' ' : ''}beta! I'm here to help with your wellness journey - whether it's stress, anxiety, fitness, or finding inner peace. Tell me what's weighing on your heart today? 💛`,
       isUser: false,
       timestamp: new Date(),
     }
@@ -38,51 +42,59 @@ const NaniWellnessPage = () => {
   }, [messages]);
 
   const generateWellnessResponse = (userInput: string): string => {
-    const input_lower = userInput.toLowerCase();
-    
-    // Search through wellness data
-    const matchedWellness = wellnessData.wellness.find(item => 
-      item.keywords.some(keyword => input_lower.includes(keyword.toLowerCase()))
-    );
+    // Try wellness advice first
+    const wellness = comprehensiveRemedyEngine.findWellnessAdvice(userInput);
+    if (wellness) {
+      const response = comprehensiveRemedyEngine.generateWellnessResponse(wellness);
+      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
+      return response;
+    }
 
-    if (matchedWellness) {
-      return `**${matchedWellness.problem.toUpperCase()} - Nani's Wellness Guide! 🌸**
-
-${matchedWellness.exercise}
-
-**💡 Additional Tips:**
-${matchedWellness.extra_info}
-
-${matchedWellness.escalation && matchedWellness.escalation.length > 0 ? 
-`**⚠️ Professional Help Needed:** ${matchedWellness.escalation.join(', ')}` : ''}
-
-*Remember beta, wellness is a journey, not a destination. I'm here with you! 🧡*`;
+    // Try comprehensive remedy for wellness-related health issues
+    const remedy = comprehensiveRemedyEngine.findComprehensiveRemedy(userInput, selectedRegion);
+    if (remedy && (remedy.category === 'mental' || remedy.problem.toLowerCase().includes('stress') || remedy.problem.toLowerCase().includes('anxiety'))) {
+      const response = comprehensiveRemedyEngine.generateEnhancedResponse(remedy);
+      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
+      return response;
     }
     
-    // Default wellness response
-    return `**Beta, I understand you're looking for wellness guidance! 💛**
+    // Enhanced default wellness response
+    const sessionContext = comprehensiveRemedyEngine.getSessionContext();
+    const contextualIntro = sessionContext ? 
+      `Beta, I remember our wellness conversation. Let me help you further on this journey! 🤗\n\n` : '';
+    
+    return `${contextualIntro}**Beta, I understand you're looking for wellness guidance! 💛**
 
-**Mental Wellness I Can Help With:**
-• **Stress & Anxiety** - Breathing exercises, grounding techniques
-• **Low Mood** - Mood-lifting practices, positive habits
-• **Sleep Issues** - Relaxation routines, bedtime rituals
-• **Confidence** - Self-affirmation exercises
-• **Anger Management** - Calming techniques
+**🧘‍♀️ Mental Wellness & Emotional Health:**
+• **Stress & Anxiety** - Pranayama, meditation, grounding techniques
+• **Depression & Low Mood** - Mood-lifting yoga, positive affirmations  
+• **Sleep Disorders** - Relaxation routines, bedtime rituals, sleep hygiene
+• **Confidence Building** - Self-affirmation, body-positive exercises
+• **Anger Management** - Calming breathing, emotional regulation
+• **Focus & Memory** - Brain exercises, concentration techniques
 
-**Physical Wellness & Fitness:**
-• **Gentle Yoga** - Morning stretches, evening relaxation
-• **Breathing Exercises** - Pranayama, stress relief
-• **Posture Improvement** - Simple exercises for back and neck
-• **Energy Boosting** - Natural ways to feel more active
-• **Women's Health** - Holistic wellness approaches
+**💪 Physical Wellness & Fitness:**
+• **Daily Yoga Routines** - Morning energizers, evening relaxation
+• **Breathing Exercises** - Pranayama for stress relief and energy
+• **Posture Improvement** - Desk exercises, spine alignment
+• **Energy Boosting** - Natural stamina builders, fatigue fighters
+• **Weight Management** - Healthy habits, mindful eating
+• **Women's Health** - Hormonal balance, cycle support
 
-**Try asking:**
-"Nani, I feel stressed"
-"Help me with morning yoga"
-"I can't sleep well"
-"How to boost my confidence"
+**🌱 Lifestyle & Holistic Wellness:**
+• **Nutrition & Diet** - Balanced meals, therapeutic foods
+• **Daily Routines** - Ayurvedic lifestyle, circadian rhythms
+• **Stress Management** - Work-life balance, relaxation techniques
+• **Spiritual Practices** - Meditation, mindfulness, gratitude
 
-*What's troubling your heart today, beta? 🌿*`;
+**✨ Try asking specific questions:**
+"Nani, I feel overwhelmed with work stress"
+"Help me create a morning yoga routine"
+"I can't sleep at night, what should I do?"
+"How to build confidence naturally?"
+"Natural ways to boost energy levels"
+
+*What's troubling your heart today, beta? I'm here to support your wellness journey! 🌿*`;
   };
 
   const handleSend = async () => {
@@ -112,9 +124,33 @@ ${matchedWellness.escalation && matchedWellness.escalation.length > 0 ?
     }, 1500);
   };
 
+  const startNewChat = () => {
+    comprehensiveRemedyEngine.clearSession();
+    setMessages([
+      {
+        id: '1',
+        text: `Namaste ${profile?.name ? profile.name + ' ' : ''}beta! I'm here to help with your wellness journey - whether it's stress, anxiety, fitness, or finding inner peace. Tell me what's weighing on your heart today? 💛`,
+        isUser: false,
+        timestamp: new Date(),
+      }
+    ]);
+    setInput("");
+  };
+
   const handleStar = (message: Message) => {
     const updatedMessage = { ...message, starred: true };
     setMessages(prev => prev.map(m => m.id === message.id ? updatedMessage : m));
+    
+    // Save to starred remedies
+    if (!message.isUser) {
+      profileManager.addStarredRemedy({
+        id: message.id,
+        title: 'Wellness Guidance',
+        content: message.text,
+        timestamp: message.timestamp,
+        category: 'wellness'
+      });
+    }
   };
 
   const renderMessage = (message: Message) => {
@@ -144,43 +180,66 @@ ${matchedWellness.escalation && matchedWellness.escalation.length > 0 ?
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header
-        onMenuClick={() => {}}
-        selectedRegion=""
-        onRegionChange={() => {}}
-        onLoginClick={() => {}}
-        isLoggedIn={false}
-        userName=""
-      />
-      
+    <div className="min-h-screen bg-background indian-motifs">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="mb-6">
+        <div className="mb-6 flex items-center justify-between">
           <Button 
             variant="ghost" 
-            onClick={() => navigate(-1)}
-            className="mb-4"
+            onClick={() => navigate('/companions')}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back
+            Back to Companions
           </Button>
           
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-primary mb-4 font-serif">
-              Nani Wellness
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Your holistic wellness companion for mind, body, and soul
-            </p>
+          <div className="flex items-center gap-4">
+            <HamburgerMenu currentPage="nani-wellness" />
+            
+            <Select value={selectedRegion} onValueChange={(value) => {
+              setSelectedRegion(value);
+              profileManager.updateProfile({ region: value });
+            }}>
+              <SelectTrigger className="w-40">
+                <SelectValue placeholder="Select Region" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="north">North India</SelectItem>
+                <SelectItem value="south">South India</SelectItem>
+                <SelectItem value="east">East India</SelectItem>
+                <SelectItem value="west">West India</SelectItem>
+                <SelectItem value="central">Central India</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
+        
+        <div className="lotus-divider mb-8">
+          <span>🌸</span>
+        </div>
+        
+        <div className="text-center mb-8">
+          <h1 className="calligraphy-title text-4xl mb-2 text-primary">
+            Nani Wellness
+          </h1>
+          <p className="nani-description text-lg">
+            Your holistic wellness companion for mind, body, and soul
+          </p>
+        </div>
 
-        <Card className="h-[600px]">
-          <CardHeader className="pb-4">
+        <Card className="h-[600px] shadow-warm">
+          <CardHeader className="pb-4 flex flex-row items-center justify-between">
             <CardTitle className="flex items-center gap-2">
               <Heart className="h-5 w-5 text-primary" />
               Wellness Chat with Nani
             </CardTitle>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={startNewChat}
+              className="gap-2"
+            >
+              <RotateCcw className="h-4 w-4" />
+              Start New Chat
+            </Button>
           </CardHeader>
           
           <CardContent className="flex flex-col h-full pb-4">

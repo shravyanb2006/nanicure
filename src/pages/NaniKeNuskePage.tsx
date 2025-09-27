@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageCircle, Send, Star, ArrowLeft, RotateCcw } from "lucide-react";
-import { Header } from "@/components/Header";
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { 
   Select,
@@ -13,7 +12,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import remediesData from "@/data/remedies.json";
+import { comprehensiveRemedyEngine } from '@/utils/comprehensiveRemedyEngine';
+import { profileManager } from '@/utils/profileManager';
 
 interface Message {
   id: string;
@@ -25,11 +25,12 @@ interface Message {
 
 const NaniKeNuskePage = () => {
   const navigate = useNavigate();
-  const [selectedRegion, setSelectedRegion] = useState("");
+  const profile = profileManager.getProfile();
+  const [selectedRegion, setSelectedRegion] = useState(profile?.region || "");
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Namaste beta! I'm your Nani, ready with home remedies for all your problems. Tell me what's troubling you today? 💛",
+      text: `Namaste ${profile?.name ? profile.name + ' ' : ''}beta! I'm your Nani, ready with home remedies for all your problems. Tell me what's troubling you today? 💛`,
       isUser: false,
       timestamp: new Date(),
     }
@@ -47,10 +48,11 @@ const NaniKeNuskePage = () => {
   }, [messages]);
 
   const startNewChat = () => {
+    comprehensiveRemedyEngine.clearSession();
     setMessages([
       {
         id: '1',
-        text: "Namaste beta! I'm your Nani, ready with home remedies for all your problems. Tell me what's troubling you today? 💛",
+        text: `Namaste ${profile?.name ? profile.name + ' ' : ''}beta! I'm your Nani, ready with home remedies for all your problems. Tell me what's troubling you today? 💛`,
         isUser: false,
         timestamp: new Date(),
       }
@@ -59,46 +61,53 @@ const NaniKeNuskePage = () => {
   };
 
   const generateNaniResponse = (userInput: string): string => {
-    const input_lower = userInput.toLowerCase();
+    // First try comprehensive remedy engine
+    const remedy = comprehensiveRemedyEngine.findComprehensiveRemedy(userInput, selectedRegion);
     
-    // Search through remedies data
-    const matchedRemedy = remediesData.remedies.find(remedy => 
-      remedy.keywords.some(keyword => input_lower.includes(keyword.toLowerCase()))
-    );
+    if (remedy) {
+      const response = comprehensiveRemedyEngine.generateEnhancedResponse(remedy);
+      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
+      return response;
+    }
 
-    if (matchedRemedy) {
-      return `**${matchedRemedy.problem.toUpperCase()} - Nani's Special Remedy! 🌿**
-
-${matchedRemedy.remedy}
-
-**✨ Extra Tips:**
-${matchedRemedy.extra_info}
-
-${matchedRemedy.escalation && matchedRemedy.escalation.length > 0 ? 
-`**⚠️ Doctor Visit Needed:** ${matchedRemedy.escalation.join(', ')}` : ''}
-
-*Got it beta? Your Nani is always here! 🧡*`;
+    // Try wellness advice
+    const wellness = comprehensiveRemedyEngine.findWellnessAdvice(userInput);
+    if (wellness) {
+      const response = comprehensiveRemedyEngine.generateWellnessResponse(wellness);
+      comprehensiveRemedyEngine.addToSessionMemory(userInput, response);
+      return response;
     }
     
-    // Default response for unknown queries
-    return `**Beta, main samjhi! Let me help you! 💛**
+    // Enhanced default response with better coverage
+    const sessionContext = comprehensiveRemedyEngine.getSessionContext();
+    const contextualIntro = sessionContext ? 
+      `Beta, I remember our conversation. Let me help you further! 🤗\n\n` : '';
+    
+    return `${contextualIntro}**Beta, main samjhi! Let me help you! 💛**
 
-**Common Home Remedies I Know:**
-• **Colds & Cough** - Honey, turmeric, ginger
-• **Headaches** - Peppermint oil, head massage  
-• **Stomach Issues** - Jeera water, hing, mint
-• **Skin Problems** - Turmeric, neem, rose water
-• **Sleep Issues** - Warm milk, meditation
-• **Minor Cuts** - Turmeric, honey, clean cloth
+**🌿 Common Health Issues I Can Help With:**
+• **🤧 Respiratory** - Cold, cough, asthma, breathing problems
+• **💚 Digestive** - Acidity, stomach pain, constipation, diarrhea
+• **🌸 Skin & Hair** - Acne, hair fall, dry skin, dark circles
+• **🧘‍♀️ Mental Health** - Stress, anxiety, insomnia, mood issues
+• **💖 Women's Health** - Period problems, pregnancy care, hormonal issues
+• **🩺 Chronic Conditions** - Diabetes, BP, joint pain, arthritis
 
-**Ask me specifically about:**
-"Nani, I have a headache"
-"How to cure cold naturally?"
-"Home remedy for acidity"
+**✨ Advanced Wellness Support:**
+• **Yoga & Exercise** - Daily routines, specific poses
+• **Nutrition** - Healthy diet plans, food remedies
+• **Lifestyle** - Sleep hygiene, stress management
+• **Ayurvedic Care** - Traditional herbs, natural healing
+
+**🗣️ Try asking:**
+"Nani, my sugar levels are high"
+"I feel very stressed lately"
+"Help with hair fall problem"
+"Natural remedy for joint pain"
 
 **⚠️ Remember:** For serious symptoms, always consult a doctor first!
 
-*What specific problem do you have beta? Main help karungi! 🧡*`;
+*What specific health concern do you have beta? Main detail mein help karungi! 🧡*`;
   };
 
   const handleSend = async () => {
@@ -131,6 +140,17 @@ ${matchedRemedy.escalation && matchedRemedy.escalation.length > 0 ?
   const handleStar = (message: Message) => {
     const updatedMessage = { ...message, starred: true };
     setMessages(prev => prev.map(m => m.id === message.id ? updatedMessage : m));
+    
+    // Save to starred remedies
+    if (!message.isUser) {
+      profileManager.addStarredRemedy({
+        id: message.id,
+        title: 'Nani ka Nuskha',
+        content: message.text,
+        timestamp: message.timestamp,
+        category: 'remedy'
+      });
+    }
   };
 
   const renderMessage = (message: Message) => {
@@ -160,30 +180,24 @@ ${matchedRemedy.escalation && matchedRemedy.escalation.length > 0 ?
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header
-        onMenuClick={() => {}}
-        selectedRegion=""
-        onRegionChange={() => {}}
-        onLoginClick={() => {}}
-        isLoggedIn={false}
-        userName=""
-      />
-      
+    <div className="min-h-screen bg-background indian-motifs">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="mb-6 flex items-center justify-between">
           <Button 
             variant="ghost" 
-            onClick={() => navigate(-1)}
+            onClick={() => navigate('/companions')}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back
+            Back to Companions
           </Button>
           
           <div className="flex items-center gap-4">
             <HamburgerMenu currentPage="nani-ke-nuske" />
             
-            <Select value={selectedRegion} onValueChange={setSelectedRegion}>
+            <Select value={selectedRegion} onValueChange={(value) => {
+              setSelectedRegion(value);
+              profileManager.updateProfile({ region: value });
+            }}>
               <SelectTrigger className="w-40">
                 <SelectValue placeholder="Select Region" />
               </SelectTrigger>
